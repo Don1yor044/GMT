@@ -1,17 +1,22 @@
 /** @jsxImportSource @emotion/react */
 import { observer } from "mobx-react-lite";
 import { Header } from "../../components/Header";
-import { Col, Row, Typography } from "antd";
+import { Col, FloatButton, Row, Typography } from "antd";
 import { colors } from "../../components/Colors";
 import { PrimaryButton, SecondaryButton } from "../../components/Buttons";
-import CategoryHome from "./components/category";
-import SwiperComponentCopy from "./components/cabinetSwiper";
 import HomeCards from "./components/Cards";
-import { Link } from "react-router-dom";
+import HomeClient from "./components/Client";
+import HomeBrand from "./components/Brend";
+import { FcUpload } from "react-icons/fc";
+import About from "../../components/About";
+import CatalogTover from "./components/catalogTover";
+import CategoryHome from "./components/category";
+import CabinetSwiper from "./components/cabinetSwiper";
 
 const Home = observer(() => {
   return (
     <>
+      <FloatButton.BackTop visibilityHeight={1000} icon={<FcUpload />} />
       <Header />
       <div className="px-14 py-8">
         <div className="rounded-xl" style={{ backgroundColor: colors.Fon }}>
@@ -29,7 +34,7 @@ const Home = observer(() => {
                 </div>
                 <div className="flex gap-5 mt-16">
                   <PrimaryButton text="Запросить цену" />
-                  <SecondaryButton text="В каталог" size={120} />
+                  <SecondaryButton text="В каталог" size={27} />
                 </div>
               </div>
             </Col>
@@ -63,25 +68,24 @@ const Home = observer(() => {
             Комплексное оснащение кабинетов
           </Typography.Title>
 
-          <SwiperComponentCopy />
+          <CabinetSwiper />
         </div>
         <div className="mt-24">
           <Typography.Title level={2}>Почему выбирают нас?</Typography.Title>
           <HomeCards />
         </div>
         <div className="mt-24">
-          <Row>
-            <Col span={5}>
-              <Typography.Title level={2}>Каталог товаров</Typography.Title>
-
-              <div className="flex flex-col items-start text-gray-500 text-lg ">
-                <Link to={"/"}>Хиты продаж</Link>
-                <Link to={"/"}>Новинки</Link>
-                <Link to={"/"}>Акции</Link>
-              </div>
-            </Col>
-          </Row>
+          <CatalogTover />
         </div>
+      </div>
+      <div>
+        <HomeClient />
+      </div>
+      <div className="px-14 mt-24">
+        <HomeBrand />
+      </div>
+      <div className="mt-24">
+        <About />
       </div>
     </>
   );

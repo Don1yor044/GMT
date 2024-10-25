@@ -52,7 +52,7 @@ const StyledPrimaryButton = styled.button<{ size?: number }>`
   background-color: #088269;
   padding: 8px 20px;
   border-radius: 50px;
-  width: ${(props) => (props.size ? `${props.size}px` : "auto")};
+  width: ${(props) => (props.size ? `${props.size}%` : "auto")};
   cursor: pointer;
   font-weight: 500;
   color: white;
@@ -71,7 +71,7 @@ const StyledTertiaryButton = styled.button<{ size?: number }>`
   background-color: inherit;
   padding: 8px 20px;
   border-radius: 50px;
-  width: ${(props) => (props.size ? `${props.size}px` : "auto")};
+  width: ${(props) => (props.size ? `${props.size}%` : "auto")};
   border: 1px solid #d5d1e1;
   cursor: pointer;
   font-weight: 500;
@@ -85,7 +85,7 @@ const StyledTertiaryButton = styled.button<{ size?: number }>`
 const StyledSecondaryButton = styled.button<{ size?: number }>`
   background-color: inherit;
   padding: 8px 20px;
-  width: ${(props) => (props.size ? `${props.size}px` : "auto")};
+  width: ${(props) => (props.size ? `${props.size}%` : "auto")};
   border-radius: 50px;
   border: 1px solid #d5d1e1;
   color: #088269 !important;
