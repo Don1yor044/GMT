@@ -5,6 +5,9 @@ import { Col, Row, Typography } from "antd";
 import { colors } from "../../components/Colors";
 import { PrimaryButton, SecondaryButton } from "../../components/Buttons";
 import CategoryHome from "./components/category";
+import SwiperComponentCopy from "./components/cabinetSwiper";
+import HomeCards from "./components/Cards";
+import { Link } from "react-router-dom";
 
 const Home = observer(() => {
   return (
@@ -54,6 +57,30 @@ const Home = observer(() => {
             <PrimaryButton text="Все категории" />
           </div>
           <CategoryHome />
+        </div>
+        <div className="mt-24">
+          <Typography.Title level={2} className="!mb-10">
+            Комплексное оснащение кабинетов
+          </Typography.Title>
+
+          <SwiperComponentCopy />
+        </div>
+        <div className="mt-24">
+          <Typography.Title level={2}>Почему выбирают нас?</Typography.Title>
+          <HomeCards />
+        </div>
+        <div className="mt-24">
+          <Row>
+            <Col span={5}>
+              <Typography.Title level={2}>Каталог товаров</Typography.Title>
+
+              <div className="flex flex-col items-start text-gray-500 text-lg ">
+                <Link to={"/"}>Хиты продаж</Link>
+                <Link to={"/"}>Новинки</Link>
+                <Link to={"/"}>Акции</Link>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     </>

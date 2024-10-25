@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { IconType } from "react-icons";
 
 export const PrimaryButton = ({
   text,
@@ -35,6 +36,16 @@ export const QuaternaryButton = ({
   size?: number;
 }) => {
   return <StyledQuaternaryButton size={size}>{text}</StyledQuaternaryButton>;
+};
+
+export const LeftButton = ({
+  icon: Icon,
+  size,
+}: {
+  icon: IconType;
+  size?: number;
+}) => {
+  return <StyledLeftButton>{<Icon size={size} />}</StyledLeftButton>;
 };
 
 const StyledPrimaryButton = styled.button<{ size?: number }>`
@@ -104,5 +115,18 @@ const StyledQuaternaryButton = styled.button<{ size?: number }>`
   &:active {
     background-color: #066753;
     color: white !important;
+  }
+`;
+const StyledLeftButton = styled.button`
+  background-color: inherit;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #d5d1e1;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #07745e;
+  }
+  &:active {
+    border: 1px solid #056552;
   }
 `;
