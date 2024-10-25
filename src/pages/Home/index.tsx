@@ -9,9 +9,12 @@ import HomeClient from "./components/Client";
 import HomeBrand from "./components/Brend";
 import { FcUpload } from "react-icons/fc";
 import About from "../../components/About";
-import CatalogTover from "./components/catalogTover";
-import CategoryHome from "./components/category";
-import CabinetSwiper from "./components/cabinetSwiper";
+import CategoryHome from "./components/Category";
+import CabinetSwiper from "./components/CabinetSwiper";
+import HomeCompany from "./components/Company";
+import HomeForm from "./components/Form";
+import CatalogTover from "./components/CatalogTover";
+import HomeSubscription from "../../components/Subscription";
 
 const Home = observer(() => {
   return (
@@ -74,18 +77,29 @@ const Home = observer(() => {
           <Typography.Title level={2}>Почему выбирают нас?</Typography.Title>
           <HomeCards />
         </div>
-        <div className="mt-24">
-          <CatalogTover />
-        </div>
+      </div>
+      <div className="mt-24 ps-14">
+        <CatalogTover />
       </div>
       <div>
         <HomeClient />
       </div>
-      <div className="px-14 mt-24">
+      <div className="ps-14 mt-24">
         <HomeBrand />
       </div>
       <div className="mt-24">
         <About />
+      </div>
+      <div className="ps-14">
+        <div className="mt-24">
+          <HomeCompany />
+        </div>
+        <div className="mt-24">
+          <HomeForm />
+        </div>
+      </div>
+      <div className="mt-24">
+        <HomeSubscription />
       </div>
     </>
   );

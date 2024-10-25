@@ -41,26 +41,21 @@ const HomeBrand = () => {
     },
     {
       id: 4,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
-      title: "НМИЦ онкологии им. Н.Н. Блохина",
-    },
-    {
-      id: 5,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/7be5/fbc1/5cd1bec2679c4b4487192625b42b8de0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YtdBpEnw6EEJRLRKnm-ez6Eb-0o4hsO~gv9ookPptb4ArifidQfwbyFaLR7Q9WaaiHdEXcMtva2uevNV0DYGs0Cyaa4hNyPz3YbP7f7jtNu3DJy1-PlfgjtBTBxAWdS-zuU2cvN8oGG2Kt~gbdUXrG-Nu4skUZRcjf89PpeqAbKXSzxEvWu6U636-hKjG-quaZWzwnAu9qvPYtL51h6A8F5A6an~-c7~GTf5ltUw4qubLpV9C~2QaKIXL7niXKdvRIi7iWnAoif3dxWqhyMFR6Q96VJ9wma6ZCp60JIQ4-mPT7Qv8P8h6yjkF3k9CS2~4i-CeIol73Afxv3U6lxLGw__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
   ];
   return (
     <>
       <Row>
-        <Col span={5}>
+        <Col span={6}>
           <Typography.Title level={2}>Бренды</Typography.Title>
 
           <div className=" text-gray-500 text-lg ">
             <Link to={"/"}>Эксклюзивные поставщики</Link>
           </div>
         </Col>
-        <Col span={18} offset={1}>
+        <Col span={18}>
           <Swiper
             loop={true}
             spaceBetween={10}

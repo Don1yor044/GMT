@@ -63,7 +63,7 @@ const CatalogTover = () => {
   return (
     <>
       <Row>
-        <Col span={5}>
+        <Col span={6}>
           <Typography.Title level={2}>Каталог товаров</Typography.Title>
 
           <div className="flex flex-col items-start text-gray-500 text-lg ">
@@ -73,7 +73,7 @@ const CatalogTover = () => {
           </div>
         </Col>
 
-        <Col span={19}>
+        <Col span={18}>
           <Swiper
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)} // Swiper instansiyani olish
