@@ -10,15 +10,17 @@ import {
 // Swiper CSS import
 import "swiper/swiper-bundle.css"; // Barcha CSS
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { useTranslation } from "react-i18next";
 
 const items = [
-  { id: 1, src: "../../Photo (1).png", title: "Экспресс лаборатория" },
-  { id: 2, src: "../../Photo (2).png", title: "Лазерная терапия" },
-  { id: 3, src: "../../Photot.png", title: "Операционный блок" },
-  { id: 4, src: "../../Photo (3).png", title: "Новая лаборатория" },
+  { id: 1, src: "../../Photo (1).png", title: "ЭкспрессЛаборатория" },
+  { id: 2, src: "../../Photo (2).png", title: "ЛазернаяТерапия" },
+  { id: 3, src: "../../Photot.png", title: "ОперационныйБлок" },
+  { id: 4, src: "../../Photo (3).png", title: "НоваяЛаборатория" },
 ];
 
 const CabinetSwiper = () => {
+  const { t } = useTranslation();
   const swiperRef = useRef<any>(null); // Swiper uchun referens
 
   const handleNext = () => {
@@ -56,7 +58,7 @@ const CabinetSwiper = () => {
                 }}
               />
               <div className="px-5 py-3">
-                <Typography.Title level={4}>{item.title}</Typography.Title>
+                <Typography.Title level={4}>{t(item.title)}</Typography.Title>
               </div>
             </div>
           </SwiperSlide>
@@ -73,8 +75,8 @@ const CabinetSwiper = () => {
           </div>
         </div>
         <div className="flex gap-2">
-          <SecondaryButton text="Бесплатная консультация" />
-          <PrimaryButton text="Рассчитать стоимость" />
+          <SecondaryButton text={t(`БесплатнаяКонсультация`)} />
+          <PrimaryButton text={t(`РассчитатьСтоимость`)} />
         </div>
       </div>
     </>

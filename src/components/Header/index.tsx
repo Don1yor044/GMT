@@ -42,9 +42,7 @@ export const Header = () => {
           <Link to={"/"} className="!text-[#7A7687] ">
             info@mail.ru
           </Link>
-          <Typography className="text-[#7A7687]">
-            {t("г. Москва, ул. Московская, д. 35")}
-          </Typography>
+          <Typography className="text-[#7A7687]">{t("Аддрес")}</Typography>
         </div>
       </div>
       <hr />
@@ -59,17 +57,17 @@ export const Header = () => {
                     title="select"
                     className="cursor-pointer bg-transparent h-8 border-none outline-none"
                   >
-                    <option value="all">Barcha kategoriyalar</option>
-                    <option value="cat1">Kategoriya 1</option>
-                    <option value="cat2">Kategoriya 2</option>
-                    <option value="cat3">Kategoriya 3</option>
+                    <option value="all">{t("ВсеКатегории")}</option>
+                    <option value="cat1">категории 1</option>
+                    <option value="cat2">категории 2</option>
+                    <option value="cat3">категории 3</option>
                   </select>
                 </div>
               </div>
 
               <input
                 type="text"
-                placeholder={t("Поиск...")}
+                placeholder={t("Поиск")}
                 className="flex-1 px-4 py-2 bg-[#F8F7F3] border-none outline-none text-gray-800 placeholder-gray-500 rounded-e-3xl"
               />
 
@@ -83,8 +81,8 @@ export const Header = () => {
           </div>
           <div className="min-w-52">
             <Typography className="!m-0 text-[#7A7687]">
-              {t("Пн-Пт с 09:00-19:00")} <br />
-              {t("Сб-Вс - выходной")}
+              {t("РабочееВремя")} <br />
+              {t("Отдых")}
             </Typography>
           </div>
         </div>
@@ -162,7 +160,7 @@ export const Header = () => {
             </Typography.Title>
           </Button>
           <Link to={"/"}>{t("Производители")}</Link>
-          <Link to={"/"}>{t("Кабинеты под ключ")}</Link>
+          <Link to={"/"}>{t("КабинетыПодключ")}</Link>
           <Link to={"/"}>{t("Услуги")}</Link>
           <Link to={"/"}>{t("Акции")}</Link>
           <Link to={"/"}>{t("Покупателям")}</Link>
@@ -176,7 +174,7 @@ export const Header = () => {
             <LuMapPin />
           </div>
           <TertiaryButton text={t("+7(495)000-00-00")} />
-          <PrimaryButton text={t("Заказать звонок")} />
+          <PrimaryButton text={t("ЗаказатьЗвонок")} />
         </div>
       </div>
       <hr />

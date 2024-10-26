@@ -15,8 +15,11 @@ import HomeCompany from "./components/Company";
 import HomeForm from "./components/Form";
 import CatalogTover from "./components/CatalogTover";
 import HomeSubscription from "../../components/Subscription";
+import Footer from "../../components/Footer";
+import { useTranslation } from "react-i18next";
 
 const Home = observer(() => {
+  const { t } = useTranslation();
   return (
     <>
       <FloatButton.BackTop visibilityHeight={1000} icon={<FcUpload />} />
@@ -28,16 +31,16 @@ const Home = observer(() => {
               <div className="px-12 py-8">
                 <div>
                   <Typography.Title style={{ fontSize: 50 }}>
-                    Заголовок баннера <br /> в пару строк
+                    {t("ЗаголовокБаннераВПаруСтрок")}
                   </Typography.Title>
                   <Typography.Title level={5} className="!text-gray-500 ">
-                    Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
-                    elit, sed do eiusmod tempor
+                    {t("Lorem ipsum dolor sit amet, consectetur")} <br />{" "}
+                    {t("adipiscing elit, sed do eiusmod tempor")}
                   </Typography.Title>
                 </div>
                 <div className="flex gap-5 mt-16">
-                  <PrimaryButton text="Запросить цену" />
-                  <SecondaryButton text="В каталог" size={27} />
+                  <PrimaryButton text={t("ЗапроситьЦену")} />
+                  <SecondaryButton text={t("ВКаталог")} size={27} />
                 </div>
               </div>
             </Col>
@@ -60,19 +63,20 @@ const Home = observer(() => {
         <div className="mt-24">
           <div className="flex justify-between items-center">
             <Typography.Title level={2} className="!m-0">
-              Популярные категории
+              {t(`ПопулярныеКатегории`)}
             </Typography.Title>
-            <PrimaryButton text="Все категории" />
+            <PrimaryButton text={t(`ВсеКатегории`)} />
           </div>
           <CategoryHome />
         </div>
         <div className="mt-24">
           <Typography.Title level={2} className="!mb-10">
-            Комплексное оснащение кабинетов
+            {t(`КомплексноеОснащениеКабинетов`)}
           </Typography.Title>
 
           <CabinetSwiper />
         </div>
+        {/* buyergacha chalatranslet */}
         <div className="mt-24">
           <Typography.Title level={2}>Почему выбирают нас?</Typography.Title>
           <HomeCards />
@@ -100,6 +104,7 @@ const Home = observer(() => {
       </div>
       <div className="mt-24">
         <HomeSubscription />
+        <Footer />
       </div>
     </>
   );

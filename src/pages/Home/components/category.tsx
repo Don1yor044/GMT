@@ -1,6 +1,8 @@
 import { Col, Row, Typography } from "antd";
+import { useTranslation } from "react-i18next";
 
 const CategoryHome = () => {
+  const { t } = useTranslation();
   return (
     <div className="mt-10">
       <Row gutter={[20, 20]}>
@@ -21,8 +23,9 @@ const CategoryHome = () => {
                   />
                 </div>
                 <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5}>
-                    Дерматологическое <br /> оборудование
+                  <Typography.Title level={5} className="pe-5">
+                    {" "}
+                    {t("ДерматологическоеОборудование")}
                   </Typography.Title>
                 </div>
               </div>
@@ -44,7 +47,7 @@ const CategoryHome = () => {
                 <div className="p-5 px-7 border-t-2">
                   <Typography.Title level={5}>
                     {" "}
-                    Ветеринарное оборудование
+                    {t(`ВетеринарноеОборудование`)}
                   </Typography.Title>
                 </div>
               </div>
@@ -73,8 +76,8 @@ const CategoryHome = () => {
                   className="p-5 px-7 border-t-2 rounded-b-xl"
                   style={{ height: "91px" }}
                 >
-                  <Typography.Title level={5}>
-                    Дерматологическое <br /> оборудование
+                  <Typography.Title level={5} className="pe-5">
+                    {t(`ДерматологическоеОборудование`)}
                   </Typography.Title>
                 </div>
               </div>
@@ -98,8 +101,8 @@ const CategoryHome = () => {
                   />
                 </div>
                 <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5}>
-                    Оборудование для <br /> анастезиологии
+                  <Typography.Title level={5} className="pe-5">
+                    {t(`ОборудованиеДляАнастезиологии`)}
                   </Typography.Title>
                 </div>
               </div>
@@ -119,9 +122,8 @@ const CategoryHome = () => {
                   />
                 </div>
                 <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5}>
-                    {" "}
-                    Оборудование для <br /> анастезиологии
+                  <Typography.Title level={5} className="pe-5">
+                    {t(`ОборудованиеДляАнастезиологии`)}
                   </Typography.Title>
                 </div>
               </div>
@@ -146,7 +148,7 @@ const CategoryHome = () => {
                 </div>
                 <div className="p-5 px-7 border-t-2">
                   <Typography.Title level={5}>
-                    Мебель для <br /> медецинских целей
+                    {t(`МебельДляМедицинскихЦелей`)}
                   </Typography.Title>
                 </div>
               </div>
@@ -166,8 +168,8 @@ const CategoryHome = () => {
                   />
                 </div>
                 <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5}>
-                    Дерматологическое <br /> оборудование
+                  <Typography.Title level={5} className="pe-5">
+                    {t(`ДерматологическоеОборудование`)}
                   </Typography.Title>
                 </div>
               </div>

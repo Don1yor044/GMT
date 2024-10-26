@@ -28,7 +28,7 @@ const HomeSubscription = () => {
                   placeholder="Введите email"
                   className="rounded-full py-2 px-5 flex-grow"
                 />
-                <div className="-ml-7">
+                <div className="-ml-8">
                   <PrimaryButton text="Подписаться" size={100} />
                 </div>
               </div>
