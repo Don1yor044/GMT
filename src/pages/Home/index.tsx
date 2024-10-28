@@ -76,9 +76,10 @@ const Home = observer(() => {
 
           <CabinetSwiper />
         </div>
-        {/* buyergacha chalatranslet */}
         <div className="mt-24">
-          <Typography.Title level={2}>Почему выбирают нас?</Typography.Title>
+          <Typography.Title level={2}>
+            {t(`ПочемуВыбираютНас`)} ?
+          </Typography.Title>
           <HomeCards />
         </div>
       </div>
@@ -88,7 +89,7 @@ const Home = observer(() => {
       <div>
         <HomeClient />
       </div>
-      <div className="ps-14 mt-24">
+      <div className="ps-14 mt-24 py-14">
         <HomeBrand />
       </div>
       <div className="mt-24">

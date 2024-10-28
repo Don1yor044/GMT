@@ -1,32 +1,33 @@
 import styled from "@emotion/styled";
 import { Col, Collapse, CollapseProps, Row, Typography } from "antd";
+import { t } from "i18next";
 import { CiCirclePlus } from "react-icons/ci";
 import { IoIosCloseCircle } from "react-icons/io";
-
-const items: CollapseProps["items"] = [
+interface ItemType {
+  key: string;
+  label: string;
+  children: string;
+}
+const items: ItemType[] = [
   {
     key: "1",
-    label: "О компании",
-    children:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества.   В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+    label: "Окомпании",
+    children: "ИнформацияОкомпанииДеск",
   },
   {
     key: "2",
-    label: "Преимущества сотрудников",
-    children:
-      "Но синтетическое Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества.   В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества.   В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+    label: "ПреимуществаСотрудников",
+    children: "ИнформацияОкомпанииДеск",
   },
   {
     key: "3",
-    label: "Достижения компании",
-    children:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества.   В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+    label: "ДостиженияКомпании",
+    children: "ИнформацияОкомпанииДеск",
   },
   {
     key: "4",
-    label: "Карьерный рост",
-    children:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества.   В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+    label: "КарьерныйРост",
+    children: "ИнформацияОкомпанииДеск",
   },
 ];
 const customExpandIcon = ({ isActive }: { isActive?: boolean }) => {
@@ -37,17 +38,22 @@ const customExpandIcon = ({ isActive }: { isActive?: boolean }) => {
   );
 };
 const About = () => {
+  const translatedItems: CollapseProps["items"] = items.map((item) => ({
+    key: item.key,
+    label: t(item.label),
+    children: t(item.children),
+  }));
   return (
     <div className="bg-[#088269] p-14" style={{ minHeight: "70vh" }}>
       <Row>
         <Col span={11}>
           <Typography.Title level={3} className="!text-white">
-            Информация о компании
+            {t(`ИнформацияОкомпании`)}
           </Typography.Title>
         </Col>
         <Col span={13}>
           <StyledCollapse
-            items={items}
+            items={translatedItems}
             bordered={false}
             accordion={true}
             defaultActiveKey={["1"]}

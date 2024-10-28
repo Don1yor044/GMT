@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import { Col, Row, Typography } from "antd";
-import { Link } from "react-router-dom";
 import { LeftButton, PrimaryButton } from "../../../components/Buttons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
@@ -8,6 +7,7 @@ import { useRef } from "react";
 import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
+import { t } from "i18next";
 
 SwiperCore.use([Navigation]);
 
@@ -30,28 +30,28 @@ const HomeCompany = () => {
       date: "07.11.2022",
       src: "https://s3-alpha-sig.figma.com/img/1c6d/378f/39f9376dda513323d7daee846be582b1?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z6eeRvyW7gmaF3ctxXpd~PBlQE5wlvNgD1RtvtLMQI2jRFr~tfILoezCem07E1ZrHxwgoG1hPWYodzF9LckETiQu5uCKqRJrHdMfZi6rvnJmUC6n1NM7kaAO8yH96MhrIIpfw4vFT0JdFkfA2mkcH-l5lAaGVr9NnJ5wFvLly8eomny67WBMkuUDJdxs2OOperLu-~74QtWa6eVTd37sw0tFCODL6EL3~ivmScG6lF3MRxxiumHPMEJNkdCX7wdKbFNcyMSobd2hhaiESV31wOyApEo1EVhie00Kfsg4otcDjxjD7d0FpCN7wbtLC0p32A8QbWGB7U9lfFkwvMlqmw__",
       title: "Название новости",
-      desc: "Допускает внедрение поэтапного и развития общества.",
+      desc: "НовостиДеск",
     },
     {
       id: 2,
       date: "07.11.2022",
       src: "https://s3-alpha-sig.figma.com/img/f1e7/cad9/878405bf2b9bbcc283b9411831ed6c67?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SckW5eannvOa2PINeQ~qOTz80dLRHH75sj3R3CnuXWlgTcoL3ENnEbRrNrToCBaGr85Smg5~83gQQcwbjjmb2xos5vMDpHeYdyQONS7ji1KlfOg8ydtoV~xH0M~UPod~NG21~1VwD2B9LAS1~d9J1w7e1-FdjIopvfCEzHyPaNMGKx6TAdZDxiAHjZ5GgPo6kA~JJAlOR00XQbiT-OiGKBGlc5Meg9298ZmSCaHQYYKK4ESlm2Qc6XsqJWtB9Tn1qVIV9VukMA~Mwv8rfKDGs9hrXduEDKkc1p~VCb5an3EM5dzUM45vlumX2o2c5DKY0U8OQIOz23r-3LYzcdIWDQ__",
       title: "Название новости",
-      desc: "Допускает внедрение поэтапного и развития общества.",
+      desc: "НовостиДеск",
     },
     {
       id: 3,
       date: "07.11.2022",
       src: "https://s3-alpha-sig.figma.com/img/2290/3fc0/850a0506ebee40fc32b9aa4c17fc06df?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hyp8W-O-3E8yDcKyoVolEt4U0DyzdO5Fb9cX~iWunAOoA7MTFnhbrL-P1XeIp2w9toEQ82eZWugwsSRO7Kk34Q~5aAwc2MTvXtTr71OaeZj-0py31Q~g0t3hfPTHrgNGEQ0xOiA8AtW7PyZdrG6BmJSmmnBW75QUB1fulMaY6oyJQInSohzuzNQRJ0GOFFKtutgc1Je3SWw2j~o-0G1~vZg1l~cOGpK37dBW2pWg1RHZpVEBTWgUmmsYyKX8rqDCnm-uLh~fYdZkjtLuPSaxtUxZbQ5NewBW289985w7E7-II6F2xGjXpdo985yn3Qy7y5FOqnN7gqfFy4Nq4rPuxw__",
       title: "Название новости",
-      desc: "Допускает внедрение поэтапного и развития общества.",
+      desc: "НовостиДеск",
     },
     {
       id: 4,
       date: "07.11.2022",
       src: "https://s3-alpha-sig.figma.com/img/104b/442a/48b2eec91524857712b5efd185d80cf5?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hZwAqgw-ZQI8I3G5oIQj0yec0sVfhL1x~qrQxN~RxTFin4rVKyZZk3~3zB5Y~TsDlq~ALZ5c269JtczOpGxkB0K8XAuRD8h-HGWC01G-w4XpiMJQyhiOyh0uLCJ~P8dsfCRZUrRcDSknSJXBZtwFKuV7I1uYsHqfqzZhuDEqhuxBLoR-3RbezkiEjwa4ffGwpneVii27cb0zoxukzd4cuy89KgY1rxbQ44Hos64Lcz6vPzhM50BM8BTLXHiTByg5YgMp3LMMvw6ElogoqEMZ~zsfEa2j28QQuWPW4UWoZpLzbrxF7UU3MZEI-o4iO4hx9sOMVCX7egw7Yd4v4y4jHg__",
       title: "Название новости",
-      desc: "Допускает внедрение поэтапного и развития общества.",
+      desc: "НовостиДеск",
     },
   ];
   return (
@@ -59,7 +59,7 @@ const HomeCompany = () => {
       <Row>
         <Col span={6}>
           <Typography.Title level={2}>
-            Новости <br /> компании
+            {t(`Новости`)} <br /> {t(`компании`)}
           </Typography.Title>
         </Col>
 
@@ -103,16 +103,16 @@ const HomeCompany = () => {
                       {item.date}
                     </Typography>
                     <Typography.Title level={4} className="!m-0">
-                      {item.title}
+                      {t(item.title)}
                     </Typography.Title>
                     <Typography.Title level={5} className="!text-[#7a7687d0]">
-                      {item.desc}
+                      {t(item.desc)}
                     </Typography.Title>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
-            <div className="flex justify-between mt-10">
+            <div className="flex justify-between mt-10 pr-10">
               <div className="flex gap-3">
                 <div onClick={handlePrevious}>
                   <LeftButton icon={GoArrowLeft} size={20} />
@@ -122,7 +122,7 @@ const HomeCompany = () => {
                 </div>
               </div>
               <div>
-                <PrimaryButton text="Все новости" />
+                <PrimaryButton text={t(`ВсеНовости`)} />
               </div>
             </div>
           </Swiper>

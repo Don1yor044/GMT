@@ -1,4 +1,5 @@
 import { Button, Col, Row, Typography } from "antd";
+import { t } from "i18next";
 import { BiLogoVk } from "react-icons/bi";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -11,27 +12,27 @@ const Footer = () => {
         <Col span={5}>
           <div className="pe-16">
             <Typography.Title level={5} className="!text-white">
-              Покупателям
+              {t("Покупателям")}
             </Typography.Title>
             <div className="bg-white h-[1px]"></div>
 
             <div className="mt-4 flex justify-between ">
               <div className="flex flex-col gap-1 !text-[#d0cfcde8] ">
-                <Link to={"/"}>Окомпании</Link>
-                <Link to={"/"}>Сертификаты</Link>
-                <Link to={"/"}>Вакансии</Link>
-                <Link to={"/"}>Гарантии</Link>
-                <Link to={"/"}>Услуги</Link>
-                <Link to={"/"}>Акции</Link>
-                <Link to={"/"}>Доставка</Link>
+                <Link to={"/"}>{t("Окомпании")}</Link>
+                <Link to={"/"}>{t("Сертификаты")}</Link>
+                <Link to={"/"}>{t("Вакансии")}</Link>
+                <Link to={"/"}>{t("Гарантии")}</Link>
+                <Link to={"/"}>{t("Услуги")}</Link>
+                <Link to={"/"}>{t("Акции")}</Link>
+                <Link to={"/"}>{t("Доставка")}</Link>
               </div>
               <div className="flex flex-col gap-1 !text-[#d0cfcde8] ">
-                <Link to={"/"}>Оплата</Link>
-                <Link to={"/"}>Возврат</Link>
-                <Link to={"/"}>FAQ</Link>
-                <Link to={"/"}>Лизинг</Link>
-                <Link to={"/"}>Отзывы</Link>
-                <Link to={"/"}>Блог</Link>
+                <Link to={"/"}>{t("Оплата")}</Link>
+                <Link to={"/"}>{t("Возврат")}</Link>
+                <Link to={"/"}>{t("FAQ")}</Link>
+                <Link to={"/"}>{t("Лизинг")}</Link>
+                <Link to={"/"}>{t("Отзывы")}</Link>
+                <Link to={"/"}>{t("Блог")}</Link>
               </div>
             </div>
           </div>
@@ -39,34 +40,34 @@ const Footer = () => {
         <Col span={14} offset={1}>
           <div className="pe-24">
             <Typography.Title level={5} className="!text-white">
-              Каталог
+              {t(`Каталог`)}
             </Typography.Title>
             <div className="w-full bg-white h-[1px]"></div>
 
-            <div className="mt-4 flex justify-between ">
-              <div className="flex flex-col gap-1 !text-[#d0cfcde8] ">
-                <Link to={"/"}>Реанимация</Link>
-                <Link to={"/"}>Хирургия</Link>
-                <Link to={"/"}>Офтальмология</Link>
-                <Link to={"/"}>Лабораторная диагностика</Link>
-                <Link to={"/"}>Акушерство и Гинекология</Link>
-                <Link to={"/"}>Гистология</Link>
-                <Link to={"/"}>Косметология</Link>
+            <div className="mt-4 flex justify-between">
+              <div className="flex flex-col gap-1 !text-[#d0cfcde8]">
+                <Link to={"/"}>{t(`Реанимация`)}</Link>
+                <Link to={"/"}>{t(`Хирургия`)}</Link>
+                <Link to={"/"}>{t(`Офтальмология`)}</Link>
+                <Link to={"/"}>{t(`ЛабораторнаяДиагностика`)}</Link>
+                <Link to={"/"}>{t(`АкушерствоИГинекология`)}</Link>
+                <Link to={"/"}>{t(`Гистология`)}</Link>
+                <Link to={"/"}>{t(`Косметология`)}</Link>
               </div>
-              <div className="flex flex-col gap-1 !text-[#d0cfcde8] ">
-                <Link to={"/"}>Орториноларингология</Link>
-                <Link to={"/"}>Рентгенология и томография</Link>
-                <Link to={"/"}>Стрерилизация</Link>
-                <Link to={"/"}>Физиотерапия и реабилитация</Link>
-                <Link to={"/"}>Функциональная диагностика</Link>
-                <Link to={"/"}>Эндоскопия</Link>
+              <div className="flex flex-col gap-1 !text-[#d0cfcde8]">
+                <Link to={"/"}>{t(`Орториноларингология`)}</Link>
+                <Link to={"/"}>{t(`РентгенологияИТомография`)}</Link>
+                <Link to={"/"}>{t(`Стрерилизация`)}</Link>
+                <Link to={"/"}>{t(`ФизиотерапияИРеабилитация`)}</Link>
+                <Link to={"/"}>{t(`ФункциональнаяДиагностика`)}</Link>
+                <Link to={"/"}>{t(`Эндоскопия`)}</Link>
               </div>
-              <div className="flex flex-col gap-1 !text-[#d0cfcde8] ">
-                <Link to={"/"}>Новинки</Link>
-                <Link to={"/"}>Распродажи</Link>
-                <Link to={"/"}>Стрерилизация</Link>
-                <Link to={"/"}>Кабинеты под ключ</Link>
-                <Link to={"/"}>Скачать каталог</Link>
+              <div className="flex flex-col gap-1 !text-[#d0cfcde8]">
+                <Link to={"/"}>{t(`Новинки`)}</Link>
+                <Link to={"/"}>{t(`Распродажи`)}</Link>
+                <Link to={"/"}>{t(`Стрерилизация`)}</Link>
+                <Link to={"/"}>{t(`КабинетыПодключ`)}</Link>
+                <Link to={"/"}>{t(`СкачатьКаталог`)}</Link>
               </div>
             </div>
           </div>
@@ -74,19 +75,19 @@ const Footer = () => {
         <Col span={4}>
           {" "}
           <Typography.Title level={5} className="!text-white">
-            Контакты
+            {t(`Контакты`)}
           </Typography.Title>
           <div className="w-full bg-white h-[1px]"></div>
           <div className="mt-4 text-white">
             <Typography.Title level={5} className="!text-white">
-              Адрес:
+              {t(`Адрес`)}:
             </Typography.Title>
             <Typography className="text-[#d0cfcde8]">
-              г. Москва, ул. Московская, д. 35{" "}
+              {t(`г. Москва, ул. Московская, д. 35`)}{" "}
             </Typography>
             <div className="!mt-5 ">
               <Link to={"/"} className="flex gap-1 items-center font-semibold">
-                Карта проезда
+                {t(`КартаПроезда`)}
                 <MdOutlineArrowOutward size={18} />
               </Link>
               <Typography.Title
@@ -98,10 +99,10 @@ const Footer = () => {
                   marginBottom: 0,
                 }}
               >
-                График работы:
+                {t(`ГрафикРаботы`)}:
               </Typography.Title>
               <Typography className="text-[#d0cfcde8] !mt-0 mb-5">
-                Пн-Пт с 09:00-19:00, <br /> Сб-Вс - выходной
+                {t(`РабочееВремя`)} <br /> {t(`Отдых`)}
               </Typography>
               <Typography className="text-[#d0cfcde8]">
                 +7 000-000-00-00
@@ -112,7 +113,9 @@ const Footer = () => {
               <Typography className="text-[#d0cfcde8]">
                 8 800-000-00-00
               </Typography>
-              <Typography className="text-[#d0cfcde8]">info@mail.ru</Typography>
+              <Typography className="text-[#d0cfcde8] cursor-pointer">
+                info@mail.ru
+              </Typography>
             </div>
           </div>{" "}
         </Col>
@@ -127,14 +130,14 @@ const Footer = () => {
               className="!text-[#d0cfcde8] mt-2"
               style={{ fontWeight: 400 }}
             >
-              ООО «ГЛОБАЛ МЕДИКАЛ ТРЕЙД»
+              {t(`ООО «ГЛОБАЛ МЕДИКАЛ ТРЕЙД»`)}
             </Typography.Title>
           </div>
         </Col>
         <Col span={5}>
           <div>
             <Typography.Title level={4} className="!text-white">
-              Мы в соцсетях
+              {t(`МыВСоцсетях`)}
             </Typography.Title>
 
             <div className="flex gap-3">
@@ -166,21 +169,21 @@ const Footer = () => {
               className="!text-[#d0cfcde8] "
               style={{ fontWeight: 400 }}
             >
-              Партнерская программа
+              {t(`ПартнерскаяПрограмма`)}
             </Typography.Title>
             <Typography.Title
               level={5}
               className="!text-[#d0cfcde8] !mt-0"
               style={{ fontWeight: 400 }}
             >
-              Оптовые продажи
+              {t(`ОптовыеПродажи`)}
             </Typography.Title>
             <Typography.Title
               level={5}
               className="!text-[#d0cfcde8] !m-0"
               style={{ fontWeight: 400 }}
             >
-              Реквизиты
+              {t(`Реквизиты`)}
             </Typography.Title>
           </div>
         </Col>
@@ -191,21 +194,21 @@ const Footer = () => {
               className="!text-[#d0cfcde8] "
               style={{ fontWeight: 400 }}
             >
-              Политика конфиденциальности
+              {t(`ПолитикаКонфиденциальности`)}
             </Typography.Title>
             <Typography.Title
               level={5}
               className="!text-[#d0cfcde8] !mt-0"
               style={{ fontWeight: 400 }}
             >
-              Условия соглашения
+              {t(`УсловияСоглашения`)}
             </Typography.Title>
             <Typography.Title
               level={5}
               className="!text-[#d0cfcde8] !m-0"
               style={{ fontWeight: 400 }}
             >
-              Карта сайта
+              {t(`КартаСайта`)}
             </Typography.Title>
           </div>
         </Col>
@@ -213,7 +216,7 @@ const Footer = () => {
           <div>
             {" "}
             <Typography.Title level={5} className="!text-white">
-              Способы оплаты
+              {t(`СпособыОплаты`)}
             </Typography.Title>
             <div className="flex gap-4 items-center">
               <img
@@ -254,12 +257,10 @@ const Footer = () => {
             className="!text-[#d0cfcde8]"
             style={{ fontWeight: 400 }}
           >
-            © 2022 Медоборудование <br /> Все права защищены
+            © 2022 {t(`Медоборудование`)} <br /> {t(`ВсеПраваЗащищены`)}
           </Typography.Title>
           <Typography className="!text-[#d0cfcde8]" style={{ fontSize: 13 }}>
-            Информация на данном сайте носит справочный характер и не является
-            публичной офертой, определяемой положениями Статьи 437 Гражданского
-            кодекса Российской Федерации
+            {t(`ИнформацияФоотер`)}
           </Typography>
         </div>
       </div>

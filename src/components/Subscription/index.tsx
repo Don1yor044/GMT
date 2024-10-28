@@ -1,5 +1,6 @@
-import { Button, Checkbox, Col, Input, Row, Space, Typography } from "antd";
+import { Checkbox, Col, Row, Typography } from "antd";
 import { PrimaryButton } from "../Buttons";
+import { t } from "i18next";
 
 const HomeSubscription = () => {
   return (
@@ -12,30 +13,28 @@ const HomeSubscription = () => {
         </Col>
         <Col span={12}>
           <div className="pt-10">
-            <Typography.Title level={2}>
-              Подпишитесь и будьте в курсе!
-            </Typography.Title>
+            <Typography.Title level={2}>{t(`Подпишитесь`)}!</Typography.Title>
             <Typography.Title
               level={5}
               className="!text-[#7A7687] !m-0"
               style={{ fontWeight: 400 }}
             >
-              Акции, скидки, распродажи ждут!
+              {t(`Акции, скидки, распродажи ждут`)}!
             </Typography.Title>
             <div>
               <div className="flex items-center mt-12" style={{ width: "70%" }}>
                 <input
-                  placeholder="Введите email"
+                  placeholder={t("ВведитеEmail")}
                   className="rounded-full py-2 px-5 flex-grow"
                 />
                 <div className="-ml-8">
-                  <PrimaryButton text="Подписаться" size={100} />
+                  <PrimaryButton text={t("Подписаться")} size={100} />
                 </div>
               </div>
               <div className="flex items-center mt-4 ms-2">
                 <Checkbox className="mr-3" />
                 <label htmlFor="consent" className="text-sm text-black">
-                  Я даю согласие на обработку своих персональных данных.
+                  {t(`Я даю согласие на обработку своих персональных данных`)}.
                 </label>
               </div>
             </div>

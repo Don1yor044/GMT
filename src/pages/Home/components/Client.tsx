@@ -1,11 +1,11 @@
 import { Col, Row, Typography } from "antd";
+import { t } from "i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 const HomeClient = () => {
   const items = [
     {
       id: 1,
-      title: "НМИЦ онкологии им. Н.Н. Блохина",
+      title: "Медицина компетенций",
       imgSrc:
         "https://s3-alpha-sig.figma.com/img/95d8/45c9/32733e253c7b094e4316cf3ec7dfd454?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DAd8DNlRqSe5lu020nvkWMjBmZUpKJ2e230RXf~Lb3p~I~E1ETx6XxK-3oYsXS8sPCq7MjQGD7nPXLake~x7q9WIeNk2n4z6kRtUONEqS8YTz3UD2yuKD8WLWmY7M7mVQS0Wayotgi09eWinVuXH5CLy2h-AktCPo8rkbqoWQ3KKCZakpbMxpMLlaakIw4R072~iwcEELt8tJqTfH2UNTSjfdswan44pocwYZHl7Ip4UodTQN0yrsA86MxILefnfTpremaH8RyebU9F4E5CLzLR7tNjKPixlG4zkz8KnA6lP2CoXq5McoIikMSemZsZsJsAboHegs934Z95IG7lWqw__",
     },
@@ -29,34 +29,41 @@ const HomeClient = () => {
     },
     {
       id: 5,
-      title: "НМИЦ онкологии им. Н.Н. Блохина",
+      title: "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА 85",
       imgSrc:
         "https://s3-alpha-sig.figma.com/img/655f/43b2/b37eeb1b1231de790fb5b0342ee90da7?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U-KZXPhmrrYlHS3AQu0DjLF~l3abMt0htFKNvQl-QnWovT~0jKON7I7zbYvzcUSIdQnbANcfmh-2j~ItR1gzXDBWsePsTA~dsPoSZRAFHNdmkjFCrelHqdMnfEc3mp2k2ZEaOE2y6FhZzoV9RtNjCBdm~ahZ5uITssiTRRdUVcWCprruNtnvaiEUBFSFX9TFJXh0IraZiAI1oZswai9jRGBZi11hT29hgmn6hj~IG4KoSEcMULyZl3sI0ajnXjxwKvn-D5rM-MBvUjfGi60q-SGaoLOiMSpl3nnSv0GTiNKhUWBm25-o~ifjCQn76YTlJlWMTVyoBSdbziKg34pCpg__",
     },
-    // Qo'shimcha elementlar qo'shishingiz mumkin
   ];
 
   return (
-    <div className="mt-24 bg-[#E5E4ED] py-16 ">
+    <div className="mt-24 bg-[#E5E4ED] py-24 ">
       <div className="px-14">
         <Row>
           <Col span={12}>
-            <Typography.Title level={2}>Наши клиенты</Typography.Title>
+            <Typography.Title level={2}>{t(`НашиКлиенты`)}</Typography.Title>
           </Col>
           <Col span={12}>
             <Typography className="text-5xl">
-              БОЛЕЕ <span className="text-[#088269]">5000</span> <br /> УСПЕШНЫХ
-              ПРОЕКТОВ
+              {t("БОЛЕЕ")}
+              <span className="text-[#088269]"> 5000 </span> <br />{" "}
+              {t("УСПЕШНЫХПРОЕКТОВ")}
             </Typography>
           </Col>
         </Row>
       </div>
+
       <div className="!mt-20 px-2">
         <Row gutter={[10, 20]}>
           <Col span={24}>
             <Swiper
               spaceBetween={10}
               slidesPerView={4.5}
+              loop={true}
+              autoplay={{
+                delay: 3000, // 3 soniyada bitta slayd o‘tadi
+                disableOnInteraction: false, // foydalanuvchi sutilganda avtomatik o'tishni to'xtatmaydi
+                pauseOnMouseEnter: false, // sichqoncha ustida bo'lsa ham davom etadi
+              }}
               breakpoints={{
                 640: {
                   slidesPerView: 1, // 640px dan kichik ekranlarda 1 slayd
@@ -86,9 +93,9 @@ const HomeClient = () => {
                         }}
                       />
                     </div>
-                    <div className="p-5 px-7 border-t-2 rounded-b-xl bg-[#F8F7F3]">
+                    <div className="p-5 px-7 border-t-2 rounded-b-xl bg-[#F8F7F3] min-h-24">
                       <Typography.Title level={5}>
-                        {item.title}
+                        {t(item.title)}
                       </Typography.Title>
                     </div>
                   </div>
