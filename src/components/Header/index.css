@@ -1,0 +1,34 @@
+.responsive-links a,
+.responsive-links button,
+.responsive-links h5 {
+  font-size: clamp(11px, 1vw + 1px, 14px);
+}
+
+.StyledHeader {
+  .twoButtons {
+    display: flex; /* default state */
+  }
+  .PhoneButton {
+    display: none; /* default state */
+  }
+
+  @media screen and (max-width: 1024px) {
+    .searchInput {
+      width: 90% !important;
+    }
+    .twoButtons {
+      display: none; /* Hide the first div when width <= 1270px */
+    }
+    .PhoneButton {
+      display: flex; /* Show the second div when width <= 1270px */
+      justify-content: center; /* Optional: center the icon */
+      align-items: center;
+    }
+    .WorkTime {
+      display: none;
+    }
+    .text {
+      display: none;
+    }
+  }
+}

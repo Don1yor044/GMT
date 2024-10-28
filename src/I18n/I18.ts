@@ -20,7 +20,7 @@ i18n.use(initReactI18next).init({
         Корзина: "Cart",
         Каталог: "Catalog", // New translations
         Производители: "Manufacturers",
-        КабинетыПодключ: "Turnkey Cabinets",
+        КабинетыКлюч: "Turnkey Cabinets",
         Услуги: "Services",
         Акции: "Promotions",
         Покупателям: "For Customers",
@@ -157,7 +157,7 @@ i18n.use(initReactI18next).init({
         Корзина: "Savat",
         Каталог: "Katalog", // New translations
         Производители: "Ishlab chiqaruvchilar",
-        КабинетыПодключ: "Kalit topshirish kabinetlari",
+        КабинетыКлюч: "Kalit topshirish kabinetlari",
         Услуги: "Xizmatlar",
         Акции: "Aksiyalar",
         Покупателям: "Xaridorlar uchun",
@@ -295,7 +295,7 @@ i18n.use(initReactI18next).init({
         Корзина: "Корзина",
         Каталог: "Каталог", // New translations
         Производители: "Производители",
-        КабинетыПодключ: "Кабинеты под ключ",
+        КабинетыКлюч: "Кабинеты ключ",
         Услуги: "Услуги",
         Акции: "Акции",
         Покупателям: "Покупателям",

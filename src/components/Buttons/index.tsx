@@ -37,7 +37,6 @@ export const QuaternaryButton = ({
 }) => {
   return <StyledQuaternaryButton size={size}>{text}</StyledQuaternaryButton>;
 };
-
 export const LeftButton = ({
   icon: Icon,
   size,
@@ -47,7 +46,15 @@ export const LeftButton = ({
 }) => {
   return <StyledLeftButton>{<Icon size={size} />}</StyledLeftButton>;
 };
-
+export const PrimaryButtonMini = ({
+  icon: Icon,
+  size,
+}: {
+  icon?: IconType;
+  size?: number;
+}) => {
+  return <StyledPrimaryButtonMini>{Icon && <Icon />}</StyledPrimaryButtonMini>;
+};
 const StyledPrimaryButton = styled.button<{ size?: number }>`
   background-color: #088269;
   padding: 8px 20px;
@@ -128,5 +135,25 @@ const StyledLeftButton = styled.button`
   }
   &:active {
     border: 1px solid #056552;
+  }
+`;
+const StyledPrimaryButtonMini = styled.button<{ size?: number }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #088269;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    background-color: #07745e;
+  }
+  &:focus {
+    background-color: #088269;
+  }
+  &:active {
+    background-color: #07745e;
   }
 `;
