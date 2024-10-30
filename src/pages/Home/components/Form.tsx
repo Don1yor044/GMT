@@ -6,10 +6,12 @@ const HomeForm = () => {
   return (
     <div className="px-2">
       <Row gutter={[10, 20]}>
-        <Col span={12}></Col>
-        <Col span={12}>
-          <div className="bg-white p-10 border rounded-xl">
-            <div className="w-96">
+        <Col md={12} xs={24}>
+          adsasd
+        </Col>
+        <Col md={12} xs={24}>
+          <div className="bg-white lg:p-10 mp:p-3 border rounded-xl ">
+            <div className="w-full xl:pe-52">
               <Typography.Title level={2}>
                 {t(`ОсталисьВопросы`)} ?
               </Typography.Title>
@@ -97,7 +99,7 @@ const HomeForm = () => {
                     bordered={false}
                     style={{
                       borderBottom: "1px solid #ccc",
-                      minHeight: "120px",
+                      minHeight: "70px",
                       maxHeight: "120px",
                       fontSize: "16px",
                     }}
@@ -105,7 +107,7 @@ const HomeForm = () => {
                   />
                 </Form.Item>
 
-                <div className="flex gap-5 mt-10">
+                <div className="mp:flex-row xl:flex gap-5 mt-10 ">
                   <Form.Item className="w-52">
                     <PrimaryButton text={t("Отправить")} size={100} />
                   </Form.Item>

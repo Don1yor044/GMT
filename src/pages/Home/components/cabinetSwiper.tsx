@@ -72,9 +72,9 @@ const CabinetSwiper = () => {
               <img
                 src={item.src}
                 alt=""
+                className="mp:h-[400px] lg:h-[500px]"
                 style={{
                   objectFit: "cover",
-                  height: "500px",
                   width: "100%",
                   borderRadius: "10px 10px 0px 0px",
                 }}
@@ -96,7 +96,7 @@ const CabinetSwiper = () => {
             <LeftButton icon={GoArrowRight} size={20} />
           </div>
         </div>
-        <div className="flex gap-2 ">
+        <div className="flex gap-2 lg:h-10 mp:h-10 mp:text-xs  sm:text-sm">
           <SecondaryButton text={t("БесплатнаяКонсультация")} />
           <PrimaryButton text={t("РассчитатьСтоимость")} />
         </div>

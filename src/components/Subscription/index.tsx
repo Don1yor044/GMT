@@ -4,14 +4,14 @@ import { t } from "i18next";
 
 const HomeSubscription = () => {
   return (
-    <div className="bg-[#E5E4ED] px-14">
+    <div className="bg-[#E5E4ED] px-3 xl:px-14 lg:px-8 md:px-10 sm:px-10 p-0 md:py-0 mp:py-5">
       <Row>
-        <Col span={12}>
+        <Col lg={12} className="hidden lg:flex ">
           <div>
             <img src="../../Vector (4).png" alt="" />
           </div>
         </Col>
-        <Col span={12}>
+        <Col lg={12} xs={24} className="md:flex md:justify-center">
           <div className="pt-10">
             <Typography.Title level={2}>{t(`Подпишитесь`)}!</Typography.Title>
             <Typography.Title
@@ -22,7 +22,7 @@ const HomeSubscription = () => {
               {t(`Акции, скидки, распродажи ждут`)}!
             </Typography.Title>
             <div>
-              <div className="flex items-center mt-12" style={{ width: "70%" }}>
+              <div className="flex items-center mt-12 sm:w-96 lg:w-full mp:w-full">
                 <input
                   placeholder={t("ВведитеEmail")}
                   className="rounded-full py-2 px-5 flex-grow"

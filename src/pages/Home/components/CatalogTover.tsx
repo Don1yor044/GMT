@@ -74,17 +74,20 @@ const CatalogTover = () => {
         <Col xl={6} xs={24}>
           <div className="flex gap-5 justify-between items-center">
             <div>
-              <Typography.Title level={2}>
+              <Typography.Title
+                level={2}
+                className="text-lg sm:text-2xl lg:text-3xl"
+              >
                 {t(`КаталогТоваров`)}
               </Typography.Title>
-              <div className="flex gap-2 xl:flex-col items-start text-gray-500 text-lg ">
+              <div className="flex gap-2 xl:flex-col items-start text-sm sm:text-base lg:text-lg">
                 <Link to={"/"}>{t(`ХитыПродаж`)}</Link>
                 <Link to={"/"}>{t(`Новинки`)}</Link>
                 <Link to={"/"}>{t(`Акции`)}</Link>
               </div>
             </div>
 
-            <div className="md:flex lg:hidden sm:hidden xs:hidden gap-2 h-10">
+            <div className="md:flex lg:hidden sm:hidden xs:hidden mp:hidden gap-2 h-10">
               <SecondaryButton text={t("БесплатнаяКонсультация")} />
               <PrimaryButton text={t("ВсеТовары")} />
             </div>
@@ -179,8 +182,9 @@ const CatalogTover = () => {
                 <LeftButton icon={GoArrowRight} size={20} />
               </div>
             </div>
-            <div className="md:hidden lg:flex xs:flex sm:flex gap-2">
+            <div className="md:hidden lg:flex xs:flex sm:flex gap-2 ">
               <SecondaryButton text={t("БесплатнаяКонсультация")} />
+              <div className="sm:hidden mp:flex mp:h-3 sm:h-0"> </div>
               <PrimaryButton text={t("ВсеТовары")} />
             </div>
           </div>

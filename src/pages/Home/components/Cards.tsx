@@ -33,7 +33,7 @@ const HomeCards = () => {
               <img src={item.src} alt="" style={{ height: "70px" }} />
               <Typography.Title
                 level={4}
-                className="mt-7 px-5 xl:px-20 text-center"
+                className="px-2 mt-7 md:px-5 xl:px-20 text-center"
               >
                 {t(item.title)}
               </Typography.Title>

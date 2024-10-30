@@ -44,14 +44,17 @@ const About = () => {
     children: t(item.children),
   }));
   return (
-    <div className="bg-[#088269] p-14" style={{ minHeight: "70vh" }}>
-      <Row>
-        <Col span={11}>
+    <div
+      className="bg-[#088269] py-14 lg:px-14 md:px-10 xs:px-5 px-2"
+      style={{ minHeight: "70vh" }}
+    >
+      <Row gutter={[20, 20]}>
+        <Col md={11} xs={24}>
           <Typography.Title level={3} className="!text-white">
             {t(`ИнформацияОкомпании`)}
           </Typography.Title>
         </Col>
-        <Col span={13}>
+        <Col md={13} xs={24}>
           <StyledCollapse
             items={translatedItems}
             bordered={false}

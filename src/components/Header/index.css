@@ -28,6 +28,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .searchInput {
+    width: 100% !important;
+  }
   .phoneMenu {
     display: flex;
     position: fixed;
@@ -42,5 +45,10 @@
     .text {
       display: flex;
     }
+  }
+}
+@media screen and (max-width: 200px) {
+  .searchInput {
+    width: 100% !important;
   }
 }

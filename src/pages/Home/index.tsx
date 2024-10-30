@@ -24,11 +24,16 @@ const Home = observer(() => {
     <>
       <FloatButton.BackTop visibilityHeight={1000} icon={<FcUpload />} />
       <Header />
-      <div className="px-5 xl:px-14 lg:px-12 md:px-10 sm:px-5 py-8">
+      <div className="px-1 xl:px-14 lg:px-12 md:px-10 sm:px-5 py-8">
         <div className="rounded-xl" style={{ backgroundColor: colors.Fon }}>
           <Row style={{ height: "420px" }}>
-            <Col lg={10} md={24} className="flex flex-col justify-center">
-              <div className="md:px-10 lg:px-12 py-8 px-5 flex-col flex-wrap">
+            <Col
+              lg={10}
+              md={12}
+              xs={24}
+              className="flex flex-col justify-center"
+            >
+              <div className="md:px-8 lg:px-12 py-8 px-5 flex-col flex-wrap">
                 <Typography.Title style={{ fontSize: 50 }}>
                   {t("ЗаголовокБаннераВПаруСтрок")}
                 </Typography.Title>
@@ -36,16 +41,16 @@ const Home = observer(() => {
                   level={5}
                   className="!text-gray-500 flex flex-wrap"
                 >
-                  {t("Lorem ipsum dolor sit amet, consectetur")}
-                  {t("adipiscing elit do eiusmod tempor")}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit do
+                  eiusmod tempor do eiusmod tempor
                 </Typography.Title>
-                <div className="flex gap-5 mt-16">
+                <div className="flex gap-5 lg:mt-16 xs:mt-5 md:text-sm sm:text-xs  mp:mt-5">
                   <PrimaryButton text={t("ЗапроситьЦену")} />
                   <SecondaryButton text={t("ВКаталог")} />
                 </div>
               </div>
             </Col>
-            <Col lg={14} md={24} sm={24} xs={24} className="h-full flex">
+            <Col lg={14} md={12} sm={24} xs={24} className="h-full flex">
               <div className="w-full">
                 <img
                   src="https://s3-alpha-sig.figma.com/img/df12/2ff9/640dd8789b3a0eb394159b40cd64204b?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AqC5PtPhE~i21-IZerc7WcUNRV1w1l4Kp6KLJjRMw91XYbqe-T20Z7sLKJcjBZTuU7~qx-y9yFVE1woVxtPFU0bTlmn4w3HAMDosyiSf7yAwn9GTulLoBAotdqHrJltzSnRsK5Uu5wx2qD0lo07FmmxS2~QJuA-WXXbvA9CWI9VXfs~tAGM42PsVT2z8h8BYtlFkLmqosg1KVvS3LmKnxR3sTTPpRz8-fKrcWIpZjX9ehD8-fYMDfS1H1GE-HvesgIW9d2SuKF7OI9oOZgE8QSml2iifOWhQ36GBVbDCKp6iHcQCoRQQ6biIzO7vyTNQtipmAQXgI5KrAC1CkYMPRQ__"
@@ -56,7 +61,7 @@ const Home = observer(() => {
             </Col>
           </Row>
         </div>
-        <div className="mt-96 xs:mt-[450px] lg:mt-24">
+        <div className="mt-96 xs:mt-[450px] md:mt-24 lg:mt-24 mp:mt-[450px] ">
           <div className="flex justify-between items-center !pt-0 sm:pt-10 ">
             <Typography.Title level={2} className="!m-0">
               {t(`ПопулярныеКатегории`)}
@@ -79,7 +84,7 @@ const Home = observer(() => {
         </div>
         <div className="mt-24">
           <Typography.Title level={2}>
-            {t(`ПочемуВыбираютНас`)} ?
+            {t(`ПочемуВыбираютНас`)}?
           </Typography.Title>
           <HomeCards />
         </div>
@@ -90,13 +95,13 @@ const Home = observer(() => {
       <div>
         <HomeClient />
       </div>
-      <div className="ps-14 mt-24 py-14">
+      <div className="px-3 xl:px-14 lg:px-8 md:px-5 sm:px-4 mt-24 py-14">
         <HomeBrand />
       </div>
       <div className="mt-24">
         <About />
       </div>
-      <div className="ps-14">
+      <div className="px-1 lg:ps-14 md:px-5 xs:px-4 sm:px-2 ">
         <div className="mt-24">
           <HomeCompany />
         </div>

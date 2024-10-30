@@ -353,8 +353,8 @@ export const Header = () => {
         </div>
       </div>
       <hr />
-      <div className="px-5 lg:px-14 py-4 flex  justify-between items-center gap-5 sm:flex-col xs:flex-col md:flex-row ">
-        <div className="flex items-center justify-between xs:w-full md:w-32">
+      <div className="flex px-5 lg:px-14 py-4 lg:flex justify-between items-center gap-5 sm:flex-col xs:flex-col mp:flex-col md:flex-row ">
+        <div className="flex items-center justify-between xs:w-full md:w-32 lg:w-36 mp:w-full ">
           <img src="../public/HeaderLogo.svg" alt="Logo" />
           <div className="md:hidden flex items-center gap-1">
             <Button type="text" className="text-black font-semibold p-2">
@@ -370,13 +370,10 @@ export const Header = () => {
           </div>
         </div>
 
-        <div className="w-full lg:flex-grow mt-4 lg:mt-0 md:w-full">
-          <div
-            className="flex items-center bg-gray-300 rounded-full overflow-hidden shadow-sm hover:shadow-md transition-shadow !text-[#7A7687] border border-gray-300 searchInput"
-            style={{ width: "70%" }}
-          >
+        <div className="w-full lg:flex-grow mt-4 lg:mt-0 lg:w-full md:w-full xs:w-full mp:w-full searchInput">
+          <div className="xl:w-[600px] lg:w-[430px] flex items-center bg-gray-300 rounded-full overflow-hidden shadow-sm hover:shadow-md transition-shadow !text-[#7A7687] border border-gray-300  ">
             <div className="!bg-[#F8F7F3]">
-              <div className="!rounded-3xl bg-gray-200 p-1 px-3 h-10 flex items-center lg:text-base sm:text-sm xs:text-xs">
+              <div className="!rounded-3xl bg-gray-200 p-1 px-3 h-10 flex items-center">
                 <Dropdown
                   overlay={menu}
                   trigger={["click"]}
@@ -385,7 +382,7 @@ export const Header = () => {
                   className="cursor-pointer"
                 >
                   <a onClick={(e) => e.preventDefault()}>
-                    <Space className="flex gap-1 ">
+                    <Space className="flex gap-1  lg:text-base sm:text-sm xs:text-xs text-xs">
                       {t(`ВсеКатегории`)}
                       {visible ? <FaCaretUp /> : <FaSortDown />}{" "}
                     </Space>
@@ -397,7 +394,7 @@ export const Header = () => {
             <input
               type="text"
               placeholder={t("Поиск")}
-              className="flex-1 px-4 py-2 bg-[#F8F7F3] border-none outline-none text-gray-800 placeholder-gray-500 rounded-e-3xl"
+              className="mp:w-20  flex-1 px-4 py-2 bg-[#F8F7F3] border-none outline-none text-gray-800 placeholder-gray-500 rounded-e-3xl"
             />
 
             <Button
@@ -477,7 +474,7 @@ export const Header = () => {
             )}
           </div>
         </div>
-        <div className="hidden gap-3 items-center phoneMenu">
+        <div className="hidden gap-3 items-center phoneMenu w-full">
           <StyledButton>
             <div className="flex flex-col items-center hover:text-[#088269]">
               <TiHomeOutline size={20} />

@@ -22,8 +22,8 @@ const CategoryHome = () => {
                     }}
                   />
                 </div>
-                <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5} className="pe-5">
+                <div className="lg:p-5 mp:p-3 px-7 border-t-2">
+                  <Typography.Title level={5} className="lg:pe-10 mp:pe-0">
                     {" "}
                     {t("ДерматологическоеОборудование")}
                   </Typography.Title>
@@ -44,8 +44,8 @@ const CategoryHome = () => {
                     }}
                   />
                 </div>
-                <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5}>
+                <div className="lg:p-5 mp:p-3 px-7 border-t-2">
+                  <Typography.Title level={5} className="lg:pe-10 mp:pe-0">
                     {" "}
                     {t(`ВетеринарноеОборудование`)}
                   </Typography.Title>
@@ -57,7 +57,7 @@ const CategoryHome = () => {
         <Col xl={6} lg={8} md={8} sm={12} xs={12}>
           <Row>
             <Col span={24}>
-              <div className="border rounded-xl">
+              <div className="border rounded-xl ">
                 <div className="bg-white rounded-tl-xl rounded-tr-xl overflow-hidden">
                   <img
                     src="https://s3-alpha-sig.figma.com/img/122b/026c/71cb144ee8b206b9ff0b172930f31d18?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hqn6FlbkCEs2mN2PjAvqF8NEyAA~x4LFXpc2i62QueKV5jyjva8nu4wMy~HtzpHL72qh8~Ifwfn8dRwzJuxhRUOGjEQWbzijFECVCZZJVUe7zLhwBlPAkm7EtT3kor~VATCqhYo615X7AX~eMKgotRCHsrEkjU4NIwo5ARpP1AnjeUNep2qZexdHM450dmcUeTPSDFHOH1k-KkOzvGsSyiagocNzpJ0totsULQF9cMer5FoqqDwwnFxq9ffl-keYpNBuoZVIjof2uDBXF5WNX7mxX78tlwGv~7Fc5d2YZyoH6yiFIUyK67TRnbYdp7Yn4e8BWopST8aw0SDn9QNXew__"
@@ -72,11 +72,12 @@ const CategoryHome = () => {
                     }}
                   />
                 </div>
+
                 <div
-                  className="p-5 px-7 border-t-2 rounded-b-xl"
+                  className="lg:p-5 mp:px-3 border-t-2 rounded-b-xl"
                   style={{ height: "91px" }}
                 >
-                  <Typography.Title level={5} className="pe-5">
+                  <Typography.Title level={5} className="lg:pe-14 mp:pe-2">
                     {t(`ДерматологическоеОборудование`)}
                   </Typography.Title>
                 </div>
@@ -100,8 +101,8 @@ const CategoryHome = () => {
                     }}
                   />
                 </div>
-                <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5} className="pe-5">
+                <div className="lg:p-5 mp:px-3  border-t-2">
+                  <Typography.Title level={5} className="lg:pe-10 mp:pe-0">
                     {t(`ОборудованиеДляАнастезиологии`)}
                   </Typography.Title>
                 </div>
@@ -121,8 +122,8 @@ const CategoryHome = () => {
                     }}
                   />
                 </div>
-                <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5} className="pe-5">
+                <div className="lg:p-5 mp:px-3 border-t-2">
+                  <Typography.Title level={5} className="lg:pe-10 mp:pe-0">
                     {t(`ОборудованиеДляАнастезиологии`)}
                   </Typography.Title>
                 </div>
@@ -146,8 +147,9 @@ const CategoryHome = () => {
                     }}
                   />
                 </div>
-                <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5}>
+
+                <div className="lg:p-5 mp:px-3 border-t-2">
+                  <Typography.Title level={5} className="lg:pe-28 mp:pe-0">
                     {t(`МебельДляМедицинскихЦелей`)}
                   </Typography.Title>
                 </div>
@@ -167,8 +169,9 @@ const CategoryHome = () => {
                     }}
                   />
                 </div>
-                <div className="p-5 px-7 border-t-2">
-                  <Typography.Title level={5} className="pe-5">
+
+                <div className="lg:p-5 mp:px-3 border-t-2">
+                  <Typography.Title level={5} className="lg:pe-10 mp:pe-0">
                     {t(`ДерматологическоеОборудование`)}
                   </Typography.Title>
                 </div>

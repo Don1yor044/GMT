@@ -56,14 +56,21 @@ const HomeCompany = () => {
   ];
   return (
     <>
-      <Row>
-        <Col span={6}>
-          <Typography.Title level={2}>
-            {t(`Новости`)} <br /> {t(`компании`)}
-          </Typography.Title>
+      <Row gutter={[20, 20]}>
+        <Col xl={6} md={24}>
+          <div className="flex justify-between items-center">
+            <div>
+              <Typography.Title level={2}>
+                {t(`Новости`)} <br /> {t(`компании`)}
+              </Typography.Title>
+            </div>
+            <div className="hidden xl:hidden md:flex h-10">
+              <PrimaryButton text={t(`ВсеНовости`)} />
+            </div>
+          </div>
         </Col>
 
-        <Col span={18}>
+        <Col xl={18} md={24}>
           <Swiper
             loop={true}
             spaceBetween={10}
@@ -72,11 +79,14 @@ const HomeCompany = () => {
               swiperRef.current = swiper;
             }}
             breakpoints={{
+              0: {
+                slidesPerView: 1.5,
+              },
               640: {
-                slidesPerView: 1, // 640px dan kichik ekranlarda 1 slayd
+                slidesPerView: 2.5, // 640px dan kichik ekranlarda 1 slayd
               },
               768: {
-                slidesPerView: 2, // 768px dan kichik ekranlarda 2 slayd
+                slidesPerView: 3, // 768px dan kichik ekranlarda 2 slayd
               },
               1024: {
                 slidesPerView: 3.2, // 1024px dan katta ekranlarda 3 slayd
@@ -98,7 +108,7 @@ const HomeCompany = () => {
                       }}
                     />
                   </div>
-                  <div className="p-2 px-5  border-t-2 rounded-b-xl bg-[#F8F7F3]">
+                  <div className="p-2 md:px-5 mp:px-1  border-t-2 rounded-b-xl bg-[#F8F7F3] ">
                     <Typography className="!m-0 text-gray-500">
                       {item.date}
                     </Typography>
@@ -113,7 +123,7 @@ const HomeCompany = () => {
               </SwiperSlide>
             ))}
             <div className="flex justify-between mt-10 pr-10">
-              <div className="flex gap-3">
+              <div className="hidden xl:flex gap-3">
                 <div onClick={handlePrevious}>
                   <LeftButton icon={GoArrowLeft} size={20} />
                 </div>
@@ -121,7 +131,7 @@ const HomeCompany = () => {
                   <LeftButton icon={GoArrowRight} size={20} />
                 </div>
               </div>
-              <div>
+              <div className="xl:flex md:hidden lg:hidden ">
                 <PrimaryButton text={t(`ВсеНовости`)} />
               </div>
             </div>
