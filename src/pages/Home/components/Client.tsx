@@ -29,20 +29,20 @@ const HomeClient = () => {
     },
     {
       id: 5,
-      title: "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА 85",
+      title: "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА",
       imgSrc:
         "https://s3-alpha-sig.figma.com/img/655f/43b2/b37eeb1b1231de790fb5b0342ee90da7?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U-KZXPhmrrYlHS3AQu0DjLF~l3abMt0htFKNvQl-QnWovT~0jKON7I7zbYvzcUSIdQnbANcfmh-2j~ItR1gzXDBWsePsTA~dsPoSZRAFHNdmkjFCrelHqdMnfEc3mp2k2ZEaOE2y6FhZzoV9RtNjCBdm~ahZ5uITssiTRRdUVcWCprruNtnvaiEUBFSFX9TFJXh0IraZiAI1oZswai9jRGBZi11hT29hgmn6hj~IG4KoSEcMULyZl3sI0ajnXjxwKvn-D5rM-MBvUjfGi60q-SGaoLOiMSpl3nnSv0GTiNKhUWBm25-o~ifjCQn76YTlJlWMTVyoBSdbziKg34pCpg__",
     },
   ];
 
   return (
-    <div className="mt-24 bg-[#E5E4ED] py-24 ">
-      <div className="px-14">
-        <Row>
-          <Col span={12}>
+    <div className="mt-24 bg-[#E5E4ED] py-24">
+      <div className="px-5 lg:px-12 xl:px-14 md:px-10 ">
+        <Row gutter={[20, 20]}>
+          <Col md={12} xs={24}>
             <Typography.Title level={2}>{t(`НашиКлиенты`)}</Typography.Title>
           </Col>
-          <Col span={12}>
+          <Col md={12} xs={24}>
             <Typography className="text-5xl">
               {t("БОЛЕЕ")}
               <span className="text-[#088269]"> 5000 </span> <br />{" "}
@@ -57,7 +57,6 @@ const HomeClient = () => {
           <Col span={24}>
             <Swiper
               spaceBetween={10}
-              slidesPerView={4.5}
               loop={true}
               autoplay={{
                 delay: 3000, // 3 soniyada bitta slayd o‘tadi
@@ -65,11 +64,14 @@ const HomeClient = () => {
                 pauseOnMouseEnter: false, // sichqoncha ustida bo'lsa ham davom etadi
               }}
               breakpoints={{
+                340: {
+                  slidesPerView: 1.5, // 640px dan kichik ekranlarda 1 slayd
+                },
                 640: {
-                  slidesPerView: 1, // 640px dan kichik ekranlarda 1 slayd
+                  slidesPerView: 2.5, // 640px dan kichik ekranlarda 1 slayd
                 },
                 768: {
-                  slidesPerView: 2, // 768px dan kichik ekranlarda 2 slayd
+                  slidesPerView: 3.5, // 768px dan kichik ekranlarda 2 slayd
                 },
                 1024: {
                   slidesPerView: 4.5, // 1024px dan katta ekranlarda 3 slayd
@@ -93,7 +95,7 @@ const HomeClient = () => {
                         }}
                       />
                     </div>
-                    <div className="p-5 px-7 border-t-2 rounded-b-xl bg-[#F8F7F3] min-h-24">
+                    <div className="p-3 xl:p-5 lg:p-4 md:p-3 px-7 border-t-2 rounded-b-xl bg-[#F8F7F3] min-h-24 max-h-24">
                       <Typography.Title level={5}>
                         {t(item.title)}
                       </Typography.Title>

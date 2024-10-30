@@ -4,10 +4,10 @@ import { useTranslation } from "react-i18next";
 const CategoryHome = () => {
   const { t } = useTranslation();
   return (
-    <div className="mt-10">
+    <div className="mt-10 ">
       <Row gutter={[20, 20]}>
-        <Col span={6}>
-          <Row gutter={[10, 10]}>
+        <Col xl={6} lg={8} md={8} sm={12} xs={12}>
+          <Row gutter={[20, 20]}>
             <Col span={24}>
               <div className="border rounded-xl" style={{ height: "44vh" }}>
                 <div className="bg-white rounded-tl-xl rounded-tr-xl">
@@ -54,7 +54,7 @@ const CategoryHome = () => {
             </Col>
           </Row>
         </Col>
-        <Col span={6}>
+        <Col xl={6} lg={8} md={8} sm={12} xs={12}>
           <Row>
             <Col span={24}>
               <div className="border rounded-xl">
@@ -84,8 +84,8 @@ const CategoryHome = () => {
             </Col>
           </Row>
         </Col>
-        <Col span={6}>
-          <Row gutter={[10, 10]}>
+        <Col xl={6} lg={8} md={8} sm={12} xs={12}>
+          <Row gutter={[20, 20]}>
             <Col span={24}>
               <div className="border rounded-xl" style={{ height: "44vh" }}>
                 <div className="bg-white rounded-tl-xl rounded-tr-xl">
@@ -130,9 +130,9 @@ const CategoryHome = () => {
             </Col>
           </Row>
         </Col>
-        <Col span={6}>
-          <Row gutter={[10, 10]}>
-            <Col span={24}>
+        <Col xl={6} lg={16} md={16} sm={12} xs={12}>
+          <Row gutter={[20, 20]}>
+            <Col xl={24} lg={12} md={12}>
               <div className="border rounded-xl" style={{ height: "44vh" }}>
                 <div className="bg-white rounded-tl-xl rounded-tr-xl">
                   <img
@@ -153,7 +153,7 @@ const CategoryHome = () => {
                 </div>
               </div>
             </Col>
-            <Col span={24}>
+            <Col xl={24} lg={12} md={12}>
               <div className="border rounded-xl" style={{ height: "44vh" }}>
                 <div className="bg-white rounded-tl-xl rounded-tr-xl">
                   <img

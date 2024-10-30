@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Typography } from "antd";
 import {
@@ -20,6 +20,8 @@ const items = [
 ];
 
 const CabinetSwiper = () => {
+  const [slidesPerView, setSlidesPerView] = useState(3);
+  const [spaceBetween, setSpaceBetween] = useState(20);
   const { t } = useTranslation();
   const swiperRef = useRef<any>(null); // Swiper uchun referens
 
@@ -33,12 +35,32 @@ const CabinetSwiper = () => {
       swiperRef.current.slidePrev(); // Oldingi slaydga o'tish
     }
   };
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 600) {
+        setSlidesPerView(1.5);
+        setSpaceBetween(10);
+      } else if (width <= 960) {
+        setSlidesPerView(1.5);
+        setSpaceBetween(15);
+      } else {
+        setSlidesPerView(3);
+        setSpaceBetween(20);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Dastlabki o'lchamni belgilash
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
       <Swiper
-        spaceBetween={20}
-        slidesPerView={3}
+        spaceBetween={spaceBetween}
+        slidesPerView={slidesPerView}
         navigation={false} // O'z navigatsiyani yoqish
         pagination={{ clickable: true }}
         loop={true}
@@ -66,7 +88,7 @@ const CabinetSwiper = () => {
       </Swiper>
 
       <div className="flex justify-between mt-10">
-        <div className="flex gap-3">
+        <div className="hidden lg:flex gap-3">
           <div onClick={handlePrevious}>
             <LeftButton icon={GoArrowLeft} size={20} />
           </div>
@@ -74,9 +96,9 @@ const CabinetSwiper = () => {
             <LeftButton icon={GoArrowRight} size={20} />
           </div>
         </div>
-        <div className="flex gap-2">
-          <SecondaryButton text={t(`БесплатнаяКонсультация`)} />
-          <PrimaryButton text={t(`РассчитатьСтоимость`)} />
+        <div className="flex gap-2 ">
+          <SecondaryButton text={t("БесплатнаяКонсультация")} />
+          <PrimaryButton text={t("РассчитатьСтоимость")} />
         </div>
       </div>
     </>

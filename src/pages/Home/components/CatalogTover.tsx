@@ -26,12 +26,12 @@ const CatalogTover = () => {
 
   const handleNext = () => {
     if (swiperRef.current) {
-      swiperRef.current.slideNext(); // Keyingi slaydga o'tish
+      swiperRef.current.slideNext();
     }
   };
   const handlePrevious = () => {
     if (swiperRef.current) {
-      swiperRef.current.slidePrev(); // Oldingi slaydga o'tish
+      swiperRef.current.slidePrev();
     }
   };
   const items = [
@@ -70,31 +70,41 @@ const CatalogTover = () => {
   ];
   return (
     <>
-      <Row>
-        <Col span={6}>
-          <Typography.Title level={2}>{t(`КаталогТоваров`)}</Typography.Title>
+      <Row gutter={[20, 20]}>
+        <Col xl={6} xs={24}>
+          <div className="flex gap-5 justify-between items-center">
+            <div>
+              <Typography.Title level={2}>
+                {t(`КаталогТоваров`)}
+              </Typography.Title>
+              <div className="flex gap-2 xl:flex-col items-start text-gray-500 text-lg ">
+                <Link to={"/"}>{t(`ХитыПродаж`)}</Link>
+                <Link to={"/"}>{t(`Новинки`)}</Link>
+                <Link to={"/"}>{t(`Акции`)}</Link>
+              </div>
+            </div>
 
-          <div className="flex flex-col items-start text-gray-500 text-lg ">
-            <Link to={"/"}>{t(`ХитыПродаж`)}</Link>
-            <Link to={"/"}>{t(`Новинки`)}</Link>
-            <Link to={"/"}>{t(`Акции`)}</Link>
+            <div className="md:flex lg:hidden sm:hidden xs:hidden gap-2 h-10">
+              <SecondaryButton text={t("БесплатнаяКонсультация")} />
+              <PrimaryButton text={t("ВсеТовары")} />
+            </div>
           </div>
         </Col>
 
-        <Col span={18}>
+        <Col xl={18} xs={24}>
           <Swiper
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)} // Swiper instansiyani olish
             spaceBetween={10}
-            slidesPerView={3.5}
             navigation={{
               prevEl: ".swiper-button-prev",
               nextEl: ".swiper-button-next",
             }}
             breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3.5 },
+              340: { slidesPerView: 1.5 },
+              640: { slidesPerView: 2.2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 3.2 },
             }}
           >
             {items.map((item) => (
@@ -161,7 +171,7 @@ const CatalogTover = () => {
             ))}
           </Swiper>
           <div className="flex justify-between mt-10 pr-10 items-center">
-            <div className="flex gap-3">
+            <div className="xl:flex gap-3 hidden ">
               <div onClick={handlePrevious}>
                 <LeftButton icon={GoArrowLeft} size={20} />
               </div>
@@ -169,7 +179,7 @@ const CatalogTover = () => {
                 <LeftButton icon={GoArrowRight} size={20} />
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="md:hidden lg:flex xs:flex sm:flex gap-2">
               <SecondaryButton text={t("БесплатнаяКонсультация")} />
               <PrimaryButton text={t("ВсеТовары")} />
             </div>

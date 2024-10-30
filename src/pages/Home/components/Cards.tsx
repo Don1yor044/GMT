@@ -28,10 +28,13 @@ const HomeCards = () => {
     <div className="mt-10">
       <Row gutter={[10, 20]}>
         {items.map((item) => (
-          <Col span={6}>
-            <div className="flex flex-col items-center h-80 justify-center border rounded-xl">
+          <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+            <div className="flex flex-col items-center xl:h-80 md:h-64 h-52 justify-center border rounded-xl">
               <img src={item.src} alt="" style={{ height: "70px" }} />
-              <Typography.Title level={4} className="mt-7 px-20 text-center">
+              <Typography.Title
+                level={4}
+                className="mt-7 px-5 xl:px-20 text-center"
+              >
                 {t(item.title)}
               </Typography.Title>
             </div>

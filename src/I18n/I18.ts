@@ -62,8 +62,7 @@ i18n.use(initReactI18next).init({
         "Медицина компетенций": "Medicine of competencies",
         "НМИЦ онкологии им. Н.Н. Блохина":
           "N.N. Blokhin National Medical Research Center of Oncology",
-        "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА 85":
-          "FMBA of Russia CLINICAL HOSPITAL 85",
+        "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА": "FMBA of Russia CLINICAL HOSPITAL",
         "Эксклюзивные поставщики": "Exclusive suppliers",
         Бренды: "Brands",
         ИнформацияОкомпании: "InformationAbout the company",
@@ -199,7 +198,7 @@ i18n.use(initReactI18next).init({
         "Медицина компетенций": "Tibbiyot kompetensiyalari",
         "НМИЦ онкологии им. Н.Н. Блохина":
           "N.N. Blokhina nomidagi Onkologiya Milliy Tibbiyot Ilmiy Markazi. ",
-        "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА 85":
+        "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА":
           "Rossiya FMBA 85-KLINIK shifoxonasi",
         "Эксклюзивные поставщики": "Eksklyuziv etkazib beruvchilar",
         Бренды: "Brendlar",
@@ -336,8 +335,7 @@ i18n.use(initReactI18next).init({
         УСПЕШНЫХПРОЕКТОВ: "УСПЕШНЫХ ПРОЕКТОВ",
         "Медицина компетенций": "Медицина компетенций",
         "НМИЦ онкологии им. Н.Н. Блохина": "НМИЦ онкологии им. Н.Н. Блохина",
-        "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА 85":
-          "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА 85",
+        "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА": "ФМБА России КЛИНИЧЕСКАЯ БОЛЬНИЦА",
         "Эксклюзивные поставщики": "Эксклюзивные поставщики",
         Бренды: "Бренды",
         ИнформацияОкомпании: "Информация О компании",
