@@ -156,8 +156,8 @@ i18n.use(initReactI18next).init({
         Сравнить: "Taqqoslash",
         Корзина: "Savat",
         Каталог: "Katalog", // New translations
-        Производители: "Ishlab chiqaruvchilar",
-        КабинетыКлюч: "Kalit topshirish kabinetlari",
+        Производители: "Ishlab chiqaruvchi",
+        КабинетыКлюч: "Kalit kabinetlari",
         Услуги: "Xizmatlar",
         Акции: "Aksiyalar",
         Покупателям: "Xaridorlar uchun",
