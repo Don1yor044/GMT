@@ -101,7 +101,7 @@ const Home = observer(() => {
       <div className="mt-24">
         <About />
       </div>
-      <div className="px-1 lg:ps-14 md:px-5 xs:px-4 sm:px-2 ">
+      <div className="px-3 lg:ps-14 md:px-5 xs:px-4 sm:px-2 ">
         <div className="mt-24">
           <HomeCompany />
         </div>

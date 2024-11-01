@@ -11,7 +11,11 @@ const HomeSubscription = () => {
             <img src="../../Vector (4).png" alt="" />
           </div>
         </Col>
-        <Col lg={12} xs={24} className="md:flex md:justify-center">
+        <Col
+          lg={12}
+          xs={24}
+          className="lg:mb-0 md:mb-10 md:flex md:justify-center"
+        >
           <div className="pt-10">
             <Typography.Title level={2}>{t(`Подпишитесь`)}!</Typography.Title>
             <Typography.Title
