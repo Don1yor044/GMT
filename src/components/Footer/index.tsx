@@ -185,9 +185,9 @@ const Footer = () => {
     );
   };
   return (
-    <div className="px-5 md:px-5 lg:px-14 bg-[#088269] !text-white pt-10">
+    <div className="px-5 md:px-5 lg:px-14 bg-[#088269] !text-white pt-10 ">
       <Row gutter={[0, 20]} className="hidden md:flex">
-        <Col span={5} className="md:bg-red-400 lg:bg-blue-500 sm:bg-yellow-100">
+        <Col span={5}>
           <div className="pe-5 lg:pe-12 xl:pe-16">
             <Typography.Title level={5} className="!text-white">
               {t("Покупателям")}

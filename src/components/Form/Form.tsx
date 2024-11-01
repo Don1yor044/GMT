@@ -1,16 +1,56 @@
 import { Col, Form, Input, Row, Typography } from "antd";
-import { PrimaryButton } from "../../../components/Buttons";
+import { PrimaryButton } from "../Buttons";
 import { t } from "i18next";
+import {
+  FullscreenControl,
+  Map,
+  Placemark,
+  TypeSelector,
+  YMaps,
+} from "@pbe/react-yandex-maps";
 
 const HomeForm = () => {
   return (
-    <div className="px-2">
-      <Row gutter={[10, 20]}>
-        <Col md={12} xs={24}>
-          adsasd
+    <div className="px-2 lg:ps-14 md:px-5 xs:px-4 sm:px-2 mt-24">
+      <Row gutter={[20, 20]}>
+        <Col md={12} xs={24} span={24}>
+          <YMaps>
+            <Map
+              defaultState={{
+                center: [41.326509, 69.228341],
+                zoom: 15,
+                controls: [],
+              }}
+              options={
+                {
+                  scrollZoom: false,
+                  draggable: false,
+                } as any
+              }
+              instanceRef={(instance) => {
+                if (instance) {
+                  instance.behaviors.disable("scrollZoom"); // Skroll orqali zoomni o'chirish
+                  instance.behaviors.disable("drag"); // Xarita ustida harakatlanishni o'chirish
+                }
+              }}
+              className="w-full h-full mp:h-96 md:h-full"
+            >
+              <FullscreenControl options={{ float: "right" }} />
+              <Placemark
+                geometry={[41.326509, 69.228341]}
+                options={{
+                  iconImageHref:
+                    "https://cdn3.iconfinder.com/data/icons/flat-pro-basic-set-1-1/32/location-green-512.png", // Bu yerda icon o'rniga preset tanlashingiz mumkin
+                  iconLayout: "default#image",
+                  iconImageSize: [40, 40], // Ikona o'lchami
+                }}
+              />
+              <TypeSelector options={{ float: "left" } as any} />
+            </Map>
+          </YMaps>
         </Col>
-        <Col md={12} xs={24}>
-          <div className="bg-white lg:p-10 mp:p-3 border rounded-xl ">
+        <Col md={12} xs={24} span={24}>
+          <div className="bg-white lg:p-10 mp:p-3 border rounded-xl h-full">
             <div className="w-full xl:pe-52">
               <Typography.Title level={2}>
                 {t(`ОсталисьВопросы`)} ?

@@ -4,7 +4,7 @@ import { t } from "i18next";
 
 const HomeSubscription = () => {
   return (
-    <div className="bg-[#E5E4ED] px-3 xl:px-14 lg:px-8 md:px-10 sm:px-10 p-0 md:py-0 mp:py-5">
+    <div className="bg-[#E5E4ED] px-3 xl:px-14 lg:px-8 md:px-10 sm:px-10 p-0 md:py-0 mp:py-5 mt-24">
       <Row>
         <Col lg={12} className="hidden lg:flex ">
           <div>

@@ -1,6 +1,5 @@
 import { Col, Row, Typography } from "antd";
 import { Link } from "react-router-dom";
-import { LeftButton, PrimaryButton } from "../../../components/Buttons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
@@ -8,6 +7,7 @@ import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { t } from "i18next";
+import { LeftButton, PrimaryButton } from "../Buttons";
 
 SwiperCore.use([Navigation]);
 
@@ -47,7 +47,7 @@ const HomeBrand = () => {
     },
   ];
   return (
-    <>
+    <div className="px-3 xl:ps-14 lg:ps-8 md:ps-5 sm:px-4 mt-24 py-12">
       <Row gutter={[20, 20]}>
         <Col xl={6} xs={24}>
           <div className="flex justify-between items-center">
@@ -124,7 +124,7 @@ const HomeBrand = () => {
           </Swiper>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

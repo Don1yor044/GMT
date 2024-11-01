@@ -3,11 +3,7 @@ import { Button, Col, Row, Typography } from "antd";
 import { FaRegHeart } from "react-icons/fa6";
 import { LuBarChartBig } from "react-icons/lu";
 import { Link } from "react-router-dom";
-import {
-  LeftButton,
-  PrimaryButton,
-  SecondaryButton,
-} from "../../../components/Buttons";
+import { LeftButton, PrimaryButton, SecondaryButton } from "../Buttons/index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
@@ -21,7 +17,7 @@ interface StyledButtonProps {
   status: string;
 }
 
-const CatalogTover = () => {
+const CatalogTovar = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const handleNext = () => {
@@ -69,7 +65,7 @@ const CatalogTover = () => {
     },
   ];
   return (
-    <>
+    <div className="mt-24 xl:ps-14 lg:ps-12 md:ps-10 sm:ps-5 px-5">
       <Row gutter={[20, 20]}>
         <Col xl={6} xs={24}>
           <div className="flex gap-5 justify-between items-center">
@@ -190,11 +186,11 @@ const CatalogTover = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 
-export default CatalogTover;
+export default CatalogTovar;
 
 const StyledButton = styled.button<StyledButtonProps>`
   color: ${({ status }) =>

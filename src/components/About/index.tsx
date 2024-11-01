@@ -45,7 +45,7 @@ const About = () => {
   }));
   return (
     <div
-      className="bg-[#088269] py-14 lg:px-14 md:px-10 xs:px-5 px-2"
+      className="bg-[#088269] py-14 lg:px-14 md:px-10 xs:px-5 px-2 mt-16"
       style={{ minHeight: "70vh" }}
     >
       <Row gutter={[20, 20]}>

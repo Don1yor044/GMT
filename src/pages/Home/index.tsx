@@ -4,19 +4,19 @@ import { Header } from "../../components/Header";
 import { Col, FloatButton, Row, Typography } from "antd";
 import { colors } from "../../components/Colors";
 import { PrimaryButton, SecondaryButton } from "../../components/Buttons";
-import HomeCards from "./components/Cards";
-import HomeClient from "./components/Client";
-import HomeBrand from "./components/Brend";
 import { FcUpload } from "react-icons/fc";
 import About from "../../components/About";
-import CategoryHome from "./components/Category";
-import CabinetSwiper from "./components/CabinetSwiper";
-import HomeCompany from "./components/Company";
-import HomeForm from "./components/Form";
-import CatalogTover from "./components/CatalogTover";
+import HomeForm from "../../components/Form/Form";
 import HomeSubscription from "../../components/Subscription";
 import Footer from "../../components/Footer";
 import { useTranslation } from "react-i18next";
+import HomeBrand from "../../components/Brend/Brend";
+import HomeClient from "../../components/Clinet/Client";
+import CabinetSwiper from "../../components/CabinetSwiper/CabinetSwiper";
+import HomeCards from "../../components/Cards/Cards";
+import CatalogTovar from "../../components/CatalogTovar/CatalogTover";
+import HomeCompany from "../../components/Company/Company";
+import CategoryHome from "../../components/Category/Category";
 
 const Home = observer(() => {
   const { t } = useTranslation();
@@ -61,58 +61,18 @@ const Home = observer(() => {
             </Col>
           </Row>
         </div>
-        <div className="mt-96 xs:mt-[450px] md:mt-24 lg:mt-24 mp:mt-[450px] ">
-          <div className="flex justify-between items-center !pt-0 sm:pt-10 ">
-            <Typography.Title level={2} className="!m-0">
-              {t(`ПопулярныеКатегории`)}
-            </Typography.Title>
-            <div className="hidden md:flex">
-              <PrimaryButton text={t(`ВсеКатегории`)} />
-            </div>
-          </div>
-          <CategoryHome />
-          <div className="md:hidden flex justify-center mt-10">
-            <PrimaryButton text={t(`ВсеКатегории`)} />
-          </div>
-        </div>
-        <div className="mt-24">
-          <Typography.Title level={2} className="!mb-10">
-            {t(`КомплексноеОснащениеКабинетов`)}
-          </Typography.Title>
-
-          <CabinetSwiper />
-        </div>
-        <div className="mt-24">
-          <Typography.Title level={2}>
-            {t(`ПочемуВыбираютНас`)}?
-          </Typography.Title>
-          <HomeCards />
-        </div>
+        <CategoryHome />
+        <CabinetSwiper />
+        <HomeCards />
       </div>
-      <div className="mt-24 xl:ps-14 lg:ps-12 md:ps-10 sm:ps-5 px-5">
-        <CatalogTover />
-      </div>
-      <div>
-        <HomeClient />
-      </div>
-      <div className="px-3 xl:px-14 lg:px-8 md:px-5 sm:px-4 mt-24 py-14">
-        <HomeBrand />
-      </div>
-      <div className="mt-24">
-        <About />
-      </div>
-      <div className="px-3 lg:ps-14 md:px-5 xs:px-4 sm:px-2 ">
-        <div className="mt-24">
-          <HomeCompany />
-        </div>
-        <div className="mt-24">
-          <HomeForm />
-        </div>
-      </div>
-      <div className="mt-24">
-        <HomeSubscription />
-        <Footer />
-      </div>
+      <CatalogTovar />
+      <HomeClient />
+      <HomeBrand />
+      <About />
+      <HomeCompany />
+      <HomeForm />
+      <HomeSubscription />
+      <Footer />
     </>
   );
 });

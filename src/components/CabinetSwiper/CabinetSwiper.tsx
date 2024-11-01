@@ -1,11 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Typography } from "antd";
-import {
-  LeftButton,
-  PrimaryButton,
-  SecondaryButton,
-} from "../../../components/Buttons";
+import { LeftButton, PrimaryButton, SecondaryButton } from "../Buttons/index";
 
 // Swiper CSS import
 import "swiper/swiper-bundle.css"; // Barcha CSS
@@ -57,7 +53,10 @@ const CabinetSwiper = () => {
   }, []);
 
   return (
-    <>
+    <div className="mt-24">
+      <Typography.Title level={2} className="!mb-10">
+        {t(`КомплексноеОснащениеКабинетов`)}
+      </Typography.Title>
       <Swiper
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
@@ -101,7 +100,7 @@ const CabinetSwiper = () => {
           <PrimaryButton text={t("РассчитатьСтоимость")} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

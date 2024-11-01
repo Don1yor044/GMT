@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Col, Row, Typography } from "antd";
-import { LeftButton, PrimaryButton } from "../../../components/Buttons";
+import { LeftButton, PrimaryButton } from "../Buttons/index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
@@ -55,7 +55,7 @@ const HomeCompany = () => {
     },
   ];
   return (
-    <>
+    <div className="px-2 lg:ps-14 md:px-5 xs:px-4 sm:px-2 mt-24">
       <Row gutter={[20, 20]}>
         <Col xl={6} md={24}>
           <div className="flex justify-between items-center">
@@ -138,7 +138,7 @@ const HomeCompany = () => {
           </Swiper>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 
