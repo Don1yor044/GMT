@@ -46,13 +46,7 @@ export const LeftButton = ({
 }) => {
   return <StyledLeftButton>{<Icon size={size} />}</StyledLeftButton>;
 };
-export const PrimaryButtonMini = ({
-  icon: Icon,
-  size,
-}: {
-  icon?: IconType;
-  size?: number;
-}) => {
+export const PrimaryButtonMini = ({ icon: Icon }: { icon?: IconType }) => {
   return <StyledPrimaryButtonMini>{Icon && <Icon />}</StyledPrimaryButtonMini>;
 };
 const StyledPrimaryButton = styled.button<{ size?: number }>`

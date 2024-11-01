@@ -13,13 +13,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { BsGlobe, BsSearch } from "react-icons/bs";
 import { CgMenuLeftAlt } from "react-icons/cg";
-import {
-  FaCaretUp,
-  FaRegHeart,
-  FaRegUser,
-  FaSortDown,
-  FaSortUp,
-} from "react-icons/fa";
+import { FaCaretUp, FaRegHeart, FaRegUser, FaSortDown } from "react-icons/fa";
 import { FiChevronDown, FiChevronUp, FiMenu } from "react-icons/fi";
 import { LuBarChartBig, LuMapPin } from "react-icons/lu";
 import { SlBasket } from "react-icons/sl";

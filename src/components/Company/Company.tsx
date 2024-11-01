@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { Col, Row, Typography } from "antd";
 import { LeftButton, PrimaryButton } from "../Buttons/index";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -143,11 +142,3 @@ const HomeCompany = () => {
 };
 
 export default HomeCompany;
-
-const StyledButton = styled.button`
-  background-color: #448c7e2f;
-  color: #088269;
-  border: 1px solid #088269;
-  padding: 1px 8px;
-  border-radius: 50px;
-`;
