@@ -60,28 +60,28 @@ export const Header = () => {
   };
   const items: MenuProps["items"] = [
     {
-      label: <a href="/">Вакансии</a>,
+      label: <a href="/hero">Вакансии</a>,
       key: "0",
     },
     {
-      label: <a href="/">Отзывы</a>,
+      label: <a href="/hero">Отзывы</a>,
       key: "1",
     },
     {
-      label: <a href="/">Сертификаты</a>,
+      label: <a href="/hero">Сертификаты</a>,
       key: "2",
     },
     {
-      label: <a href="/">Партнерские программы</a>,
+      label: <a href="/hero">Партнерские программы</a>,
       key: "3",
     },
 
     {
-      label: <a href="/">Оптовые продажи</a>,
+      label: <a href="/hero">Оптовые продажи</a>,
       key: "4",
     },
     {
-      label: <a href="/">Лизинг</a>,
+      label: <a href="/hero">Лизинг</a>,
       key: "5",
     },
   ];

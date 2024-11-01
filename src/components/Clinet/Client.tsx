@@ -43,7 +43,7 @@ const HomeClient = () => {
             <Typography.Title level={2}>{t(`НашиКлиенты`)}</Typography.Title>
           </Col>
           <Col md={12} xs={24}>
-            <Typography className="text-5xl">
+            <Typography className="text-3xl md:text-5xl">
               {t("БОЛЕЕ")}
               <span className="text-[#088269]"> 5000 </span> <br />{" "}
               {t("УСПЕШНЫХПРОЕКТОВ")}
