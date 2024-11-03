@@ -87,15 +87,15 @@ export const Header = () => {
   ];
   const blogs: MenuProps["items"] = [
     {
-      label: <a href="/">Вакансии</a>,
+      label: <a href="/">Новости</a>,
       key: "0",
     },
     {
-      label: <a href="/">Отзывы</a>,
+      label: <a href="/">Статьи</a>,
       key: "1",
     },
     {
-      label: <a href="/">Сертификаты</a>,
+      label: <a href="/">Видео</a>,
       key: "2",
     },
   ];
@@ -320,7 +320,7 @@ export const Header = () => {
               <Space className="hover:text-[#07745E]">{t(`Окомпании`)}</Space>
             </a>
           </Dropdown>
-          <Link to={"/"} className="hover:text-[#07745E]">
+          <Link to={"/Delivery"} className="hover:text-[#07745E]">
             {t("Доставка")}
           </Link>
           <Link to={"/"} className="hover:text-[#07745E]">

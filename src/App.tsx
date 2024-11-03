@@ -7,6 +7,7 @@ import i18n from "./I18n/I18";
 import Login from "./pages/Login";
 import Catalog from "./pages/Catalog";
 import Hero from "./pages/Hero";
+import Delivery from "./pages/Delivery";
 
 const queryClient = new QueryClient();
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/hero" element={<Hero />} />
+            <Route path="/delivery" element={<Delivery />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </Router>
