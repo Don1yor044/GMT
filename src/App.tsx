@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Catalog from "./pages/Catalog";
 import Hero from "./pages/Hero";
 import Delivery from "./pages/Delivery";
+import { Services } from "./pages/Services";
 
 const queryClient = new QueryClient();
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/hero" element={<Hero />} />
             <Route path="/delivery" element={<Delivery />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </Router>

@@ -4,14 +4,14 @@ import { PrimaryButton } from "../../../components/Buttons";
 
 const DeliveryForm = () => {
   return (
-    <div className="px-2 lg:px-14 md:px-5 xs:px-4 sm:px-2 py-24">
+    <div className="px-2 lg:px-14 md:px-5 xs:px-4 sm:px-2 md:pt-24 pt-10">
       <Row gutter={[20, 20]}>
-        <Col md={12} xs={24} span={24}>
-          <div className="pr-44">
+        <Col lg={12} xs={24} span={24}>
+          <div>
             <Typography.Title level={2}>
               Вам нужна консультация?
             </Typography.Title>
-            <Typography.Title level={5}>
+            <Typography.Title level={5} className="xl:pr-44 md:pr-40">
               Задайте их по номеру телефона{" "}
               <span className="text-[#088269]">+7 (495) 000-00-00</span> или
               оставьте свои координаты и наш менеджер перезвонит вам через 10
@@ -19,7 +19,7 @@ const DeliveryForm = () => {
             </Typography.Title>
           </div>
         </Col>
-        <Col md={12} xs={24} span={24}>
+        <Col lg={12} xs={24} span={24}>
           <div className="bg-white lg:p-10 mp:p-3 border rounded-xl h-full">
             <div style={{ maxWidth: "100%" }}>
               <Form layout="vertical" autoComplete="off" requiredMark={false}>

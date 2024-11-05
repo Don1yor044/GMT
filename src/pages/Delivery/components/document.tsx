@@ -47,16 +47,16 @@ const Document = () => {
       style={{ minHeight: "60vh" }}
     >
       <Row gutter={[20, 20]}>
-        <Col md={11} xs={24}>
-          <Typography.Title level={2} className="w-96">
+        <Col md={18} lg={11} xs={24}>
+          <Typography.Title level={2} className="lg:w-96 w-full">
             Документы, необходимые для получения груза
           </Typography.Title>
-          <Typography className="pr-52 ">
+          <Typography className="xl:pr-52 ">
             По копиям доверенностей и доверенностям с незаполненными
             обязательными реквизитами отгрузка не производится
           </Typography>
         </Col>
-        <Col md={13} xs={24}>
+        <Col md={18} lg={13} xs={24}>
           <StyledCollapse
             items={translatedItems}
             bordered={false}

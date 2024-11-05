@@ -23,7 +23,7 @@ const Delivery = () => {
     <>
       <Header />
       <div className="px-5 py-2 lg:px-14">
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center py-2">
           <Link to={"/"} className="text-[#7A7687]">
             Главная
           </Link>
@@ -32,10 +32,10 @@ const Delivery = () => {
           </div>
           <Typography className="font-semibold">Доставка</Typography>
         </div>
-        <div className="pt-20">
-          <Typography.Title level={1} className="!mb-10">
+        <div className="mt-5 md:mt-10 lg:mt-20">
+          <Typography className="!mb-10 text-2xl sm:text-4xl  lg:text-5xl font-semibold">
             Информация о доставке
-          </Typography.Title>
+          </Typography>
           <Stylediv>
             <YMaps>
               <Map
@@ -82,20 +82,23 @@ const Delivery = () => {
         </div>
         <div className="my-28">
           <Row gutter={[20, 20]}>
-            <Col span={12}>
-              <div className="pr-48">
-                <Typography.Title level={2} className="pr-32">
+            <Col span={12} lg={12} xs={24}>
+              <div>
+                <Typography.Title
+                  level={2}
+                  className="2xl:pr-80 xl:pr-56 lg:pr-48"
+                >
                   Правила получения товара в пункте выдачи
                 </Typography.Title>
 
-                <Typography.Title level={5}>
+                <Typography.Title level={5} className="2xl:pr-40">
                   Учитывая стремительное развитие мировых медицинских
                   технологий, врачи в Российской Федерации и соседних странах
                   столкнулись с вызовом, требующим обновления приборов.
                 </Typography.Title>
               </div>
             </Col>
-            <Col span={12}>
+            <Col span={12} lg={12} xs={24} md={18}>
               <div>
                 <hr className="mb-7" />
                 <Typography.Title level={4}>
@@ -133,14 +136,14 @@ const Delivery = () => {
         <div className="pt-20">
           <div className="py-5">
             <Row gutter={[20, 20]}>
-              <Col span={12}>
-                <Typography.Title level={2} className="!mb-10">
-                  Вы сможете забрать оборудование{" "}
+              <Col span={24} lg={12} md={24}>
+                <Typography className="!mb-10 xl:text-3xl lg:text-2xl text-2xl font-semibold">
+                  Вы сможете забрать оборудование <br />
                   <span className="text-[#088269]">самостоятельно</span> из
                   нашего офиса
-                </Typography.Title>
+                </Typography>
               </Col>
-              <Col span={12}>
+              <Col span={11} className="hidden lg:md:block  mp:hidden">
                 <div className="flex gap-5">
                   <div className="border w-full bg-white rounded-xl p-5">
                     <Typography.Title level={5}>Контакты</Typography.Title>
@@ -191,6 +194,32 @@ const Delivery = () => {
               <PrimaryButton text="Построить маршрут" />
             </div>
           </Stylediv>
+          <div className="block lg:hidden mt-6">
+            <Row gutter={[20, 20]}>
+              <Col span={24} md={12} sm={12}>
+                <div className="border w-full bg-white rounded-xl p-6">
+                  <Typography.Title level={5}>Контакты</Typography.Title>
+                  <Typography className="text-[#7A7687]">
+                    +7 (000) 000-00-00
+                  </Typography>
+                  <Typography className="text-[#7A7687]">
+                    info@mail.ru
+                  </Typography>
+                </div>
+              </Col>
+              <Col span={24} md={12} sm={12}>
+                <div className="border w-full bg-white rounded-xl p-6">
+                  <Typography.Title level={5}>Режим работы</Typography.Title>
+                  <Typography className="text-[#7A7687]">
+                    пн-пт: 09:00-19:00
+                  </Typography>
+                  <Typography className="text-[#7A7687]">
+                    сб-вс: выходной
+                  </Typography>
+                </div>
+              </Col>
+            </Row>
+          </div>
         </div>
       </div>
       <Document />

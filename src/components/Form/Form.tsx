@@ -8,46 +8,49 @@ import {
   TypeSelector,
   YMaps,
 } from "@pbe/react-yandex-maps";
+import styled from "@emotion/styled";
 
 const HomeForm = () => {
   return (
     <div className="px-2 lg:px-14 md:px-5 xs:px-4 sm:px-2 mt-24">
       <Row gutter={[20, 20]}>
         <Col md={12} xs={24} span={24}>
-          <YMaps>
-            <Map
-              defaultState={{
-                center: [41.326509, 69.228341],
-                zoom: 15,
-                controls: [],
-              }}
-              options={
-                {
-                  scrollZoom: false,
-                  draggable: false,
-                } as any
-              }
-              instanceRef={(instance) => {
-                if (instance) {
-                  instance.behaviors.disable("scrollZoom"); // Skroll orqali zoomni o'chirish
-                  instance.behaviors.disable("drag"); // Xarita ustida harakatlanishni o'chirish
-                }
-              }}
-              className="w-full h-full mp:h-96 md:h-full"
-            >
-              <FullscreenControl options={{ float: "right" }} />
-              <Placemark
-                geometry={[41.326509, 69.228341]}
-                options={{
-                  iconImageHref:
-                    "https://cdn3.iconfinder.com/data/icons/flat-pro-basic-set-1-1/32/location-green-512.png", // Bu yerda icon o'rniga preset tanlashingiz mumkin
-                  iconLayout: "default#image",
-                  iconImageSize: [40, 40], // Ikona o'lchami
+          <Stylediv className="w-full h-full mp:h-96 md:h-full">
+            <YMaps>
+              <Map
+                defaultState={{
+                  center: [41.326509, 69.228341],
+                  zoom: 15,
+                  controls: [],
                 }}
-              />
-              <TypeSelector options={{ float: "left" } as any} />
-            </Map>
-          </YMaps>
+                options={
+                  {
+                    scrollZoom: false,
+                    draggable: false,
+                  } as any
+                }
+                instanceRef={(instance) => {
+                  if (instance) {
+                    instance.behaviors.disable("scrollZoom"); // Skroll orqali zoomni o'chirish
+                    instance.behaviors.disable("drag"); // Xarita ustida harakatlanishni o'chirish
+                  }
+                }}
+                className="w-full h-full"
+              >
+                <FullscreenControl options={{ float: "right" }} />
+                <Placemark
+                  geometry={[41.326509, 69.228341]}
+                  options={{
+                    iconImageHref:
+                      "https://cdn3.iconfinder.com/data/icons/flat-pro-basic-set-1-1/32/location-green-512.png", // Bu yerda icon o'rniga preset tanlashingiz mumkin
+                    iconLayout: "default#image",
+                    iconImageSize: [40, 40], // Ikona o'lchami
+                  }}
+                />
+                <TypeSelector options={{ float: "left" } as any} />
+              </Map>
+            </YMaps>
+          </Stylediv>
         </Col>
         <Col md={12} xs={24} span={24}>
           <div className="bg-white lg:p-10 mp:p-3 border rounded-xl h-full">
@@ -171,3 +174,14 @@ const HomeForm = () => {
 };
 
 export default HomeForm;
+const Stylediv = styled.div`
+  .ymaps-2-1-79-gotoymaps {
+    display: none;
+  }
+  .ymaps-2-1-79-gototech {
+    display: none;
+  }
+  .ymaps-2-1-79-copyright__content-cell {
+    display: none;
+  }
+`;

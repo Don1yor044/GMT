@@ -26,8 +26,14 @@ const Cards = () => {
   ];
   return (
     <>
-      <Typography.Title level={2}>С нами выгодно и удобно</Typography.Title>
-
+      <div className="flex justify-between items-center">
+        <Typography className="text-2xl font-semibold md:text-4xl">
+          С нами выгодно и удобно
+        </Typography>
+        <div className="hidden lg:hidden md:flex">
+          <PrimaryButton text="Проверить статус доставки" />
+        </div>
+      </div>
       <div className="mt-10">
         <Row gutter={[10, 20]}>
           {items.map((item) => (
@@ -44,7 +50,7 @@ const Cards = () => {
             </Col>
           ))}
         </Row>
-        <div className="mt-16 flex justify-end">
+        <div className="mt-16 flex lg:justify-end mp:justify-center lg:flex md:hidden">
           <PrimaryButton text="Проверить статус доставки" />
         </div>
       </div>

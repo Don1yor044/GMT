@@ -9,7 +9,7 @@ import {
   Space,
   Typography,
 } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { BsGlobe, BsSearch } from "react-icons/bs";
 import { CgMenuLeftAlt } from "react-icons/cg";
@@ -23,10 +23,10 @@ import { PiPhoneLight } from "react-icons/pi";
 import "./index.css";
 import { TiHomeOutline } from "react-icons/ti";
 import { RiMenuSearchLine } from "react-icons/ri";
+
 export const Header = () => {
   const { t, i18n } = useTranslation();
   const [showDropdown, setShowDropdown] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("Ru");
   const [visible, setVisible] = useState(false); // Dropdown holatini saqlash
   const [open, setOpen] = useState(false);
 
@@ -48,16 +48,21 @@ export const Header = () => {
   };
 
   const handleLanguageChange = (language: any) => {
-    i18n
-      .changeLanguage(language)
-      .then(() => {
-        setSelectedLanguage(language);
-        setShowDropdown(false);
-      })
-      .catch((error) => {
-        console.error("Error changing language: ", error);
-      });
+    i18n.changeLanguage(language).catch((error) => {
+      console.error("Error changing language: ", error);
+    });
+    localStorage.setItem("selectedLanguage", language); // Tanlangan tilni saqlash
   };
+  const language = localStorage.getItem("selectedLanguage");
+
+  useEffect(() => {
+    if (language) {
+      i18n.changeLanguage(language);
+    } else {
+      i18n.changeLanguage("Ru");
+    }
+  }, [location.search]);
+
   const items: MenuProps["items"] = [
     {
       label: <a href="/hero">Вакансии</a>,
@@ -431,7 +436,7 @@ export const Header = () => {
               onClick={() => setShowDropdown(!showDropdown)}
             >
               <BsGlobe size={20} />
-              <span className="text">{selectedLanguage}</span>
+              <span className="text">{language}</span>
               {showDropdown ? (
                 <FiChevronUp size={16} />
               ) : (
@@ -511,7 +516,6 @@ export const Header = () => {
           </StyledButton>
         </div>
       </div>
-
       <hr />
       <div className="hidden px-5 lg:px-0 xl:px-14 py-4 md:flex justify-between">
         <div className="flex items-center font-semibold xl:gap-4 lg:gap-1 md:gap-3 gap-2 text-xs md:text-md lg:text-sm xl:text-sm">
@@ -549,7 +553,7 @@ export const Header = () => {
             </a>
           </Dropdown>
           <Link to={"/"}>{t("КабинетыКлюч")}</Link>
-          <Link to={"/"}>{t("Услуги")}</Link>
+          <Link to={"/services"}>{t("Услуги")}</Link>
           <Link to={"/"}>{t("Акции")}</Link>
           <Dropdown
             overlay={<Menu items={ForBuyers} />}

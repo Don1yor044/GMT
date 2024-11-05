@@ -27,7 +27,7 @@ i18n.use(initReactI18next).init({
         Контакты: "Contacts",
         Москва: "Moscow",
         ЗаказатьЗвонок: "Request a Call",
-        ВсеКатегории: "all categories",
+        ВсеКатегории: "All categories",
         ЗаголовокБаннераВПаруСтрок: "Banner Heading in a couple of lines",
         ЗапроситьЦену: "Request Price",
         ВКаталог: "To Catalog",
