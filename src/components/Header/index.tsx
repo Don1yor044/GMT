@@ -325,13 +325,13 @@ export const Header = () => {
               <Space className="hover:text-[#07745E]">{t(`Окомпании`)}</Space>
             </a>
           </Dropdown>
-          <Link to={"/Delivery"} className="hover:text-[#07745E]">
+          <Link to={"/delivery"} className="hover:text-[#07745E]">
             {t("Доставка")}
           </Link>
-          <Link to={"/"} className="hover:text-[#07745E]">
+          <Link to={"/payment"} className="hover:text-[#07745E]">
             {t("Оплата")}
           </Link>
-          <Link to={"/"} className="hover:text-[#07745E]">
+          <Link to={"/guarantees"} className="hover:text-[#07745E]">
             {t("Гарантии")}
           </Link>
           <Dropdown
@@ -517,14 +517,13 @@ export const Header = () => {
         </div>
       </div>
       <hr />
-      <div className="hidden px-5 lg:px-0 xl:px-14 py-4 md:flex justify-between">
-        <div className="flex items-center font-semibold xl:gap-4 lg:gap-1 md:gap-3 gap-2 text-xs md:text-md lg:text-sm xl:text-sm">
+      <div className="hidden px-5 lg:px-10 xl:px-14 py-4 md:flex justify-between">
+        <div className="flex items-center font-semibold xl:gap-4 lg:gap-2 md:gap-3 gap-2 text-xs md:text-md lg:text-xs xl:text-sm">
           <Button
             type="text"
             className="flex items-center justify-start px-0 text-black hover:!text-[#07745E] text-base font-semibold"
           >
-            <CgMenuLeftAlt size={20} />
-
+            <CgMenuLeftAlt className="md:text-lg xl:text-xl" />
             <Dropdown
               overlay={
                 <StyledMenu
@@ -537,7 +536,7 @@ export const Header = () => {
               className="cursor-pointer "
             >
               <a onClick={(e) => e.preventDefault()}>
-                <Space>{t(`Каталог`)}</Space>
+                <Typography>{t(`Каталог`)}</Typography>
               </a>
             </Dropdown>
           </Button>
@@ -570,12 +569,9 @@ export const Header = () => {
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1">
-            <Typography.Title
-              level={5}
-              className="!m-0 text-xs md:text-md lg:text-sm xl:text-sm"
-            >
+            <Typography className="!m-0 text-xs md:text-md lg:text-base xl:text-sm font-semibold">
               {t("Москва")}
-            </Typography.Title>
+            </Typography>
             <LuMapPin />
           </div>
           <div className="flex gap-2 twoButtons">

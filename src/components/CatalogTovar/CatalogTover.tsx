@@ -45,7 +45,7 @@ const CatalogTovar = () => {
       title: "Анализатор Мочи MINDUA-66",
       article: 213134,
       price: "300 000",
-      status: "Хит продаж",
+      status: "ХитПродаж",
     },
     {
       id: 3,

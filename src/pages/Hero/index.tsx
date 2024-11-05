@@ -1,4 +1,4 @@
-import { Button, Col, Row, Typography } from "antd";
+import { Col, Row, Typography } from "antd";
 import { Header } from "../../components/Header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -12,6 +12,7 @@ import HomeBrand from "../../components/Brend/Brend";
 import Sertifikat from "../../components/Sertifikat";
 import HomeForm from "../../components/Form/Form";
 import Footer from "../../components/Footer";
+import { useTranslation } from "react-i18next";
 
 const images = [
   { src: "../../Person.png", name: "Константин", title: "Основатель компании" },
@@ -24,6 +25,7 @@ const images = [
 ];
 
 const Hero = () => {
+  const { t } = useTranslation();
   const [displayImages, setDisplayImages] = useState(images);
 
   const handleNext = () => {
@@ -46,12 +48,12 @@ const Hero = () => {
       <div className="px-5 py-2 lg:px-14">
         <div className="flex gap-3 items-center">
           <Link to={"/"} className="text-[#7A7687]">
-            Главная
+            {t(`Главная`)}
           </Link>
           <div className="text-[#7A7687]">
             <RiArrowRightSLine size={20} />{" "}
           </div>
-          <Typography className="font-semibold">О компании</Typography>
+          <Typography className="font-semibold">{t(`Окомпании`)}</Typography>
         </div>
         <div className="pt-10">
           <img src="../../Hero.png" alt="" className="h-full w-full " />
@@ -59,26 +61,15 @@ const Hero = () => {
             <Row gutter={[20, 20]}>
               <Col span={24} lg={12}>
                 <Typography className="text-2xl lg:text-5xl font-semibold">
-                  Глобал медикал трейд
+                  {t(`ГлобалМедикалТрейд`)}
                 </Typography>
               </Col>
               <Col span={24} lg={12}>
                 <Typography className="text-base lg:text-lg">
-                  Учитывая стремительное развитие мировых медицинских
-                  технологий, врачи в Российской Федерации и соседних странах
-                  столкнулись с вызовом, требующим обновления приборов
-                  в различных направлениях, от установок компьютерной томографии
-                  до ультразвуковых сканеров и ЛОР комбайнов. Переход
-                  на полностью цифровую платформу при диагностике и лечении
-                  заболеваний также стал серьёзным испытанием для большинства
-                  больниц и частных клиник.
+                  {t(`УчитываяСтремительное`)}
                 </Typography>
                 <Typography className="text-base lg:text-lg mt-3">
-                  Компания ООО «Глобал Медикал Трейд» считает своим долгом
-                  оказать специалистам всю необходимую помощь в деле поставок
-                  медицинского оборудования. Наш каталог включает передовое
-                  оборудование от лучших производителей России, Европы, Азии
-                  и США.
+                  {t(`КомпанияОООГлобалМедикалТрейд`)}
                 </Typography>
               </Col>
             </Row>

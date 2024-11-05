@@ -45,7 +45,7 @@ const About = () => {
   }));
   return (
     <div
-      className="bg-[#088269] py-14 lg:px-14 md:px-10 xs:px-5 px-2 mt-16"
+      className="bg-[#088269] py-14 lg:px-14 md:px-10 sm:px-7 px-5 mt-16"
       style={{ minHeight: "70vh" }}
     >
       <Row gutter={[20, 20]}>
@@ -55,14 +55,16 @@ const About = () => {
           </Typography.Title>
         </Col>
         <Col md={13} xs={24}>
-          <StyledCollapse
-            items={translatedItems}
-            bordered={false}
-            accordion={true}
-            defaultActiveKey={["1"]}
-            expandIconPosition="right"
-            expandIcon={customExpandIcon}
-          />
+          <div>
+            <StyledCollapse
+              items={translatedItems}
+              bordered={false}
+              accordion={true}
+              defaultActiveKey={["1"]}
+              expandIconPosition="right"
+              expandIcon={customExpandIcon}
+            />
+          </div>
         </Col>
       </Row>
     </div>

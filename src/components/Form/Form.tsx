@@ -12,7 +12,7 @@ import styled from "@emotion/styled";
 
 const HomeForm = () => {
   return (
-    <div className="px-2 lg:px-14 md:px-5 xs:px-4 sm:px-2 mt-24">
+    <div className="px-3 lg:px-14 md:px-5 xs:px-4 sm:px-3 mt-24">
       <Row gutter={[20, 20]}>
         <Col md={12} xs={24} span={24}>
           <Stylediv className="w-full h-full mp:h-96 md:h-full">

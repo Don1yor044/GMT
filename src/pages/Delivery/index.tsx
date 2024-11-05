@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
 import { RiArrowRightSLine } from "react-icons/ri";
-import { Button, Col, Row, Typography } from "antd";
+import {  Col, Row, Typography } from "antd";
 import {
   FullscreenControl,
   Map,

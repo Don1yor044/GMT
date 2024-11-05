@@ -9,6 +9,8 @@ import Catalog from "./pages/Catalog";
 import Hero from "./pages/Hero";
 import Delivery from "./pages/Delivery";
 import { Services } from "./pages/Services";
+import Payment from "./pages/Payment";
+import Guarantees from "./pages/Guarantees";
 
 const queryClient = new QueryClient();
 function App() {
@@ -22,6 +24,8 @@ function App() {
             <Route path="/hero" element={<Hero />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/guarantees" element={<Guarantees />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </Router>

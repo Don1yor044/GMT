@@ -26,7 +26,9 @@ const HomeCards = () => {
   ];
   return (
     <div className="mt-24">
-      <Typography.Title level={2}>{t(`ПочемуВыбираютНас`)}?</Typography.Title>
+      <Typography className="text-3xl md:text-4xl font-semibold">
+        {t(`ПочемуВыбираютНас`)} ?
+      </Typography>
       <div className="mt-10">
         <Row gutter={[10, 20]}>
           {items.map((item) => (

@@ -24,7 +24,7 @@ const Home = observer(() => {
     <>
       <FloatButton.BackTop visibilityHeight={1000} icon={<FcUpload />} />
       <Header />
-      <div className="px-1 xl:px-14 lg:px-12 md:px-10 sm:px-5 py-8">
+      <div className="px-3 xl:px-14 lg:px-12 md:px-10 sm:px-5 py-8">
         <div className="rounded-xl" style={{ backgroundColor: colors.Fon }}>
           <Row style={{ height: "420px" }}>
             <Col

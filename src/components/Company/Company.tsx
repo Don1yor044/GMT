@@ -54,7 +54,7 @@ const HomeCompany = () => {
     },
   ];
   return (
-    <div className="px-2 lg:ps-14 md:px-5 xs:px-4 sm:px-2 mt-24">
+    <div className="px-4 lg:ps-14 md:px-5 xs:px-4 sm:px-4 mt-24">
       <Row gutter={[20, 20]}>
         <Col xl={6} md={24}>
           <div className="flex justify-between items-center">

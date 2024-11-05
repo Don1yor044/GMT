@@ -132,9 +132,7 @@ const Footer = () => {
           <Typography.Title level={5} className="!text-white">
             {t(`Адрес`)}:
           </Typography.Title>
-          <Typography className="text-[#d0cfcde8]">
-            {t(`г. Москва, ул. Московская, д. 35`)}{" "}
-          </Typography>
+          <Typography className="text-[#d0cfcde8]">{t(`Аддрес`)} </Typography>
           <div className="!mt-5 ">
             <Link to={"/"} className="flex gap-1 items-center font-semibold">
               {t(`КартаПроезда`)}
@@ -276,9 +274,7 @@ const Footer = () => {
             <Typography.Title level={5} className="!text-white">
               {t(`Адрес`)}:
             </Typography.Title>
-            <Typography className="text-[#d0cfcde8]">
-              {t(`г. Москва, ул. Московская, д. 35`)}{" "}
-            </Typography>
+            <Typography className="text-[#d0cfcde8]">{t(`Аддрес`)} </Typography>
             <div className="!mt-5 ">
               <Link to={"/"} className="flex gap-1 items-center font-semibold">
                 {t(`КартаПроезда`)}

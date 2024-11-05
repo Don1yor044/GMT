@@ -19,5 +19,9 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "vite.config.ts",
+    "src",
+    "types" // TypeScript ga o'z deklaratsiyalaringizni ham qo'shish
+  ]
 }
