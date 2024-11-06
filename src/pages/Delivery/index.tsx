@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
 import { RiArrowRightSLine } from "react-icons/ri";
-import {  Col, Row, Typography } from "antd";
+import { Col, Row, Typography } from "antd";
 import {
   FullscreenControl,
   Map,
   Placemark,
   TypeSelector,
   YMaps,
+  ZoomControl,
 } from "@pbe/react-yandex-maps";
 import styled from "@emotion/styled";
 import { PrimaryButton } from "../../components/Buttons";
@@ -17,24 +18,43 @@ import Document from "./components/document";
 import DeliveryForm from "./components/form";
 import HomeSubscription from "../../components/Subscription";
 import Footer from "../../components/Footer";
+import { useTranslation } from "react-i18next";
 
 const Delivery = () => {
+  const { t } = useTranslation();
+  const steps = [
+    {
+      title: "ПодготовитьДокументы",
+      description:
+        "Предварительно ознакомиться с условиями выдачи грузов на сайте и подготовьте нужные документы",
+    },
+    {
+      title: "ПроверкаУпаковки",
+      description:
+        "При получении необходимо внимательно осмотреть упаковку груза на наличие механических повреждений и нарушений целостности упаковки",
+    },
+    {
+      title: "ПроверкаТовара",
+      description:
+        "Вскрыть каждую упаковку и проверите товар по количеству согласно накладной поставщика и на наличие повреждений товара внутри тары",
+    },
+  ];
   return (
     <>
       <Header />
       <div className="px-5 py-2 lg:px-14">
         <div className="flex gap-3 items-center py-2">
           <Link to={"/"} className="text-[#7A7687]">
-            Главная
+            {t(`Главная`)}
           </Link>
           <div className="text-[#7A7687]">
             <RiArrowRightSLine size={20} />{" "}
           </div>
-          <Typography className="font-semibold">Доставка</Typography>
+          <Typography className="font-semibold">{t(`Доставка`)}</Typography>
         </div>
         <div className="mt-5 md:mt-10 lg:mt-20">
           <Typography className="!mb-10 text-2xl sm:text-4xl  lg:text-5xl font-semibold">
-            Информация о доставке
+            {t(`ИнформацияОдоставке`)}
           </Typography>
           <Stylediv>
             <YMaps>
@@ -47,6 +67,7 @@ const Delivery = () => {
                 className="w-full h-full"
               >
                 <FullscreenControl options={{ float: "right" }} />
+                <ZoomControl options={{ float: "right" } as any} />
                 <Placemark
                   geometry={[41.326509, 69.228341]}
                   options={{
@@ -60,20 +81,17 @@ const Delivery = () => {
               </Map>
             </YMaps>
             <div style={{ position: "absolute", bottom: 20, right: 20 }}>
-              <PrimaryButton text="Пункт выдачи" />
+              <PrimaryButton text={t(`ПунктВыдачи`)} />
             </div>
           </Stylediv>
         </div>
         <div className="flex h-full w-full justify-end items-end mt-10">
           <div className="flex justify-end w-[640px]">
             <Typography className="text-start  text-base font-semibold">
-              Учитывая стремительное развитие мировых медицинских технологий,
-              врачи в Российской Федерации и соседних странах столкнулись с
-              вызовом, требующим обновления приборов в различных направлениях,
-              от установок компьютерной томографии до ультразвуковых сканеров и
-              ЛОР комбайнов. Переход на полностью цифровую платформу при
-              диагностике и лечении заболеваний также стал серьёзным испытанием
-              для большинства больниц и частных клиник.
+              {t(
+                `Учитывая стремительное развитие мировых медицинских технологий,врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях,от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник`
+              )}
+              .
             </Typography>
           </div>
         </div>
@@ -88,45 +106,27 @@ const Delivery = () => {
                   level={2}
                   className="2xl:pr-80 xl:pr-56 lg:pr-48"
                 >
-                  Правила получения товара в пункте выдачи
+                  {t(`Правила получения товара в пункте выдачи`)}
                 </Typography.Title>
 
                 <Typography.Title level={5} className="2xl:pr-40">
-                  Учитывая стремительное развитие мировых медицинских
-                  технологий, врачи в Российской Федерации и соседних странах
-                  столкнулись с вызовом, требующим обновления приборов.
+                  {t(
+                    `Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов`
+                  )}
+                  .
                 </Typography.Title>
               </div>
             </Col>
             <Col span={12} lg={12} xs={24} md={18}>
-              <div>
-                <hr className="mb-7" />
-                <Typography.Title level={4}>
-                  Подготовить документы
-                </Typography.Title>
-                <Typography.Title level={5} className="!text-[#7A7687] !m-0">
-                  Предварительно ознакомиться с условиями выдачи грузов на сайте
-                  и подготовьте нужные документы
-                </Typography.Title>
-              </div>
-              <div>
-                <hr className="my-7" />
-                <Typography.Title level={4}>Проверка упаковки</Typography.Title>
-                <Typography.Title level={5} className="!text-[#7A7687] !m-0">
-                  При получении необходимо внимательно осмотреть упаковку груза
-                  на наличие механических повреждений и нарушений целостности
-                  упаковки
-                </Typography.Title>
-              </div>
-              <div>
-                <hr className="my-7" />
-                <Typography.Title level={4}>Проверка товара</Typography.Title>
-                <Typography.Title level={5} className="!text-[#7A7687] !m-0">
-                  Вскрыть каждую упаковку и проверите товар по количеству
-                  согласно накладной поставщика и на наличие повреждений товара
-                  внутри тары
-                </Typography.Title>
-              </div>
+              {steps.map((step, index) => (
+                <div key={index}>
+                  {index > 0 && <hr className="my-7" />}
+                  <Typography.Title level={4}>{t(step.title)}</Typography.Title>
+                  <Typography.Title level={5} className="!text-[#7A7687] !m-0">
+                    {t(step.description)}
+                  </Typography.Title>
+                </div>
+              ))}
             </Col>
           </Row>
         </div>
@@ -138,15 +138,17 @@ const Delivery = () => {
             <Row gutter={[20, 20]}>
               <Col span={24} lg={12} md={24}>
                 <Typography className="!mb-10 xl:text-3xl lg:text-2xl text-2xl font-semibold">
-                  Вы сможете забрать оборудование <br />
-                  <span className="text-[#088269]">самостоятельно</span> из
-                  нашего офиса
+                  {t(`Вы сможете забрать оборудование`)} <br />
+                  <span className="text-[#088269]">{t(`самостоятельно`)}</span>
+                  {t(` из нашего офиса`)}
                 </Typography>
               </Col>
               <Col span={11} className="hidden lg:md:block  mp:hidden">
                 <div className="flex gap-5">
                   <div className="border w-full bg-white rounded-xl p-5">
-                    <Typography.Title level={5}>Контакты</Typography.Title>
+                    <Typography.Title level={5}>
+                      {t(`Контакты`)}
+                    </Typography.Title>
                     <Typography className="text-[#7A7687]">
                       +7 (000) 000-00-00
                     </Typography>
@@ -155,12 +157,14 @@ const Delivery = () => {
                     </Typography>
                   </div>
                   <div className="border w-full bg-white rounded-xl p-5">
-                    <Typography.Title level={5}>Режим работы</Typography.Title>
+                    <Typography.Title level={5}>
+                      {t(`РежимРаботы`)}
+                    </Typography.Title>
                     <Typography className="text-[#7A7687]">
-                      пн-пт: 09:00-19:00
+                      {t(`РабочееВремя`)}
                     </Typography>
                     <Typography className="text-[#7A7687]">
-                      сб-вс: выходной
+                      {t(`Отдых`)}
                     </Typography>
                   </div>
                 </div>
@@ -191,14 +195,14 @@ const Delivery = () => {
               </Map>
             </YMaps>
             <div style={{ position: "absolute", bottom: 20, right: 20 }}>
-              <PrimaryButton text="Построить маршрут" />
+              <PrimaryButton text={t("ПостроитьМаршрут")} />
             </div>
           </Stylediv>
           <div className="block lg:hidden mt-6">
             <Row gutter={[20, 20]}>
               <Col span={24} md={12} sm={12}>
                 <div className="border w-full bg-white rounded-xl p-6">
-                  <Typography.Title level={5}>Контакты</Typography.Title>
+                  <Typography.Title level={5}>{t(`Контакты`)}</Typography.Title>
                   <Typography className="text-[#7A7687]">
                     +7 (000) 000-00-00
                   </Typography>
@@ -209,12 +213,14 @@ const Delivery = () => {
               </Col>
               <Col span={24} md={12} sm={12}>
                 <div className="border w-full bg-white rounded-xl p-6">
-                  <Typography.Title level={5}>Режим работы</Typography.Title>
+                  <Typography.Title level={5}>
+                    {t(`РежимРаботы`)}
+                  </Typography.Title>
                   <Typography className="text-[#7A7687]">
-                    пн-пт: 09:00-19:00
+                    {t(`РабочееВремя`)}
                   </Typography>
                   <Typography className="text-[#7A7687]">
-                    сб-вс: выходной
+                    {t(`Отдых`)}
                   </Typography>
                 </div>
               </Col>

@@ -1,17 +1,18 @@
 import { Col, Row, Typography } from "antd";
-import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
 import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import { t } from "i18next";
-import { LeftButton, PrimaryButton } from "../Buttons";
+// import { t } from "i18next";
+import { LeftButton } from "../Buttons";
+import { useTranslation } from "react-i18next";
 
 SwiperCore.use([Navigation]);
 
 const Sertifikat = () => {
+  const { t } = useTranslation();
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const handleNext = () => {
@@ -56,7 +57,7 @@ const Sertifikat = () => {
         <Col xl={6} xs={24}>
           <div>
             <Typography.Title level={2}>
-              Сертификаты <br /> на продукцию
+              {t(`Сертификаты`)} <br /> {t(`наПродукцию`)}
             </Typography.Title>
           </div>
         </Col>

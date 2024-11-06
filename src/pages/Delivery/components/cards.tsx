@@ -1,37 +1,39 @@
 import { Col, Row, Typography } from "antd";
 import { PrimaryButton } from "../../../components/Buttons";
+import { useTranslation } from "react-i18next";
 
 const Cards = () => {
+  const { t } = useTranslation();
   const items = [
     {
       id: 1,
       src: "../../Subtract.png",
-      title: "Доставка по всей России",
+      title: "ДоставкаПоВсейРоссииИУзбекистану",
     },
     {
       id: 2,
       src: "../../Group (3).png",
-      title: "Собственный склад с продукцией",
+      title: "СобственныйСкладСПродукцией",
     },
     {
       id: 3,
       src: "../../Symbol (1).png",
-      title: "Весь товар сертифицирован",
+      title: "ВесьТоварСертифицирован",
     },
     {
       id: 4,
       src: "../../Group (4).png",
-      title: "Безопасные способы оплаты",
+      title: "БезопасныеСпособыОплаты",
     },
   ];
   return (
     <>
       <div className="flex justify-between items-center">
         <Typography className="text-2xl font-semibold md:text-4xl">
-          С нами выгодно и удобно
+          {t(`С нами выгодно и удобно`)}
         </Typography>
         <div className="hidden lg:hidden md:flex">
-          <PrimaryButton text="Проверить статус доставки" />
+          <PrimaryButton text={t("ПроверитьСтатусДоставки")} />
         </div>
       </div>
       <div className="mt-10">
@@ -44,14 +46,14 @@ const Cards = () => {
                   level={4}
                   className="px-2 mt-7 md:px-5 xl:px-16 xl:pl-20 text-center"
                 >
-                  {item.title}
+                  {t(item.title)}
                 </Typography.Title>
               </div>
             </Col>
           ))}
         </Row>
         <div className="mt-16 flex lg:justify-end mp:justify-center lg:flex md:hidden">
-          <PrimaryButton text="Проверить статус доставки" />
+          <PrimaryButton text={t("ПроверитьСтатусДоставки")} />
         </div>
       </div>
     </>

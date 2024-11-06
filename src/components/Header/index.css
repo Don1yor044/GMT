@@ -2,6 +2,7 @@
   .twoButtons {
     display: flex; /* default state */
   }
+
   .PhoneButton {
     display: none; /* default state */
   }

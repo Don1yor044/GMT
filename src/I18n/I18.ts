@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -69,7 +70,7 @@ i18n
             "FMBA of Russia CLINICAL HOSPITAL",
           "Эксклюзивные поставщики": "Exclusive suppliers",
           Бренды: "Brands",
-          ИнформацияОкомпании: "InformationAbout the company",
+          ИнформацияОкомпании: "Information About the company",
           ПреимуществаСотрудников: "Employee Benefits",
           ДостиженияКомпании: "Company Achievements",
           КарьерныйРост: "Career Growth",
@@ -172,6 +173,119 @@ i18n
           ОсновательКомпании: "Founder of the Company",
           ДиректорПоМаркетингу: "Marketing Director",
           ГлавныйИнженер: "Chief Engineer",
+          ИнформацияОдоставке: "Shipping Information",
+          ПунктВыдачи: "Pick-up Point",
+          "Учитывая стремительное развитие мировых медицинских технологий,врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях,от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник":
+            "Given the rapid development of global medical technologies, doctors in the Russian Federation and neighboring countries are faced with the challenge of upgrading their equipment in various areas, from CT scanners to ultrasound scanners and ENT combines. The transition to a fully digital platform for diagnosing and treating diseases has also become a serious challenge for most hospitals and private clinics.",
+          "С нами выгодно и удобно": "It is profitable and convenient with us",
+          ДоставкаПоВсейРоссииИУзбекистану:
+            "Delivery throughout Russia and Uzbekistan.",
+          СобственныйСкладСПродукцией: "Own Warehouse with Products",
+          БезопасныеСпособыОплаты: "Safe Payment Methods",
+          ПроверитьСтатусДоставки: "Check delivery status",
+          "Правила получения товара в пункте выдачи":
+            "Rules for receiving goods at the pick-up point",
+          "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов":
+            "Given the rapid development of global medical technologies, doctors in the Russian Federation and neighboring countries are faced with the challenge of upgrading their equipment.",
+          ПодготовитьДокументы: "Prepare Documents",
+          ПроверкаУпаковки: "Checking the Packaging",
+          ПроверкаТовара: "Product Check",
+          "Предварительно ознакомиться с условиями выдачи грузов на сайте и подготовьте нужные документы":
+            "Please familiarize yourself with the terms of cargo delivery on the website and prepare the necessary documents.",
+          "При получении необходимо внимательно осмотреть упаковку груза на наличие механических повреждений и нарушений целостности упаковки":
+            "Upon receipt, it is necessary to carefully inspect the cargo packaging for mechanical damage and violations of the integrity of the packaging.",
+          "Вскрыть каждую упаковку и проверите товар по количеству согласно накладной поставщика и на наличие повреждений товара внутри тары":
+            "Open each package and check the goods for quantity according to the supplier's invoice and for damage to the goods inside the container.",
+          "Вы сможете забрать оборудование":
+            "You will be able to pick up the equipment",
+          самостоятельно: "on one's own ",
+          " из нашего офиса": "from our office",
+          РежимРаботы: "Operating Mode",
+          ПостроитьМаршрут: "Build a Route",
+          "Документы, необходимые для получения груза":
+            "Documents required to receive cargo",
+          "По копиям доверенностей и доверенностям с незаполненными обязательными реквизитами отгрузка не производится":
+            "Shipments are not made based on copies of powers of attorney and powers of attorney with unfilled mandatory details.",
+          ЮридическиеЛица: "Legal Entities",
+          ИндивидуальныеПредприниматели: "Individual Entrepreneurs",
+          ФизическиеЛица: "Individuals",
+          "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены":
+            "But synthetic testing, in its classical presentation, allows for the introduction of a step-by-step and consistent development of society. Within the framework of the specification of modern standards, supporters of totalitarianism in science will be functionally separated",
+          ВамНужнаКонсультация: "You Need a Consultation",
+          "Задайте их по номеру телефона": "Ask them by phone number",
+          "или оставьте свои координаты и наш менеджер перезвонит вам через 10 минут":
+            "or leave your contact details and our manager will call you back in 10 minutes",
+          наПродукцию: "for products",
+          "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов.":
+            "Given the rapid development of global medical technologies, doctors in the Russian Federation and neighboring countries are faced with the challenge of upgrading equipment in various areas, from CT scanners to ultrasound scanners and ENT combines.",
+          "Порядок возврата денежных средств": "Refund procedure",
+          УсловияПоставок: "Delivery terms",
+          ОплатаНаличными: "Payment in Cash",
+          БезналичныйРасчет: "Cashless Payment",
+          ОплатаБанковскойКартой: "Payment by Bank Card",
+          "Также как постоянное обеспечение нашей деятельности требует определения":
+            "Just as the continuous provision of our activities requires the definition",
+          "Требующим обновления приборов в различных направлениях, от установок компьютерной томографии":
+            "Requiring an update of devices in various areas, from computer tomography installations",
+          "Также как постоянное обеспечение нашей":
+            "As well as the constant provision of our",
+          "Также как постоянное": "Also as a permanent",
+          "Также как постоянное обеспечение": "Also as a permanent provision",
+          "При оплате наличными": "When paying in cash",
+          "При оплате банковской картой": "When paying by credit card",
+          Рассрочка: "Installment plan",
+          "Регулярное сервисное обслуживание медицинской техники – залог ее надежной, беспроблемной эксплуатации, а также продолжительного срока службы. Периодическая диагностика позволяет выявить любые неисправности, отклонения от нормального рабочего режима на самых ранних сроках. Это предотвратит серьезные поломки, приводящие к дорогостоящим ремонтам":
+            "Regular maintenance of medical equipment is the key to its reliable, trouble-free operation, as well as a long service life. Periodic diagnostics allow you to identify any malfunctions, deviations from the normal operating mode at the earliest possible stages. This will prevent serious breakdowns that lead to expensive repairs.",
+          "Являясь авторизованным дилером брендов, продукция которых представлена в каталоге, компания":
+            "As an authorized dealer of the brands whose products are presented in the catalog, the company",
+          "Предоставляет услуги сервисного и гарантийного обслуживания":
+            "Provides service and warranty maintenance services",
+          "Осуществляет поставку оригинальных запчастей и комплектующих":
+            "Provides supply of original spare parts and components",
+          "Обучает медицинский персонал работе с современным высокотехнологичным оборудованием":
+            "Trains medical personnel to work with modern high-tech equipment",
+          "Глобал Медикал Трейд является надежным поставщиком медицинского оборудовани, предлагая своим клиентам качественную продукцию по лучшей цене. Наша компания гарантирует всем клиентам возможность воспользоваться услугами квалифицированных мастеров в установке, пуско-наладке, сервисном и техническом обслуживании приобретенного оборудования":
+            "Global Medical Trade is a reliable supplier of medical equipment, offering its customers quality products at the best price. Our company guarantees all customers the opportunity to use the services of qualified technicians in installation, commissioning, service and maintenance of the purchased equipment.",
+          ПереченьГарантийныхУслуг: "List of Warranty Services",
+          "Установка, настройка и пуско-наладка медтехники":
+            "Installation, configuration and commissioning of medical equipment",
+          "Сервисное обслуживание медицинской техники любой комплектации":
+            "Service maintenance of medical equipment of any configuration",
+          "Гарантийное и постгарантийное обслуживание":
+            "Warranty and post-warranty service",
+          "Диагностика и проведение профилактических работ":
+            "Diagnostics and preventive maintenance",
+          ГарантийныйСлучай: "Warranty Case",
+          ЗаменаТовара: "Replacement of Goods",
+          Внимание: "Attention",
+          "Рассмотрение заявки на замену товара осуществляется в срок до 30 дней со дня её регистрации согласно п. 1 ст. 12 Закона № 59-ФЗ, при условии предоставления документов, перечисленных в договоре":
+            "The application for replacement of goods is considered within 30 days from the date of its registration in accordance with paragraph 1 of Article 12 of Law No. 59-FZ, subject to the provision of the documents listed in the agreement.",
+          "Оформление гарантийного случая осуществляется согласно Гражданскому кодексу РФ, при условии предоставления документов, перечисленных в договоре и при наличии заявления с указанием причины возврата, оформленного надлежащим образом":
+            "Registration of a warranty case is carried out in accordance with the Civil Code of the Russian Federation, subject to the provision of documents listed in the contract and the presence of an application indicating the reason for the return, duly executed",
+          Апробация: "Approbation",
+          "Помощь в подборе оборудования":
+            "Assistance in selection of equipment",
+          "Помощь инженеров в настройке": "Help from engineers in setting up",
+          "Пуско-наладочные работы": "Commissioning works",
+          "Обучение работе с оборудованием": "Training in equipment operation",
+          "Подменный аппарат": "Replacement device",
+          "Работа с учебными центрами повышения квалификации медицинского персонала":
+            "Working with training centers for advanced training of medical personnel",
+          "Организация обучения врачей на собственной территории":
+            "Organization of training of doctors on our own territory",
+          ОписаниеУслуги: "Description of Service",
+          "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.":
+            "Just as constant information and propaganda support of our activities requires the definition and clarification of the distribution of internal reserves and resources.",
+          "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения.":
+            "Just as the constant information and propaganda support of our activities requires definition.",
+          Заказать: "Order",
+          ВыСможете: "You Can Do It ",
+          оставитьЗаявку: "leave a request",
+          "на услуги и скачать бланк для заполнения":
+            "for services and download the form to fill out",
+          БланкДляЗаполнения: "Form To Fill Out",
+          ЗаполненнаяФорма: "Completed Form",
+          ОставитьЗаявку: "Leave a Request",
         },
       },
       Uz: {
@@ -344,6 +458,118 @@ i18n
           ОсновательКомпании: "Kompaniya asoschisi",
           ДиректорПоМаркетингу: "Marketing direktori",
           ГлавныйИнженер: "Bosh muhandis",
+          ИнформацияОдоставке: "Yetkazib berish haqida ma'lumot",
+          ПунктВыдачи: "Qabul qilish punkti",
+          "Учитывая стремительное развитие мировых медицинских технологий,врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях,от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник":
+            "Jahon tibbiyoti texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari kompyuter tomografiyasi bo'linmalaridan tortib, ultratovush skanerlari va LOR kombinatlarigacha bo'lgan turli sohalardagi qurilmalarni yangilashni talab qiladigan muammoga duch kelishmoqda. Kasalliklarni tashxislash va davolash uchun to'liq raqamli platformaga o'tish ham ko'pchilik shifoxonalar va xususiy klinikalar uchun jiddiy sinovga aylandi.",
+          "С нами выгодно и удобно": "Bu biz bilan foydali va qulay",
+          ДоставкаПоВсейРоссииИУзбекистану:
+            "Butun Rossiya va Uzbekiston bo'ylab yetkazib berish",
+          СобственныйСкладСПродукцией: "Mahsulotlar bilan shaxsiy ombor",
+          БезопасныеСпособыОплаты: "Xavfsiz to'lov usullari",
+          ПроверитьСтатусДоставки: "Yetkazib berish holatini tekshiring",
+          "Правила получения товара в пункте выдачи":
+            "Emissiya joyida tovarlarni qabul qilish qoidalari",
+          "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов":
+            "Jahon tibbiyot texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari uskunalarni yangilashni talab qiladigan muammoga duch kelishmoqda.",
+          ПодготовитьДокументы: "Hujjatlarni tayyorlang",
+          ПроверкаУпаковки: "Paket tekshiruvi",
+          ПроверкаТовара: "Mahsulotni tekshirish",
+          "Предварительно ознакомиться с условиями выдачи грузов на сайте и подготовьте нужные документы":
+            "Veb-saytda yuklarni etkazib berish shartlarini oldindan o'qing va kerakli hujjatlarni tayyorlang",
+          "При получении необходимо внимательно осмотреть упаковку груза на наличие механических повреждений и нарушений целостности упаковки":
+            "Qabul qilgandan so'ng, siz yuk qadoqlarini mexanik shikastlanish va qadoqning yaxlitligini buzish uchun ehtiyotkorlik bilan tekshirishingiz kerak.",
+          "Вскрыть каждую упаковку и проверите товар по количеству согласно накладной поставщика и на наличие повреждений товара внутри тары":
+            "Har bir o'ramni oching va etkazib beruvchining hisob-fakturasiga ko'ra miqdori bo'yicha tovarlarni tekshiring va idish ichidagi tovarlarga shikast etkazing.",
+          "Вы сможете забрать оборудование": "Uskunani o'zingiz",
+          самостоятельно: "ofisimizdan ",
+          " из нашего офиса": "olishingiz mumkin",
+          РежимРаботы: "Ishlash tartibi",
+          ПостроитьМаршрут: "Yo'nalish qurish",
+          "Документы, необходимые для получения груза":
+            "Yukni qabul qilish uchun zarur bo'lgan hujjatlar",
+          "По копиям доверенностей и доверенностям с незаполненными обязательными реквизитами отгрузка не производится":
+            "To'ldirilmagan majburiy rekvizitlari ko'rsatilgan ishonchnomalar va ishonchnomalarning nusxalari yuborilmaydi.",
+          ЮридическиеЛица: "Yuridik shaxslar",
+          ИндивидуальныеПредприниматели: "Yakka tartibdagi tadbirkorlar",
+          ФизическиеЛица: "Jismoniy shaxslar",
+          "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены":
+            "Ammo sintetik test o'zining klassik taqdimotida jamiyatning bosqichma-bosqich va izchil rivojlanishini joriy etish imkonini beradi. Zamonaviy standartlarning spetsifikatsiyasi doirasida fanda totalitarizm tarafdorlari funktsional jihatdan ajratiladi",
+          ВамНужнаКонсультация: "Sizga maslahat kerakmi?",
+          "Задайте их по номеру телефона":
+            "Ulardan telefon raqami orqali so'rang",
+          "или оставьте свои координаты и наш менеджер перезвонит вам через 10 минут":
+            "yoki koordinatalaringizni qoldiring va menejerimiz sizga 10 daqiqadan so'ng qo'ng'iroq qiladi",
+          наПродукцию: "mahsulotlar uchun",
+          "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов.":
+            "Jahon tibbiyot texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari kompyuter tomografiyasi qurilmalaridan tortib, ultratovushli skanerlar va LOR bo'limlarigacha bo'lgan turli sohalardagi uskunalarni yangilashni talab qiladigan muammoga duch kelishmoqda.",
+          "Порядок возврата денежных средств": "To'lovni qaytarish tartibi",
+          УсловияПоставок: "Yetkazib berish shartlari",
+          ОплатаНаличными: "Naqd pulda to'lash",
+          БезналичныйРасчет: "Naqd pulsiz to'lov",
+          ОплатаБанковскойКартой: "Bank kartasi orqali to'lov",
+          "Также как постоянное обеспечение нашей деятельности требует определения":
+            "Faoliyatimizni doimiy ta'minlash qat'iyatni talab qilganidek",
+          "Требующим обновления приборов в различных направлениях, от установок компьютерной томографии":
+            "Kompyuter tomografiyasi qurilmalaridan tortib, turli yo'nalishlarda jihozlarni yangilashni talab qilish",
+          "Также как постоянное обеспечение нашей":
+            "Xuddi bizning doimiy ta'minlanganimiz kabi",
+          "Также как постоянное": "Xuddi doimiy kabi",
+          "Также как постоянное обеспечение": "Xuddi doimiy ta'minot kabi",
+          "При оплате наличными": "When paying in cash",
+          "При оплате банковской картой": "Bank kartasi orqali to'lashda",
+          Рассрочка: "To'lov rejasi",
+          "Регулярное сервисное обслуживание медицинской техники – залог ее надежной, беспроблемной эксплуатации, а также продолжительного срока службы. Периодическая диагностика позволяет выявить любые неисправности, отклонения от нормального рабочего режима на самых ранних сроках. Это предотвратит серьезные поломки, приводящие к дорогостоящим ремонтам":
+            "Tibbiy asbob-uskunalarga muntazam texnik xizmat ko'rsatish uning ishonchli, muammosiz ishlashi, shuningdek, uzoq xizmat muddatining kalitidir. Davriy diagnostika har qanday nosozliklar yoki normal ish sharoitidan og'ishlarni imkon qadar erta aniqlash imkonini beradi. Bu qimmat ta'mirlashga olib keladigan jiddiy zararni oldini oladi.",
+          "Являясь авторизованным дилером брендов, продукция которых представлена в каталоге, компания":
+            "Mahsulotlari katalogda taqdim etilgan brendlarning vakolatli dileri bo'lgan kompaniya",
+          "Предоставляет услуги сервисного и гарантийного обслуживания":
+            "Xizmat va kafolat xizmatlarini taqdim etadi",
+          "Осуществляет поставку оригинальных запчастей и комплектующих":
+            "Asl ehtiyot qismlar va butlovchi qismlarni yetkazib beradi",
+          "Обучает медицинский персонал работе с современным высокотехнологичным оборудованием":
+            "Tibbiyot xodimlarini zamonaviy yuqori texnologiyali uskunalar bilan ishlashga o‘rgatadi",
+          "Глобал Медикал Трейд является надежным поставщиком медицинского оборудовани, предлагая своим клиентам качественную продукцию по лучшей цене. Наша компания гарантирует всем клиентам возможность воспользоваться услугами квалифицированных мастеров в установке, пуско-наладке, сервисном и техническом обслуживании приобретенного оборудования":
+            "Global Medical Trade tibbiy asbob-uskunalarning ishonchli yetkazib beruvchisi bo'lib, o'z mijozlariga eng yaxshi narxlarda sifatli mahsulotlarni taklif etadi. Kompaniyamiz barcha mijozlarga sotib olingan uskunani o'rnatish, ishga tushirish, xizmat ko'rsatish va texnik xizmat ko'rsatishda malakali ustalarning xizmatlaridan foydalanish imkoniyatini kafolatlaydi.",
+          ПереченьГарантийныхУслуг: "Kafolat bo'yicha xizmatlar ro'yxati",
+          "Установка, настройка и пуско-наладка медтехники":
+            "Tibbiy asbob-uskunalarni o'rnatish, sozlash va ishga tushirish",
+          "Сервисное обслуживание медицинской техники любой комплектации":
+            "Har qanday konfiguratsiyadagi tibbiy asbob-uskunalarga xizmat ko'rsatish",
+          "Гарантийное и постгарантийное обслуживание":
+            "Kafolat va kafolatdan keyingi xizmat ko'rsatish",
+          "Диагностика и проведение профилактических работ":
+            "Diagnostika va profilaktika ishlari",
+          ГарантийныйСлучай: "Kafolat ishi",
+          ЗаменаТовара: "Mahsulotni almashtirish",
+          Внимание: "Diqqat",
+          "Рассмотрение заявки на замену товара осуществляется в срок до 30 дней со дня её регистрации согласно п. 1 ст. 12 Закона № 59-ФЗ, при условии предоставления документов, перечисленных в договоре":
+            "Tovarlarni almashtirish to'g'risidagi arizani ko'rib chiqish San'atning 1-bandiga muvofiq ro'yxatga olingan kundan boshlab 30 kun ichida amalga oshiriladi. 59-FZ-sonli Qonunning 12-moddasi, shartnomada ko'rsatilgan hujjatlarni taqdim etish sharti bilan",
+          "Оформление гарантийного случая осуществляется согласно Гражданскому кодексу РФ, при условии предоставления документов, перечисленных в договоре и при наличии заявления с указанием причины возврата, оформленного надлежащим образом":
+            "Kafolat ishini ro'yxatdan o'tkazish Rossiya Federatsiyasi Fuqarolik Kodeksiga muvofiq, shartnomada sanab o'tilgan hujjatlar taqdim etilgan taqdirda va tegishli ravishda rasmiylashtirilgan qaytarib berish sababini ko'rsatadigan ariza mavjud bo'lganda amalga oshiriladi.",
+          Апробация: "Aprobatsiya",
+          "Помощь в подборе оборудования": "Uskunani tanlashda yordam bering",
+          "Помощь инженеров в настройке": "Muhandislar sozlashda yordam beradi",
+          "Пуско-наладочные работы": "Ishga tushirish ishlari",
+          "Обучение работе с оборудованием": "Uskunalarni tayyorlash",
+          "Подменный аппарат": "O'zgartirish moslamasi",
+          "Работа с учебными центрами повышения квалификации медицинского персонала":
+            "Tibbiyot xodimlarining malakasini oshirish bo'yicha o'quv markazlari bilan ishlash",
+          "Организация обучения врачей на собственной территории":
+            "O'z hududida shifokorlar tayyorlashni tashkil etish",
+          ОписаниеУслуги: "Xizmatlar tavsifi",
+          "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.":
+            "Faoliyatimizni doimiy ravishda axborot va targ‘ibot-tashviqot bilan ta’minlash ichki zaxira va resurslar taqsimotini aniqlash va oydinlashtirishni taqozo etganidek.",
+          "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения.":
+            "Faoliyatimizni doimiy ravishda axborot va targ'ibot-tashviqot bilan ta'minlash ta'rifni talab qilganidek.",
+          Заказать: "Buyurtma",
+          ВыСможете: "Siz xizmatlarga ",
+          оставитьЗаявку: "so'rov qoldirishingiz",
+          "на услуги и скачать бланк для заполнения":
+            "va to'ldirish uchun shaklni yuklab olishingiz mumkin",
+          БланкДляЗаполнения: "To'ldirish uchun shakl",
+          ЗаполненнаяФорма: "Tugallangan shakl",
+          ОставитьЗаявку: "So'rov qoldiring",
         },
       },
       Ru: {
@@ -515,6 +741,119 @@ i18n
           ОсновательКомпании: "Основатель компании",
           ДиректорПоМаркетингу: "Директор по маркетингу",
           ГлавныйИнженер: "Главный инженер",
+          ИнформацияОдоставке: "Информация о доставке",
+          ПунктВыдачи: "Пункт выдачи",
+          "Учитывая стремительное развитие мировых медицинских технологий,врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях,от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник":
+            "Учитывая стремительное развитие мировых медицинских технологий,врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях,от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник",
+          "С нами выгодно и удобно": "С нами выгодно и удобно",
+          ДоставкаПоВсейРоссииИУзбекистану:
+            "Доставка по всей России и Узбекистану.",
+          СобственныйСкладСПродукцией: "Собственный Склад С Продукцией",
+          БезопасныеСпособыОплаты: "Безопасные Способы Оплаты",
+          ПроверитьСтатусДоставки: "Проверить статус доставки",
+          "Правила получения товара в пункте выдачи":
+            "Правила получения товара в пункте выдачи",
+          "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов":
+            "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов",
+          ПодготовитьДокументы: "Подготовить документы",
+          ПроверкаУпаковки: "Проверка упаковки",
+          ПроверкаТовара: "Проверка товара",
+          "Предварительно ознакомиться с условиями выдачи грузов на сайте и подготовьте нужные документы":
+            "Предварительно ознакомиться с условиями выдачи грузов на сайте и подготовьте нужные документы",
+          "При получении необходимо внимательно осмотреть упаковку груза на наличие механических повреждений и нарушений целостности упаковки":
+            "При получении необходимо внимательно осмотреть упаковку груза на наличие механических повреждений и нарушений целостности упаковки",
+          "Вскрыть каждую упаковку и проверите товар по количеству согласно накладной поставщика и на наличие повреждений товара внутри тары":
+            "Вскрыть каждую упаковку и проверите товар по количеству согласно накладной поставщика и на наличие повреждений товара внутри тары",
+          "Вы сможете забрать оборудование": "Вы сможете забрать оборудование",
+          самостоятельно: "самостоятельно",
+          " из нашего офиса": " из нашего офиса",
+          РежимРаботы: "Режим работы",
+          ПостроитьМаршрут: "Построить маршрут",
+          "Документы, необходимые для получения груза":
+            "Документы, необходимые для получения груза",
+          "По копиям доверенностей и доверенностям с незаполненными обязательными реквизитами отгрузка не производится":
+            "По копиям доверенностей и доверенностям с незаполненными обязательными реквизитами отгрузка не производится",
+          ЮридическиеЛица: "Юридические лица",
+          ИндивидуальныеПредприниматели: "Индивидуальные предприниматели",
+          ФизическиеЛица: "Физические лица",
+          "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены":
+            "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены",
+          ВамНужнаКонсультация: "Вам нужна консультация",
+          "Задайте их по номеру телефона": "Задайте их по номеру телефона",
+          "или оставьте свои координаты и наш менеджер перезвонит вам через 10 минут":
+            "или оставьте свои координаты и наш менеджер перезвонит вам через 10 минут",
+          наПродукцию: "на продукцию",
+          "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов.":
+            "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов.",
+          "Порядок возврата денежных средств":
+            "Порядок возврата денежных средств",
+          УсловияПоставок: "Условия поставок",
+          ОплатаНаличными: "Оплата наличными",
+          БезналичныйРасчет: "Безналичный расчет",
+          ОплатаБанковскойКартой: "Оплата банковской картой",
+          "Также как постоянное обеспечение нашей деятельности требует определения":
+            "Также как постоянное обеспечение нашей деятельности требует определения",
+          "Требующим обновления приборов в различных направлениях, от установок компьютерной томографии":
+            "Требующим обновления приборов в различных направлениях, от установок компьютерной томографии",
+          "Также как постоянное обеспечение нашей":
+            "Также как постоянное обеспечение нашей",
+          "Также как постоянное": "Также как постоянное",
+          "Также как постоянное обеспечение":
+            "Также как постоянное обеспечение",
+          "При оплате наличными": "При оплате наличными",
+          "При оплате банковской картой": "При оплате банковской картой",
+          Рассрочка: "Рассрочка",
+          "Регулярное сервисное обслуживание медицинской техники – залог ее надежной, беспроблемной эксплуатации, а также продолжительного срока службы. Периодическая диагностика позволяет выявить любые неисправности, отклонения от нормального рабочего режима на самых ранних сроках. Это предотвратит серьезные поломки, приводящие к дорогостоящим ремонтам":
+            "Регулярное сервисное обслуживание медицинской техники – залог ее надежной, беспроблемной эксплуатации, а также продолжительного срока службы. Периодическая диагностика позволяет выявить любые неисправности, отклонения от нормального рабочего режима на самых ранних сроках. Это предотвратит серьезные поломки, приводящие к дорогостоящим ремонтам",
+          "Являясь авторизованным дилером брендов, продукция которых представлена в каталоге, компания":
+            "Являясь авторизованным дилером брендов, продукция которых представлена в каталоге, компания",
+          "Предоставляет услуги сервисного и гарантийного обслуживания":
+            "Предоставляет услуги сервисного и гарантийного обслуживания",
+          "Осуществляет поставку оригинальных запчастей и комплектующих":
+            "Осуществляет поставку оригинальных запчастей и комплектующих",
+          "Обучает медицинский персонал работе с современным высокотехнологичным оборудованием":
+            "Обучает медицинский персонал работе с современным высокотехнологичным оборудованием",
+          "Глобал Медикал Трейд является надежным поставщиком медицинского оборудовани, предлагая своим клиентам качественную продукцию по лучшей цене. Наша компания гарантирует всем клиентам возможность воспользоваться услугами квалифицированных мастеров в установке, пуско-наладке, сервисном и техническом обслуживании приобретенного оборудования":
+            "Глобал Медикал Трейд является надежным поставщиком медицинского оборудовани, предлагая своим клиентам качественную продукцию по лучшей цене. Наша компания гарантирует всем клиентам возможность воспользоваться услугами квалифицированных мастеров в установке, пуско-наладке, сервисном и техническом обслуживании приобретенного оборудования",
+          ПереченьГарантийныхУслуг: "Перечень гарантийных услуг",
+          "Установка, настройка и пуско-наладка медтехники":
+            "Установка, настройка и пуско-наладка медтехники",
+          "Сервисное обслуживание медицинской техники любой комплектации":
+            "Сервисное обслуживание медицинской техники любой комплектации",
+          "Гарантийное и постгарантийное обслуживание":
+            "Гарантийное и постгарантийное обслуживание",
+          "Диагностика и проведение профилактических работ":
+            "Диагностика и проведение профилактических работ",
+          ГарантийныйСлучай: "Гарантийный случай",
+          ЗаменаТовара: "Замена товара",
+          Внимание: "Внимание",
+          "Рассмотрение заявки на замену товара осуществляется в срок до 30 дней со дня её регистрации согласно п. 1 ст. 12 Закона № 59-ФЗ, при условии предоставления документов, перечисленных в договоре":
+            "Рассмотрение заявки на замену товара осуществляется в срок до 30 дней со дня её регистрации согласно п. 1 ст. 12 Закона № 59-ФЗ, при условии предоставления документов, перечисленных в договоре",
+          "Оформление гарантийного случая осуществляется согласно Гражданскому кодексу РФ, при условии предоставления документов, перечисленных в договоре и при наличии заявления с указанием причины возврата, оформленного надлежащим образом":
+            "Оформление гарантийного случая осуществляется согласно Гражданскому кодексу РФ, при условии предоставления документов, перечисленных в договоре и при наличии заявления с указанием причины возврата, оформленного надлежащим образом",
+          Апробация: "Апробация",
+          "Помощь в подборе оборудования": "Помощь в подборе оборудования",
+          "Помощь инженеров в настройке": "Помощь инженеров в настройке",
+          "Пуско-наладочные работы": "Пуско-наладочные работы",
+          "Обучение работе с оборудованием": "Обучение работе с оборудованием",
+          "Подменный аппарат": "Подменный аппарат",
+          "Работа с учебными центрами повышения квалификации медицинского персонала":
+            "Работа с учебными центрами повышения квалификации медицинского персонала",
+          "Организация обучения врачей на собственной территории":
+            "Организация обучения врачей на собственной территории",
+          ОписаниеУслуги: "Описание услуги",
+          "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.":
+            "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.",
+          "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения.":
+            "Также как постоянное информационно-пропагандистское обеспечение нашей деятельности требует определения.",
+          Заказать: "Заказать",
+          ВыСможете: "Вы С можете ",
+          оставитьЗаявку: "оставить заявку",
+          "на услуги и скачать бланк для заполнения":
+            "на услуги и скачать бланк для заполнения",
+          БланкДляЗаполнения: "Бланк для заполнения",
+          ЗаполненнаяФорма: "Заполненная форма",
+          ОставитьЗаявку: "Оставить заявку",
         },
       },
     },

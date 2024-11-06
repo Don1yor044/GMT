@@ -7,8 +7,10 @@ import Fakt from "../../components/Fakt";
 import Sertifikat from "../../components/Sertifikat";
 import HomeForm from "../../components/Form/Form";
 import Footer from "../../components/Footer";
+import { useTranslation } from "react-i18next";
 
 export const Services = () => {
+  const { t } = useTranslation();
   const items = [
     {
       id: 1,
@@ -68,15 +70,15 @@ export const Services = () => {
       <div className="px-5 py-2 lg:px-14">
         <div className="flex gap-3 items-center py-2">
           <Link to={"/"} className="text-[#7A7687]">
-            Главная
+            {t(`Главная`)}
           </Link>
           <div className="text-[#7A7687]">
             <RiArrowRightSLine size={20} />{" "}
           </div>
-          <Typography className="font-semibold">Услуги</Typography>
+          <Typography className="font-semibold">{t(`Услуги`)}</Typography>
         </div>
         <div className="mt-5 md:mt-10 lg:mt-20">
-          <Typography className="text-5xl mb-10">Услуги</Typography>
+          <Typography className="text-5xl mb-10">{t(`Услуги`)}</Typography>
           <Row gutter={[20, 20]}>
             {items.map((item) => (
               <Col span={24} md={12}>
@@ -93,25 +95,25 @@ export const Services = () => {
                       <div className="lg:p-5 px-5 ">
                         <div>
                           <Typography.Title level={4}>
-                            {item.title}
+                            {t(item.title)}
                           </Typography.Title>
                           <Typography className="text-[#7A7687]">
-                            Описание услуги
+                            {t(`ОписаниеУслуги`)}
                           </Typography>
                           <Typography className="text-sm md:text-xl !mt-1 !text-[#7A7687] lg:mt-1 mp:mb-20">
-                            {item.desc}{" "}
+                            {t(item.desc)}{" "}
                           </Typography>
                         </div>
 
                         <div className="absolute bottom-5">
-                          <SecondaryButton text="Заказать" />
+                          <SecondaryButton text={t("Заказать")} />
                         </div>
                       </div>
                     </Col>
                     <Col span={24} lg={11} xl={9} className="hidden lg:flex">
                       <img
                         src={item.img}
-                        className="h-full w-full object-cover rounded-r-lg"
+                        className="xl:min-h-[360px] lg:min-h-[460px] w-full object-cover rounded-r-lg"
                         alt=""
                       />
                     </Col>
@@ -128,9 +130,11 @@ export const Services = () => {
           <Row gutter={[20, 20]}>
             <Col span={24} md={19} lg={10} xl={12} sm={24}>
               <Typography className="text-xl md:text-4xl font-semibold pr-5">
-                Вы сможете{" "}
-                <span className="text-[#088269]">оставить заявку</span> на
-                услуги и скачать бланк для заполнения
+                {t(`ВыСможете`)}
+                <span className="text-[#088269]">
+                  {t(`оставитьЗаявку`)}
+                </span>{" "}
+                {t(`на услуги и скачать бланк для заполнения`)}
               </Typography>
             </Col>
             <Col span={5} className="hidden lg:hidden md:flex h-14">
@@ -143,7 +147,7 @@ export const Services = () => {
                 <Col sm={12} span={24}>
                   <div className="bg-white flex justify-between w-full p-4 items-center border rounded-lg">
                     <Typography.Title level={5}>
-                      Бланк для заполнения
+                      {t(`БланкДляЗаполнения`)}
                     </Typography.Title>{" "}
                     <Button type="default" className="p-2">
                       <RiDownloadLine size={18} />
@@ -153,7 +157,7 @@ export const Services = () => {
                 <Col sm={12} span={24}>
                   <div className="bg-white flex justify-between w-full p-4 items-center border rounded-lg">
                     <Typography.Title level={5}>
-                      Заполненная форма
+                      {t(`ЗаполненнаяФорма`)}
                     </Typography.Title>{" "}
                     <Button type="default" className="p-2">
                       <RiDownloadLine size={18} />
@@ -164,7 +168,7 @@ export const Services = () => {
             </Col>
           </Row>
           <div className="mt-5 flex md:hidden lg:flex justify-end">
-            <PrimaryButton text="Оставить заявку" />
+            <PrimaryButton text={t("ОставитьЗаявку")} />
           </div>
         </div>
       </div>

@@ -1,13 +1,14 @@
 import { Col, Row, Typography } from "antd";
-import { t } from "i18next";
 import { PrimaryButton, SecondaryButton } from "../../../components/Buttons";
+import { useTranslation } from "react-i18next";
 
 const Cards = () => {
+  const { t } = useTranslation();
   const items = [
     {
       id: 1,
       src: "../../carbon.png",
-      title: " Установка, настройка и пуско-наладка медтехники",
+      title: "Установка, настройка и пуско-наладка медтехники",
     },
     {
       id: 2,
@@ -28,7 +29,7 @@ const Cards = () => {
   return (
     <div className="mt-24">
       <Typography className="text-2xl md:text-4xl font-semibold">
-        Перечень гарантийных услуг
+        {t(`ПереченьГарантийныхУслуг`)}
       </Typography>
       <div className="mt-10">
         <Row gutter={[10, 20]}>
@@ -44,8 +45,8 @@ const Cards = () => {
           ))}
         </Row>
         <div className="mt-10 gap-3  flex justify-end items-center mp:flex-col sm:flex-row">
-          <SecondaryButton text="Гарантийный случай" />
-          <PrimaryButton text="Замена товара" />
+          <SecondaryButton text={t("ГарантийныйСлучай")} />
+          <PrimaryButton text={t("ЗаменаТовара")} />
         </div>
       </div>
     </div>
