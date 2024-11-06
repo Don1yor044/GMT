@@ -11,6 +11,7 @@ import Delivery from "./pages/Delivery";
 import { Services } from "./pages/Services";
 import Payment from "./pages/Payment";
 import Guarantees from "./pages/Guarantees";
+import New from "./pages/new";
 
 const queryClient = new QueryClient();
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Catalog />} />
+            <Route path="/catalog/new" element={<New />} />
             <Route path="/hero" element={<Hero />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/services" element={<Services />} />

@@ -106,7 +106,7 @@ export const Header = () => {
   ];
   const categories: MenuProps["items"] = [
     {
-      label: <a href="/">Реанимация</a>,
+      label: <a href="/catalog">Реанимация</a>,
       key: "0",
     },
     {
@@ -187,7 +187,7 @@ export const Header = () => {
   );
   const katalog: MenuProps["items"] = [
     {
-      label: <a href="/">Реанимация</a>,
+      label: <a href="/catalog">Реанимация</a>,
       key: "0",
     },
     {
