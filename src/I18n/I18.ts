@@ -23,7 +23,7 @@ i18n
           Корзина: "Cart",
           Каталог: "Catalog", // New translations
           Производители: "Manufacturers",
-          КабинетыКлюч: "Turnkey Cabinets",
+          КабинетыКлюч: "Turnkey offices",
           Услуги: "Services",
           Акции: "Promotions",
           Покупателям: "For Customers",
@@ -159,6 +159,19 @@ i18n
           "международных сертификатов качества":
             "international quality certificates",
           "товаров всегда в наличии": "goods always in stock",
+          НашиПартнёры: "Our partners",
+          "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях":
+            "Our partners are the most serious players in the global market of specialized equipment. This allows us to establish long-term and successful cooperation, achieve the best prices for government healthcare institutions, medical centers, laboratories, as well as veterinary clinics and offices. Buying the equipment you need at the best prices, choosing the right model of the device within the budget will be much easier in our company. We support discounts and special offers for our partners, offer leasing of devices and are ready to provide systems in installments on favorable terms",
+          "Опытные сотрудники из": "Experienced staff from",
+          "производственных компаний": "manufacturing companies",
+          "Наши сотрудники имеют огромный опыт работы в сложных условиях,в том числе в разгар пандемии COVID–19. В этот период мы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны":
+            "Our employees have extensive experience working in difficult conditions, including during the height of the COVID-19 pandemic. During this period, we delivered medical equipment to the newest clinics of the Ministry of Defense in various regions of the country.",
+          Константин: "Konstantin",
+          Алексей: "Alexey",
+          Наталья: "Natalia",
+          ОсновательКомпании: "Founder of the Company",
+          ДиректорПоМаркетингу: "Marketing Director",
+          ГлавныйИнженер: "Chief Engineer",
         },
       },
       Uz: {
@@ -299,7 +312,7 @@ i18n
  Rossiya Federatsiyasi kodeksi`,
           Новинка: "Yangi",
           ХитПродаж: "Eng yaxshi sotilgan",
-          Главная: "Home",
+          Главная: "Uy",
           ГлобалМедикалТрейд: "Global tibbiy savdo",
           УчитываяСтремительное:
             "Jahon tibbiyoti texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari kompyuter tomografiyasi bo'linmalaridan tortib, ultratovush skanerlari va LOR bo'limlarigacha bo'lgan turli sohalardagi uskunalarni yangilashni talab qiladigan muammoga duch kelishmoqda. Kasalliklarni tashxislash va davolash uchun to‘liq raqamli platformaga o‘tish ham aksariyat shifoxonalar va xususiy klinikalar uchun jiddiy sinovga aylandi.",
@@ -318,6 +331,19 @@ i18n
             "butun dunyodan original mahsulotlar",
           "международных сертификатов качества": "xalqaro sifat sertifikatlari",
           "товаров всегда в наличии": "tovarlar doimo zaxirada",
+          НашиПартнёры: "Bizning hamkorlarimiz",
+          "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях":
+            "Bizning hamkorlarimiz ixtisoslashtirilgan uskunalar uchun jahon bozoridagi eng jiddiy o'yinchilardir. Bu bizga uzoq muddatli va muvaffaqiyatli hamkorlikni yo‘lga qo‘yish, davlat sog‘liqni saqlash muassasalari, tibbiyot markazlari, laboratoriyalar, shuningdek, veterinariya klinikalari va idoralari uchun eng yaxshi narxlarga erishish imkonini beradi. Bizning kompaniyamizda sizga kerak bo'lgan uskunani eng yaxshi narxlarda sotib olish va byudjetingiz doirasida mos qurilma modelini tanlash ancha oson bo'ladi. Biz hamkorlarimiz uchun chegirmalar va maxsus takliflarni qo'llab-quvvatlaymiz, qurilmalar lizingini taklif qilamiz va tizimlarni qulay shartlarda bo'lib-bo'lib taqdim etishga tayyormiz.",
+          "Опытные сотрудники из": "Ishlab chiqarish korxonalarining",
+          "производственных компаний": "tajribali xodimlari",
+          "Наши сотрудники имеют огромный опыт работы в сложных условиях,в том числе в разгар пандемии COVID–19. В этот период мы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны":
+            "Xodimlarimiz og‘ir sharoitlarda, jumladan, COVID-19 pandemiyasi davrida ishlashda katta tajribaga ega. Bu davrda mamlakatimizning turli hududlaridagi Mudofaa vazirligining eng yangi klinikalarini tibbiy asbob-uskunalar bilan ta’minladik.",
+          Константин: "Konstantin",
+          Алексей: "Aleksey",
+          Наталья: "Natalya",
+          ОсновательКомпании: "Kompaniya asoschisi",
+          ДиректорПоМаркетингу: "Marketing direktori",
+          ГлавныйИнженер: "Bosh muhandis",
         },
       },
       Ru: {
@@ -476,10 +502,23 @@ i18n
           "международных сертификатов качества":
             "международных сертификатов качества",
           "товаров всегда в наличии": "товаров всегда в наличии",
+          НашиПартнёры: "Наши партнёры",
+          "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях":
+            "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях",
+          "Опытные сотрудники из": "Опытные сотрудники из",
+          "производственных компаний": "производственных компаний",
+          "Наши сотрудники имеют огромный опыт работы в сложных условиях, в том числе в разгар пандемии COVID–19. В этот периодмы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны":
+            "Наши сотрудники имеют огромный опыт работы в сложных условиях,  в том числе в разгар пандемии COVID–19. В этот период мы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны",
+          Константин: "Константин",
+          Алексей: "Алексей",
+          Наталья: "Наталья",
+          ОсновательКомпании: "Основатель компании",
+          ДиректорПоМаркетингу: "Директор по маркетингу",
+          ГлавныйИнженер: "Главный инженер",
         },
       },
     },
-    lng: localStorage.getItem("i18nextLng") || "Ru",
+    lng: localStorage.getItem("selectedLanguage") || "Ru",
     fallbackLng: "Ru",
     interpolation: {
       escapeValue: false,
