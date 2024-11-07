@@ -12,6 +12,7 @@ import { Services } from "./pages/Services";
 import Payment from "./pages/Payment";
 import Guarantees from "./pages/Guarantees";
 import New from "./pages/new";
+import Vacancies from "./pages/Vacancies";
 
 const queryClient = new QueryClient();
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/catalog/new" element={<New />} />
             <Route path="/hero" element={<Hero />} />
+            <Route path="/vacancies" element={<Vacancies />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/services" element={<Services />} />
             <Route path="/payment" element={<Payment />} />

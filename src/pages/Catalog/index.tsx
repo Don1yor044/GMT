@@ -254,7 +254,7 @@ const Catalog = () => {
                   onOpenChange={handleOpenChange}
                 >
                   <a onClick={(e) => e.preventDefault()}>
-                    <div className="flex justify-between p-3">
+                    <div className="flex justify-between p-3 items-center">
                       <Typography className="text-base font-semibold">
                         Направления
                       </Typography>
@@ -270,7 +270,7 @@ const Catalog = () => {
             </Col>
             <Col span={24} className="flex md:hidden cursor-pointer">
               <div className="flex justify-center border w-full p-3">
-                <Typography className="font-semibold ">Направления</Typography>
+                <Typography className="font-semibold">Направления</Typography>
               </div>
             </Col>
             <Col span={24} lg={24} xl={18}>

@@ -65,7 +65,7 @@ export const Header = () => {
 
   const items: MenuProps["items"] = [
     {
-      label: <a href="/hero">Вакансии</a>,
+      label: <a href="/vacancies">Вакансии</a>,
       key: "0",
     },
     {
