@@ -65,29 +65,33 @@ export const Header = () => {
 
   const items: MenuProps["items"] = [
     {
-      label: <a href="/vacancies">Вакансии</a>,
+      label: <a href="/hero">О компании</a>,
       key: "0",
     },
     {
-      label: <a href="/hero">Отзывы</a>,
+      label: <a href="/vacancies">Вакансии</a>,
       key: "1",
     },
     {
-      label: <a href="/hero">Сертификаты</a>,
+      label: <a href="/">Отзывы</a>,
       key: "2",
     },
     {
-      label: <a href="/hero">Партнерские программы</a>,
+      label: <a href="/">Сертификаты</a>,
       key: "3",
+    },
+    {
+      label: <a href="/">Партнерские программы</a>,
+      key: "4",
     },
 
     {
-      label: <a href="/hero">Оптовые продажи</a>,
-      key: "4",
+      label: <a href="/">Оптовые продажи</a>,
+      key: "5",
     },
     {
-      label: <a href="/hero">Лизинг</a>,
-      key: "5",
+      label: <a href="/">Лизинг</a>,
+      key: "6",
     },
   ];
   const blogs: MenuProps["items"] = [

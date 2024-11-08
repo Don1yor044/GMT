@@ -286,6 +286,37 @@ i18n
           БланкДляЗаполнения: "Form To Fill Out",
           ЗаполненнаяФорма: "Completed Form",
           ОставитьЗаявку: "Leave a Request",
+          "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции":
+            "At Global Medical Trade there is always a place for both newcomers and established experts. For those who are just starting to build a career, we offer the opportunity to gain valuable knowledge, and for experienced specialists - to expand their competencies",
+          АктуальныеВакансии: "Current Vacancies",
+          АрхивВакансий: "Job Archives",
+          "Менеджер по продажам": "Sales Manager",
+          "Специалист по медицинскому оборудованию":
+            "Medical Equipment Specialist",
+          ОфисМенеджер: "Office manager",
+          HRМенеджер: "HR manager",
+          Обязанности: "Responsibilities",
+          "Работа с входящими/исходящими звонками":
+            "Working with incoming/outgoing calls",
+          "Работа с договорами составление/заключение":
+            "Working with contracts drafting/concluding",
+          "Ведение деловой переписки (эл. почта, переписка в мессенджерах)":
+            "Conducting business correspondence (e-mail, correspondence in instant messengers)",
+          "Выполнение плановых показателей": "Achieving planned targets",
+          Требования: "Requirements",
+          "Опыт работы телефонных продаж": "Experience in telephone sales",
+          "Опыт работы в CRM": "Experience in CRM",
+          "Способность восприятия большого объема информации":
+            "The ability to perceive large amounts of information",
+          "Оформление с первого рабочего дня":
+            "Registration from the first working day",
+          ОтправитьРезюме: "Send resume",
+          Направления: "Directions",
+          Стерилизация: "Sterilization",
+          Оториноларингология: "Otorhinolaryngology",
+          Анестезиология: "Anesthesiology",
+          ФизиотерапевтическоеОборудование: "Physiotherapy Equipment",
+          СтоматологическоеОборудование: "Dental Equipment",
         },
       },
       Uz: {
@@ -570,6 +601,38 @@ i18n
           БланкДляЗаполнения: "To'ldirish uchun shakl",
           ЗаполненнаяФорма: "Tugallangan shakl",
           ОставитьЗаявку: "So'rov qoldiring",
+          "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции":
+            "Global tibbiy savdoda har doim yangi boshlanuvchilar va malakali mutaxassislar uchun joy bor. Karyera qurishni endi boshlayotganlar uchun qimmatli bilimlarga ega bo'lish, tajribali mutaxassislar uchun esa o'z vakolatlarini kengaytirish imkoniyatini taklif etamiz",
+          АктуальныеВакансии: "Joriy bo'sh ish o'rinlari",
+          АрхивВакансий: "Vakansiya arxivi",
+          "Менеджер по продажам": "Sotish bo'yicha menejer",
+          "Специалист по медицинскому оборудованию":
+            "Tibbiy asboblar bo'yicha mutaxassis",
+          ОфисМенеджер: "Ofis menejeri",
+          HRМенеджер: "HR menejeri",
+          Обязанности: "Mas'uliyat",
+          "Работа с входящими/исходящими звонками":
+            "Kiruvchi/chiqish qo'ng'iroqlari bilan ishlash",
+          "Работа с договорами составление/заключение":
+            "Shartnomalarni tuzish / tuzish bilan ishlash",
+          "Ведение деловой переписки (эл. почта, переписка в мессенджерах)":
+            "Ishbilarmonlik yozishmalarini olib borish (elektron pochta, messenjerlarda yozishmalar)",
+          "Выполнение плановых показателей":
+            "Rejalashtirilgan ko'rsatkichlarning bajarilishi",
+          Требования: "Talablar",
+          "Опыт работы телефонных продаж": "Telefon savdosi tajribasi",
+          "Опыт работы в CRM": "CRM sohasida tajriba",
+          "Способность восприятия большого объема информации":
+            "Katta hajmdagi ma'lumotlarni idrok etish qobiliyati",
+          "Оформление с первого рабочего дня":
+            "Birinchi ish kunidan boshlab ro'yxatdan o'tish",
+          ОтправитьРезюме: "Rezyumeni yuboring",
+          Направления: "Yo'nalishlar",
+          Стерилизация: "Sterilizatsiya",
+          Оториноларингология: "Otorinolaringologiya",
+          Анестезиология: "Anesteziologiya",
+          ФизиотерапевтическоеОборудование: "Fizioterapevtik uskunalar",
+          СтоматологическоеОборудование: "Stomatologiya uskunalari",
         },
       },
       Ru: {
@@ -854,6 +917,37 @@ i18n
           БланкДляЗаполнения: "Бланк для заполнения",
           ЗаполненнаяФорма: "Заполненная форма",
           ОставитьЗаявку: "Оставить заявку",
+          "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции":
+            "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции",
+          АктуальныеВакансии: "Актуальные вакансии",
+          АрхивВакансий: "Архив вакансий",
+          "Менеджер по продажам": "Менеджер по продажам",
+          "Специалист по медицинскому оборудованию":
+            "Специалист по медицинскому оборудованию",
+          ОфисМенеджер: "Офис менеджер",
+          HRМенеджер: "HR-менеджер",
+          Обязанности: "Обязанности",
+          "Работа с входящими/исходящими звонками":
+            "Работа с входящими/исходящими звонками",
+          "Работа с договорами составление/заключение":
+            "Работа с договорами составление/заключение",
+          "Ведение деловой переписки (эл. почта, переписка в мессенджерах)":
+            "Ведение деловой переписки (эл. почта, переписка в мессенджерах)",
+          "Выполнение плановых показателей": "Выполнение плановых показателей",
+          Требования: "Требования",
+          "Опыт работы телефонных продаж": "Опыт работы телефонных продаж",
+          "Опыт работы в CRM": "Опыт работы в CRM",
+          "Способность восприятия большого объема информации":
+            "Способность восприятия большого объема информации",
+          "Оформление с первого рабочего дня":
+            "Оформление с первого рабочего дня",
+          ОтправитьРезюме: "Отправить резюме",
+          Направления: "Направления",
+          Стерилизация: "Стерилизация",
+          Оториноларингология: "Оториноларингология",
+          Анестезиология: "Анестезиология",
+          ФизиотерапевтическоеОборудование: "Физиотерапевтическое оборудование",
+          СтоматологическоеОборудование: "Стоматологическое оборудование",
         },
       },
     },

@@ -14,8 +14,10 @@ import HomeSubscription from "../../components/Subscription";
 import Footer from "../../components/Footer";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const Catalog = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const items = [
@@ -33,11 +35,11 @@ const Catalog = () => {
     },
     {
       id: 4,
-      title: "Лабораторная диагностика",
+      title: "ЛабораторнаяДиагностика",
     },
     {
       id: 5,
-      title: "Акушерство и Гинекология",
+      title: "АкушерствоИГинекология",
     },
     {
       id: 6,
@@ -53,7 +55,7 @@ const Catalog = () => {
     },
     {
       id: 10,
-      title: "Рентгенология и томография",
+      title: "РентгенологияИТомография",
     },
     {
       id: 11,
@@ -61,11 +63,11 @@ const Catalog = () => {
     },
     {
       id: 12,
-      title: "Физиотерапия и реабилитация",
+      title: "ФизиотерапияИРеабилитация",
     },
     {
       id: 13,
-      title: "Функциональная диагностика",
+      title: "ФункциональнаяДиагностика",
     },
     {
       id: 14,
@@ -81,14 +83,14 @@ const Catalog = () => {
     },
     {
       id: 17,
-      title: "Кабинеты под ключ",
+      title: "КабинетыКлюч",
     },
   ];
   const items2: MenuProps["items"] = [
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Реанимация
+          {t(`Реанимация`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -97,7 +99,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Хирургия
+          {t(`Хирургия`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -106,7 +108,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Офтальмология
+          {t(`Офтальмология`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -115,7 +117,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Лабораторная диагностика
+          {t(`ЛабораторнаяДиагностика`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -124,7 +126,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Акушерство и Гинекология
+          {t(`АкушерствоИГинекология`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -133,7 +135,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Гистология
+          {t(`Гистология`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -142,7 +144,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Косметология
+          {t(`Косметология`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -151,7 +153,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Оториноларингология
+          {t(`Оториноларингология`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -160,7 +162,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Рентгенология и томография
+          {t(`РентгенологияИТомография`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -169,7 +171,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Стерилизация
+          {t(`Стерилизация`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -178,7 +180,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Физиотерапия и реабилитация
+          {t(`ФизиотерапияИРеабилитация`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -187,7 +189,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Функциональная диагностика
+          {t(`ФункциональнаяДиагностика`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -196,7 +198,7 @@ const Catalog = () => {
     {
       label: (
         <div className="flex justify-between w-full items-center">
-          Эндоскопия
+          {t(`Эндоскопия`)}
           <RiArrowRightSLine size={20} />
         </div>
       ),
@@ -205,7 +207,7 @@ const Catalog = () => {
   ];
 
   const handleOpenChange = (open: boolean) => {
-    setIsOpen(open); // `open` qiymati `true` yoki `false` bo'ladi
+    setIsOpen(open);
   };
 
   return (
@@ -214,18 +216,20 @@ const Catalog = () => {
       <div className="px-5 py-2 lg:px-14">
         <div className="flex gap-3 items-center py-2">
           <Link to={"/"} className="text-[#7A7687]">
-            Главная
+            {t(`Главная`)}
           </Link>
           <div className="text-[#7A7687]">
             <RiArrowRightSLine size={20} />{" "}
           </div>
-          <Typography className="font-semibold">Каталог</Typography>
+          <Typography className="font-semibold">{t(`Каталог`)}</Typography>
         </div>
         <div className="mt-5">
           <Row gutter={[20, 20]}>
             <Col lg={6} className="hidden xl:block">
               <div className="p-4 border rounded-lg">
-                <Typography.Title level={5}>Направления</Typography.Title>
+                <Typography.Title level={5}>
+                  {t(`Направления`)}
+                </Typography.Title>
                 <hr className="my-4" />
 
                 {items.map((item) => (
@@ -235,7 +239,9 @@ const Catalog = () => {
                     onClick={() => navigate(`/${item.title}`)} // `item.title` bilan navigate qiladi
                     style={{ cursor: "pointer" }}
                   >
-                    <Typography className="text-base">{item.title}</Typography>
+                    <Typography className="text-base">
+                      {t(item.title)}
+                    </Typography>
                     <RiArrowRightSLine size={19} />{" "}
                   </div>
                 ))}
@@ -244,7 +250,7 @@ const Catalog = () => {
             <Col span={24} className="hidden md:flex xl:hidden justify-between">
               <div className="hidden md:flex xl:hidden">
                 <Typography className="text-3xl font-semibold">
-                  Популярные категории
+                  {t(`ПопулярныеКатегории`)}
                 </Typography>
               </div>
               <div className=" md:w-[33%] border rounded-xl">
@@ -256,7 +262,7 @@ const Catalog = () => {
                   <a onClick={(e) => e.preventDefault()}>
                     <div className="flex justify-between p-3 items-center">
                       <Typography className="text-base font-semibold">
-                        Направления
+                        {t(`Направления`)}
                       </Typography>
                       {isOpen ? (
                         <IoIosArrowUp size={18} />
@@ -270,7 +276,9 @@ const Catalog = () => {
             </Col>
             <Col span={24} className="flex md:hidden cursor-pointer">
               <div className="flex justify-center border w-full p-3">
-                <Typography className="font-semibold">Направления</Typography>
+                <Typography className="font-semibold">
+                  {t(`Направления`)}
+                </Typography>
               </div>
             </Col>
             <Col span={24} lg={24} xl={18}>

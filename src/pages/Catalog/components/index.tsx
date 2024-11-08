@@ -24,7 +24,7 @@ const GridCards = () => {
                 </div>
                 <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                   <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                    Ветеринарное оборудование
+                    {t(`ВетеринарноеОборудование`)}
                   </Typography>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const GridCards = () => {
                 </div>
                 <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                   <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                    Анестезиология{" "}
+                    {t(`Анестезиология`)}
                   </Typography>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const GridCards = () => {
                 </div>
                 <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                   <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                    Физиотерапевтическое оборудование
+                    {t(`ФизиотерапевтическоеОборудование`)}
                   </Typography>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const GridCards = () => {
                 </div>
                 <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                   <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                    Стоматологическое оборудование
+                    {t(`СтоматологическоеОборудование`)}
                   </Typography>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const GridCards = () => {
               </div>
               <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                 <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                  Физиотерапевтическое оборудование
+                  {t(`ФизиотерапевтическоеОборудование`)}
                 </Typography>
               </div>
             </div>
@@ -159,7 +159,7 @@ const GridCards = () => {
               </div>
               <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                 <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                  Стоматологическое оборудование
+                  {t(`СтоматологическоеОборудование`)}
                 </Typography>
               </div>
             </div>
@@ -211,7 +211,7 @@ const GridCards = () => {
                   </div>
                   <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                     <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                      Ветеринарное оборудование
+                      {t(`ВетеринарноеОборудование`)}
                     </Typography>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ const GridCards = () => {
                   </div>
                   <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                     <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                      Анестезиология{" "}
+                      {t(`Анестезиология`)}{" "}
                     </Typography>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ const GridCards = () => {
                   </div>
                   <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                     <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                      Физиотерапевтическое оборудование
+                      {t(`ФизиотерапевтическоеОборудование`)}
                     </Typography>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ const GridCards = () => {
                   </div>
                   <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                     <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                      Стоматологическое оборудование
+                      {t(`СтоматологическоеОборудование`)}
                     </Typography>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ const GridCards = () => {
                 </div>
                 <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                   <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                    Физиотерапевтическое оборудование
+                    {t(`ФизиотерапевтическоеОборудование`)}
                   </Typography>
                 </div>
               </div>
@@ -321,7 +321,7 @@ const GridCards = () => {
                 </div>
                 <div className="lg:p-5 mp:p-3 px-7 border-t-2">
                   <Typography className="lg:pe-10 mp:pe-0 text-base md:text-lg font-semibold">
-                    Стоматологическое оборудование
+                    {t(`СтоматологическоеОборудование`)}
                   </Typography>
                 </div>
               </div>
