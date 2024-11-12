@@ -32,7 +32,7 @@ const HomeCards = () => {
       <div className="mt-10">
         <Row gutter={[10, 20]}>
           {items.map((item) => (
-            <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} key={item.id}>
               <div className="flex flex-col items-center xl:h-80 md:h-64 h-52 justify-center border rounded-xl">
                 <img src={item.src} alt="" style={{ height: "70px" }} />
                 <Typography.Title

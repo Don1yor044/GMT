@@ -393,7 +393,6 @@ export const Header = () => {
                   </Dropdown>
                 </div>
               </div>
-
               <input
                 type="text"
                 placeholder={t("Поиск")}
@@ -414,7 +413,6 @@ export const Header = () => {
             <Typography className="text-[#7A7687]">{t(`Отдых`)}</Typography>
           </div>
         </div>
-
         <div className="hidden gap-3 md:flex lg:gap-6 items-center userVisible">
           <StyledButton>
             <div className="flex flex-col items-center">
@@ -488,7 +486,7 @@ export const Header = () => {
             <div className="flex flex-col items-center hover:text-[#088269]">
               <TiHomeOutline size={20} />
               <div className="text-gray-500 text hover:text-[#088269]">
-                Главная
+                {t(`Главная`)}
               </div>
             </div>
           </StyledButton>
@@ -496,7 +494,7 @@ export const Header = () => {
             <div className="flex flex-col items-center hover:text-[#088269]">
               <RiMenuSearchLine size={20} />
               <div className="text-gray-500 text hover:text-[#088269]">
-                Каталог
+                {t(`Каталог`)}
               </div>
             </div>
           </StyledButton>
@@ -528,7 +526,7 @@ export const Header = () => {
       </div>
       <hr />
       <div className="hidden px-5 lg:px-10 xl:px-14 py-4 md:flex justify-between">
-        <div className="flex items-center font-semibold xl:gap-4 lg:gap-2 md:gap-3 gap-2 text-xs md:text-md lg:text-xs xl:text-sm">
+        <div className="flex items-center font-semibold xl:gap-4 lg:gap-2 md:gap-3 gap-2 text-xs md:text-sm lg:text-xs xl:text-base ">
           <Button
             type="text"
             className="flex items-center justify-start px-0 text-black hover:!text-[#07745E] text-base font-semibold"
@@ -546,7 +544,9 @@ export const Header = () => {
               className="cursor-pointer "
             >
               <a onClick={(e) => e.preventDefault()}>
-                <Typography>{t(`Каталог`)}</Typography>
+                <Typography className="xl:text-base text-sm hover:!text-[#07745E]">
+                  {t(`Каталог`)}
+                </Typography>
               </a>
             </Dropdown>
           </Button>
@@ -561,9 +561,15 @@ export const Header = () => {
               </Space>
             </a>
           </Dropdown>
-          <Link to={"/"}>{t("КабинетыКлюч")}</Link>
-          <Link to={"/services"}>{t("Услуги")}</Link>
-          <Link to={"/"}>{t("Акции")}</Link>
+          <Link to={"/"} className="hover:!text-[#07745E]">
+            {t("КабинетыКлюч")}
+          </Link>
+          <Link to={"/services"} className="hover:!text-[#07745E]">
+            {t("Услуги")}
+          </Link>
+          <Link to={"/"} className="hover:!text-[#07745E]">
+            {t("Акции")}
+          </Link>
           <Dropdown
             overlay={<Menu items={ForBuyers} />}
             trigger={["click"]}
@@ -575,7 +581,9 @@ export const Header = () => {
               </Space>
             </a>
           </Dropdown>
-          <Link to={"/"}>{t("Контакты")}</Link>
+          <Link to={"/"} className="hover:!text-[#07745E]">
+            {t("Контакты")}
+          </Link>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1">
@@ -605,13 +613,15 @@ const StyledButton = styled.button`
   cursor: pointer;
   &:hover {
     background-color: inherit;
+    color: #088269;
   }
-
   &:focus {
     outline: none;
+    color: #088269;
   }
   &:active {
     background-color: inherit;
+    color: #088269;
   }
 `;
 const StyledMenu = styled(Menu)`
