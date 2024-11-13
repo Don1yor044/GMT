@@ -18,7 +18,7 @@ import { FiChevronDown, FiChevronUp, FiMenu } from "react-icons/fi";
 import { LuBarChartBig, LuMapPin } from "react-icons/lu";
 import { SlBasket } from "react-icons/sl";
 import { Link } from "react-router-dom";
-import { PrimaryButton, PrimaryButtonMini, TertiaryButton } from "../Buttons";
+import { PrimaryButton, PrimaryButtonMini, TertiaryButton } from "../buttons";
 import { PiPhoneLight } from "react-icons/pi";
 import "./index.css";
 import { TiHomeOutline } from "react-icons/ti";
@@ -92,20 +92,6 @@ export const Header = () => {
     {
       label: <a href="/">Лизинг</a>,
       key: "6",
-    },
-  ];
-  const blogs: MenuProps["items"] = [
-    {
-      label: <a href="/">Новости</a>,
-      key: "0",
-    },
-    {
-      label: <a href="/">Статьи</a>,
-      key: "1",
-    },
-    {
-      label: <a href="/">Видео</a>,
-      key: "2",
     },
   ];
   const categories: MenuProps["items"] = [
@@ -338,15 +324,9 @@ export const Header = () => {
           <Link to={"/guarantees"} className="hover:text-[#07745E]">
             {t("Гарантии")}
           </Link>
-          <Dropdown
-            overlay={<Menu items={blogs} />}
-            trigger={["click"]}
-            className="cursor-pointer"
-          >
-            <a onClick={(e) => e.preventDefault()}>
-              <Space className="hover:text-[#07745E]">{t(`Блог`)}</Space>
-            </a>
-          </Dropdown>
+          <Link to={"/blog"} className="hover:text-[#07745E]">
+            {t("Блог")}
+          </Link>
         </div>
         <div className="flex gap-5 items-center text-xs md:text-md lg:text-sm xl:text-base">
           <Link to={"/"} className="!text-[#7A7687]">
@@ -581,7 +561,7 @@ export const Header = () => {
               </Space>
             </a>
           </Dropdown>
-          <Link to={"/"} className="hover:!text-[#07745E]">
+          <Link to={"/contact"} className="hover:!text-[#07745E]">
             {t("Контакты")}
           </Link>
         </div>

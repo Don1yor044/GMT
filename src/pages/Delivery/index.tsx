@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Row, Typography } from "antd";
 import {
@@ -11,13 +11,13 @@ import {
   ZoomControl,
 } from "@pbe/react-yandex-maps";
 import styled from "@emotion/styled";
-import { PrimaryButton } from "../../components/Buttons";
+import { PrimaryButton } from "../../components/buttons";
 import Cards from "./components/cards";
-import About from "../../components/About";
+import About from "../../components/about";
 import Document from "./components/document";
 import DeliveryForm from "./components/form";
-import HomeSubscription from "../../components/Subscription";
-import Footer from "../../components/Footer";
+import HomeSubscription from "../../components/subscription";
+import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
 
 const Delivery = () => {

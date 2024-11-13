@@ -7,7 +7,7 @@ import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { t } from "i18next";
-import { LeftButton, PrimaryButton } from "../Buttons";
+import { LeftButton, PrimaryButton } from "../buttons";
 
 SwiperCore.use([Navigation]);
 

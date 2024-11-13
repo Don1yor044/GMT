@@ -1,5 +1,5 @@
 import { Col, Row, Typography } from "antd";
-import { PrimaryButton } from "../../../components/Buttons";
+import { PrimaryButton } from "../../../components/buttons";
 import { useTranslation } from "react-i18next";
 
 const Cards = () => {

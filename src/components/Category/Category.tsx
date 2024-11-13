@@ -1,6 +1,6 @@
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
-import { PrimaryButton } from "../Buttons/index";
+import { PrimaryButton } from "../buttons/index";
 
 const CategoryHome = () => {
   const { t } = useTranslation();

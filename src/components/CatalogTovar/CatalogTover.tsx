@@ -3,7 +3,7 @@ import { Button, Col, Row, Typography } from "antd";
 import { FaRegHeart } from "react-icons/fa6";
 import { LuBarChartBig } from "react-icons/lu";
 import { Link } from "react-router-dom";
-import { LeftButton, PrimaryButton, SecondaryButton } from "../Buttons/index";
+import { LeftButton, PrimaryButton, SecondaryButton } from "../buttons/index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";

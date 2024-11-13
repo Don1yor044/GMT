@@ -6,7 +6,7 @@ import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 // import { t } from "i18next";
-import { LeftButton } from "../Buttons";
+import { LeftButton } from "../buttons";
 import { useTranslation } from "react-i18next";
 
 SwiperCore.use([Navigation]);

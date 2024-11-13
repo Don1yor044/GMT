@@ -1,5 +1,5 @@
 import { Col, Row, Typography } from "antd";
-import { LeftButton, PrimaryButton } from "../Buttons/index";
+import { LeftButton, PrimaryButton } from "../buttons/index";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";

@@ -1,5 +1,5 @@
 import { Col, Form, Input, Row, Typography } from "antd";
-import { PrimaryButton } from "../Buttons";
+import { PrimaryButton } from "../buttons";
 import { t } from "i18next";
 import {
   FullscreenControl,

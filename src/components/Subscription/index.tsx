@@ -1,5 +1,5 @@
 import { Checkbox, Col, Row, Typography } from "antd";
-import { PrimaryButton } from "../Buttons";
+import { PrimaryButton } from "../buttons";
 import { t } from "i18next";
 
 const HomeSubscription = () => {

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Typography } from "antd";
-import { LeftButton, PrimaryButton, SecondaryButton } from "../Buttons/index";
+import { LeftButton, PrimaryButton, SecondaryButton } from "../buttons/index";
 
 // Swiper CSS import
 import "swiper/swiper-bundle.css"; // Barcha CSS

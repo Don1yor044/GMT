@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/header";
 import { RiArrowRightSLine, RiDownloadLine } from "react-icons/ri";
 import { Button, Col, Row, Typography } from "antd";
-import { PrimaryButton, SecondaryButton } from "../../components/Buttons";
-import Fakt from "../../components/Fakt";
-import Sertifikat from "../../components/Sertifikat";
-import HomeForm from "../../components/Form/Form";
-import Footer from "../../components/Footer";
+import { PrimaryButton, SecondaryButton } from "../../components/buttons";
+import Fakt from "../../components/fact";
+import Sertifikat from "../../components/sertifikat";
+import HomeForm from "../../components/form/Form";
+import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
 
 export const Services = () => {

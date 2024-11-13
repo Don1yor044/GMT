@@ -1,7 +1,7 @@
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 
-const Fakt = () => {
+const Fact = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -75,4 +75,4 @@ const Fakt = () => {
   );
 };
 
-export default Fakt;
+export default Fact;

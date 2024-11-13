@@ -1,17 +1,17 @@
 import { Col, Row, Typography } from "antd";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import Fakt from "../../components/Fakt";
+import Fact from "../../components/fact";
 import { useState } from "react";
-import { LeftButton } from "../../components/Buttons";
+import { LeftButton } from "../../components/buttons";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import HomeClient from "../../components/Clinet/Client";
-import HomeCards from "../../components/Cards/Cards";
-import HomeBrand from "../../components/Brend/Brend";
-import Sertifikat from "../../components/Sertifikat";
-import HomeForm from "../../components/Form/Form";
-import Footer from "../../components/Footer";
+import HomeClient from "../../components/clinet/Client";
+import HomeCards from "../../components/cards/Cards";
+import HomeBrand from "../../components/brend/Brend";
+import Sertifikat from "../../components/sertifikat";
+import HomeForm from "../../components/form/Form";
+import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
 
 const images = [
@@ -75,7 +75,7 @@ const Hero = () => {
             </Row>
           </div>
           <div className="my-16 lg:my-36">
-            <Fakt />
+            <Fact />
           </div>
         </div>
       </div>

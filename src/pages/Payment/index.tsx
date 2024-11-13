@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Row, Typography } from "antd";
-import HomeForm from "../../components/Form/Form";
-import Footer from "../../components/Footer";
+import HomeForm from "../../components/form/Form";
+import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
 
 const Payment = () => {

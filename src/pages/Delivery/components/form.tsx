@@ -1,6 +1,6 @@
 import { Col, Form, Input, Row, Typography } from "antd";
 import { t } from "i18next";
-import { PrimaryButton } from "../../../components/Buttons";
+import { PrimaryButton } from "../../../components/buttons";
 
 const DeliveryForm = () => {
   return (
