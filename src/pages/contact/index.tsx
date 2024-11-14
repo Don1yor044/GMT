@@ -212,7 +212,7 @@ const Contact = () => {
                       <GeolocationControl options={{ float: "left" }} />
                     </Map>
                   </YMaps>
-                  <div style={{ position: "absolute", bottom: 20, right: 20 }}>
+                  <div className="absolute bottom-5 right-5">
                     <PrimaryButton text={t("ПостроитьМаршрут")} />
                   </div>
                 </Stylediv1>
@@ -231,7 +231,7 @@ const Contact = () => {
                       через 10 минут
                     </Typography.Title>
                   </div>
-                  <div style={{ maxWidth: "100%", marginTop: "40px" }}>
+                  <div className="max-w-[100%] mt-[40px]">
                     <Form
                       layout="vertical"
                       autoComplete="off"
@@ -371,7 +371,7 @@ const Contact = () => {
                       <GeolocationControl options={{ float: "left" }} />
                     </Map>
                   </YMaps>
-                  <div style={{ position: "absolute", bottom: 20, right: 20 }}>
+                  <div className="absolute bottom-5 right-5 ">
                     <PrimaryButton text={t("ПостроитьМаршрут")} />
                   </div>
                 </Stylediv>

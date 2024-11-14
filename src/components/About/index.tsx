@@ -44,10 +44,7 @@ const About = () => {
     children: t(item.children),
   }));
   return (
-    <div
-      className="bg-[#088269] py-14 lg:px-14 md:px-10 sm:px-7 px-5 mt-16"
-      style={{ minHeight: "70vh" }}
-    >
+    <div className="bg-[#088269] py-14 lg:px-14 md:px-10 sm:px-7 px-5 mt-16 min-h-[70vh]">
       <Row gutter={[20, 20]}>
         <Col md={11} xs={24}>
           <Typography.Title level={3} className="!text-white">

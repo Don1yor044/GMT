@@ -80,7 +80,7 @@ const Delivery = () => {
                 <TypeSelector options={{ float: "left" } as any} />
               </Map>
             </YMaps>
-            <div style={{ position: "absolute", bottom: 20, right: 20 }}>
+            <div className=" absolute bottom-5 right-5">
               <PrimaryButton text={t(`ПунктВыдачи`)} />
             </div>
           </Stylediv>
@@ -194,7 +194,7 @@ const Delivery = () => {
                 <TypeSelector options={{ float: "left" } as any} />
               </Map>
             </YMaps>
-            <div style={{ position: "absolute", bottom: 20, right: 20 }}>
+            <div className=" absolute bottom-5 right-5">
               <PrimaryButton text={t("ПостроитьМаршрут")} />
             </div>
           </Stylediv>

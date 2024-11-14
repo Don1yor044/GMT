@@ -219,7 +219,7 @@ const Vacancies = () => {
                 <GeolocationControl options={{ float: "left" }} />
               </Map>
             </YMaps>
-            <div style={{ position: "absolute", bottom: 20, right: 20 }}>
+            <div className="absolute bottom-5 right-5">
               <PrimaryButton text={t("ПостроитьМаршрут")} />
             </div>
           </Stylediv>

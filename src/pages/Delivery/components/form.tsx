@@ -22,7 +22,7 @@ const DeliveryForm = () => {
         </Col>
         <Col lg={12} xs={24} span={24}>
           <div className="bg-white lg:p-10 mp:p-3 border rounded-xl h-full">
-            <div style={{ maxWidth: "100%" }}>
+            <div className="max-w-[100%]">
               <Form layout="vertical" autoComplete="off" requiredMark={false}>
                 <Form.Item
                   name="name"

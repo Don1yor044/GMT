@@ -36,7 +36,7 @@ const Cards = () => {
           {items.map((item) => (
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
               <div className="flex flex-col items-center xl:h-72 md:h-64 h-64 justify-center border rounded-xl">
-                <img src={item.src} alt="" style={{ height: "70px" }} />
+                <img src={item.src} alt="" className="h-[70px]" />
                 <Typography className="px-1 mt-7 md:px-5 xl:px-12 text-center text-lg lg:text-xl xl:text-1xl ">
                   {t(item.title)}
                 </Typography>

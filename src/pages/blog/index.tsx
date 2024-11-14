@@ -300,9 +300,8 @@ const Blog = () => {
                   {items.map((item) => (
                     <div
                       key={item.id}
-                      className="flex justify-between items-center py-1"
-                      onClick={() => navigate(`/${item.title}`)} // `item.title` bilan navigate qiladi
-                      style={{ cursor: "pointer" }}
+                      className="flex justify-between items-center py-1 cursor-pointer"
+                      onClick={() => navigate(`/${item.title}`)}
                     >
                       <Typography className="text-base">
                         {t(item.title)}

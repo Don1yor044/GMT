@@ -446,30 +446,18 @@ const Footer = () => {
             <div className="flex gap-4 items-center flex-wrap">
               <img
                 src="../../mastercard.png"
-                style={{
-                  width: "50px",
-                  height: "25px",
-                  objectFit: "contain",
-                }}
+                className="w-[50px] h-[25px] object-contain"
                 alt="masterCard"
               />
               <img
                 src="../../visa.png"
-                style={{
-                  width: "50px",
-                  height: "25px",
-                  objectFit: "contain",
-                }}
-                alt=""
+                alt="visaCard"
+                className="w-[50px] h-[25px] object-contain"
               />
               <img
                 src="../../mir.png"
-                style={{
-                  width: "50px",
-                  height: "25px",
-                  objectFit: "contain",
-                }}
-                alt=""
+                alt="mirCard"
+                className="w-[50px] h-[25px] object-contain"
               />
             </div>
           </div>

@@ -2,7 +2,6 @@
 import { observer } from "mobx-react-lite";
 import { Header } from "../../components/header";
 import { Col, FloatButton, Row, Typography } from "antd";
-import { colors } from "../../components/colors";
 import { PrimaryButton, SecondaryButton } from "../../components/buttons";
 import { FcUpload } from "react-icons/fc";
 import About from "../../components/about";
@@ -25,7 +24,7 @@ const Home = observer(() => {
       <FloatButton.BackTop visibilityHeight={1000} icon={<FcUpload />} />
       <Header />
       <div className="px-3 xl:px-14 lg:px-12 md:px-10 sm:px-5 py-8">
-        <div className="rounded-xl" style={{ backgroundColor: colors.Fon }}>
+        <div className="rounded-xl bg-[#E5E4ED]">
           <Row style={{ height: "420px" }}>
             <Col
               lg={10}

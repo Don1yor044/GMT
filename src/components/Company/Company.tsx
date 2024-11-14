@@ -99,12 +99,7 @@ const HomeCompany = () => {
                     <img
                       src={item.src}
                       alt=""
-                      className="rounded-tr-xl rounded-tl-xl"
-                      style={{
-                        height: "100%",
-                        objectFit: "cover",
-                        width: "100%",
-                      }}
+                      className="rounded-tr-xl rounded-tl-xl h-[100%] object-cover w-[100%]"
                     />
                   </div>
                   <div className="p-2 md:px-5 mp:px-1  border-t-2 rounded-b-xl bg-[#F8F7F3] ">

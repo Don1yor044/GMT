@@ -71,12 +71,7 @@ const CabinetSwiper = () => {
               <img
                 src={item.src}
                 alt=""
-                className="mp:h-[400px] lg:h-[500px]"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  borderRadius: "10px 10px 0px 0px",
-                }}
+                className="mp:h-[400px] lg:h-[500px] object-cover w-[100%] rounded-t-md"
               />
               <div className="px-5 py-3">
                 <Typography.Title level={4}>{t(item.title)}</Typography.Title>

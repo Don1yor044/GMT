@@ -65,7 +65,7 @@ const HomeForm = () => {
                 {t(`ОсталисьВопросыНомер`)}
               </Typography.Title>
             </div>
-            <div style={{ maxWidth: "100%", marginTop: "40px" }}>
+            <div className="max-w-[100%] mt-[40px]">
               <Form layout="vertical" autoComplete="off" requiredMark={false}>
                 <Form.Item
                   name="name"

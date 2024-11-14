@@ -90,12 +90,7 @@ const Sertifikat = () => {
                   <img
                     src={item.src}
                     alt=""
-                    className="rounded-tr-xl rounded-tl-xl"
-                    style={{
-                      height: "100%",
-                      width: "100%",
-                      objectFit: "contain",
-                    }}
+                    className="rounded-tr-xl rounded-tl-xl h-[100%] w-[100%] object-contain"
                   />
                 </div>
               </SwiperSlide>

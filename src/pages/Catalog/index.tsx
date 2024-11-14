@@ -235,9 +235,8 @@ const Catalog = () => {
                 {items.map((item) => (
                   <div
                     key={item.id}
-                    className="flex justify-between items-center py-1"
+                    className="flex justify-between items-center py-1 cursor-pointer"
                     onClick={() => navigate(`/${item.title}`)} // `item.title` bilan navigate qiladi
-                    style={{ cursor: "pointer" }}
                   >
                     <Typography className="text-base">
                       {t(item.title)}

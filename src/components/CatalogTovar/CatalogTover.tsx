@@ -131,19 +131,8 @@ const CatalogTovar = () => {
                         </Button>
                       </div>
                     </div>
-                    <div
-                      style={{
-                        backgroundImage: `url("${item.src}")`,
-                        backgroundPosition: "center",
-                        backgroundSize: "contain",
-                        backgroundRepeat: "no-repeat",
-                        width: "100%",
-                        maxWidth: "200px",
-                        height: "100%",
-                        maxHeight: "200px",
-                        margin: "0 auto",
-                      }}
-                    ></div>
+
+                    <ImageContainer src={item.src}></ImageContainer>
                   </div>
                   <div className="p-3 border-t">
                     <Typography.Title level={4} className="w-52">
@@ -216,4 +205,18 @@ const StyledButton = styled.button<StyledButtonProps>`
   border-radius: 50px;
   font-weight: 500;
   cursor: auto;
+`;
+interface ImageContainerProps {
+  src: string;
+}
+const ImageContainer = styled.div<ImageContainerProps>`
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
+  margin: 0 auto;
+  background-image: ${(props) => `url(${props.src})`};
 `;

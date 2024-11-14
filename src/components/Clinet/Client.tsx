@@ -85,14 +85,7 @@ const HomeClient = () => {
                       <img
                         src={item.imgSrc}
                         alt=""
-                        className="rounded-tr-xl rounded-tl-xl"
-                        style={{
-                          height: "200px",
-                          width: "auto",
-                          maxWidth: "65%",
-                          objectFit: "contain",
-                          margin: "auto",
-                        }}
+                        className="rounded-tr-xl rounded-tl-xl h-[200px] w-auto max-w-[65%] object-contain m-auto"
                       />
                     </div>
                     <div className="p-3 xl:p-5 lg:p-4 md:p-3 px-7 border-t-2 rounded-b-xl bg-[#F8F7F3] min-h-24 max-h-24">
