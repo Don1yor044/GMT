@@ -1,7 +1,6 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Home from "./pages/home";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
 import Login from "./pages/login";
@@ -17,6 +16,7 @@ import { NotFound } from "./components/notFound";
 import { ErrorBoundarayContainer } from "./components/errorBoundary";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
+import { Home } from "./pages";
 
 const queryClient = new QueryClient();
 function App() {
