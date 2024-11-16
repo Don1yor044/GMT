@@ -7,7 +7,7 @@ import { Footer } from "@components/footer/footer";
 import { Header } from "@components/header";
 import { CatalogTovar } from "@components/catalogTovar";
 import { HomeClient } from "@components/clinet";
-import { HomeBrand } from "@components/brend/index";
+import { HomeBrand } from "@components/brend";
 import { About } from "@components/about";
 import { HomeCompany } from "@components/company";
 import { HomeForm } from "@components/form";

@@ -145,11 +145,11 @@ const En = {
   "международных сертификатов качества": "international quality certificates",
   "товаров всегда в наличии": "goods always in stock",
   НашиПартнёры: "Our partners",
-  "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях":
+  "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях":
     "Our partners are the most serious players in the global market of specialized equipment. This allows us to establish long-term and successful cooperation, achieve the best prices for government healthcare institutions, medical centers, laboratories, as well as veterinary clinics and offices. Buying the equipment you need at the best prices, choosing the right model of the device within the budget will be much easier in our company. We support discounts and special offers for our partners, offer leasing of devices and are ready to provide systems in installments on favorable terms",
   "Опытные сотрудники из": "Experienced staff from",
   "производственных компаний": "manufacturing companies",
-  "Наши сотрудники имеют огромный опыт работы в сложных условиях,в том числе в разгар пандемии COVID–19. В этот период мы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны":
+  "Наши сотрудники имеют огромный опыт работы в сложных условиях,в том числе в разгар пандемии COVID–19. В этот период мы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны":
     "Our employees have extensive experience working in difficult conditions, including during the height of the COVID-19 pandemic. During this period, we delivered medical equipment to the newest clinics of the Ministry of Defense in various regions of the country.",
   Константин: "Konstantin",
   Алексей: "Alexey",
@@ -169,7 +169,7 @@ const En = {
   ПроверитьСтатусДоставки: "Check delivery status",
   "Правила получения товара в пункте выдачи":
     "Rules for receiving goods at the pick-up point",
-  "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов":
+  "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов":
     "Given the rapid development of global medical technologies, doctors in the Russian Federation and neighboring countries are faced with the challenge of upgrading their equipment.",
   ПодготовитьДокументы: "Prepare Documents",
   ПроверкаУпаковки: "Checking the Packaging",
@@ -269,7 +269,7 @@ const En = {
   БланкДляЗаполнения: "Form To Fill Out",
   ЗаполненнаяФорма: "Completed Form",
   ОставитьЗаявку: "Leave a Request",
-  "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции":
+  "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции":
     "At Global Medical Trade there is always a place for both newcomers and established experts. For those who are just starting to build a career, we offer the opportunity to gain valuable knowledge, and for experienced specialists - to expand their competencies",
   АктуальныеВакансии: "Current Vacancies",
   АрхивВакансий: "Job Archives",
@@ -299,5 +299,21 @@ const En = {
   Анестезиология: "Anesthesiology",
   ФизиотерапевтическоеОборудование: "Physiotherapy Equipment",
   СтоматологическоеОборудование: "Dental Equipment",
+  Подробнее: "Read more",
+  "Что такое инфузомат (инфузионный насос)": "What is an infusion pump?",
+  "Обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.  Каждый из нас понимает очевидную вещь.":
+    "Ensuring our activities requires defining and refining the distribution of internal reserves and resources. Each of us understands the obvious.",
+  "Обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.  Каждый из нас понимает очевидную вещь: понимание сути ресурсосберегающих технологий создаёт.":
+    "Ensuring our activities requires defining and refining the distribution of internal reserves and resources. Each of us understands the obvious: understanding the essence of resource-saving technologies creates.",
+  "ООО Глобал Медикал Трейд": "Global Medical Trade LLC",
+  "Юридический адрес": "Legal address",
+  "Россия, г. Москва, ул. Докукина, 8, стр. 2":
+    "Russia, Moscow, st. Dokukina, 8, building 2",
+  "Фактический адрес": "Actual address",
+  "Звоните. Звонки по России бесплатны": "Call. Calls within Russia are free",
+  Телефоны: "Phones",
+  Пишите: "Write",
+  "Оставьте свои координаты и наш менеджер перезвонит вам через 10 минут":
+    "Leave your contact details and our manager will call you back in 10 minutes",
 };
 export default En;

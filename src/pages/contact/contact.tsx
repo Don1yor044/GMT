@@ -41,7 +41,7 @@ export const Contact = () => {
         </div>
         <div className="mt-5 md:mt-10 lg:mt-20">
           <Typography className="font-semibold text-3xl sm:text-5xl">
-            Контакты
+            {t(`Контакты`)}
           </Typography>
 
           <div className="mt-10">
@@ -49,7 +49,7 @@ export const Contact = () => {
               <Col lg={12} span={24}>
                 <div className="bg-white lg:p-10 mp:p-3 border rounded-xl">
                   <Typography className="text-3xl font-semibold">
-                    ООО Глобал Медикал Трейд
+                    {t(`ООО Глобал Медикал Трейд`)}
                   </Typography>
                   <div className="flex gap-2 mt-2">
                     <div className="text-[#7A7687] mt-1">
@@ -57,10 +57,10 @@ export const Contact = () => {
                     </div>
                     <div>
                       <Typography className="text-lg text-[#7A7687]">
-                        Юридический адрес:
+                        {t(`Юридический адрес`)}:
                       </Typography>
                       <Typography className="text-lg">
-                        Россия, г. Москва, ул. Докукина, 8, стр. 2
+                        {t(`Россия, г. Москва, ул. Докукина, 8, стр. 2`)}
                       </Typography>
                     </div>
                   </div>
@@ -70,10 +70,10 @@ export const Contact = () => {
                     </div>
                     <div>
                       <Typography className="text-lg text-[#7A7687]">
-                        Фактический адрес:
+                        {t(`Фактический адрес`)}:
                       </Typography>
                       <Typography className="text-lg">
-                        Россия, г. Москва, ул. Докукина, 8, стр. 2
+                        {t(`Россия, г. Москва, ул. Докукина, 8, стр. 2`)}
                       </Typography>
                     </div>
                   </div>
@@ -83,19 +83,17 @@ export const Contact = () => {
                     </div>
                     <div>
                       <Typography className="text-lg text-[#7A7687]">
-                        Режим работы:
+                        {t(`РежимРаботы`)}:
                       </Typography>
                       <Typography className="text-lg">
-                        Пн-Пт с 09:00-19:00
+                        {t(`РабочееВремя`)}
                       </Typography>
-                      <Typography className="text-lg">
-                        Сб-Вс - выходной
-                      </Typography>
+                      <Typography className="text-lg">{t(`Отдых`)}</Typography>
                     </div>
                   </div>
                   <div className="mt-3">
                     <Typography className="font-semibold text-2xl">
-                      Звоните. Звонки по России бесплатны:{" "}
+                      {t(`Звоните. Звонки по России бесплатны`)}:
                     </Typography>
                     <div className="flex gap-2 mt-2">
                       <div className="text-[#7A7687] mt-1">
@@ -103,7 +101,7 @@ export const Contact = () => {
                       </div>
                       <div>
                         <Typography className="text-lg text-[#7A7687]">
-                          Телефоны:
+                          {t(`Телефоны`)}:
                         </Typography>
                         <div className="flex gap-5 flex-wrap">
                           <Typography className="text-lg">
@@ -124,7 +122,7 @@ export const Contact = () => {
                       </div>
                       <div>
                         <Typography className="text-lg text-[#7A7687]">
-                          Пишите:
+                          {t(`Пишите`)}:
                         </Typography>
                         <Typography className="text-lg">
                           info@mail.ru
@@ -135,7 +133,7 @@ export const Contact = () => {
                   <div className="mt-2 flex w-full gap-14 items-center flex-wrap">
                     <div>
                       <Typography className="text-xl font-semibold py-1">
-                        Реквизиты:{" "}
+                        {t(`Реквизиты`)}:{" "}
                       </Typography>
                       <div className="flex gap-10">
                         <div>
@@ -226,14 +224,15 @@ export const Contact = () => {
                 <div className="bg-white lg:p-10 mp:p-3 border rounded-xl h-full">
                   <div className="w-full xl:pe-52">
                     <Typography.Title level={2}>
-                      Бесплатная консультация ?
+                      {t(`БесплатнаяКонсультация`)} ?
                     </Typography.Title>
                     <Typography.Title
                       level={5}
                       style={{ fontWeight: 400, color: "#7A7687" }}
                     >
-                      Оставьте свои координаты и наш менеджер перезвонит вам
-                      через 10 минут
+                      {t(
+                        `Оставьте свои координаты и наш менеджер перезвонит вам через 10 минут`
+                      )}
                     </Typography.Title>
                   </div>
                   <div className="max-w-[100%] mt-[40px]">

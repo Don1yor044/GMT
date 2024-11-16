@@ -140,7 +140,7 @@ const Uz = {
     "Jahon tibbiyoti texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari kompyuter tomografiyasi bo'linmalaridan tortib, ultratovush skanerlari va LOR bo'limlarigacha bo'lgan turli sohalardagi uskunalarni yangilashni talab qiladigan muammoga duch kelishmoqda. Kasalliklarni tashxislash va davolash uchun to‘liq raqamli platformaga o‘tish ham aksariyat shifoxonalar va xususiy klinikalar uchun jiddiy sinovga aylandi.",
   КомпанияОООГлобалМедикалТрейд: `"Global Medical Trade" MChJ kompaniyasi buni o'z burchi deb biladi
  ta'minot biznesida mutaxassislarga barcha zarur yordamni ko'rsatish
- tibbiy asbob-uskunalar. Bizning katalogimiz eng so'nggi yangiliklarni o'z ichiga oladi
+ tibbiy asbob-uskunalar. Bizning katalogimiz eng so'nggi yangiliklarni o'z ichiga oladi
  Rossiya, Evropa, Osiyodagi eng yaxshi ishlab chiqaruvchilarning uskunalari
  va AQSh`,
   ЦифрыИФакты: "Raqamlar va faktlar",
@@ -153,11 +153,11 @@ const Uz = {
   "международных сертификатов качества": "xalqaro sifat sertifikatlari",
   "товаров всегда в наличии": "tovarlar doimo zaxirada",
   НашиПартнёры: "Bizning hamkorlarimiz",
-  "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях":
+  "Нашими партнёрами являются наиболее серьёзные игроки на мировом  рынке профильного оборудования. Это позволяет нам наладить долгосрочное и успешное сотрудничество, добиться лучших  цен для государственных учреждений здравоохранения, медицинских  центров, лабораторий, а также ветеринарных клиник и кабинетов.  Купить нужную вам технику по оптимальным ценам, выбрать подходящую  модель устройства в рамках бюджета в нашей компании окажется  намного проще. Мы поддерживаем скидки и особые предложения  для наших партнёров, предлагаем оформление аппаратов в лизинг  и готовы предоставить системы в рассрочку на выгодных условиях":
     "Bizning hamkorlarimiz ixtisoslashtirilgan uskunalar uchun jahon bozoridagi eng jiddiy o'yinchilardir. Bu bizga uzoq muddatli va muvaffaqiyatli hamkorlikni yo‘lga qo‘yish, davlat sog‘liqni saqlash muassasalari, tibbiyot markazlari, laboratoriyalar, shuningdek, veterinariya klinikalari va idoralari uchun eng yaxshi narxlarga erishish imkonini beradi. Bizning kompaniyamizda sizga kerak bo'lgan uskunani eng yaxshi narxlarda sotib olish va byudjetingiz doirasida mos qurilma modelini tanlash ancha oson bo'ladi. Biz hamkorlarimiz uchun chegirmalar va maxsus takliflarni qo'llab-quvvatlaymiz, qurilmalar lizingini taklif qilamiz va tizimlarni qulay shartlarda bo'lib-bo'lib taqdim etishga tayyormiz.",
   "Опытные сотрудники из": "Ishlab chiqarish korxonalarining",
   "производственных компаний": "tajribali xodimlari",
-  "Наши сотрудники имеют огромный опыт работы в сложных условиях,в том числе в разгар пандемии COVID–19. В этот период мы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны":
+  "Наши сотрудники имеют огромный опыт работы в сложных условиях,в том числе в разгар пандемии COVID–19. В этот период мы осуществили поставки медицинских аппаратов в новейшие клиники Минобороны в различных регионах страны":
     "Xodimlarimiz og‘ir sharoitlarda, jumladan, COVID-19 pandemiyasi davrida ishlashda katta tajribaga ega. Bu davrda mamlakatimizning turli hududlaridagi Mudofaa vazirligining eng yangi klinikalarini tibbiy asbob-uskunalar bilan ta’minladik.",
   Константин: "Konstantin",
   Алексей: "Aleksey",
@@ -177,7 +177,7 @@ const Uz = {
   ПроверитьСтатусДоставки: "Yetkazib berish holatini tekshiring",
   "Правила получения товара в пункте выдачи":
     "Emissiya joyida tovarlarni qabul qilish qoidalari",
-  "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов":
+  "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов":
     "Jahon tibbiyot texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari uskunalarni yangilashni talab qiladigan muammoga duch kelishmoqda.",
   ПодготовитьДокументы: "Hujjatlarni tayyorlang",
   ПроверкаУпаковки: "Paket tekshiruvi",
@@ -276,7 +276,7 @@ const Uz = {
   БланкДляЗаполнения: "To'ldirish uchun shakl",
   ЗаполненнаяФорма: "Tugallangan shakl",
   ОставитьЗаявку: "So'rov qoldiring",
-  "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции":
+  "В «Глобал Медикал Трейд» всегда есть место как для новичков, так и для состоявшихся экспертов. Тем, кто только начинает строить карьеру, мы предлагаем возможность получить ценные знания, а опытным специалистам — расширить компетенции":
     "Global tibbiy savdoda har doim yangi boshlanuvchilar va malakali mutaxassislar uchun joy bor. Karyera qurishni endi boshlayotganlar uchun qimmatli bilimlarga ega bo'lish, tajribali mutaxassislar uchun esa o'z vakolatlarini kengaytirish imkoniyatini taklif etamiz",
   АктуальныеВакансии: "Joriy bo'sh ish o'rinlari",
   АрхивВакансий: "Vakansiya arxivi",
@@ -308,5 +308,23 @@ const Uz = {
   Анестезиология: "Anesteziologiya",
   ФизиотерапевтическоеОборудование: "Fizioterapevtik uskunalar",
   СтоматологическоеОборудование: "Stomatologiya uskunalari",
+  Подробнее: "Batafsil",
+  "Что такое инфузомат (инфузионный насос)":
+    "Infuzion nasos nima (infuzion nasos)",
+  "Обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.  Каждый из нас понимает очевидную вещь.":
+    "Faoliyatimizni ta'minlash ichki zaxira va resurslarni taqsimlashni aniqlash va aniqlashtirishni taqozo etadi. Har birimiz aniq narsani tushunamiz.",
+  "Обеспечение нашей деятельности требует определения и уточнения распределения внутренних резервов и ресурсов.  Каждый из нас понимает очевидную вещь: понимание сути ресурсосберегающих технологий создаёт.":
+    "Faoliyatimizni ta'minlash ichki zaxira va resurslarni taqsimlashni aniqlash va aniqlashtirishni taqozo etadi. Har birimiz aniq narsani tushunamiz: resurslarni tejovchi texnologiyalarning mohiyatini tushunish yaratadi.",
+  "ООО Глобал Медикал Трейд": "Global Medical Trade MChJ",
+  "Юридический адрес": "Yuridik manzil",
+  "Россия, г. Москва, ул. Докукина, 8, стр. 2":
+    "Rossiya, Moskva, st. Dokukina, 8, 2-bino",
+  "Фактический адрес": "Haqiqiy manzil",
+  "Звоните. Звонки по России бесплатны":
+    "Qo'ng'iroq qiling. Rossiya bo'ylab qo'ng'iroqlar bepul",
+  Телефоны: "Telefonlar",
+  Пишите: "Yozing",
+  "Оставьте свои координаты и наш менеджер перезвонит вам через 10 минут":
+    "Kontakt ma'lumotlaringizni qoldiring va menejerimiz sizga 10 daqiqadan so'ng qo'ng'iroq qiladi",
 };
 export default Uz;

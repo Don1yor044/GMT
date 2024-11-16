@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Dropdown, MenuProps, Pagination, Row, Typography } from "antd";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "@emotion/styled";
 import { HomeSubscription } from "@components/subscription";
 import { Footer } from "@components/footer";
@@ -14,6 +14,7 @@ export const Blog = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const paginationRef = useRef(null);
 
   const items = [
     {
@@ -248,6 +249,15 @@ export const Blog = () => {
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
+  useEffect(() => {
+    if (paginationRef.current) {
+      if (currentPage === 1) {
+        window.scrollTo(0, 0);
+      } else {
+        window.scrollTo(0, 300);
+      }
+    }
+  }, [currentPage]);
   return (
     <>
       <Header />
@@ -264,7 +274,7 @@ export const Blog = () => {
         <div className="mt-5 md:mt-10 lg:mt-20">
           <div className="flex justify-between">
             <Typography className="font-semibold text-3xl sm:text-5xl">
-              Блог
+              {t(`Блог`)}
             </Typography>
             <div className=" md:w-[33%] border rounded-xl hidden md:block xl:hidden ">
               <Dropdown
@@ -331,17 +341,17 @@ export const Blog = () => {
                         </div>
                         <div className="py-5 px-5 lg:px-10 relative lg:w-[60%] w-full">
                           <Typography className="font-semibold text-2xl">
-                            {item.title}
+                            {t(item.title)}
                           </Typography>
                           <Typography className="text-[#7A7687]">
                             {item.date}
                           </Typography>
                           <Typography className="text-[#7A7687] text-md sm:text-lg md:text-lg mt-5 lg:min-h-10 sm:min-h-64 min-h-56">
-                            {item.descriptions}
+                            {t(item.descriptions)}
                           </Typography>
 
                           <div className="absolute bottom-7">
-                            <SecondaryButton text="Подробнее" />
+                            <SecondaryButton text={t("Подробнее")} />
                           </div>
                         </div>
                       </div>
@@ -350,7 +360,7 @@ export const Blog = () => {
                 </Row>
               </Col>
             </Row>
-            <StylePagination>
+            <StylePagination ref={paginationRef}>
               <Pagination
                 current={currentPage}
                 total={CardItems.length}
