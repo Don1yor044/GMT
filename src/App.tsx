@@ -3,7 +3,6 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
-import { Home } from "@pages/home";
 import { Contact } from "@pages/contact";
 import { Catalog } from "@pages/Catalog";
 import { Hero } from "@pages/hero";
@@ -15,6 +14,7 @@ import { Blog } from "@pages/blog";
 import { ErrorBoundarayContainer } from "@components/errorBoundary";
 import { Services } from "@pages/services";
 import { NotFound } from "@components/notFound";
+import { Home } from "@pages/home";
 
 const queryClient = new QueryClient();
 function App() {
