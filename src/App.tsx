@@ -3,9 +3,7 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
-import Login from "./pages/login";
 import { Services } from "./pages/services";
-import New from "./pages/new";
 import { NotFound } from "./components/notFound";
 import { ErrorBoundarayContainer } from "./components/errorBoundary";
 import { Home } from "./pages/home";
@@ -28,7 +26,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/catalog" element={<Catalog />} />
-              <Route path="/catalog/new" element={<New />} />
               <Route path="/hero" element={<Hero />} />
               <Route path="/vacancies" element={<Vacancies />} />
               <Route path="/delivery" element={<Delivery />} />
@@ -37,7 +34,6 @@ function App() {
               <Route path="/guarantees" element={<Guarantees />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>
