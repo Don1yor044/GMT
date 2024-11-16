@@ -6,8 +6,7 @@ import Cards from "./components";
 import { useTranslation } from "react-i18next";
 import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer/footer";
-
-const Guarantees = () => {
+export const Guarantees = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -100,4 +99,3 @@ const Guarantees = () => {
   );
 };
 
-export default Guarantees;
