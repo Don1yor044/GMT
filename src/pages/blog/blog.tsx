@@ -1,14 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Header } from "../../components/header";
 import { useTranslation } from "react-i18next";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Dropdown, MenuProps, Pagination, Row, Typography } from "antd";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
-import { SecondaryButton } from "../../components/buttons";
 import styled from "@emotion/styled";
 import { HomeSubscription } from "@components/subscription";
 import { Footer } from "@components/footer";
+import { SecondaryButton } from "@components/buttons";
+import { Header } from "@components/header";
 export const Blog = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();

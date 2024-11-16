@@ -1,9 +1,7 @@
-import { Header } from "../../components/header";
 import { Link } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Button, Col, Form, Input, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
-import { PrimaryButton } from "../../components/buttons";
 import { LuMapPin } from "react-icons/lu";
 import { GoClock } from "react-icons/go";
 import { PiPhoneLight } from "react-icons/pi";
@@ -21,6 +19,8 @@ import {
 import styled from "@emotion/styled";
 import { Footer } from "@components/footer/footer";
 import { IOptionManager } from "yandex-maps";
+import { Header } from "@components/header";
+import { PrimaryButton } from "@components/buttons";
 interface ExtendedOptionManager extends IOptionManager {
   float?: string;
 }

@@ -6,7 +6,7 @@ import { useRef } from "react";
 import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css";
 import { t } from "i18next";
-import { LeftButton, PrimaryButton } from "../buttons";
+import { LeftButton, PrimaryButton } from "@components/buttons";
 
 export const HomeBrand = () => {
   const swiperRef = useRef<SwiperCore | null>(null);

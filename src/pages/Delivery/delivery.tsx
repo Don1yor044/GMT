@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Header } from "../../components/header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Row, Typography } from "antd";
 import {
@@ -11,7 +10,6 @@ import {
   ZoomControl,
 } from "@pbe/react-yandex-maps";
 import styled from "@emotion/styled";
-import { PrimaryButton } from "../../components/buttons";
 import Cards from "./components/cards";
 import Document from "./components/document";
 import DeliveryForm from "./components/form";
@@ -20,6 +18,8 @@ import { HomeSubscription } from "@components/subscription";
 import { Footer } from "@components/footer/footer";
 import { About } from "@components/about";
 import { IOptionManager } from "yandex-maps";
+import { Header } from "@components/header";
+import { PrimaryButton } from "@components/buttons";
 interface TypeSelectorOptions extends IOptionManager {
   float?: string;
 }

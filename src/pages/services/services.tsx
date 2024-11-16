@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import { Header } from "../../components/header";
 import { RiArrowRightSLine, RiDownloadLine } from "react-icons/ri";
 import { Button, Col, Row, Typography } from "antd";
-import { PrimaryButton, SecondaryButton } from "../../components/buttons";
 import { useTranslation } from "react-i18next";
 import { Fact } from "@components/fact";
 import { Sertifikat } from "@components/sertifikat";
 import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer/footer";
+import { Header } from "@components/header";
+import { PrimaryButton, SecondaryButton } from "@components/buttons";
 
 export const Services = () => {
   const { t } = useTranslation();

@@ -1,4 +1,3 @@
-import { Header } from "../../components/header";
 import { Link } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Row, Typography } from "antd";
@@ -6,6 +5,7 @@ import Cards from "./components";
 import { useTranslation } from "react-i18next";
 import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer/footer";
+import { Header } from "@components/header";
 export const Guarantees = () => {
   const { t } = useTranslation();
   return (
@@ -98,4 +98,3 @@ export const Guarantees = () => {
     </>
   );
 };
-

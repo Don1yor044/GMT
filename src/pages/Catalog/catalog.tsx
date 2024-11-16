@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Header } from "../../components/header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Dropdown, MenuProps, Row, Typography } from "antd";
 import { useState } from "react";
@@ -15,6 +14,7 @@ import { About } from "@components/about";
 import { HomeForm } from "@components/form";
 import { HomeSubscription } from "@components/subscription";
 import { Footer } from "@components/footer/footer";
+import { Header } from "@components/header";
 export const Catalog = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);

@@ -1,9 +1,7 @@
 import { Col, Row, Typography } from "antd";
-import { Header } from "../../components/header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { LeftButton } from "../../components/buttons";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
 import { Fact } from "@components/fact";
@@ -13,6 +11,8 @@ import { HomeBrand } from "@components/brend";
 import { Sertifikat } from "@components/sertifikat";
 import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer/footer";
+import { Header } from "@components/header";
+import { LeftButton } from "@components/buttons";
 
 const images = [
   { src: "../../Person.png", name: "Константин", title: "ОсновательКомпании" },

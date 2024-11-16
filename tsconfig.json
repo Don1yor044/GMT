@@ -20,8 +20,8 @@
     "resolveJsonModule": true,
     "baseUrl": "./src",
     "paths": {
-      "@pages/*": ["pages/*"],
       "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
       "@stores/*": ["stores/*"],
       "@i18n/*": ["i18n/*"]
     }

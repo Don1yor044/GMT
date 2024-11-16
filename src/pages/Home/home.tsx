@@ -1,8 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { observer } from "mobx-react-lite";
-import { Header } from "../../components/header";
 import { Col, FloatButton, Row, Typography } from "antd";
-import { PrimaryButton, SecondaryButton } from "../../components/buttons";
 import { FcUpload } from "react-icons/fc";
 import { useTranslation } from "react-i18next";
 import {
@@ -10,12 +8,15 @@ import {
   CabinetSwiper,
   CatalogTovar,
   CategoryHome,
+  Header,
   HomeBrand,
   HomeCards,
   HomeClient,
   HomeCompany,
   HomeForm,
   HomeSubscription,
+  PrimaryButton,
+  SecondaryButton,
 } from "../../components";
 import { Footer } from "@components/footer/footer";
 

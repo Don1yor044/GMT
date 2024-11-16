@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import { Header } from "../../components/header";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Collapse, CollapseProps, Row, Typography } from "antd";
 import { IoIosCloseCircle } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
 import styled from "@emotion/styled";
-import { PrimaryButton } from "../../components/buttons";
 import {
   FullscreenControl,
   GeolocationControl,
@@ -19,6 +17,8 @@ import { HomeSubscription } from "@components/subscription";
 import { Footer } from "@components/footer/footer";
 import { IOptionManager } from "yandex-maps";
 import { ReactNode } from "react";
+import { Header } from "@components/header";
+import { PrimaryButton } from "@components/buttons";
 
 interface ItemType {
   key: string;
