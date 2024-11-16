@@ -3,10 +3,7 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
-import { Services } from "./pages/services";
-import { NotFound } from "./components/notFound";
-import { ErrorBoundarayContainer } from "./components/errorBoundary";
-import { Home } from "./pages/home";
+import { Home } from "@pages/home";
 import { Contact } from "@pages/contact";
 import { Catalog } from "@pages/Catalog";
 import { Hero } from "@pages/hero";
@@ -15,6 +12,9 @@ import { Delivery } from "@pages/Delivery";
 import { Payment } from "@pages/payment";
 import Guarantees from "@pages/Guarantees/guarantees";
 import { Blog } from "@pages/blog";
+import { ErrorBoundarayContainer } from "@components/errorBoundary";
+import { Services } from "@pages/services";
+import { NotFound } from "@components/notFound";
 
 const queryClient = new QueryClient();
 function App() {
