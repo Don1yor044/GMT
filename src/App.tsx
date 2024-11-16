@@ -4,19 +4,19 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
 import Login from "./pages/login";
-import Catalog from "./pages/Catalog";
-import Hero from "./pages/hero";
-import Delivery from "./pages/Delivery";
 import { Services } from "./pages/services";
-import Payment from "./pages/payment";
-import Guarantees from "./pages/Guarantees";
 import New from "./pages/new";
-import Vacancies from "./pages/vacancies";
 import { NotFound } from "./components/notFound";
 import { ErrorBoundarayContainer } from "./components/errorBoundary";
-import Blog from "./pages/blog";
-import Contact from "./pages/contact";
-import { Home } from "./pages";
+import { Home } from "./pages/home";
+import { Contact } from "@pages/contact";
+import { Catalog } from "@pages/Catalog";
+import { Hero } from "@pages/hero";
+import { Vacancies } from "@pages/vacancies";
+import { Delivery } from "@pages/Delivery";
+import { Payment } from "@pages/payment";
+import Guarantees from "@pages/Guarantees/guarantees";
+import { Blog } from "@pages/blog";
 
 const queryClient = new QueryClient();
 function App() {

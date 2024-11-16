@@ -1,7 +1,30 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2022",
+    "lib": ["DOM", "ESNext"],
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@stores/*": ["stores/*"],
+      "@i18n/*": ["i18n/*"]
+    }
+  },
+  "include": ["vite.config.ts", "src", "types"]
 }

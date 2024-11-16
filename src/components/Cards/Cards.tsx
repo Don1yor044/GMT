@@ -1,7 +1,6 @@
 import { Col, Row, Typography } from "antd";
 import { t } from "i18next";
-
-const HomeCards = () => {
+export const HomeCards = () => {
   const items = [
     {
       id: 1,
@@ -49,5 +48,3 @@ const HomeCards = () => {
     </div>
   );
 };
-
-export default HomeCards;

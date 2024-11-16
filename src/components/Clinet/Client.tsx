@@ -1,7 +1,7 @@
 import { Col, Row, Typography } from "antd";
 import { t } from "i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
-const HomeClient = () => {
+export const HomeClient = () => {
   const items = [
     {
       id: 1,
@@ -104,4 +104,3 @@ const HomeClient = () => {
   );
 };
 
-export default HomeClient;

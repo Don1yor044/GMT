@@ -4,6 +4,7 @@ import { Typography } from "antd";
 import { LeftButton, PrimaryButton, SecondaryButton } from "../buttons/index";
 
 // Swiper CSS import
+import { Swiper as SwiperClass } from "swiper";
 import "swiper/swiper-bundle.css"; // Barcha CSS
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
@@ -14,12 +15,11 @@ const items = [
   { id: 3, src: "../../Photot.png", title: "ОперационныйБлок" },
   { id: 4, src: "../../Photo (3).png", title: "НоваяЛаборатория" },
 ];
-
-const CabinetSwiper = () => {
+export const CabinetSwiper = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [spaceBetween, setSpaceBetween] = useState(20);
   const { t } = useTranslation();
-  const swiperRef = useRef<any>(null); // Swiper uchun referens
+  const swiperRef = useRef<SwiperClass | null>(null); // Swiper uchun referens
 
   const handleNext = () => {
     if (swiperRef.current) {
@@ -98,5 +98,3 @@ const CabinetSwiper = () => {
     </div>
   );
 };
-
-export default CabinetSwiper;

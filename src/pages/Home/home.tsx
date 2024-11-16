@@ -4,18 +4,20 @@ import { Header } from "../../components/header";
 import { Col, FloatButton, Row, Typography } from "antd";
 import { PrimaryButton, SecondaryButton } from "../../components/buttons";
 import { FcUpload } from "react-icons/fc";
-import About from "../../components/about";
-import HomeForm from "../../components/form/Form";
-import HomeSubscription from "../../components/subscription";
-import Footer from "../../components/footer";
 import { useTranslation } from "react-i18next";
-import HomeBrand from "../../components/brend/Brend";
-import HomeClient from "../../components/clinet/Client";
-import CabinetSwiper from "../../components/cabinetSwiper/CabinetSwiper";
-import HomeCards from "../../components/cards/Cards";
-import CatalogTovar from "../../components/catalogTovar/CatalogTover";
-import HomeCompany from "../../components/company/Company";
-import CategoryHome from "../../components/category/Category";
+import {
+  About,
+  CabinetSwiper,
+  CatalogTovar,
+  CategoryHome,
+  HomeBrand,
+  HomeCards,
+  HomeClient,
+  HomeCompany,
+  HomeForm,
+  HomeSubscription,
+} from "../../components";
+import { Footer } from "@components/footer/footer";
 
 export const Home = observer(() => {
   const { t } = useTranslation();

@@ -8,16 +8,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
 import SwiperCore from "swiper";
-import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { t } from "i18next";
 
-SwiperCore.use([Navigation]);
 interface StyledButtonProps {
   status: string;
 }
-
-const CatalogTovar = () => {
+export const CatalogTovar = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const handleNext = () => {
@@ -178,8 +175,6 @@ const CatalogTovar = () => {
     </div>
   );
 };
-
-export default CatalogTovar;
 
 const StyledButton = styled.button<StyledButtonProps>`
   color: ${({ status }) =>

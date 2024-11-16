@@ -1,8 +1,7 @@
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import { PrimaryButton } from "../buttons/index";
-
-const CategoryHome = () => {
+export const CategoryHome = () => {
   const { t } = useTranslation();
   return (
     <div className="mt-96 xs:mt-[450px] md:mt-24 lg:mt-24 mp:mt-[450px] ">
@@ -157,5 +156,3 @@ const CategoryHome = () => {
     </div>
   );
 };
-
-export default CategoryHome;

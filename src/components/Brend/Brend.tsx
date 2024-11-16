@@ -4,14 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
 import SwiperCore from "swiper";
-import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { t } from "i18next";
 import { LeftButton, PrimaryButton } from "../buttons";
 
-SwiperCore.use([Navigation]);
-
-const HomeBrand = () => {
+export const HomeBrand = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const handleNext = () => {
@@ -120,5 +117,3 @@ const HomeBrand = () => {
     </div>
   );
 };
-
-export default HomeBrand;

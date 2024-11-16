@@ -9,8 +9,11 @@ import {
   YMaps,
 } from "@pbe/react-yandex-maps";
 import styled from "@emotion/styled";
-
-const HomeForm = () => {
+import { IOptionManager } from "yandex-maps";
+interface ExtendedOptionManager extends IOptionManager {
+  float?: string;
+}
+export const HomeForm = () => {
   return (
     <div className="px-3 lg:px-14 md:px-5 xs:px-4 sm:px-3 mt-24">
       <Row gutter={[20, 20]}>
@@ -23,12 +26,6 @@ const HomeForm = () => {
                   zoom: 15,
                   controls: [],
                 }}
-                options={
-                  {
-                    scrollZoom: false,
-                    draggable: false,
-                  } as any
-                }
                 instanceRef={(instance) => {
                   if (instance) {
                     instance.behaviors.disable("scrollZoom"); // Skroll orqali zoomni o'chirish
@@ -47,7 +44,9 @@ const HomeForm = () => {
                     iconImageSize: [40, 40], // Ikona o'lchami
                   }}
                 />
-                <TypeSelector options={{ float: "left" } as any} />
+                <TypeSelector
+                  options={{ float: "left" } as ExtendedOptionManager}
+                />
               </Map>
             </YMaps>
           </Stylediv>
@@ -173,7 +172,6 @@ const HomeForm = () => {
   );
 };
 
-export default HomeForm;
 const Stylediv = styled.div`
   .ymaps-2-1-79-gotoymaps {
     display: none;
