@@ -315,5 +315,16 @@ const En = {
   Пишите: "Write",
   "Оставьте свои координаты и наш менеджер перезвонит вам через 10 минут":
     "Leave your contact details and our manager will call you back in 10 minutes",
+  Страны: "Countries",
+  ПоискПоСтране: "Search By Country",
+  Австралия: "Australia",
+  Австрия: "Austria",
+  Беларусь: "Belarus",
+  Бельгия: "Belgium",
+  Великобритания: "United Kingdom",
+  Германия: "Germany",
+  Израиль: "Israel",
+  Испания: "Spain",
+  Фильтр: "Filter",
 };
 export default En;

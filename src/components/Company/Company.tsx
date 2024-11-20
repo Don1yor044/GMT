@@ -113,7 +113,7 @@ export const HomeCompany = () => {
                 </div>
               </SwiperSlide>
             ))}
-            <div className="flex justify-between mt-10 pr-10">
+            <div className="flex justify-between mt-10 pr-10 ">
               <div className="hidden xl:flex gap-3">
                 <div onClick={handlePrevious}>
                   <LeftButton icon={GoArrowLeft} size={20} />

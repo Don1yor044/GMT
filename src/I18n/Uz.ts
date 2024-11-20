@@ -326,5 +326,16 @@ const Uz = {
   Пишите: "Yozing",
   "Оставьте свои координаты и наш менеджер перезвонит вам через 10 минут":
     "Kontakt ma'lumotlaringizni qoldiring va menejerimiz sizga 10 daqiqadan so'ng qo'ng'iroq qiladi",
+  Страны: "Mamlakatlar",
+  ПоискПоСтране: "Mamlakat bo'yicha qidirish",
+  Австралия: "Avstraliya",
+  Австрия: "Avstriya",
+  Беларусь: "Belarus",
+  Бельгия: "Belgiya",
+  Великобритания: "Buyuk Britaniya",
+  Германия: "Germaniya",
+  Израиль: "Isroil",
+  Испания: "Ispaniya",
+  Фильтр: "Filtr",
 };
 export default Uz;

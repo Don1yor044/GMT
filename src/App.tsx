@@ -15,6 +15,8 @@ import { Vacancies } from "@pages/vacancies";
 import { Delivery } from "@pages/Delivery";
 import { Payment } from "@pages/payment";
 import { Blog } from "@pages/blog";
+import { Manufacturers } from "@pages/manufacturers";
+import { Certificates } from "@pages/certificates";
 
 const queryClient = new QueryClient();
 function App() {
@@ -34,6 +36,8 @@ function App() {
               <Route path="/guarantees" element={<Guarantees />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/manufacturers" element={<Manufacturers />} />
+              <Route path="/certificates" element={<Certificates />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>

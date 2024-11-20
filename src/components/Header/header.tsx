@@ -60,36 +60,36 @@ export const Header = () => {
     } else {
       i18n.changeLanguage("Ru");
     }
-  }, []);
+  }, [language, i18n]);
 
   const items: MenuProps["items"] = [
     {
-      label: <a href="/hero">О компании</a>,
+      label: <Link to="/hero">О компании</Link>,
       key: "0",
     },
     {
-      label: <a href="/vacancies">Вакансии</a>,
+      label: <Link to="/vacancies">Вакансии</Link>,
       key: "1",
     },
     {
-      label: <a href="/">Отзывы</a>,
+      label: <Link to="/">Отзывы</Link>,
       key: "2",
     },
     {
-      label: <a href="/">Сертификаты</a>,
+      label: <Link to="/certificates">Сертификаты</Link>,
       key: "3",
     },
     {
-      label: <a href="/">Партнерские программы</a>,
+      label: <Link to="/">Партнерские программы</Link>,
       key: "4",
     },
 
     {
-      label: <a href="/">Оптовые продажи</a>,
+      label: <Link to="/">Оптовые продажи</Link>,
       key: "5",
     },
     {
-      label: <a href="/">Лизинг</a>,
+      label: <Link to="/">Лизинг</Link>,
       key: "6",
     },
   ];
@@ -176,11 +176,11 @@ export const Header = () => {
   );
   const katalog: MenuProps["items"] = [
     {
-      label: <a href="/catalog">Реанимация</a>,
+      label: <Link to={"/catalog"}>Реанимация</Link>,
       key: "0",
     },
     {
-      label: <a href="/">Хирургия</a>,
+      label: <Link to={"/"}>Хирургия</Link>,
       key: "1",
     },
     {
@@ -245,33 +245,6 @@ export const Header = () => {
     {
       label: <a href="/">Кабинеты под ключ</a>,
       key: "16",
-    },
-  ];
-  const Manufacturers: MenuProps["items"] = [
-    {
-      label: <a href="/">A. KRÜSS Optronic</a>,
-      key: "0",
-    },
-    {
-      label: <a href="/">AnD</a>,
-      key: "1",
-    },
-    {
-      label: <a href="/">AWARENESS TECHNOLOGY</a>,
-      key: "2",
-    },
-    {
-      label: <a href="/">BEGER</a>,
-      key: "3",
-    },
-
-    {
-      label: <a href="/">Berrcom</a>,
-      key: "4",
-    },
-    {
-      label: <a href="/">BESTMAN</a>,
-      key: "5",
     },
   ];
   const ForBuyers: MenuProps["items"] = [
@@ -508,9 +481,9 @@ export const Header = () => {
         <div className="flex items-center font-semibold xl:gap-4 lg:gap-2 md:gap-3 gap-2 text-xs md:text-sm lg:text-xs xl:text-base ">
           <Button
             type="text"
-            className="flex items-center justify-start px-0 text-black hover:!text-[#07745E] text-base font-semibold"
+            className=" px-0 text-black hover:!text-[#07745E] text-base font-semibold"
+            onClick={(e) => e.preventDefault()}
           >
-            <CgMenuLeftAlt className="md:text-lg xl:text-xl" />
             <Dropdown
               overlay={
                 <StyledMenu
@@ -522,24 +495,18 @@ export const Header = () => {
               trigger={["click"]}
               className="cursor-pointer "
             >
-              <a onClick={(e) => e.preventDefault()}>
+              <div className="flex gap-1 items-center">
+                <CgMenuLeftAlt className="md:text-lg xl:text-xl" />
                 <Typography className="xl:text-base text-sm hover:!text-[#07745E]">
                   {t(`Каталог`)}
                 </Typography>
-              </a>
+              </div>
             </Dropdown>
           </Button>
-          <Dropdown
-            overlay={<Menu items={Manufacturers} />}
-            trigger={["click"]}
-            className="cursor-pointer "
-          >
-            <a onClick={(e) => e.preventDefault()}>
-              <Space className="hover:!text-[#07745E]">
-                {t(`Производители`)}
-              </Space>
-            </a>
-          </Dropdown>
+
+          <Link to={"/manufacturers"} className="hover:!text-[#07745E]">
+            {t("Производители")}
+          </Link>
           <Link to={"/"} className="hover:!text-[#07745E]">
             {t("КабинетыКлюч")}
           </Link>
