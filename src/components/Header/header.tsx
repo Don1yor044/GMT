@@ -393,7 +393,7 @@ export const Header = () => {
           <div className="relative flex flex-col items-center">
             <StyledButton
               className="flex items-center gap-1 px-0 py-2 rounded-lg hover:bg-gray-200 transition-colors"
-              onClick={() => setShowDropdown(!showDropdown)}
+              onClick={() => setShowDropdown((e: boolean) => !e)}
             >
               <BsGlobe size={20} />
               <span className="text">{language}</span>
@@ -478,7 +478,7 @@ export const Header = () => {
       </div>
       <hr />
       <div className="hidden px-5 lg:px-10 xl:px-14 py-4 md:flex justify-between">
-        <div className="flex items-center font-semibold xl:gap-4 lg:gap-2 md:gap-3 gap-2 text-xs md:text-sm lg:text-xs xl:text-base ">
+        <div className="flex items-center font-semibold xl:gap-6 lg:gap-2 md:gap-3 gap-2 text-xs md:text-sm lg:text-xs xl:text-base ">
           <Button
             type="text"
             className=" px-0 text-black hover:!text-[#07745E] text-base font-semibold"
@@ -503,7 +503,6 @@ export const Header = () => {
               </div>
             </Dropdown>
           </Button>
-
           <Link to={"/manufacturers"} className="hover:!text-[#07745E]">
             {t("Производители")}
           </Link>
