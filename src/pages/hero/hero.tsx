@@ -1,6 +1,4 @@
 import { Col, Row, Typography } from "antd";
-import { RiArrowRightSLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
@@ -13,6 +11,7 @@ import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer/footer";
 import { Header } from "@components/header";
 import { LeftButton } from "@components/buttons";
+import { BreadcrumbTwo } from "@components/breadCrumb";
 
 const images = [
   { src: "../../Person.png", name: "Константин", title: "ОсновательКомпании" },
@@ -45,15 +44,7 @@ export const Hero = () => {
     <>
       <Header />
       <div className="px-5 py-2 lg:px-14">
-        <div className="flex gap-3 items-center">
-          <Link to={"/"} className="text-[#7A7687]">
-            {t(`Главная`)}
-          </Link>
-          <div className="text-[#7A7687]">
-            <RiArrowRightSLine size={20} />{" "}
-          </div>
-          <Typography className="font-semibold">{t(`Окомпании`)}</Typography>
-        </div>
+        <BreadcrumbTwo currentPage="Окомпании" />
         <div className="pt-10">
           <img src="../../Hero.png" alt="" className="h-full w-full " />
           <div className="mt-10">

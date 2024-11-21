@@ -326,5 +326,52 @@ const En = {
   Израиль: "Israel",
   Испания: "Spain",
   Фильтр: "Filter",
+  МедицинскиеИнструменты: "Medical instruments",
+  "Материалы для гинекологии и урологии":
+    "Materials for gynecology and urology",
+  "Материалы для инъекционных процедур": "Materials for injection procedures",
+  "Перевязочные материалы": "Perevyazochnye materialy",
+  "Инструменты медицинские хирургические РУ № РЗН 2015/3121 от 12 октября 2015 г.":
+    "Medical surgical instruments, RU No. RZN 2015/3121 dated October 12, 2015",
+  "Фильтры медицинские РУ № РЗН 2019/8405 от 5 июня 2019 г.":
+    "Medical filters, RU No. RZN 2019/8405 dated June 5, 2019",
+  "Воздуховоды полимерные РУ № ФСР 2011/10719 от 15 августа 2016 г.":
+    "Polymer airways, RU No. FSR 2011/10719 dated August 15, 2016",
+  "Набор оториноларингологический РУ № ФСЗ 2010/08840 от 23 ноября 2018 г.":
+    "Otorhinolaryngological set, RU No. FSZ 2010/08840 dated November 23, 2018",
+  "Инструменты одноразовые РУ № ФСЗ 2009/05638 от 23 ноября 2018 года":
+    "Disposable instruments, RU No. FSZ 2009/05638 dated November 23, 2018",
+  "Пипетка офтальмологическая РУ № ФСР 2009/04211 от 23 ноября 2015 г.":
+    "Ophthalmological pipette, RU No. FSR 2009/04211 dated November 23, 2015",
+  "Термометр инфракрасный РУ № ФСЗ 2012/13255 от 22 ноября 2012 г.":
+    "Infrared thermometer, RU No. FSZ 2012/13255 dated November 22, 2012",
+  "Зажим пупочный РУ № ФСР 2011/10731 от 6 мая 2011 г.":
+    "Umbilical clamp, RU No. FSR 2011/10731 dated May 6, 2011	",
+  "Гигрометры ВИТ Свидетельство об утверждении":
+    "Hygrometers VIT Certificate of Approval",
+  "Термометры медицинские РУ № РЗН 2015/2853 от 6 июля 2017 г.":
+    "Medical thermometers, RU No. RZN 2015/2853 dated July 6, 2017",
+  "Станов для бритья РУ № ФСЗ 2009/04329 от 20 июля 2009 г.":
+    "Shaving stands, RU No. FSZ 2009/04329 dated July 20, 2009",
+  "Пинцеты медицинские РУ № ФСЗ 2010/06996 от 23 ноября 2018 г.":
+    "Medical tweezers, RU No. FSZ 2010/06996 dated November 23, 2018",
+  "Емкость-контейнеры для сбора РУ № РЗН 2014/2254 от 18 марта 2020 г.":
+    "Collection containers, RU No. RZN 2014/2254 dated March 18, 2020",
+  "Емкости-контейнеры РУ № ФСР 2012/13095 ч.1":
+    "Containers, RU No. FSR 2012/13095 Part 1",
+  "Электроды медицинские РУ № ФСЗ 2012/12612":
+    "Medical electrodes, RU No. FSZ 2012/12612",
+  "Инструменты хирургические РУ № ФСЗ 2012/12251 от 30 мая 2012 г.":
+    "Surgical instruments, RU No. FSZ 2012/12251 dated May 30, 2012",
+  "Изделие медицинское для инфуз.-трансфуз. РУ № ФСЗ 2011/11287 от 27 декабря 2011 г.":
+    "Medical device for infusion-transfusion, RU No. FSZ 2011/11287 dated December 27, 2011",
+  "Термометр медицинский РУ № ФСЗ 2011/10572":
+    "Medical thermometer, RU No. FSZ 2011/10572",
+  "Мундштуки картонные и адаптеры РУ № ФСР 2012/13317 от 27 августа 2019 г.":
+    "Cardboard mouthpieces and adapters, RU No. FSR 2012/13317 dated August 27, 2019",
+  "Мундштуки картонные одноразовые РУ № ФСР 2012/13607 от 13 февраля 2018 г.":
+    "Disposable cardboard mouthpieces, RU No. FSR 2012/13607 dated February 13, 2018",
+  "Анализатор паров этанола Alcotest РУ № РЗН 2016/5237 от 13 января 2017 г.":
+    "Ethanol vapor analyzer Alcotest, RU No. RZN 2016/5237 dated January 13, 2017",
 };
 export default En;

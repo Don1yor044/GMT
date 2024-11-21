@@ -1,26 +1,17 @@
-import { Link } from "react-router-dom";
-import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Row, Typography } from "antd";
 import Cards from "./components";
 import { useTranslation } from "react-i18next";
 import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer/footer";
 import { Header } from "@components/header";
+import { BreadcrumbTwo } from "@components/breadCrumb";
 export const Guarantees = () => {
   const { t } = useTranslation();
   return (
     <>
       <Header />
       <div className="px-5 py-2 lg:px-14">
-        <div className="flex gap-3 items-center py-2">
-          <Link to={"/"} className="text-[#7A7687]">
-            {t(`Главная`)}
-          </Link>
-          <div className="text-[#7A7687]">
-            <RiArrowRightSLine size={20} />{" "}
-          </div>
-          <Typography className="font-semibold">{t(`Гарантии`)}</Typography>
-        </div>
+        <BreadcrumbTwo currentPage="Гарантии" />
         <div className="mt-5 md:mt-10 lg:mt-20">
           <Typography className="text-5xl mb-10">{t(`Гарантии`)}</Typography>
           <div className="xl:w-[53%] lg:w-[65%] md:w-[90%] w-[100%]">

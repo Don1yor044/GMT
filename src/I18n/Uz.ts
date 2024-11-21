@@ -337,5 +337,53 @@ const Uz = {
   Израиль: "Isroil",
   Испания: "Ispaniya",
   Фильтр: "Filtr",
+  МедицинскиеИнструменты: "Tibbiy asboblar",
+  "Материалы для гинекологии и урологии":
+    "Ginekologiya va urologiya uchun materiallar",
+  "Материалы для инъекционных процедур":
+    "In'ektsiya protseduralari uchun materiallar",
+  "Перевязочные материалы": "Kiyinish materiallari",
+  "Инструменты медицинские хирургические РУ № РЗН 2015/3121 от 12 октября 2015 г.":
+    "Tibbiy jarrohlik asboblari, RU № RZN 2015/3121, 2015-yil 12-oktabr",
+  "Фильтры медицинские РУ № РЗН 2019/8405 от 5 июня 2019 г.":
+    "Tibbiy filtrlari, RU № RZN 2019/8405, 2019-yil 5-iyun",
+  "Воздуховоды полимерные РУ № ФСР 2011/10719 от 15 августа 2016 г.":
+    "Polimer nafas yo'llari, RU № FSR 2011/10719, 2016-yil 15-avgust",
+  "Набор оториноларингологический РУ № ФСЗ 2010/08840 от 23 ноября 2018 г.":
+    "Otorinolaringologik to‘plam, RU № FSZ 2010/08840, 2018-yil 23-noyabr",
+  "Инструменты одноразовые РУ № ФСЗ 2009/05638 от 23 ноября 2018 года":
+    "Bir martalik asboblar, RU № FSZ 2009/05638, 2018-yil 23-noyabr",
+  "Пипетка офтальмологическая РУ № ФСР 2009/04211 от 23 ноября 2015 г.":
+    "Oftalmologik pipetka, RU № FSR 2009/04211, 2015-yil 23-noyabr",
+  "Термометр инфракрасный РУ № ФСЗ 2012/13255 от 22 ноября 2012 г.":
+    "Infraqizil termometr, RU № FSZ 2012/13255, 2012-yil 22-noyabr",
+  "Зажим пупочный РУ № ФСР 2011/10731 от 6 мая 2011 г.":
+    "Kindik qisqichi, RU № FSR 2011/10731, 2011-yil 6-may",
+  "Гигрометры ВИТ Свидетельство об утверждении":
+    "VIT gigrometrlari, tasdiqlash sertifikati",
+  "Термометры медицинские РУ № РЗН 2015/2853 от 6 июля 2017 г.":
+    "Tibbiy termometrlar, RU № RZN 2015/2853, 2017-yil 6-iyul",
+  "Станов для бритья РУ № ФСЗ 2009/04329 от 20 июля 2009 г.":
+    "Soqol olish uchun stanoklar, RU № FSZ 2009/04329, 2009-yil 20-iyul",
+  "Пинцеты медицинские РУ № ФСЗ 2010/06996 от 23 ноября 2018 г.":
+    "Tibbiy pinsetlar, RU № FSZ 2010/06996, 2018-yil 23-noyabr",
+  "Емкость-контейнеры для сбора РУ № РЗН 2014/2254 от 18 марта 2020 г.":
+    "Qayta to'plash idishlari, RU № RZN 2014/2254, 2020-yil 18-mart",
+  "Емкости-контейнеры РУ № ФСР 2012/13095 ч.1":
+    "Idish-konteynerlar, RU № FSR 2012/13095, 1-qism",
+  "Электроды медицинские РУ № ФСЗ 2012/12612":
+    "Tibbiy elektrodlari, RU № FSZ 2012/12612",
+  "Инструменты хирургические РУ № ФСЗ 2012/12251 от 30 мая 2012 г.":
+    "Jarrohlik asboblari, RU № FSZ 2012/12251, 2012-yil 30-may",
+  "Изделие медицинское для инфуз.-трансфуз. РУ № ФСЗ 2011/11287 от 27 декабря 2011 г.":
+    "Infuziya-transfuziya uchun tibbiy moslama, RU № FSZ 2011/11287, 2011-yil 27-dekabr",
+  "Термометр медицинский РУ № ФСЗ 2011/10572":
+    "Tibbiy termometr, RU № FSZ 2011/10572",
+  "Мундштуки картонные и адаптеры РУ № ФСР 2012/13317 от 27 августа 2019 г.":
+    "Karton bo‘shliq va adapterlar, RU № FSR 2012/13317, 2019-yil 27-avgust",
+  "Мундштуки картонные одноразовые РУ № ФСР 2012/13607 от 13 февраля 2018 г.":
+    "Bir martalik karton bo‘shliqlar, RU № FSR 2012/13607, 2018-yil 13-fevral",
+  "Анализатор паров этанола Alcotest РУ № РЗН 2016/5237 от 13 января 2017 г.":
+    "Etanol bug‘larini aniqlovchi Alcotest, RU № RZN 2016/5237, 2017-yil 13-yanvar",
 };
 export default Uz;

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { RiArrowRightSLine, RiDownloadLine } from "react-icons/ri";
+import { RiDownloadLine } from "react-icons/ri";
 import { Button, Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import { Fact } from "@components/fact";
@@ -8,6 +7,7 @@ import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer/footer";
 import { Header } from "@components/header";
 import { PrimaryButton, SecondaryButton } from "@components/buttons";
+import { BreadcrumbTwo } from "@components/breadCrumb";
 
 export const Services = () => {
   const { t } = useTranslation();
@@ -68,15 +68,7 @@ export const Services = () => {
     <>
       <Header />
       <div className="px-5 py-2 lg:px-14">
-        <div className="flex gap-3 items-center py-2">
-          <Link to={"/"} className="text-[#7A7687]">
-            {t(`Главная`)}
-          </Link>
-          <div className="text-[#7A7687]">
-            <RiArrowRightSLine size={20} />{" "}
-          </div>
-          <Typography className="font-semibold">{t(`Услуги`)}</Typography>
-        </div>
+        <BreadcrumbTwo currentPage="Услуги" />
         <div className="mt-5 md:mt-10 lg:mt-20">
           <Typography className="text-5xl mb-10">{t(`Услуги`)}</Typography>
           <Row gutter={[20, 20]}>

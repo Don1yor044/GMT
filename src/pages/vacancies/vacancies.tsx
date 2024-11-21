@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Collapse, CollapseProps, Row, Typography } from "antd";
 import { IoIosCloseCircle } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
@@ -19,6 +17,7 @@ import { IOptionManager } from "yandex-maps";
 import { ReactNode } from "react";
 import { Header } from "@components/header";
 import { PrimaryButton } from "@components/buttons";
+import { BreadcrumbTwo } from "@components/breadCrumb";
 
 interface ItemType {
   key: string;
@@ -134,15 +133,7 @@ export const Vacancies = () => {
     <>
       <Header />
       <div className="px-5 py-2 lg:px-14">
-        <div className="flex gap-3 items-center py-2">
-          <Link to={"/"} className="text-[#7A7687]">
-            {t(`Главная`)}
-          </Link>
-          <div className="text-[#7A7687]">
-            <RiArrowRightSLine size={20} />{" "}
-          </div>
-          <Typography className="font-semibold">{t(`Вакансии`)}</Typography>
-        </div>
+        <BreadcrumbTwo currentPage="Вакансии" />
         <div className="mt-20">
           <Row gutter={[20, 20]}>
             <Col span={24} lg={12}>

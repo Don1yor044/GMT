@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { Col, Dropdown, MenuProps, Pagination, Row, Typography } from "antd";
@@ -9,6 +9,7 @@ import { HomeSubscription } from "@components/subscription";
 import { Footer } from "@components/footer";
 import { SecondaryButton } from "@components/buttons";
 import { Header } from "@components/header";
+import { BreadcrumbTwo } from "@components/breadCrumb";
 export const Blog = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -262,15 +263,7 @@ export const Blog = () => {
     <>
       <Header />
       <div className="px-4 py-2 lg:px-14">
-        <div className="flex gap-3 items-center py-2">
-          <Link to={"/"} className="text-[#7A7687]">
-            {t(`Главная`)}
-          </Link>
-          <div className="text-[#7A7687]">
-            <RiArrowRightSLine size={20} />{" "}
-          </div>
-          <Typography className="font-semibold">{t(`Блог`)}</Typography>
-        </div>
+        <BreadcrumbTwo currentPage="Блог" />
         <div className="mt-5 md:mt-10 lg:mt-20">
           <div className="flex justify-between">
             <Typography className="font-semibold text-3xl sm:text-5xl">
