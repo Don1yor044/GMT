@@ -1,4 +1,4 @@
-import { BreadcrumbTree } from "@components/breadCrumb";
+import { BreadcrumbThree } from "@components/breadCrumb";
 import { CatalogTovar } from "@components/catalogTovar";
 import { Footer } from "@components/footer";
 import { HomeForm } from "@components/form";
@@ -87,7 +87,7 @@ export const Certificates = () => {
     <>
       <Header />
       <div className="px-5 py-2 lg:px-14">
-        <BreadcrumbTree currentPage="Сертификаты" twoPages="Окомпании" />
+        <BreadcrumbThree currentPage="Сертификаты" twoPages="Окомпании" />
         <div className="mt-24">
           <Row gutter={[20, 20]}>
             <Col span={24} lg={12}>

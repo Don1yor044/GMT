@@ -17,6 +17,7 @@ import { Payment } from "@pages/payment";
 import { Blog } from "@pages/blog";
 import { Manufacturers } from "@pages/manufacturers";
 import { Certificates } from "@pages/certificates";
+import { Product } from "@pages/product";
 
 const queryClient = new QueryClient();
 function App() {
@@ -38,6 +39,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/manufacturers" element={<Manufacturers />} />
               <Route path="/certificates" element={<Certificates />} />
+              <Route path="/product" element={<Product />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>
