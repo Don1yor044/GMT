@@ -5,19 +5,19 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
 import { ErrorBoundarayContainer } from "@components/errorBoundary";
 import { Services } from "@pages/services";
-import { Home } from "@pages/home";
 import { NotFound } from "@components/notFound";
 import { Contact } from "@pages/contact";
-import { Guarantees } from "@pages/Guarantees/guarantees";
-import { Catalog } from "@pages/Catalog";
+import { Guarantees } from "@pages/guarantees/guarantees";
+import { Catalog } from "@pages/catalog";
 import { Hero } from "@pages/hero";
 import { Vacancies } from "@pages/vacancies";
-import { Delivery } from "@pages/Delivery";
+import { Delivery } from "@pages/delivery";
 import { Payment } from "@pages/payment";
 import { Blog } from "@pages/blog";
 import { Manufacturers } from "@pages/manufacturers";
 import { Certificates } from "@pages/certificates";
 import { Product } from "@pages/product";
+import { Home } from "@pages/home";
 
 const queryClient = new QueryClient();
 function App() {

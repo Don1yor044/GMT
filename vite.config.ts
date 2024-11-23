@@ -1,12 +1,7 @@
+// vite.config.ts
 import { defineConfig } from "vite";
-import path from "path";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      "@components": path.resolve(__dirname, "src/components"),
-      "@pages": path.resolve(__dirname, "src/pages"),
-    },
-  },
+  plugins: [tsconfigPaths()],
 });

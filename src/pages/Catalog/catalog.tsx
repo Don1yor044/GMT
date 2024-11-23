@@ -4,7 +4,6 @@ import { Col, Dropdown, MenuProps, Row, Typography } from "antd";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useTranslation } from "react-i18next";
-import { GridCards } from "./components";
 import { CabinetSwiper } from "@components/cabinetSwiper";
 import { HomeCards } from "@components/cards";
 import { CatalogTovar } from "@components/catalogTovar";
@@ -16,6 +15,7 @@ import { HomeSubscription } from "@components/subscription";
 import { Footer } from "@components/footer/footer";
 import { Header } from "@components/header";
 import { BreadcrumbTwo } from "@components/breadCrumb";
+import { GridCards } from "./component";
 export const Catalog = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
