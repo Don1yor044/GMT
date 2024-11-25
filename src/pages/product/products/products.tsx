@@ -25,7 +25,7 @@ export const Products = () => {
   return (
     <>
       <Row gutter={[20, 20]}>
-        <Col span={13}>
+        <Col span={24} lg={13}>
           <div className="bg-[#FFFFFF] p-5 border border-gray-300 rounded-lg max-h-[70vh] relative">
             <div className="flex justify-between items-center">
               <StyledButton status={`Новинка`}>{t(`Новинка`)}</StyledButton>
@@ -84,9 +84,9 @@ export const Products = () => {
             </div>
           </div>
         </Col>
-        <Col span={11}>
-          <div className="ps-10 py-5">
-            <Typography className="font-semibold text-4xl">
+        <Col span={24} lg={11}>
+          <div className="lg:ps-10 lg:py-5 p-3">
+            <Typography className="font-semibold md:text-4xl sm:text-2xl text-xl">
               Анализатор мочи MIND UA-66
             </Typography>
             <div className="my-3">
@@ -104,18 +104,18 @@ export const Products = () => {
               </Typography>
               <Typography className="text-[#7A7687]">В наличии</Typography>
             </div>
-            <Typography className="font-semibold text-2xl mt-2">
+            <Typography className="hidden font-semibold text-2xl mt-2 sm:block">
               300 000 руб.
             </Typography>
-            <div className="flex gap-2 mt-5 justify-between">
-              <div className="inline-flex items-center gap-2 rounded-full px-4 py-[5px] border-gray-300 border-[1px]">
+            <div className="hidden sm:flex gap-2 mt-5 justify-around lg:w-full md:w-[70%] sm:w-[81%] w-full">
+              <div className="lg:hidden inline-flex xl:inline-flex items-center gap-2 rounded-full px-4 py-[5px] border-gray-300 border-[1px]">
                 <Button
                   type="text"
                   icon={<MinusOutlined />}
                   onClick={decrement}
                   className="flex items-center justify-center rounded-full border-none text-gray-500 hover:bg-gray-50 hover:text-[#088269]"
                 />
-                <span className="min-w-[15px] text-center text-lg font-medium text-[#088269]">
+                <span className="min-w-[12px] text-center text-lg font-medium text-[#088269]">
                   {count}
                 </span>
                 <Button
@@ -125,8 +125,36 @@ export const Products = () => {
                   className="flex items-center justify-center rounded-full border-none text-gray-500 hover:bg-gray-50 !hover:text-[#088269]"
                 />
               </div>
-              <SecondaryButton text="Задать вопрос" size={33} />
-              <PrimaryButton text="Добавить в корзину" size={40} />
+              <SecondaryButton text="Задать вопрос" />
+              <PrimaryButton text="Добавить в корзину" />
+            </div>
+            <div className="flex-col space-y-2 sm:hidden fixed z-10 right-0 bottom-[64px] bg-white w-full pt-3 ">
+              <div className="flex justify-between w-full px-7 flex-wrap gap-1">
+                <Typography className="font-semibold text-xl ">
+                  300 000 руб.
+                </Typography>
+                <PrimaryButton text="Добавить в корзину" />
+              </div>
+              <div className="flex justify-between w-full px-7 flex-wrap gap-1">
+                <div className="inline-flex items-center gap-5 rounded-full px-4 py-[3px] border-gray-300 border-[1px] justify-center ">
+                  <Button
+                    type="text"
+                    icon={<MinusOutlined />}
+                    onClick={decrement}
+                    className="flex items-center justify-center rounded-full border-none text-gray-500 hover:bg-gray-50 hover:text-[#088269]"
+                  />
+                  <span className="min-w-[12px] text-center text-lg font-medium text-[#088269]">
+                    {count}
+                  </span>
+                  <Button
+                    type="text"
+                    icon={<PlusOutlined />}
+                    onClick={increment}
+                    className="flex items-center justify-center rounded-full border-none text-gray-500 hover:bg-gray-50 !hover:text-[#088269]"
+                  />
+                </div>
+                <SecondaryButton text="Задать вопрос" />
+              </div>
             </div>
             <hr className="mt-5 mb-3" />
             <Typography className="text-xl font-semibold">О товаре</Typography>

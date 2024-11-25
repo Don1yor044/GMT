@@ -48,8 +48,9 @@
     }
   }
 }
-@media screen and (max-width: 200px) {
-  .searchInput {
-    width: 100% !important;
+
+@media screen and (max-width: 458px) {
+  .phoneMenu {
+    font-size: 13px;
   }
 }
