@@ -2,6 +2,7 @@ import { BreadcrumbFour } from "@components/breadCrumb";
 import { Header } from "@components/header";
 import { Products } from "./products";
 import { TabsComp } from "./tabs";
+import { CatalogTovar } from "@components/catalogTovar";
 
 export const Product = () => {
   return (
@@ -18,6 +19,7 @@ export const Product = () => {
         </div>
         <TabsComp />
       </div>
+      <CatalogTovar />
     </>
   );
 };

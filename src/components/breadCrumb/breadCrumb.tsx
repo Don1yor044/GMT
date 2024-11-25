@@ -87,7 +87,7 @@ export const BreadcrumbFour: React.FC<BreadcrumbPropsFour> = ({
   return (
     <>
       {/* Desktop ko'rinishi */}
-      <div className="hidden sm:flex gap-3 items-center py-2">
+      <div className="hidden md:flex gap-3 items-center py-2">
         <Link to={"/"} className="text-[#7A7687]">
           {t(`Главная`)}
         </Link>
@@ -110,7 +110,7 @@ export const BreadcrumbFour: React.FC<BreadcrumbPropsFour> = ({
       </div>
 
       {/* Mobil ko'rinishi */}
-      <div className="sm:hidden gap-1 items-center py-2 flex">
+      <div className="md:hidden gap-1 items-center py-2 flex">
         <div className="text-[#7A7687]">
           <RiArrowLeftSLine size={20} />
         </div>
