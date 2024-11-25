@@ -45,6 +45,7 @@
     z-index: 1000; /* Har qanday boshqa element ustida ko'rinishini ta'minlash uchun */
     .text {
       display: flex;
+      /* somthing */
     }
   }
 }
