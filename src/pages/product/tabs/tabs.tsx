@@ -7,38 +7,40 @@ import {
   TwoChildren,
 } from "./tabsChildrens";
 import { Reviews } from "./reviews";
+import { useTranslation } from "react-i18next";
 const onChange = (key: string) => {
   console.log(key);
 };
 
-const items: TabsProps["items"] = [
-  {
-    key: "1",
-    label: "Описание оборудования",
-    children: OneChildren,
-  },
-  {
-    key: "2",
-    label: "Характеристики и документы",
-    children: TwoChildren,
-  },
-  {
-    key: "3",
-    label: "Услуги и сервис",
-    children: ThreeChildren,
-  },
-  {
-    key: "4",
-    label: "Оптовым покупателям",
-    children: FourChildren,
-  },
-  {
-    key: "5",
-    label: "Отзывы",
-    children: <Reviews />,
-  },
-];
 export const TabsComp = () => {
+  const { t } = useTranslation();
+  const items: TabsProps["items"] = [
+    {
+      key: "1",
+      label: t("ОписаниеОборудования"),
+      children: <OneChildren />,
+    },
+    {
+      key: "2",
+      label: t("ХарактеристикиИдокументы"),
+      children: <TwoChildren />,
+    },
+    {
+      key: "3",
+      label: t("УслугиИсервис"),
+      children: <ThreeChildren />,
+    },
+    {
+      key: "4",
+      label: t("ОптовымПокупателям"),
+      children: <FourChildren />,
+    },
+    {
+      key: "5",
+      label: t("Отзывы"),
+      children: <Reviews />,
+    },
+  ];
   return (
     <div className="mt-10 border rounded-lg">
       <StyledTabs defaultActiveKey="5" items={items} onChange={onChange} />

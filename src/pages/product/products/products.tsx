@@ -94,15 +94,17 @@ export const Products = () => {
             </div>
             <div>
               <Typography className="text-[#7A7687]">
-                Категория: Лабораторное оборудование
+                {t(`Категория`)}: Лабораторное оборудование
               </Typography>
               <Typography className="text-[#7A7687]">
-                Производитель: Lorem
+                {t(`Производитель`)}: Lorem
               </Typography>
               <Typography className="text-[#7A7687]">
-                Артикул: 213134
+                {t(`Артикул`)}: 213134
               </Typography>
-              <Typography className="text-[#7A7687]">В наличии</Typography>
+              <Typography className="text-[#7A7687]">
+                {t(`Вналичии`)}
+              </Typography>
             </div>
             <Typography className="hidden font-semibold text-2xl mt-2 sm:block">
               300 000 руб.
@@ -125,15 +127,15 @@ export const Products = () => {
                   className="flex items-center justify-center rounded-full border-none text-gray-500 hover:bg-gray-50 !hover:text-[#088269]"
                 />
               </div>
-              <SecondaryButton text="Задать вопрос" />
-              <PrimaryButton text="Добавить в корзину" />
+              <SecondaryButton text={t("ЗадатьВопрос")} />
+              <PrimaryButton text={t("ДобавитьВкорзину")} />
             </div>
             <div className="flex-col space-y-2 sm:hidden fixed z-10 right-0 bottom-[64px] bg-white w-full pt-3 ">
               <div className="flex justify-between w-full px-7 flex-wrap gap-1">
                 <Typography className="font-semibold text-xl ">
                   300 000 руб.
                 </Typography>
-                <PrimaryButton text="Добавить в корзину" />
+                <PrimaryButton text={t("ДобавитьВкорзину")} />
               </div>
               <div className="flex justify-between w-full px-7 flex-wrap gap-1">
                 <div className="inline-flex items-center gap-5 rounded-full px-4 py-[3px] border-gray-300 border-[1px] justify-center ">
@@ -153,16 +155,17 @@ export const Products = () => {
                     className="flex items-center justify-center rounded-full border-none text-gray-500 hover:bg-gray-50 !hover:text-[#088269]"
                   />
                 </div>
-                <SecondaryButton text="Задать вопрос" />
+                <SecondaryButton text={t("ЗадатьВопрос")} />
               </div>
             </div>
             <hr className="mt-5 mb-3" />
-            <Typography className="text-xl font-semibold">О товаре</Typography>
+            <Typography className="text-xl font-semibold">
+              {t(`О товаре`)}
+            </Typography>
             <Typography className="text-[#202020] mt-1">
-              О Но синтетическое тестирование, в своём классическом
-              представлении, допускает внедрение поэтапного и последовательного
-              развития общества. В рамках спецификации современных стандартов,
-              сторонники тоталитаризма в науке будут функционально разнесены.s
+              {t(
+                `О Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов,сторонники тоталитаризма в науке будут функционально разнесены.`
+              )}
             </Typography>
           </div>
         </Col>

@@ -2,6 +2,7 @@ import { PrimaryButton, SecondaryButton } from "@components/buttons";
 import { Col, Progress, Rate, Row, Select } from "antd";
 import Typography from "antd/es/typography/Typography";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { BiSortAlt2 } from "react-icons/bi";
 const handleChange = (value: string) => {
   console.log(`selected ${value}`);
@@ -13,46 +14,46 @@ interface Items {
   date: string;
 }
 
-const items: Items[] = [
-  {
-    id: 1,
-    name: "Тепляков Максим",
-    comment:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
-    date: "12 января 2023",
-  },
-  {
-    id: 2,
-    name: "Тепляков Максим",
-    comment:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
-    date: "12 января 2023",
-  },
-  {
-    id: 3,
-    name: "Тепляков Максим",
-    comment:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
-    date: "12 января 2023",
-  },
-  {
-    id: 4,
-    name: "Тепляков Максим",
-    comment:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
-    date: "12 января 2023",
-  },
-  {
-    id: 5,
-    name: "Тепляков Максим",
-    comment:
-      "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
-    date: "12 января 2023",
-  },
-];
-
 export const Reviews = () => {
+  const { t } = useTranslation();
   const [visibleItems, setVisibleItems] = useState(2);
+  const items: Items[] = [
+    {
+      id: 1,
+      name: "Тепляков Максим",
+      comment:
+        "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+      date: t("12 января 2023"),
+    },
+    {
+      id: 2,
+      name: "Тепляков Максим",
+      comment:
+        "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+      date: t("12 января 2023"),
+    },
+    {
+      id: 3,
+      name: "Тепляков Максим",
+      comment:
+        "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+      date: t("12 января 2023"),
+    },
+    {
+      id: 4,
+      name: "Тепляков Максим",
+      comment:
+        "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+      date: t("12 января 2023"),
+    },
+    {
+      id: 5,
+      name: "Тепляков Максим",
+      comment:
+        "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.",
+      date: t("12 января 2023"),
+    },
+  ];
   const ShowMore = () => {
     setVisibleItems(items.length);
   };
@@ -60,23 +61,22 @@ export const Reviews = () => {
     <>
       <div className="flex gap-10">
         <Typography className="text-xl font-semibold hidden sm:block ">
-          Отзывы <span className="text-gray-400">{items.length}</span>
+          {t(`Отзывы`)} <span className="text-gray-400">{items.length}</span>
         </Typography>
         <Select
-          defaultValue="Сначала полезные"
+          defaultValue={t("СначалаПолезные")}
           onChange={handleChange}
           style={{ width: "300px" }}
           suffixIcon={<BiSortAlt2 size={19} color="black" />}
           options={[
-            { value: "jack", label: "Jack" },
-            { value: "Сначала новые ", label: "Сначала новые " },
+            { value: t("Сначала новые"), label: t("Сначала новые") },
             {
-              value: "Сначала с высокой оценкой",
-              label: "Сначала с высокой оценкой",
+              value: t("Сначала с высокой оценкой"),
+              label: t("Сначала с высокой оценкой"),
             },
             {
-              value: "Сначала с низкой оценкой",
-              label: "Сначала с низкой оценкой",
+              value: t("Сначала с низкой оценкой"),
+              label: t("Сначала с низкой оценкой"),
             },
           ]}
         />
@@ -115,14 +115,14 @@ export const Reviews = () => {
                       {item.comment}
                     </Typography>
                     <Typography className="font-semibold mt-2">
-                      {item.date}
+                      {t(item.date)}
                     </Typography>
                   </div>
                 </div>
               </div>
             ))}
             <div onClick={ShowMore} className="flex justify-center mt-5">
-              <SecondaryButton text="Показать еще" />
+              <SecondaryButton text={t("Показать еще")} />
             </div>
           </Col>
           <Col sm={24} md={11} lg={6} span={24}>
@@ -140,11 +140,11 @@ export const Reviews = () => {
             <hr className="my-3" />
             <div className="flex gap-7 mt-3">
               <div className="space-y-2">
-                <Typography className="font-medium">5 звезд</Typography>
-                <Typography className="font-medium">4 звезд</Typography>
-                <Typography className="font-medium">3 звезд</Typography>
-                <Typography className="font-medium">2 звезд</Typography>
-                <Typography className="font-medium">1 звезд</Typography>
+                <Typography className="font-medium">5 {t(`звезд`)}</Typography>
+                <Typography className="font-medium">4 {t(`звезд`)}</Typography>
+                <Typography className="font-medium">3 {t(`звезд`)}</Typography>
+                <Typography className="font-medium">2 {t(`звезд`)}</Typography>
+                <Typography className="font-medium">1 {t(`звезд`)}</Typography>
               </div>
               <div className="flex-1 space-y-3">
                 <Progress
@@ -190,7 +190,7 @@ export const Reviews = () => {
               </div>
             </div>
             <div className="mt-3 flex justify-center py-2">
-              <PrimaryButton text="Оставить отзыв" size={80} />
+              <PrimaryButton text={t("Оставить отзыв")} size={80} />
             </div>
           </Col>
         </Row>
