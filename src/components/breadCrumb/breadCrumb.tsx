@@ -94,13 +94,13 @@ export const BreadcrumbFour: React.FC<BreadcrumbPropsFour> = ({
         <div className="text-[#7A7687]">
           <RiArrowRightSLine size={20} />
         </div>
-        <Link to={`/catalog`} className="text-[#7A7687]">
+        <Link to={``} className="text-[#7A7687]">
           {t(twoPages)}
         </Link>
         <div className="text-[#7A7687]">
           <RiArrowRightSLine size={20} />
         </div>
-        <Link to={`/catalog`} className="text-[#7A7687]">
+        <Link to={``} className="text-[#7A7687]">
           {t(currentPage)}
         </Link>
         <div className="text-[#7A7687]">
