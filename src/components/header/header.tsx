@@ -310,7 +310,7 @@ export const Header = () => {
       <hr />
       <div className="flex px-5 lg:px-14 py-4 lg:flex justify-between items-center gap-5 sm:flex-col xs:flex-col mp:flex-col md:flex-row ">
         <div className="flex items-center justify-between xs:w-full md:w-32 lg:w-36 mp:w-full ">
-          <img src="../public/HeaderLogo.svg" alt="Logo" />
+          <img src="../HeaderLogo.svg" alt="Logo" />
           <div className="md:hidden flex items-center gap-1">
             <Button type="text" className="text-black font-semibold p-2">
               <PiPhoneLight size={22} />
