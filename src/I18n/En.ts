@@ -413,5 +413,7 @@ const En = {
   "Показать еще": "Show more",
   звезд: "stars",
   "Оставить отзыв": "Leave feedback",
+  "Закажите у нас комплексное оснащение":
+    "Order comprehensive equipment from us",
 };
 export default En;

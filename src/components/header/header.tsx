@@ -505,7 +505,7 @@ export const Header = () => {
           <Link to={"/manufacturers"} className="hover:!text-[#07745E]">
             {t("Производители")}
           </Link>
-          <Link to={"/"} className="hover:!text-[#07745E]">
+          <Link to={"/turnkey"} className="hover:!text-[#07745E]">
             {t("КабинетыКлюч")}
           </Link>
           <Link to={"/services"} className="hover:!text-[#07745E]">

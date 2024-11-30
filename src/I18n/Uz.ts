@@ -425,5 +425,7 @@ const Uz = {
   "Показать еще": "Ko'proq ko'rsatish",
   звезд: "yulduzlar",
   "Оставить отзыв": "Fikr qoldiring",
+  "Закажите у нас комплексное оснащение":
+    "Bizdan keng qamrovli jihozlarga buyurtma bering",
 };
 export default Uz;
