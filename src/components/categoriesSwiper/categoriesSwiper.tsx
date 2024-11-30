@@ -24,33 +24,33 @@ export const CategoriesSwiper = () => {
   const items = [
     {
       id: 1,
-      src: "../../../public/category/Photo (7).png",
+      src: "../category/Photo (7).png",
       title: t("ОборудованиеДляАнастезиологии"),
     },
 
     {
       id: 2,
-      src: "../../../public/category/Photo (6).png",
+      src: "../category/Photo (6).png",
       title: t("ОборудованиеДляАнастезиологии"),
     },
     {
       id: 3,
-      src: "../../../public/category/Photo (8).png",
+      src: "../category/Photo (8).png",
       title: t("МебельДляМедицинскихЦелей"),
     },
     {
       id: 4,
-      src: "../../../public/category/Photo (5).png",
+      src: "../category/Photo (5).png",
       title: t("ДерматологическоеОборудование"),
     },
     {
       id: 5,
-      src: "../../../public/category/Photo (9).png",
+      src: "../category/Photo (9).png",
       title: t("ДерматологическоеОборудование"),
     },
     {
       id: 6,
-      src: "../../../public/category/Phtoto.png",
+      src: "../category/Phtoto.png",
       title: t("ВетеринарноеОборудование"),
     },
   ];
