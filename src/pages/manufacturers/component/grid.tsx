@@ -35,52 +35,52 @@ const Grid = () => {
   const items = [
     {
       id: 1,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 2,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 3,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 4,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 5,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 6,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 7,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 8,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 9,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
     {
       id: 10,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SOX~oDO1JcV~gymn6NIC5bXSHVqzYDxoqjGazEOkQULUfjY2HWqKkP90I~4VenR6JksMWDVhltyFF~4dgqw9Nis-54GbWsU1ffezcjEpcztIqtTQNArrD6Gje3eLG5gXCcM88cbd7gEXu38VVSRMatyEevgHNbVYjhDKCK8raotBEI9sJ5O8wNMtuKr03a2zWouXHoOcMPwQkGmuRHmGeddoqhX5UtbMh4AgHuaysjtP2RI8Twd~d4dL35urQ9TAdbK~rWgLAcZFnV1RjomaAfLPFWoYnDK2y84ep7q3u3OWINTjNT26wiR8iUwBVsfMs0HdB4pDI8ucsigFjV9doA__",
+      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
       title: "НМИЦ онкологии им. Н.Н. Блохина",
     },
   ];

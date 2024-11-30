@@ -1,5 +1,5 @@
 import { Header } from "@components/header";
-import Grid from "./components/grid";
+import Grid from "./component/grid";
 import { CatalogTovar } from "@components/catalogTovar";
 import { HomeCards } from "@components/cards";
 import { HomeCompany } from "@components/company";

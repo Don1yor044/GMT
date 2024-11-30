@@ -3,7 +3,7 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
-import { ErrorBoundarayContainer } from "@components/errorBoundary";
+import { ErrorBoundarayContainer } from "@components/errorBoundaries";
 import { Services } from "@pages/services";
 import { NotFound } from "@components/notFound";
 import { Contact } from "@pages/contact";
