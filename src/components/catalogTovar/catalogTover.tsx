@@ -38,7 +38,7 @@ export const CatalogTovar = () => {
     },
     {
       id: 2,
-      src: "../../../public/category/Phtoto.png",
+      src: "../category/Phtoto.png",
       title: "Анализатор Мочи MINDUA-66",
       article: 213134,
       price: "300 000",

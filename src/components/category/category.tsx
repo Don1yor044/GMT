@@ -21,7 +21,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../../../public/category/Phtoto.png"
+                      src="../category/Phtoto.png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />
@@ -38,7 +38,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../../../public/category/Photo (5).png"
+                      src="../category/Photo (5).png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />
@@ -59,7 +59,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl ">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl">
                     <img
-                      src="../../../public/category/Photo (4).png"
+                      src="../category/Photo (4).png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[570px] w-[100%] object-contain pe-10"
                     />
@@ -79,7 +79,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../../../public/category/Photo (6).png"
+                      src="../category/Photo (6).png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />
@@ -95,7 +95,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../../../public/category/Photo (7).png"
+                      src="../category/Photo (7).png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />
@@ -115,7 +115,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../../../public/category/Photo (8).png"
+                      src="../category/Photo (8).png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />
@@ -132,7 +132,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../../../public/category/Photo (9).png"
+                      src="../category/Photo (9).png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />

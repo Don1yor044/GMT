@@ -12,17 +12,17 @@ export const HomeClient = () => {
     {
       id: 2,
       title: "НМИЦ онкологии им. Н.Н. Блохина",
-      imgSrc: "../../../public/client/image 221.png",
+      imgSrc: "../client/image 221.png",
     },
     {
       id: 3,
       title: "НМИЦ онкологии им. Н.Н. Блохина",
-      imgSrc: "../../../public/client/image 222.png",
+      imgSrc: "../client/image 222.png",
     },
     {
       id: 4,
       title: "НМИЦ онкологии им. Н.Н. Блохина",
-      imgSrc: "../../../public/client/image 224.png",
+      imgSrc: "../client/image 224.png",
     },
     {
       id: 5,
