@@ -1,14 +1,15 @@
 import { BreadcrumbFour } from "@components/breadCrumb";
 import { Header } from "@components/header";
 import { Typography } from "antd";
-import { Link } from "react-router-dom";
 import { ResuscitationTabs } from "./resuscitationTabs";
 import { TurnkeyForm } from "@components/turnkeyForm";
 import { About } from "@components/about";
 import { HomeForm } from "@components/form";
 import { Footer } from "@components/footer";
+import { useTranslation } from "react-i18next";
 
 export const Resuscitation = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
@@ -20,8 +21,9 @@ export const Resuscitation = () => {
         />
         <div className="mt-5 md:mt-10 lg:mt-20">
           <Typography className="md:text-5xl sm:text-3xl text-xl">
-            Комплексное оснащение палаты <br className="hidden sm:flex" />
-            реанимации и интенсивной терапии
+            {t(`Комплексное оснащение палаты`)}{" "}
+            <br className="hidden sm:flex" />
+            {t(`реанимации и интенсивной терапии`)}
           </Typography>
           <div className="mt-10 sm:h-[55vh]">
             <img
@@ -33,17 +35,10 @@ export const Resuscitation = () => {
           <div className="flex lg:justify-end ">
             <div className="w-full md:max-w-[46%]">
               <Typography className="bg-none my-10 text-sm sm:text-base font-medium">
-                Учитывая стремительное развитие мировых медицинских технологий,
-                врачи в Российской Федерации и соседних странах столкнулись с
-                вызовом, требующим обновления приборов в различных направлениях,
-                от установок компьютерной томографии до ультразвуковых сканеров
-                и ЛОР комбайнов. Переход на полностью цифровую платформу при
-                диагностике и лечении заболеваний также стал серьёзным
-                испытанием для большинства больниц и частных клиник.
+                {t(
+                  `Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник.`
+                )}
               </Typography>
-              <Link to={""} className="text-[#07745E]">
-                Скачать каталог "Стандарты оснащения отделений"
-              </Link>
             </div>
           </div>
           <div className="mt-20">

@@ -415,5 +415,34 @@ const En = {
   "Оставить отзыв": "Leave feedback",
   "Закажите у нас комплексное оснащение":
     "Order comprehensive equipment from us",
+  СписокТоваров: "List of products",
+  СтандартыОснащения: "Equipment standards",
+  "Аппарат искусственной вентиляции лёгких":
+    "Artificial lung ventilation apparatus",
+  "Аппарат искусственной вентиляции легких транспортный":
+    "Transport artificial lung ventilation apparatus",
+  "Дыхательный мешок для ручной искусственной вентиляции легких":
+    "Breathing bag for manual artificial lung ventilation",
+  "Монитор пациента на 5 параметров": "5-parameter patient monitor",
+  "Монитор пациента на 8 параметров": "8-parameter patient monitor",
+  "Шприцевой насос": "Syringe pump",
+  "Инфузионный насос": "Infusion pump",
+  "Набор для интубации трахеи": "Tracheal intubation kit",
+  Дефибриллятор: "Defibrillator",
+  "Матрац термостабилизирующий": "Thermo-stabilizing mattress",
+  "Автоматический анализатор газов крови": "Automatic Blood Gas Analyzer",
+  Электрокардиограф: "Electrocardiograph",
+  "Транспортируемый рентгеновский аппарат": "Transportable X-ray machine",
+  "Портативный ультразвуковой диагностический аппарат":
+    "Portable ultrasound diagnostic device",
+  "Кровать трёхсекционная с ограждением": "Three-section bed with railing",
+  "Кровать-вес": "Bed-weight",
+  "Электроэнцефалограф 8-канальный": "Electroencephalograph 8-channel",
+  "Пневмокомпрессорная профилактика тромбоэмболических осложнений и лимфостаза":
+    "Pneumocompressor prophylaxis of thromboembolic complications and lymphostasis",
+  "Комплексное оснащение палаты": "Comprehensive equipment of the ward",
+  "реанимации и интенсивной терапии": "resuscitation and intensive care",
+  "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник.":
+    "Given the rapid development of global medical technologies, doctors in the Russian Federation and neighboring countries have faced the challenge of upgrading equipment in various areas, from CT scanners to ultrasound scanners and ENT combines. The transition to a fully digital platform for diagnosing and treating diseases has also become a serious challenge for most hospitals and private clinics.",
 };
 export default En;

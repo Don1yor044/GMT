@@ -409,7 +409,11 @@ export const Header = () => {
                   className="px-2 py-1 hover:bg-gray-200 cursor-pointer flex items-center gap-2 font-semibold"
                   onClick={() => handleLanguageChange("Ru")}
                 >
-                  <img src="./ru.png" className="h-3 object-cover" alt="" />
+                  <img
+                    src="../ru.png"
+                    className="h-3 w-6 object-cover"
+                    alt=""
+                  />
                   <Typography>Ru</Typography>
                 </div>
                 <hr />
@@ -417,7 +421,7 @@ export const Header = () => {
                   className="px-2 py-1 hover:bg-gray-200 cursor-pointer flex items-center gap-2 font-semibold"
                   onClick={() => handleLanguageChange("Uz")}
                 >
-                  <img src="./uz.png" className="h-3 object-cover" alt="" />
+                  <img src="../uz.png" className="h-3 object-cover" alt="" />
                   <Typography>Uz</Typography>
                 </div>
                 <hr />
@@ -425,7 +429,7 @@ export const Header = () => {
                   className="px-2 py-1 hover:bg-gray-200 cursor-pointer flex items-center gap-2 font-semibold"
                   onClick={() => handleLanguageChange("En")}
                 >
-                  <img src="./en.png" className="h-3 object-cover" alt="" />
+                  <img src="../en.png" className="h-3 object-cover" alt="" />
                   <Typography>En</Typography>
                 </div>
               </div>

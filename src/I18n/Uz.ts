@@ -427,5 +427,33 @@ const Uz = {
   "Оставить отзыв": "Fikr qoldiring",
   "Закажите у нас комплексное оснащение":
     "Bizdan keng qamrovli jihozlarga buyurtma bering",
+  СписокТоваров: "Mahsulotlar ro'yxati",
+  СтандартыОснащения: "Uskunalar standartlari",
+  "Аппарат искусственной вентиляции лёгких": "Ventilyator",
+  "Аппарат искусственной вентиляции легких транспортный":
+    "Transport ventilyatori",
+  "Дыхательный мешок для ручной искусственной вентиляции легких":
+    "Qo'lda sun'iy shamollatish uchun nafas olish sumkasi",
+  "Монитор пациента на 5 параметров": "5 parametrli bemor monitori",
+  "Монитор пациента на 8 параметров": "8 parametrli bemor monitori",
+  "Шприцевой насос": "Shprits pompasi",
+  "Инфузионный насос": "Infuzion nasos",
+  "Набор для интубации трахеи": "Trakeal intubatsiya to'plami",
+  Дефибриллятор: "Defibrilator",
+  "Матрац термостабилизирующий": "Termostabillashtiruvchi matras",
+  "Автоматический анализатор газов крови": "Qon gazining avtomatik analizatori",
+  Электрокардиограф: "Elektrokardiograf",
+  "Транспортируемый рентгеновский аппарат": "Ko'chma rentgen apparati",
+  "Портативный ультразвуковой диагностический аппарат":
+    "Portativ ultratovush diagnostikasi",
+  "Кровать трёхсекционная с ограждением": "To'siqli uch qismli to'shak",
+  "Кровать-вес": "To'shak og'irligi",
+  "Электроэнцефалограф 8-канальный": "8 kanalli elektroensefalograf",
+  "Пневмокомпрессорная профилактика тромбоэмболических осложнений и лимфостаза":
+    "Tromboembolik asoratlar va limfostazning pnevmokompressorli profilaktikasi",
+  "Комплексное оснащение палаты": "Bo'limning murakkab jihozlari",
+  "реанимации и интенсивной терапии": "reanimatsiya va intensiv terapiya",
+  "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник.":
+    "Jahon tibbiyoti texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari kompyuter tomografiyasi bo'linmalaridan tortib, ultratovush skanerlari va LOR kombinatlarigacha bo'lgan turli sohalardagi qurilmalarni yangilashni talab qiladigan muammoga duch kelishmoqda. Kasalliklarni tashxislash va davolash uchun to‘liq raqamli platformaga o‘tish ham aksariyat shifoxonalar va xususiy klinikalar uchun jiddiy sinovga aylandi.",
 };
 export default Uz;
