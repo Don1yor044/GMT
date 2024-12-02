@@ -12,8 +12,6 @@ import { HomeCompany } from "@components/company";
 import { About } from "@components/about";
 import { HomeForm } from "@components/form";
 import { HomeSubscription } from "@components/subscription";
-import { Footer } from "@components/footer/footer";
-import { Header } from "@components/header";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 import { GridCards } from "./component";
 export const Catalog = () => {
@@ -212,7 +210,6 @@ export const Catalog = () => {
 
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Каталог" />
         <div className="mt-5">
@@ -292,7 +289,6 @@ export const Catalog = () => {
       </div>
       <HomeForm />
       <HomeSubscription />
-      <Footer />
     </>
   );
 };

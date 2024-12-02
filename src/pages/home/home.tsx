@@ -3,8 +3,6 @@ import { observer } from "mobx-react-lite";
 import { Col, FloatButton, Row, Typography } from "antd";
 import { FcUpload } from "react-icons/fc";
 import { useTranslation } from "react-i18next";
-import { Footer } from "@components/footer/footer";
-import { Header } from "@components/header";
 import { CatalogTovar } from "@components/catalogTovar";
 import { HomeClient } from "@components/clinet";
 import { HomeBrand } from "@components/brend";
@@ -22,7 +20,6 @@ export const Home = observer(() => {
   return (
     <>
       <FloatButton.BackTop visibilityHeight={1000} icon={<FcUpload />} />
-      <Header />
       <div className="px-3 xl:px-14 lg:px-12 md:px-10 sm:px-5 py-8">
         <div className="rounded-xl bg-[#E5E4ED]">
           <Row style={{ height: "420px" }}>
@@ -71,7 +68,6 @@ export const Home = observer(() => {
       <HomeCompany />
       <HomeForm />
       <HomeSubscription />
-      <Footer />
     </>
   );
 });

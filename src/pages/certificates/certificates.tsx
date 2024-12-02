@@ -1,8 +1,6 @@
 import { BreadcrumbThree } from "@components/breadCrumb";
 import { CatalogTovar } from "@components/catalogTovar";
-import { Footer } from "@components/footer";
 import { HomeForm } from "@components/form";
-import { Header } from "@components/header";
 import styled from "@emotion/styled";
 import { Col, Collapse, CollapseProps, Row, Typography } from "antd";
 import { ReactNode } from "react";
@@ -85,7 +83,6 @@ export const Certificates = () => {
   };
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbThree currentPage="Сертификаты" twoPages="Окомпании" />
         <div className="mt-24">
@@ -114,9 +111,8 @@ export const Certificates = () => {
         </div>
       </div>
       <CatalogTovar />
-      <HomeForm />
-      <div className="mt-24">
-        <Footer />
+      <div className="mb-24">
+        <HomeForm />
       </div>
     </>
   );

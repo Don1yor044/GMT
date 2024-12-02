@@ -4,8 +4,6 @@ import { useTranslation } from "react-i18next";
 import { Fact } from "@components/fact";
 import { Sertifikat } from "@components/sertifikat";
 import { HomeForm } from "@components/form";
-import { Footer } from "@components/footer/footer";
-import { Header } from "@components/header";
 import { PrimaryButton, SecondaryButton } from "@components/buttons";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 
@@ -66,7 +64,6 @@ export const Services = () => {
   ];
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Услуги" />
         <div className="mt-5 md:mt-10 lg:mt-20">
@@ -165,9 +162,8 @@ export const Services = () => {
         </div>
       </div>
       <Sertifikat />
-      <HomeForm />
-      <div className="mt-24">
-        <Footer />
+      <div className="mb-24">
+        <HomeForm />
       </div>
     </>
   );

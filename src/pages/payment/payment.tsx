@@ -1,8 +1,6 @@
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import { HomeForm } from "@components/form";
-import { Footer } from "@components/footer/footer";
-import { Header } from "@components/header";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 export const Payment = () => {
   const { t } = useTranslation();
@@ -87,7 +85,6 @@ export const Payment = () => {
   ];
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Оплата" />
         <div>
@@ -123,9 +120,8 @@ export const Payment = () => {
           ))}
         </div>
       </div>
-      <HomeForm />
-      <div className="mt-16">
-        <Footer />
+      <div className="mb-24">
+        <HomeForm />
       </div>{" "}
     </>
   );

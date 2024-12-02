@@ -1,9 +1,7 @@
 import { About } from "@components/about";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 import { HomeCards } from "@components/cards";
-import { Footer } from "@components/footer";
 import { HomeForm } from "@components/form";
-import { Header } from "@components/header";
 import { HomeSubscription } from "@components/subscription";
 import { TurnkeyForm } from "@components/turnkeyForm";
 import { Col, Row, Typography } from "antd";
@@ -65,7 +63,6 @@ export const TurnkeyOffices = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Кабинеты ключ" />
         <div className="mt-5 md:mt-10 lg:mt-20">
@@ -95,7 +92,6 @@ export const TurnkeyOffices = () => {
       <About />
       <HomeForm />
       <HomeSubscription />
-      <Footer />
     </>
   );
 };

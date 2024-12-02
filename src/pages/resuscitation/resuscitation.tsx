@@ -1,18 +1,15 @@
 import { BreadcrumbFour } from "@components/breadCrumb";
-import { Header } from "@components/header";
 import { Typography } from "antd";
 import { ResuscitationTabs } from "./resuscitationTabs";
 import { TurnkeyForm } from "@components/turnkeyForm";
 import { About } from "@components/about";
 import { HomeForm } from "@components/form";
-import { Footer } from "@components/footer";
 import { useTranslation } from "react-i18next";
 
 export const Resuscitation = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbFour
           twoPages="Кабинет ключ"
@@ -48,9 +45,8 @@ export const Resuscitation = () => {
         </div>
       </div>
       <About />
-      <HomeForm />
-      <div className="mt-20">
-        <Footer />
+      <div className="mb-24">
+        <HomeForm />
       </div>
     </>
   );

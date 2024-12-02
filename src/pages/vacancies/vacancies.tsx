@@ -12,10 +12,8 @@ import {
 } from "@pbe/react-yandex-maps";
 import { useTranslation } from "react-i18next";
 import { HomeSubscription } from "@components/subscription";
-import { Footer } from "@components/footer/footer";
 import { IOptionManager } from "yandex-maps";
 import { ReactNode } from "react";
-import { Header } from "@components/header";
 import { PrimaryButton } from "@components/buttons";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 
@@ -131,7 +129,6 @@ export const Vacancies = () => {
 
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Вакансии" />
         <div className="mt-20">
@@ -224,7 +221,6 @@ export const Vacancies = () => {
         </div>
       </div>
       <HomeSubscription />
-      <Footer />
     </>
   );
 };

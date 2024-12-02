@@ -1,5 +1,4 @@
 import { BreadcrumbFour } from "@components/breadCrumb";
-import { Header } from "@components/header";
 import { Products } from "./products";
 import { TabsComp } from "./tabs";
 import { CatalogTovar } from "@components/catalogTovar";
@@ -7,12 +6,10 @@ import { CabinetSwiper } from "@components/cabinetSwiper";
 import { CategoriesSwiper } from "@components/categoriesSwiper";
 import { HomeBrand } from "@components/brend";
 import { HomeSubscription } from "@components/subscription";
-import { Footer } from "@components/footer";
 
 export const Product = () => {
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbFour
           currentPage="Лабораторное оборудование"
@@ -31,7 +28,6 @@ export const Product = () => {
       <CategoriesSwiper />
       <HomeBrand />
       <HomeSubscription />
-      <Footer />
     </>
   );
 };

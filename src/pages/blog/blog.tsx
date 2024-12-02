@@ -6,9 +6,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
 import styled from "@emotion/styled";
 import { HomeSubscription } from "@components/subscription";
-import { Footer } from "@components/footer";
 import { SecondaryButton } from "@components/buttons";
-import { Header } from "@components/header";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 export const Blog = () => {
   const { t } = useTranslation();
@@ -261,7 +259,6 @@ export const Blog = () => {
   }, [currentPage]);
   return (
     <>
-      <Header />
       <div className="px-4 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Блог" />
         <div className="mt-5 md:mt-10 lg:mt-20">
@@ -365,7 +362,6 @@ export const Blog = () => {
         </div>
       </div>
       <HomeSubscription />
-      <Footer />
     </>
   );
 };

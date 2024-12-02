@@ -1,15 +1,12 @@
 import { Col, Row, Typography } from "antd";
-import Cards from "./components";
+import Cards from "./component";
 import { useTranslation } from "react-i18next";
 import { HomeForm } from "@components/form";
-import { Footer } from "@components/footer/footer";
-import { Header } from "@components/header";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 export const Guarantees = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Гарантии" />
         <div className="mt-5 md:mt-10 lg:mt-20">
@@ -82,9 +79,8 @@ export const Guarantees = () => {
           </Row>
         </div>
       </div>
-      <HomeForm />
-      <div className="mt-16">
-        <Footer />
+      <div className="mb-24">
+        <HomeForm />
       </div>
     </>
   );

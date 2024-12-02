@@ -8,8 +8,6 @@ import { HomeCards } from "@components/cards";
 import { HomeBrand } from "@components/brend";
 import { Sertifikat } from "@components/sertifikat";
 import { HomeForm } from "@components/form";
-import { Footer } from "@components/footer/footer";
-import { Header } from "@components/header";
 import { LeftButton } from "@components/buttons";
 import { BreadcrumbTwo } from "@components/breadCrumb";
 
@@ -42,7 +40,6 @@ export const Hero = () => {
   };
   return (
     <>
-      <Header />
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Окомпании" />
         <div className="pt-10">
@@ -161,9 +158,8 @@ export const Hero = () => {
       </div>
       <HomeBrand />
       <Sertifikat />
-      <HomeForm />
-      <div className="mt-20">
-        <Footer />
+      <div className="mb-24">
+        <HomeForm />
       </div>
     </>
   );
