@@ -20,6 +20,7 @@ import { Product } from "@pages/product";
 import { Home } from "@pages/home";
 import { TurnkeyOffices } from "@pages/turnkeyOffices";
 import { Resuscitation } from "@pages/resuscitation";
+import { Article } from "@pages/article";
 
 const queryClient = new QueryClient();
 function App() {
@@ -44,6 +45,7 @@ function App() {
               <Route path="/product" element={<Product />} />
               <Route path="/turnkey" element={<TurnkeyOffices />} />
               <Route path="turnkey/resuscitation" element={<Resuscitation />} />
+              <Route path="/article" element={<Article />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>

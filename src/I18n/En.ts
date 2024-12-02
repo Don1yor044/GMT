@@ -444,5 +444,15 @@ const En = {
   "реанимации и интенсивной терапии": "resuscitation and intensive care",
   "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник.":
     "Given the rapid development of global medical technologies, doctors in the Russian Federation and neighboring countries have faced the challenge of upgrading equipment in various areas, from CT scanners to ultrasound scanners and ENT combines. The transition to a fully digital platform for diagnosing and treating diseases has also become a serious challenge for most hospitals and private clinics.",
+  "Равным образом, внедрение современных методик однозначно фиксирует необходимость поэтапного и последовательного развития общества. В частности, постоянное информационно-пропагандистское обеспечение нашей деятельности, а также свежий взгляд на привычные вещи —  безусловно открывает новые горизонты для стандартных подходов.  Каждый из нас понимает очевидную вещь: постоянный количественный  рост и сфера нашей активности создаёт предпосылки для   соответствующих условий активизации.":
+    "Likewise, the introduction of modern methods clearly establishes the need for a gradual and consistent development of society. In particular, constant information and propaganda support for our activities, as well as a fresh look at familiar things - certainly opens new horizons for standard approaches. Each of us understands the obvious thing: constant quantitative growth and the scope of our activity creates prerequisites for the corresponding conditions for activation.",
+  "Новая модель организационной деятельности":
+    "New model of organizational activity",
+  Автор: "Author",
+  "Иванов Р": "Ivanov R",
+  "Информационная статья": "Informational article",
+  Содержание: "Content",
+  "Мы вынуждены отталкиваться от того, что курс":
+    "We are forced to proceed from the fact that the rate",
 };
 export default En;

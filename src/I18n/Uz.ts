@@ -455,5 +455,15 @@ const Uz = {
   "реанимации и интенсивной терапии": "reanimatsiya va intensiv terapiya",
   "Учитывая стремительное развитие мировых медицинских технологий, врачи в Российской Федерации и соседних странах столкнулись с вызовом, требующим обновления приборов в различных направлениях, от установок компьютерной томографии до ультразвуковых сканеров и ЛОР комбайнов. Переход на полностью цифровую платформу при диагностике и лечении заболеваний также стал серьёзным испытанием для большинства больниц и частных клиник.":
     "Jahon tibbiyoti texnologiyalarining jadal rivojlanishini hisobga olgan holda, Rossiya Federatsiyasi va qo'shni mamlakatlar shifokorlari kompyuter tomografiyasi bo'linmalaridan tortib, ultratovush skanerlari va LOR kombinatlarigacha bo'lgan turli sohalardagi qurilmalarni yangilashni talab qiladigan muammoga duch kelishmoqda. Kasalliklarni tashxislash va davolash uchun to‘liq raqamli platformaga o‘tish ham aksariyat shifoxonalar va xususiy klinikalar uchun jiddiy sinovga aylandi.",
+  "Равным образом, внедрение современных методик однозначно фиксирует необходимость поэтапного и последовательного развития общества. В частности, постоянное информационно-пропагандистское обеспечение нашей деятельности, а также свежий взгляд на привычные вещи —  безусловно открывает новые горизонты для стандартных подходов.  Каждый из нас понимает очевидную вещь: постоянный количественный  рост и сфера нашей активности создаёт предпосылки для   соответствующих условий активизации.":
+    "Xuddi shunday, zamonaviy usullarni joriy etish jamiyatni bosqichma-bosqich va izchil rivojlantirish zaruriyatini aniq belgilab beradi. Xususan, faoliyatimizni doimiy ravishda axborot va targ‘ibot qo‘llab-quvvatlash, shuningdek, tanish narsalarga yangicha qarash, albatta, standart yondashuvlar uchun yangi ufqlarni ochadi. Har birimiz aniq narsani tushunamiz: doimiy miqdoriy o'sish va faoliyatimiz ko'lami faollashtirish uchun tegishli shart-sharoitlar uchun zarur shart-sharoitlarni yaratadi.",
+  "Новая модель организационной деятельности":
+    "Tashkiliy faoliyatning yangi modeli",
+  Автор: "Muallif",
+  "Иванов Р": "Ivanov R",
+  "Информационная статья": "Ma'lumot maqolasi",
+  Содержание: "Tarkib",
+  "Мы вынуждены отталкиваться от того, что курс":
+    "Kursdan boshlashga majburmiz",
 };
 export default Uz;

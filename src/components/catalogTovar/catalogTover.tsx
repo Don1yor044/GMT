@@ -96,7 +96,7 @@ export const CatalogTovar = () => {
               nextEl: ".swiper-button-next",
             }}
             breakpoints={{
-              340: { slidesPerView: 1.5 },
+              340: { slidesPerView: 1.2 },
               640: { slidesPerView: 2.2 },
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 3.2 },
