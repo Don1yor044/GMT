@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { Button, Col, Collapse, CollapseProps, Row, Typography } from "antd";
-import { t } from "i18next";
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 import { BiLogoVk } from "react-icons/bi";
 import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { GoPlus } from "react-icons/go";
@@ -9,6 +9,7 @@ import { HiOutlineMinus } from "react-icons/hi";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 export const Footer = () => {
+  const { t } = useTranslation();
   interface ItemType {
     key: string;
     label: string;

@@ -17,7 +17,7 @@ import { FaCaretUp, FaRegHeart, FaRegUser, FaSortDown } from "react-icons/fa";
 import { FiChevronDown, FiChevronUp, FiMenu } from "react-icons/fi";
 import { LuBarChartBig, LuMapPin } from "react-icons/lu";
 import { SlBasket } from "react-icons/sl";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { PrimaryButton, PrimaryButtonMini, TertiaryButton } from "../buttons";
 import { PiPhoneLight } from "react-icons/pi";
 import "./index.css";
@@ -29,6 +29,9 @@ export const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [visible, setVisible] = useState(false); // Dropdown holatini saqlash
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
 
   const showDrawer = () => {
     setOpen(true);
@@ -64,19 +67,19 @@ export const Header = () => {
 
   const items: MenuProps["items"] = [
     {
-      label: <Link to="/hero">О компании</Link>,
+      label: <Link to="/hero">{t(`Окомпании`)}</Link>,
       key: "0",
     },
     {
-      label: <Link to="/vacancies">Вакансии</Link>,
+      label: <Link to="/vacancies">{t(`Вакансии`)}</Link>,
       key: "1",
     },
     {
-      label: <Link to="/">Отзывы</Link>,
+      label: <Link to="/reviews">{t(`Отзывы`)}</Link>,
       key: "2",
     },
     {
-      label: <Link to="/certificates">Сертификаты</Link>,
+      label: <Link to="/certificates">{t(`Сертификаты`)}</Link>,
       key: "3",
     },
     {
@@ -91,6 +94,16 @@ export const Header = () => {
     {
       label: <Link to="/">Лизинг</Link>,
       key: "6",
+    },
+  ];
+  const blogItems: MenuProps["items"] = [
+    {
+      label: <Link to="/blog">{t(`Блог`)}</Link>,
+      key: "0",
+    },
+    {
+      label: <Link to="/article">{t(`Article`)}</Link>,
+      key: "1",
     },
   ];
   const categories: MenuProps["items"] = [
@@ -166,7 +179,6 @@ export const Header = () => {
       key: "16",
     },
   ];
-
   const menu = (
     <Menu
       onClick={handleMenuClick}
@@ -284,21 +296,63 @@ export const Header = () => {
             className="cursor-pointer "
           >
             <a onClick={(e) => e.preventDefault()}>
-              <Space className="hover:text-[#07745E]">{t(`Окомпании`)}</Space>
+              <Space
+                className={
+                  isActive("/hero") ||
+                  isActive("/vacancies") ||
+                  isActive("/certificates") ||
+                  isActive("/reviews")
+                    ? "text-[#07745E]"
+                    : "hover:text-[#07745E]"
+                }
+              >
+                {t(`Окомпании`)}
+              </Space>
             </a>
           </Dropdown>
-          <Link to={"/delivery"} className="hover:text-[#07745E]">
+          <Link
+            to={"/delivery"}
+            className={
+              isActive("/delivery") ? "text-[#07745E]" : "hover:text-[#07745E]"
+            }
+          >
             {t("Доставка")}
           </Link>
-          <Link to={"/payment"} className="hover:text-[#07745E]">
+          <Link
+            to={"/payment"}
+            className={
+              isActive("/payment") ? "text-[#07745E]" : "hover:text-[#07745E]"
+            }
+          >
             {t("Оплата")}
           </Link>
-          <Link to={"/guarantees"} className="hover:text-[#07745E]">
+          <Link
+            to={"/guarantees"}
+            className={
+              isActive("/guarantees")
+                ? "text-[#07745E]"
+                : "hover:text-[#07745E]"
+            }
+          >
             {t("Гарантии")}
           </Link>
-          <Link to={"/blog"} className="hover:text-[#07745E]">
-            {t("Блог")}
-          </Link>
+          <Dropdown
+            menu={{ items: blogItems }}
+            trigger={["click"]}
+            className="cursor-pointer"
+          >
+            <Link to={""} onClick={(e) => e.preventDefault()}>
+              <Space
+                className={
+                  isActive("/blog") || isActive("/article")
+                    ? "text-[#07745E]"
+                    : "hover:text-[#07745E]"
+                }
+              >
+                {t(`Блог`)}
+              </Space>
+            </Link>
+          </Dropdown>
         </div>
         <div className="flex gap-5 items-center text-xs md:text-md lg:text-sm xl:text-base">
           <Link to={"/"} className="!text-[#7A7687]">

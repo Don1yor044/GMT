@@ -14,3 +14,4 @@ export * from "./resuscitation";
 export * from "./services";
 export * from "./turnkeyOffices";
 export * from "./vacancies";
+export * from "./reviews";

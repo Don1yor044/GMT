@@ -22,6 +22,7 @@ import { TurnkeyOffices } from "@pages/turnkeyOffices";
 import { Resuscitation } from "@pages/resuscitation";
 import { Article } from "@pages/article";
 import { Layout } from "@components/layout/layout";
+import { Reviews } from "@pages/reviews/reviews";
 
 const queryClient = new QueryClient();
 function App() {
@@ -51,6 +52,7 @@ function App() {
                   element={<Resuscitation />}
                 />
                 <Route path="/article" element={<Article />} />
+                <Route path="/reviews" element={<Reviews />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
