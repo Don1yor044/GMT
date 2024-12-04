@@ -3,7 +3,8 @@ import { Col, Row, Typography } from "antd";
 import { useState } from "react";
 import { Filter } from "./filter";
 import { Products } from "./products";
-
+import { css } from "@emotion/react";
+/** @jsxImportSource @emotion/react */
 interface Items {
   id: number;
   name: string;
@@ -24,9 +25,14 @@ export const Equipment = () => {
 
   return (
     <div className="mt-28">
-      <Typography className="text-4xl">Оборудование Draeger</Typography>
+      <Typography className="text-3xl sm:text-4xl">
+        Оборудование Draeger
+      </Typography>
       <div className="mt-10">
-        <div className="flex gap-3 flex-wrap">
+        <div
+          css={noScrollbar}
+          className="flex gap-3 w-full flex-nowrap overflow-auto"
+        >
           {visibleItems.map((item: Items) => (
             <ButtonStyled key={item.id}>{item.name}</ButtonStyled>
           ))}
@@ -48,11 +54,14 @@ export const Equipment = () => {
     </div>
   );
 };
+
 const ButtonStyled = styled.button`
   padding: 8px 30px;
   border: 1px solid #d5d1e1;
   background-color: white;
   border-radius: 30px;
+  white-space: nowrap; /* Yozuvlarni bir qatorda saqlash */
+  flex-shrink: 0; /* Tugma hajmini siqib qo‘ymaslik */
 `;
 const ButtonStyledDefault = styled.button`
   padding: 8px 30px;
@@ -61,4 +70,21 @@ const ButtonStyledDefault = styled.button`
   border-radius: 30px;
   color: #088269;
   font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+`;
+
+const noScrollbar = css`
+  overflow-x: auto;
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+
+  /* Scrollbar’ni yashirish uchun */
+  &::-webkit-scrollbar {
+    display: none; /* Webkit brauzerlarda yashirish */
+  }
+
+  -ms-overflow-style: none; /* IE va Edge uchun */
+  scrollbar-width: none; /* Firefox uchun */
 `;
