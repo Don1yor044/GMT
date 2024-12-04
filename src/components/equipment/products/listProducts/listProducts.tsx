@@ -1,10 +1,9 @@
 import { SecondaryButton } from "@components/buttons";
 import styled from "@emotion/styled";
-import { Button, Col, Row, Typography } from "antd";
-import { useState } from "react";
+import { Button, Col, Pagination, Row, Typography } from "antd";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaRegHeart } from "react-icons/fa";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { LuBarChartBig } from "react-icons/lu";
 interface ImageContainerProps {
   src: string;
@@ -12,8 +11,9 @@ interface ImageContainerProps {
 interface StyledButtonProps {
   status: string;
 }
-export const Products = () => {
-  const [popularity, setPopularity] = useState(false);
+export const ListProducts = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const paginationRef = useRef(null);
   const { t } = useTranslation();
   const itemsProduct = [
     {
@@ -49,50 +49,50 @@ export const Products = () => {
       status: "-30%",
     },
   ];
+  const startIndex = (currentPage - 1) * 4;
+  const endIndex = startIndex + 4;
+  const currentItems = itemsProduct.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+  useEffect(() => {
+    if (paginationRef.current) {
+      if (currentPage === 1) {
+        window.scrollTo(0, 0);
+      } else {
+        window.scrollTo(0, 300);
+      }
+    }
+  }, [currentPage]);
   return (
     <>
-      <div className="p-3 border rounded-lg flex">
-        <div className="flex w-[80%] justify-between">
-          <div
-            className="flex justify-between items-center cursor-pointer gap-3 "
-            onClick={() => setPopularity((prev) => !prev)}
-          >
-            <Typography className="text-sm font-medium">
-              По популярности
-            </Typography>
-
-            {popularity ? (
-              <IoIosArrowUp size={15} />
-            ) : (
-              <IoIosArrowDown size={15} />
-            )}
-          </div>
-          <div
-            className="flex justify-between items-center cursor-pointer gap-3"
-            onClick={() => setPopularity((prev) => !prev)}
-          >
-            <Typography className="text-sm font-medium">
-              По популярности
-            </Typography>
-
-            {popularity ? (
-              <IoIosArrowUp size={15} />
-            ) : (
-              <IoIosArrowDown size={15} />
-            )}
-          </div>
-        </div>
-        <div className="w-[20%] flex justify-end pe-3">asd</div>
-      </div>
       <Row gutter={[10, 10]} className="mt-5">
-        {itemsProduct.map((item) => (
-          <Col span={8} key={item.id}>
-            <div className="!border border-gray-300 rounded-xl">
-              <div className="bg-white h-72 p-3 rounded-t-xl">
+        {currentItems.map((item) => (
+          <Col span={24} key={item.id}>
+            <div className="!border border-gray-300 rounded-xl flex">
+              <div className="bg-white w-[35%] p-3 rounded-s-xl min-h-64 border">
                 <div className="flex justify-between items-center">
                   <StyledButton status={item.status}>
                     {t(item.status)}
                   </StyledButton>
+                </div>
+                <ImageContainer src={item.src}></ImageContainer>
+              </div>
+              <div className="px-7 p-3 border-t w-[70%]">
+                <div className="flex justify-between">
+                  <div>
+                    {" "}
+                    <Typography.Title level={2} className="w-96">
+                      {t(item.title)}
+                    </Typography.Title>
+                    <Typography className="text-[#7A7687]">
+                      {t(`Артикул`)}:{item.article}
+                    </Typography>
+                    <Typography className="text-[#7A7687]">
+                      {t(`Вналичии`)}
+                    </Typography>
+                  </div>
                   <div className="flex">
                     <Button
                       type="text"
@@ -110,28 +110,27 @@ export const Products = () => {
                     </Button>
                   </div>
                 </div>
-
-                <ImageContainer src={item.src}></ImageContainer>
-              </div>
-              <div className="p-3 border-t">
-                <Typography.Title level={4} className="w-52">
-                  {t(item.title)}
-                </Typography.Title>
-                <Typography className="text-[#7A7687]">
-                  {t(`Артикул`)}:{item.article}
-                </Typography>
-                <Typography className="text-[#7A7687]">
-                  {t(`Вналичии`)}
-                </Typography>
-                <Typography.Title level={4}>{item.price} руб.</Typography.Title>
-                <div className="mt-5">
-                  <SecondaryButton text={t("ДобавитьВкорзину")} size={100} />
+                <div className="flex justify-between mt-12 w-full">
+                  <Typography.Title level={4}>
+                    {item.price} руб.
+                  </Typography.Title>
+                  <div>
+                    <SecondaryButton text={t("ДобавитьВкорзину")} size={100} />
+                  </div>
                 </div>
               </div>
             </div>
           </Col>
         ))}
       </Row>
+      <StylePagination ref={paginationRef}>
+        <Pagination
+          current={currentPage}
+          total={itemsProduct.length}
+          pageSize={4}
+          onChange={handlePageChange}
+        />
+      </StylePagination>
     </>
   );
 };
@@ -170,4 +169,26 @@ const ImageContainer = styled.div<ImageContainerProps>`
   max-height: 200px;
   margin: 0 auto;
   background-image: ${(props) => `url(${props.src})`};
+`;
+const StylePagination = styled.div`
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  .ant-pagination {
+    a {
+      color: black !important;
+      outline: 1px solid gray;
+      border-radius: 7px;
+    }
+    .ant-pagination-item-active {
+      border: none !important;
+      outline: none !important;
+      background-color: #088269;
+      a {
+        border: none !important;
+        outline: none !important;
+        color: white !important;
+      }
+    }
+  }
 `;

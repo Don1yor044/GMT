@@ -18,3 +18,4 @@ export * from "./breadCrumb";
 export * from "./errorBoundaries";
 export * from "./notFound";
 export * from "./listProducts";
+export * from "./equipment";
