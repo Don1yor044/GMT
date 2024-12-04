@@ -179,20 +179,20 @@ const StyledButton = styled.button<StyledButtonProps>`
   color: ${({ status }) =>
     status === "Новинка"
       ? "#088269"
-      : status === "Хит продаж"
+      : status === "ХитПродаж"
       ? "#59599A"
       : "#855E00"};
   border: 1px solid
     ${({ status }) =>
       status === "Новинка"
         ? "#088269"
-        : status === "Хит продаж"
+        : status === "ХитПродаж"
         ? "#59599A"
         : "#855E00"};
   background-color: ${({ status }) =>
     status === "Новинка"
       ? "#448c7e2f"
-      : status === "Хит продаж"
+      : status === "ХитПродаж"
       ? "#59599a44"
       : "#ffeeba"};
   padding: 1px 8px;
