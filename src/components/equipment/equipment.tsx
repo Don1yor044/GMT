@@ -4,12 +4,14 @@ import { useState } from "react";
 import { Filter } from "./filter";
 import { Products } from "./products";
 import { css } from "@emotion/react";
+import { useTranslation } from "react-i18next";
 interface Items {
   id: number;
   name: string;
 }
 
 export const Equipment = () => {
+  const { t } = useTranslation();
   const [show, setShow] = useState(false);
   const items: Items[] = [
     { id: 1, name: "Дерматологическое оборудование" },
@@ -25,7 +27,7 @@ export const Equipment = () => {
   return (
     <div className="mt-28">
       <Typography className="text-3xl sm:text-4xl">
-        Оборудование Draeger
+        {t(`Оборудование Draeger`)}
       </Typography>
       <div className="mt-10">
         <div
@@ -36,15 +38,15 @@ export const Equipment = () => {
             <ButtonStyled key={item.id}>{item.name}</ButtonStyled>
           ))}
           <ButtonStyledDefault onClick={() => setShow(!show)}>
-            {show ? "Скрыть" : "Показать все"}
+            {show ? t("Скрыть") : t("Показать все")}
           </ButtonStyledDefault>
         </div>
         <div className="mt-8">
           <Row gutter={[20, 20]}>
-            <Col span={6}>
+            <Col span={24} lg={6} md={8}>
               <Filter />
             </Col>
-            <Col span={18}>
+            <Col span={24} lg={18} md={16}>
               <Products />
             </Col>
           </Row>

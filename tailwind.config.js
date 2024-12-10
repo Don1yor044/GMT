@@ -10,7 +10,7 @@ export default {
         xs: '475px',  // Define `xs` as needed
       },
       screens: {
-        mp: '275px',  // Define `xs` as needed
+        mp: '275px',  // Define `mp` as needed
       },
     },
   },

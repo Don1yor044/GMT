@@ -465,5 +465,20 @@ const Uz = {
   Содержание: "Tarkib",
   "Мы вынуждены отталкиваться от того, что курс":
     "Kursdan boshlashga majburmiz",
+  "Медецинское оборудование Draeger": "Tibbiy asbob-uskunalar Draeger",
+  "Оборудование Draeger": "Drager uskunalari",
+  Скрыть: "Yashirish",
+  "Показать все": "Hammasini ko'rsatish",
+  Цена: "Narxi",
+  "Фильтр по товарам": "Mahsulot bo'yicha filtrlash",
+  От: "Dan",
+  До: "Gacha",
+  Страна: "Mamlakat",
+  Состояние: "Holat",
+  Новый: "Yangi",
+  Демонстрационный: "Namoyish",
+  Показать: "Ko'rsatish",
+  Сбросить: "Tiklash",
+  "По популярности": "Mashhurlik bo'yicha",
 };
 export default Uz;

@@ -378,7 +378,7 @@ export const Header = () => {
             </Button>
           </div>
         </div>
-        <div className="flex w-full items-center gap-7">
+        <div className="flex w-full justify-center gap-7">
           <div className="w-full lg:flex-grow mt-4 lg:mt-0 lg:w-auto md:w-full xs:w-full mp:w-full searchInput">
             <div className="xl:w-[600px] lg:w-[430px] flex items-center bg-gray-300 rounded-full overflow-hidden shadow-sm hover:shadow-md transition-shadow !text-[#7A7687] border border-gray-300  ">
               <div className="!bg-[#F8F7F3]">

@@ -454,5 +454,20 @@ const En = {
   Содержание: "Content",
   "Мы вынуждены отталкиваться от того, что курс":
     "We are forced to proceed from the fact that the rate",
+  "Медецинское оборудование Draeger": "Medical equipment Drager",
+  "Оборудование Draeger": "Medical equipment Drager",
+  Скрыть: "Hide",
+  "Показать все": "Show all",
+  Цена: "Price",
+  "Фильтр по товарам": "Filter by products",
+  От: "From",
+  До: "Up to",
+  Страна: "Country",
+  Состояние: "State",
+  Новый: "New",
+  Демонстрационный: "Demo",
+  Показать: "Show",
+  Сбросить: "Reset",
+  "По популярности": "By popularity",
 };
 export default En;

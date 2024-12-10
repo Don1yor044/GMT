@@ -17,8 +17,8 @@ export const Brand = () => {
           threePages="Медецинское оборудование Draeger"
         />
         <div className="mt-24">
-          <Typography className="text-5xl">
-            Медецинское оборудование Draeger
+          <Typography className="text-2xl sm:text-3xl md:text-5xl">
+            {t(`Медецинское оборудование Draeger`)}
           </Typography>
           <div className="mt-10">
             <Row gutter={[10, 20]}>

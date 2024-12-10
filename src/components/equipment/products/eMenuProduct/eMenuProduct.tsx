@@ -18,7 +18,7 @@ interface ProductsType {
   price: string;
   status: string;
 }
-export const ListProducts = ({
+export const MenuProducts = ({
   itemsProduct,
 }: {
   itemsProduct: ProductsType[];
@@ -27,8 +27,8 @@ export const ListProducts = ({
   const paginationRef = useRef(null);
   const { t } = useTranslation();
 
-  const startIndex = (currentPage - 1) * 4;
-  const endIndex = startIndex + 4;
+  const startIndex = (currentPage - 1) * 6;
+  const endIndex = startIndex + 6;
   const currentItems = itemsProduct.slice(startIndex, endIndex);
 
   const handlePageChange = (page: number) => {
@@ -41,62 +41,54 @@ export const ListProducts = ({
       }
     }
   }, [currentPage]);
+
   return (
     <>
       <Row gutter={[10, 10]} className="mt-5">
         {currentItems.map((item) => (
-          <Col span={24} key={item.id}>
-            <div className="!border border-gray-300 rounded-xl flex">
-              <div className="bg-white w-[45%] lg:w-[35%] p-3 rounded-s-xl min-h-64 border">
+          <Col span={12} lg={8} key={item.id}>
+            <div className="!border border-gray-300 rounded-xl">
+              <div className="bg-white h-60 sm:h-72 p-1 sm:p-3 rounded-t-xl">
                 <div className="flex justify-between items-center">
                   <StyledButton status={item.status}>
-                    {t(item.status)}
+                    <span className="text-xs sm:text-sm">{t(item.status)}</span>
                   </StyledButton>
-                </div>
-                <ImageContainer src={item.src}></ImageContainer>
-              </div>
-              <div className="sm:px-7 p-3 border-t w-[55%] lg:w-[70%]">
-                <div className="flex justify-between">
-                  <div>
-                    {" "}
-                    <Typography className="w-[90%] text-lg sm:text-xl lg:text-3xl font-medium">
-                      {t(item.title)}
-                    </Typography>
-                    <Typography className="text-[#7A7687]">
-                      {t(`Артикул`)}: {item.article}
-                    </Typography>
-                    <Typography className="text-[#7A7687]">
-                      {t(`Вналичии`)}
-                    </Typography>
-                  </div>
-                  <div className="hidden lg:flex">
+                  <div className="flex">
                     <Button
                       type="text"
-                      className="p-0 flex items-center justify-center"
-                      style={{ minWidth: "35px", minHeight: "30px" }}
+                      className="p-0 flex items-center justify-center sm:w-[35px] sm:h-[30px] w-[25px] h-[20px]"
                     >
                       <LuBarChartBig size={19} />
                     </Button>
                     <Button
                       type="text"
-                      className="p-0 flex items-center justify-center"
-                      style={{ minWidth: "35px", minHeight: "30px" }}
+                      className="p-0 flex items-center justify-center sm:w-[35px] sm:h-[30px] w-[25px] h-[20px]"
                     >
                       <FaRegHeart size={19} />
                     </Button>
                   </div>
                 </div>
-                <div className="lg:flex justify-between sm:mt-0 mt-5 lg:mt-14 w-full">
-                  <Typography.Title level={4}>
-                    {item.price} руб.
-                  </Typography.Title>
-                  <div className="lg:mt-0 sm:mt-8">
-                    <StyledSecondaryButton>
-                      <span className="text-[11px] sm:text-sm lg:px-10">
-                        {t("ДобавитьВкорзину")}
-                      </span>
-                    </StyledSecondaryButton>
-                  </div>
+                <ImageContainer src={item.src}></ImageContainer>
+              </div>
+              <div className="p-2 sm:p-3 border-t">
+                <Typography className="w-full flex-wrap sm:text-xl md:text-2xl text-lg font-medium ">
+                  {t(item.title)}
+                </Typography>
+                <Typography className="text-[#7A7687]">
+                  {t(`Артикул`)}: {item.article}
+                </Typography>
+                <Typography className="text-[#7A7687]">
+                  {t(`Вналичии`)}
+                </Typography>
+                <Typography className="text-lg font-medium sm:text-2xl">
+                  {item.price} руб.
+                </Typography>
+                <div className="mt-5 ">
+                  <StyledSecondaryButton>
+                    <span className="text-[11px] sm:text-sm">
+                      {t("ДобавитьВкорзину")}
+                    </span>
+                  </StyledSecondaryButton>
                 </div>
               </div>
             </div>
@@ -107,7 +99,7 @@ export const ListProducts = ({
         <Pagination
           current={currentPage}
           total={itemsProduct.length}
-          pageSize={4}
+          pageSize={7}
           onChange={handlePageChange}
         />
       </StylePagination>

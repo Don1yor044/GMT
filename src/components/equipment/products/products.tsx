@@ -1,21 +1,20 @@
-import { SecondaryButton } from "@components/buttons";
-import styled from "@emotion/styled";
-import { Button, Col, Pagination, Row, Typography } from "antd";
-import { useEffect, useRef, useState } from "react";
+import { Typography } from "antd";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FaRegHeart } from "react-icons/fa";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { LuBarChartBig } from "react-icons/lu";
 import { RxDashboard, RxHamburgerMenu } from "react-icons/rx";
 import { ListProducts } from "./eListProduct";
+import { MenuProducts } from "./eMenuProduct";
 
-interface ImageContainerProps {
+interface ProductsType {
+  id: number;
   src: string;
-}
-interface StyledButtonProps {
+  title: string;
+  article: number;
+  price: string;
   status: string;
 }
-const itemsProduct = [
+const itemsProduct: ProductsType[] = [
   {
     id: 1,
     src: "https://s3-alpha-sig.figma.com/img/98d6/ce68/ca05465aa55ba84ace8005d1e27d304e?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JF03XnkxPtJqZP~WkiPPjrSTlpi6qfHG1YUXGXBdd3Em~VCvVm~6vCv24gGkidK6-0hsp7oSyK6zVFsUSPgpCdHNxU27xnEazGaLBIhEtTRkeYV-ycX98bETvoZvELm47Ln7OcUnkcUdpJfa415tYj2JVUWRymV1gF0q~YvO287tW0OQM9hWIrOtx5xLfBGja5EaNAxXf~BEIHjpgfcHYWiUv0Hi~91eVg1qP6Wv-mj5IwTcdoYcAbT1hskPP4lW6mjoWHg0ewdZdQIFpxpJbr7L9NL4Tr~GmHtgL5W8cMw~-w21MWMt2KDGwA6x~7Yp64dbJCwZ~RZ2arXGydZHng__",
@@ -92,36 +91,17 @@ const itemsProduct = [
 export const Products = () => {
   const [popularity, setPopularity] = useState(false);
   const [list, setList] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const paginationRef = useRef(null);
-
   const { t } = useTranslation();
-
-  const startIndex = (currentPage - 1) * 6;
-  const endIndex = startIndex + 6;
-  const currentItems = itemsProduct.slice(startIndex, endIndex);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-  };
-  useEffect(() => {
-    if (paginationRef.current) {
-      if (currentPage !== 1) {
-        window.scrollTo(0, 1300);
-      }
-    }
-  }, [currentPage]);
-
   return (
     <>
-      <div className="p-3 border rounded-lg flex">
+      <div className="p-1 sm:p-3 border rounded-lg flex">
         <div className="flex w-[80%] justify-between">
           <div
-            className="flex justify-between items-center cursor-pointer gap-3 "
+            className="flex justify-between items-center cursor-pointer gap-1 sm:gap-3 "
             onClick={() => setPopularity((prev) => !prev)}
           >
-            <Typography className="text-sm font-medium">
-              По популярности
+            <Typography className="text-xs sm:text-sm font-medium">
+              {t(`По популярности`)}
             </Typography>
 
             {popularity ? (
@@ -131,10 +111,12 @@ export const Products = () => {
             )}
           </div>
           <div
-            className="flex justify-between items-center cursor-pointer gap-3"
+            className="flex justify-between items-center cursor-pointer gap-1 sm:gap-3"
             onClick={() => setPopularity((prev) => !prev)}
           >
-            <Typography className="text-sm font-medium">Показать</Typography>
+            <Typography className="text-xs sm:text-sm font-medium">
+              {t(`Показать`)}
+            </Typography>
             <div className="flex gap-1 items-center">
               <Typography className="text-sm">36</Typography>
 
@@ -147,7 +129,7 @@ export const Products = () => {
           </div>
         </div>
         <div className="w-[20%] flex justify-end pe-3">
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-2 sm:gap-3 items-center">
             <RxHamburgerMenu
               size={17}
               onClick={() => setList(true)}
@@ -167,130 +149,13 @@ export const Products = () => {
       </div>
       {list ? (
         <>
-          <ListProducts />
+          <ListProducts itemsProduct={itemsProduct} />
         </>
       ) : (
         <>
-          <Row gutter={[10, 10]} className="mt-5">
-            {currentItems.map((item) => (
-              <Col span={8} key={item.id}>
-                <div className="!border border-gray-300 rounded-xl">
-                  <div className="bg-white h-72 p-3 rounded-t-xl">
-                    <div className="flex justify-between items-center">
-                      <StyledButton status={item.status}>
-                        {t(item.status)}
-                      </StyledButton>
-                      <div className="flex">
-                        <Button
-                          type="text"
-                          className="p-0 flex items-center justify-center"
-                          style={{ minWidth: "35px", minHeight: "30px" }}
-                        >
-                          <LuBarChartBig size={19} />
-                        </Button>
-                        <Button
-                          type="text"
-                          className="p-0 flex items-center justify-center"
-                          style={{ minWidth: "35px", minHeight: "30px" }}
-                        >
-                          <FaRegHeart size={19} />
-                        </Button>
-                      </div>
-                    </div>
-                    <ImageContainer src={item.src}></ImageContainer>
-                  </div>
-                  <div className="p-3 border-t">
-                    <Typography.Title level={4} className="w-52">
-                      {t(item.title)}
-                    </Typography.Title>
-                    <Typography className="text-[#7A7687]">
-                      {t(`Артикул`)}:{item.article}
-                    </Typography>
-                    <Typography className="text-[#7A7687]">
-                      {t(`Вналичии`)}
-                    </Typography>
-                    <Typography.Title level={4}>
-                      {item.price} руб.
-                    </Typography.Title>
-                    <div className="mt-5">
-                      <SecondaryButton
-                        text={t("ДобавитьВкорзину")}
-                        size={100}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
-          <StylePagination ref={paginationRef}>
-            <Pagination
-              current={currentPage}
-              total={itemsProduct.length}
-              pageSize={7}
-              onChange={handlePageChange}
-            />
-          </StylePagination>
+          <MenuProducts itemsProduct={itemsProduct} />
         </>
       )}
     </>
   );
 };
-const StyledButton = styled.button<StyledButtonProps>`
-  color: ${({ status }) =>
-    status === "Новинка"
-      ? "#088269"
-      : status === "ХитПродаж"
-      ? "#59599A"
-      : "#855E00"};
-  border: 1px solid
-    ${({ status }) =>
-      status === "Новинка"
-        ? "#088269"
-        : status === "ХитПродаж"
-        ? "#59599A"
-        : "#855E00"};
-  background-color: ${({ status }) =>
-    status === "Новинка"
-      ? "#448c7e2f"
-      : status === "ХитПродаж"
-      ? "#59599a44"
-      : "#ffeeba"};
-  padding: 1px 8px;
-  border-radius: 50px;
-  font-weight: 500;
-  cursor: auto;
-`;
-const ImageContainer = styled.div<ImageContainerProps>`
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: 200px;
-  height: 100%;
-  max-height: 200px;
-  margin: 0 auto;
-  background-image: ${(props) => `url(${props.src})`};
-`;
-const StylePagination = styled.div`
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  .ant-pagination {
-    a {
-      color: black !important;
-      outline: 1px solid gray;
-      border-radius: 7px;
-    }
-    .ant-pagination-item-active {
-      border: none !important;
-      outline: none !important;
-      background-color: #088269;
-      a {
-        border: none !important;
-        outline: none !important;
-        color: white !important;
-      }
-    }
-  }
-`;
