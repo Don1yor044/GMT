@@ -7,7 +7,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { LuBarChartBig } from "react-icons/lu";
 import { RxDashboard, RxHamburgerMenu } from "react-icons/rx";
-import { ListProducts } from "./listProducts";
+import { ListProducts } from "./eListProduct";
 
 interface ImageContainerProps {
   src: string;

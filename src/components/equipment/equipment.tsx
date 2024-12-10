@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Filter } from "./filter";
 import { Products } from "./products";
 import { css } from "@emotion/react";
-/** @jsxImportSource @emotion/react */
 interface Items {
   id: number;
   name: string;

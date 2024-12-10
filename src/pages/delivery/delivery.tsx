@@ -66,7 +66,6 @@ export const Delivery = () => {
                     visible: true,
                   }}
                 />
-
                 <Placemark
                   geometry={[41.326509, 69.228341]}
                   options={{
