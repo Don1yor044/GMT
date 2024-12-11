@@ -480,5 +480,20 @@ const Uz = {
   Показать: "Ko'rsatish",
   Сбросить: "Tiklash",
   "По популярности": "Mashhurlik bo'yicha",
+  "Часто задаваемые вопросы": "Tez-tez so'raladigan savollar",
+  "Поиск по вопросам": "Savollar bo'yicha qidirish",
+  "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.":
+    "Ammo sintetik test o'zining klassik taqdimotida jamiyatning bosqichma-bosqich va izchil rivojlanishini joriy etish imkonini beradi. Zamonaviy standartlarning spetsifikatsiyasi doirasida fanda totalitarizm tarafdorlari funktsional jihatdan ajratiladi.",
+  "Возврат товара или заказа": "Mahsulot yoki buyurtmani qaytarish",
+  "Стоимость доставки": "Yetkazib berish narxi",
+  "Стать поставщиком": "Yetkazib beruvchiga aylaning",
+  "Возможен ли возврат денежных средств?": "To'lovni qaytarish mumkinmi?",
+  "Правила расторжения договора?": "Shartnomani bekor qilish qoidalari?",
+  "Почему не отгружаем по платежному поручению?":
+    "Nega biz to'lov topshirig'i bilan jo'natmaymiz?",
+  "Как можно купить товар за наличный расчет?":
+    "Tovarlarni naqd pulga qanday sotib olish mumkin?",
+  "Как сравнить товары на сайте?":
+    "Saytdagi mahsulotlarni qanday solishtirish mumkin?",
 };
 export default Uz;

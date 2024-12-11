@@ -42,13 +42,13 @@ const Document = () => {
     children: t(item.children),
   }));
   return (
-    <div className="bg-[#E5E4ED] py-14 lg:px-14 md:px-10 xs:px-5 px-2 mt-28 h-[60vh]">
-      <Row gutter={[20, 20]}>
+    <div className="bg-[#E5E4ED] py-14 lg:px-14 md:px-10 sm:px-5 px-2  mt-28 min-h-[60vh] ">
+      <Row gutter={[10, 20]}>
         <Col md={18} lg={11} xs={24}>
           <Typography.Title level={2} className="lg:w-96 w-full">
             {t(`Документы, необходимые для получения груза`)}
           </Typography.Title>
-          <Typography className="xl:pr-52 ">
+          <Typography className="xl:pr-52">
             {t(
               `По копиям доверенностей и доверенностям с незаполненными обязательными реквизитами отгрузка не производится`
             )}

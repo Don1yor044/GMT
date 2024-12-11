@@ -1,6 +1,5 @@
 import { Col, Form, Input, Row, Typography } from "antd";
 import { PrimaryButton } from "../buttons";
-import { t } from "i18next";
 import {
   FullscreenControl,
   Map,
@@ -10,10 +9,12 @@ import {
 } from "@pbe/react-yandex-maps";
 import styled from "@emotion/styled";
 import { IOptionManager } from "yandex-maps";
+import { useTranslation } from "react-i18next";
 interface ExtendedOptionManager extends IOptionManager {
   float?: string;
 }
 export const HomeForm = () => {
+  const { t } = useTranslation();
   return (
     <div className="px-3 lg:px-14 md:px-5 xs:px-4 sm:px-3 mt-24">
       <Row gutter={[20, 20]}>

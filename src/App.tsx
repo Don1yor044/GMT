@@ -25,6 +25,7 @@ import { Layout } from "@components/layout/layout";
 import { Reviews } from "@pages/reviews/reviews";
 import { Brand } from "@pages/brand";
 import { Category } from "@pages/category/category";
+import { Faq } from "@pages/faq";
 
 const queryClient = new QueryClient();
 function App() {
@@ -57,6 +58,7 @@ function App() {
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/brand" element={<Brand />} />
                 <Route path="/category" element={<Category />} />
+                <Route path="/faq" element={<Faq />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>

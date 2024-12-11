@@ -469,5 +469,18 @@ const En = {
   Показать: "Show",
   Сбросить: "Reset",
   "По популярности": "By popularity",
+  "Часто задаваемые вопросы": "Frequently asked questions",
+  "Поиск по вопросам": "Search by questions",
+  "Но синтетическое тестирование, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. В рамках спецификации современных стандартов, сторонники тоталитаризма в науке будут функционально разнесены.":
+    "But synthetic testing, in its classical presentation, allows for the introduction of a step-by-step and consistent development of society. Within the framework of the specification of modern standards, supporters of totalitarianism in science will be functionally separated.",
+  "Возврат товара или заказа": "Return of goods or order",
+  "Стоимость доставки": "Shipping cost",
+  "Стать поставщиком": "Become a supplier",
+  "Возможен ли возврат денежных средств?": "Is a refund possible?",
+  "Правила расторжения договора?": "Rules for termination of the contract?",
+  "Почему не отгружаем по платежному поручению?":
+    "Why don't we ship according to payment order?",
+  "Как можно купить товар за наличный расчет?": "How can I buy goods for cash?",
+  "Как сравнить товары на сайте?": "How to compare products on the site?",
 };
 export default En;

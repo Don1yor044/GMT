@@ -131,7 +131,7 @@ export const Vacancies = () => {
     <>
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Вакансии" />
-        <div className="mt-20">
+        <div className="mt-10 lg:mt-20">
           <Row gutter={[20, 20]}>
             <Col span={24} lg={12}>
               <div>

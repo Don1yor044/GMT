@@ -5,10 +5,11 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
 import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css";
-import { t } from "i18next";
 import { LeftButton, PrimaryButton } from "@components/buttons";
+import { useTranslation } from "react-i18next";
 
 export const HomeBrand = () => {
+  const { t } = useTranslation();
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const handleNext = () => {

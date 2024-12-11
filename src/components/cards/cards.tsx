@@ -1,6 +1,7 @@
 import { Col, Row, Typography } from "antd";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 export const HomeCards = () => {
+  const { t } = useTranslation();
   const items = [
     {
       id: 1,

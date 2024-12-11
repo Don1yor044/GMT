@@ -149,7 +149,7 @@ export const Reviews = () => {
     <>
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Отзывы" />
-        <div className="mt-20">
+        <div className="mt-10 lg:mt-20">
           <Typography className="text-4xl sm:text-5xl">
             {t(`Отзывы`)}
           </Typography>

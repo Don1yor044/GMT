@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Col, Collapse, CollapseProps, Row, Typography } from "antd";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { CiCirclePlus } from "react-icons/ci";
 import { IoIosCloseCircle } from "react-icons/io";
 interface ItemType {
@@ -38,6 +38,7 @@ const customExpandIcon = ({ isActive }: { isActive?: boolean }) => {
   );
 };
 export const About = () => {
+  const { t } = useTranslation();
   const translatedItems: CollapseProps["items"] = items.map((item) => ({
     key: item.key,
     label: t(item.label),

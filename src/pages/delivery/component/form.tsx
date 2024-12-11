@@ -5,20 +5,18 @@ import { t } from "i18next";
 const DeliveryForm = () => {
   return (
     <div className="px-2 lg:px-14 md:px-5 xs:px-4 sm:px-2 md:pt-24 pt-10">
-      <Row gutter={[20, 20]}>
+      <Row gutter={[10, 20]}>
         <Col lg={12} xs={24} span={24}>
-          <div>
-            <Typography.Title level={2}>
-              {t(`ВамНужнаКонсультация`)} ?
-            </Typography.Title>
-            <Typography.Title level={5} className="xl:pr-44 md:pr-40">
-              {t(`Задайте их по номеру телефона`)}{" "}
-              <span className="text-[#088269]">+7 (495) 000-00-00</span>{" "}
-              {t(
-                `или оставьте свои координаты и наш менеджер перезвонит вам через 10 минут`
-              )}
-            </Typography.Title>
-          </div>
+          <Typography.Title level={2}>
+            {t(`ВамНужнаКонсультация`)} ?
+          </Typography.Title>
+          <Typography.Title level={5} className="xl:pr-44 md:pr-40">
+            {t(`Задайте их по номеру телефона`)}{" "}
+            <span className="text-[#088269]">+7 (495) 000-00-00</span>{" "}
+            {t(
+              `или оставьте свои координаты и наш менеджер перезвонит вам через 10 минут`
+            )}
+          </Typography.Title>
         </Col>
         <Col lg={12} xs={24} span={24}>
           <div className="bg-white lg:p-10 mp:p-3 border rounded-xl h-full">

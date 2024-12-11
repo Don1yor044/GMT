@@ -85,7 +85,7 @@ export const Certificates = () => {
     <>
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbThree currentPage="Сертификаты" twoPages="Окомпании" />
-        <div className="mt-24">
+        <div className="mt-10 lg:mt-24">
           <Row gutter={[20, 20]}>
             <Col span={24} lg={12}>
               <Typography className="lg:text-5xl text-4xl font-semibold ">

@@ -98,7 +98,7 @@ export const Delivery = () => {
         <div className="mt-28">
           <Cards />
         </div>
-        <div className="my-28">
+        <div className="my-28 ">
           <Row gutter={[20, 20]}>
             <Col span={12} lg={12} xs={24}>
               <div>
@@ -118,15 +118,22 @@ export const Delivery = () => {
               </div>
             </Col>
             <Col span={12} lg={12} xs={24} md={18}>
-              {steps.map((step, index) => (
-                <div key={index}>
-                  {index > 0 && <hr className="my-7" />}
-                  <Typography.Title level={4}>{t(step.title)}</Typography.Title>
-                  <Typography.Title level={5} className="!text-[#7A7687] !m-0">
-                    {t(step.description)}
-                  </Typography.Title>
-                </div>
-              ))}
+              <div>
+                {steps.map((step, index) => (
+                  <div key={index}>
+                    {index > 0 && <hr className="my-7" />}
+                    <Typography.Title level={4}>
+                      {t(step.title)}
+                    </Typography.Title>
+                    <Typography.Title
+                      level={5}
+                      className="!text-[#7A7687] !m-0"
+                    >
+                      {t(step.description)}
+                    </Typography.Title>
+                  </div>
+                ))}
+              </div>
             </Col>
           </Row>
         </div>

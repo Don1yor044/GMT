@@ -1,7 +1,8 @@
 import { Col, Row, Typography } from "antd";
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 export const HomeClient = () => {
+  const { t } = useTranslation();
   const items = [
     {
       id: 1,

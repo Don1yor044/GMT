@@ -16,7 +16,7 @@ export const Brand = () => {
           twoPages="Каталог"
           threePages="Медецинское оборудование Draeger"
         />
-        <div className="mt-24">
+        <div className="mt-10 lg:mt-24">
           <Typography className="text-2xl sm:text-3xl md:text-5xl">
             {t(`Медецинское оборудование Draeger`)}
           </Typography>
