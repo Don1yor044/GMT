@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Col, Row, Typography } from "antd";
+import { Col, Row } from "antd";
 import { useState } from "react";
 import { Filter } from "./filter";
 import { Products } from "./products";
@@ -25,10 +25,7 @@ export const Equipment = () => {
   const visibleItems = show ? items : items.slice(0, 4);
 
   return (
-    <div className="mt-28">
-      <Typography className="text-3xl sm:text-4xl">
-        {t(`Оборудование Draeger`)}
-      </Typography>
+    <>
       <div className="mt-10">
         <div
           css={noScrollbar}
@@ -52,7 +49,7 @@ export const Equipment = () => {
           </Row>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

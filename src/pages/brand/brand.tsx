@@ -52,7 +52,10 @@ export const Brand = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="mt-28">
+            <Typography className="text-3xl sm:text-4xl">
+              {t(`Оборудование Draeger`)}
+            </Typography>
             <Equipment />
           </div>
         </div>
