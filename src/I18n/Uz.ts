@@ -500,5 +500,12 @@ const Uz = {
   Лампы: "Лампы",
   Кровати: "Yoritgichlar",
   Рентгены: "rentgen nurlari",
+  "Не добавлено товаров в избранное":
+    "Sevimlilarga hech qanday mahsulot kiritilmagan",
+  "Вы можете перейти на главную страницу или воспользоваться каталогом товаров":
+    "Siz asosiy sahifaga o'tishingiz yoki mahsulot katalogidan foydalanishingiz mumkin",
+  "На главную": "Asosiy sahifaga",
+  Маммографы: "Mamografilar",
+  Флюорографы: "Florograflar",
 };
 export default Uz;

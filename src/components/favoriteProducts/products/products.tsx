@@ -114,8 +114,8 @@ export const FavoriteProducts = () => {
           <MenuProducts itemsProduct={itemsProduct} />
         </>
       )}
-      <div className="flex justify-end mt-5">
-        <PrimaryButton text="В каталог" />
+      <div className="flex justify-center  md:justify-end mt-10">
+        <PrimaryButton text={t("ВКаталог")} />
       </div>
     </>
   );

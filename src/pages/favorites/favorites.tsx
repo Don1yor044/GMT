@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export const Favorites = () => {
-  const [favorite] = useState(true);
+  const [favorite] = useState(false);
   const { t } = useTranslation();
   return (
     <>
@@ -48,13 +48,13 @@ export const Favorites = () => {
                   <Col span={24} lg={6}>
                     <div className="lg:block flex gap-5">
                       <Typography className=" sm:text-lg">
-                        Все товары
+                        {t(`ВсеТовары`)}
                       </Typography>
                       <Typography className="sm:text-lg text-gray-400">
-                        Маммографы
+                        {t(`Маммографы`)}
                       </Typography>
                       <Typography className=" sm:text-lg text-gray-400">
-                        Флюорографы
+                        {t(`Флюорографы`)}
                       </Typography>
                     </div>
                   </Col>

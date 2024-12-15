@@ -487,5 +487,11 @@ const En = {
   Лампы: "Lamps",
   Кровати: "Beds",
   Рентгены: "X-rays",
+  "Не добавлено товаров в избранное": "No products added to favorites",
+  "Вы можете перейти на главную страницу или воспользоваться каталогом товаров":
+    "You can go to the main page or use the product catalog",
+  "На главную": "To the main page",
+  Маммографы: "Mammographs",
+  Флюорографы: "Fluorographs",
 };
 export default En;
