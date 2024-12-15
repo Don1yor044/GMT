@@ -482,5 +482,10 @@ const En = {
     "Why don't we ship according to payment order?",
   "Как можно купить товар за наличный расчет?": "How can I buy goods for cash?",
   "Как сравнить товары на сайте?": "How to compare products on the site?",
+  "Группы товаров": "Product groups",
+  Мониторы: "Monitors",
+  Лампы: "Lamps",
+  Кровати: "Beds",
+  Рентгены: "X-rays",
 };
 export default En;

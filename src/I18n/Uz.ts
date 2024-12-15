@@ -495,5 +495,10 @@ const Uz = {
     "Tovarlarni naqd pulga qanday sotib olish mumkin?",
   "Как сравнить товары на сайте?":
     "Saytdagi mahsulotlarni qanday solishtirish mumkin?",
+  "Группы товаров": "Mahsulot guruhlari",
+  Мониторы: "Monitorlar",
+  Лампы: "Лампы",
+  Кровати: "Yoritgichlar",
+  Рентгены: "rentgen nurlari",
 };
 export default Uz;

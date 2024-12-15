@@ -26,6 +26,7 @@ import { Reviews } from "@pages/reviews/reviews";
 import { Brand } from "@pages/brand";
 import { Category } from "@pages/category/category";
 import { Faq } from "@pages/faq";
+import { Discounts } from "@pages/stock";
 
 const queryClient = new QueryClient();
 function App() {
@@ -59,6 +60,7 @@ function App() {
                 <Route path="/brand" element={<Brand />} />
                 <Route path="/category" element={<Category />} />
                 <Route path="/faq" element={<Faq />} />
+                <Route path="/discounts" element={<Discounts />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
