@@ -94,7 +94,7 @@ export const Faq = () => {
     <>
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Faq" />
-        <div className=" mt-10 lg:mt-24">
+        <div className="mt-10 lg:mt-24">
           <Row gutter={[20, 20]}>
             <Col span={24} lg={12}>
               <div className="sm:w-[90%]">

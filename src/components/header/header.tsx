@@ -17,7 +17,7 @@ import { FaCaretUp, FaRegHeart, FaRegUser, FaSortDown } from "react-icons/fa";
 import { FiChevronDown, FiChevronUp, FiMenu } from "react-icons/fi";
 import { LuBarChartBig, LuMapPin } from "react-icons/lu";
 import { SlBasket } from "react-icons/sl";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { PrimaryButton, PrimaryButtonMini, TertiaryButton } from "../buttons";
 import { PiPhoneLight } from "react-icons/pi";
 import "./index.css";
@@ -30,6 +30,7 @@ export const Header = () => {
   const [visible, setVisible] = useState(false); // Dropdown holatini saqlash
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -429,7 +430,12 @@ export const Header = () => {
           <StyledButton>
             <div className="flex flex-col items-center">
               <FaRegHeart size={20} />
-              <div className="text-gray-500 text">{t("Избранное")}</div>
+              <div
+                className="text-gray-500 text"
+                onClick={() => navigate("favorites")}
+              >
+                {t("Избранное")}
+              </div>
             </div>
           </StyledButton>
           <StyledButton>
@@ -569,7 +575,7 @@ export const Header = () => {
           <Link to={"/services"} className="hover:!text-[#07745E]">
             {t("Услуги")}
           </Link>
-          <Link to={"/"} className="hover:!text-[#07745E]">
+          <Link to={"/discounts"} className="hover:!text-[#07745E]">
             {t("Акции")}
           </Link>
           <Dropdown
