@@ -419,7 +419,10 @@ export const Header = () => {
             </div>
           </StyledButton>
           <StyledButton>
-            <div className="flex flex-col items-center">
+            <div
+              className="flex flex-col items-center"
+              onClick={() => navigate("basket")}
+            >
               <SlBasket size={20} />
               <div className="text-gray-500 text">{t("Корзина")}</div>
             </div>

@@ -29,6 +29,7 @@ import { Discounts } from "@pages/stock";
 import { Favorites } from "@pages/favorites";
 import { Compare } from "@pages/compare/compare";
 import { Layout } from "@components/layout";
+import { Basket } from "@pages/basket";
 
 const queryClient = new QueryClient();
 function App() {
@@ -65,6 +66,7 @@ function App() {
                 <Route path="/discounts" element={<Discounts />} />
                 <Route path="/favorites" element={<Favorites />} />
                 <Route path="/compare" element={<Compare />} />
+                <Route path="/basket" element={<Basket />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>

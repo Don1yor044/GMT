@@ -133,7 +133,7 @@ const Uz = {
  Fuqarolik kodeksining 437-moddasi qoidalari bilan belgilanadigan ommaviy taklif
  Rossiya Federatsiyasi kodeksi`,
   Новинка: "Yangi",
-  ХитПродаж: "Eng yaxshi sotilgan",
+  ХитПродаж: "Yaxshi sotilgan",
   Главная: "Uy",
   ГлобалМедикалТрейд: "Global tibbiy savdo",
   УчитываяСтремительное:
@@ -518,5 +518,10 @@ const Uz = {
   "Возможный диапазон длины волны": "Mumkin bo'lgan to'lqin uzunligi diapazoni",
   "Тест-полоски": "Sinov chiziqlari",
   "Функция автоматической калибровки": "Avtomatik kalibrlash funksiyasi",
+  Итого: "Jami",
+  Товары: "Tovarlar",
+  шт: "dona",
+  Скидка: "Chegirma",
+  "Оформить заказ": "Buyurtma berish",
 };
 export default Uz;

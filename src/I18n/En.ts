@@ -11,7 +11,7 @@ const En = {
   Войти: "Login",
   Избранное: "Favorites",
   Сравнить: "Compare",
-  Корзина: "Cart",
+  Корзина: "Basket",
   Каталог: "Catalog", // New translations
   Производители: "Manufacturers",
   КабинетыКлюч: "Turnkey offices",
@@ -503,5 +503,10 @@ const En = {
   "Возможный диапазон длины волны": "Possible wavelength range",
   "Тест-полоски": "Test strips",
   "Функция автоматической калибровки": "Automatic calibration function",
+  Итого: "Total",
+  Товары: "Products",
+  шт: "pcs",
+  Скидка: "Discount",
+  "Оформить заказ": "Place an order",
 };
 export default En;
