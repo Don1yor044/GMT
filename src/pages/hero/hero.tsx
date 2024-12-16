@@ -87,7 +87,7 @@ export const Hero = () => {
       <div className="lg:p-14 p-5">
         <Row gutter={[20, 20]}>
           <Col span={24} lg={12}>
-            <Typography className="text-3xl md:text-4xl font-semibold">
+            <Typography className="text-2xl sm:text-3xl md:text-4xl font-semibold">
               {t(`Опытные сотрудники из`)} <br />{" "}
               {t(`производственных компаний`)}
             </Typography>

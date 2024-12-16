@@ -14,7 +14,7 @@ export const Favorites = () => {
       <div className="px-5 py-2 lg:px-14">
         <BreadcrumbTwo currentPage="Избранное" />
 
-        <div className="my-10 lg:mt-24">
+        <div className="my-10 lg:my-24">
           {favorite ? (
             <>
               <div className="lg:flex block space-y-5 justify-between">
@@ -43,7 +43,7 @@ export const Favorites = () => {
               <Typography className="text-3xl sm:text-5xl">
                 {t(`Избранное`)}
               </Typography>
-              <div className="mt-5">
+              <div className="mt-8">
                 <Row gutter={[20, 20]}>
                   <Col span={24} lg={6}>
                     <div className="lg:block flex gap-5">

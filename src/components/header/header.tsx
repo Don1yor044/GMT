@@ -260,33 +260,6 @@ export const Header = () => {
       key: "16",
     },
   ];
-  const ForBuyers: MenuProps["items"] = [
-    {
-      label: <a href="/">Как сделать заказ</a>,
-      key: "0",
-    },
-    {
-      label: <a href="/">Возврат</a>,
-      key: "1",
-    },
-    {
-      label: <a href="/">Прайс-лист (скачать)</a>,
-      key: "2",
-    },
-    {
-      label: <a href="/">Каталоги оборудования PDF</a>,
-      key: "3",
-    },
-
-    {
-      label: <a href="/">Оформить претензию</a>,
-      key: "4",
-    },
-    {
-      label: <a href="/">FAQ</a>,
-      key: "5",
-    },
-  ];
   return (
     <div className="StyledHeader">
       <div className="hidden md:flex justify-between items-center px-5 lg:px-14 py-3">
@@ -428,18 +401,19 @@ export const Header = () => {
             </div>
           </StyledButton>
           <StyledButton>
-            <div className="flex flex-col items-center">
+            <div
+              className="flex flex-col items-center"
+              onClick={() => navigate("favorites")}
+            >
               <FaRegHeart size={20} />
-              <div
-                className="text-gray-500 text"
-                onClick={() => navigate("favorites")}
-              >
-                {t("Избранное")}
-              </div>
+              <div className="text-gray-500 text">{t("Избранное")}</div>
             </div>
           </StyledButton>
           <StyledButton>
-            <div className="flex flex-col items-center">
+            <div
+              className="flex flex-col items-center"
+              onClick={() => navigate("compare")}
+            >
               <LuBarChartBig size={20} />
               <div className="text-gray-500 text">{t("Сравнить")}</div>
             </div>
@@ -540,8 +514,8 @@ export const Header = () => {
         </div>
       </div>
       <hr />
-      <div className="hidden px-5 lg:px-10 xl:px-14 py-4 md:flex justify-between">
-        <div className="flex items-center font-semibold xl:gap-5 lg:gap-2 md:gap-3 gap-2 text-xs md:text-sm lg:text-xs xl:text-base ">
+      <div className="hidden px-5 lg:px-14 py-4 md:flex justify-between">
+        <div className="flex items-center font-semibold xl:gap-5 lg:gap-3 md:gap-3 gap-2 text-xs md:text-sm lg:text-md xl:text-base ">
           <Button
             type="text"
             className=" px-0 text-black hover:!text-[#07745E] text-base font-semibold"
@@ -578,24 +552,13 @@ export const Header = () => {
           <Link to={"/discounts"} className="hover:!text-[#07745E]">
             {t("Акции")}
           </Link>
-          <Dropdown
-            overlay={<Menu items={ForBuyers} />}
-            trigger={["click"]}
-            className="cursor-pointer "
-          >
-            <a onClick={(e) => e.preventDefault()}>
-              <Space className="hover:!text-[#07745E]">
-                {t(`Покупателям`)}
-              </Space>
-            </a>
-          </Dropdown>
           <Link to={"/contact"} className="hover:!text-[#07745E]">
             {t("Контакты")}
           </Link>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1">
-            <Typography className="!m-0 text-xs md:text-md lg:text-base xl:text-sm font-semibold">
+            <Typography className="!m-0 text-xs md:text-sm lg:text-base xl:text-sm font-semibold">
               {t("Москва")}
             </Typography>
             <LuMapPin />

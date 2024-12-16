@@ -26,7 +26,7 @@ export const HomeCards = () => {
   ];
   return (
     <div className="mt-24">
-      <Typography className="text-3xl md:text-4xl font-semibold">
+      <Typography className="text-2xl sm:text-3xl md:text-4xl font-semibold">
         {t(`ПочемуВыбираютНас`)} ?
       </Typography>
       <div className="mt-10">

@@ -329,11 +329,11 @@ export const Blog = () => {
                             className="h-60 md:h-full w-full object-cover lg:rounded-l-xl lg:rounded-r-none rounded-md rounded-b-none"
                           />
                         </div>
-                        <div className="py-5 px-5 lg:px-10 relative lg:w-[60%] w-full">
+                        <div className="p-3 sm:p-5 lg:px-10 relative lg:w-[60%] w-full">
                           <Typography className="font-semibold text-2xl">
                             {t(item.title)}
                           </Typography>
-                          <Typography className="text-[#7A7687]">
+                          <Typography className="text-[#7A7687] mt-2 sm:mt-1">
                             {item.date}
                           </Typography>
                           <Typography className="text-[#7A7687] text-md sm:text-lg md:text-lg mt-5 lg:min-h-10 sm:min-h-64 min-h-56">

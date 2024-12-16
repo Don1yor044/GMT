@@ -28,6 +28,7 @@ import { Category } from "@pages/category/category";
 import { Faq } from "@pages/faq";
 import { Discounts } from "@pages/stock";
 import { Favorites } from "@pages/favorites";
+import { Compare } from "@pages/compare/compare";
 
 const queryClient = new QueryClient();
 function App() {
@@ -63,6 +64,7 @@ function App() {
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/discounts" element={<Discounts />} />
                 <Route path="/favorites" element={<Favorites />} />
+                <Route path="/compare" element={<Compare />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
