@@ -13,7 +13,7 @@ export const CompareTable = () => {
     {
       dataIndex: "product1",
       key: "product1",
-      render: (value: number, record: any, index: number) =>
+      render: (value: number, record: unknown, index: number) =>
         index === 0 ? (
           <div className="flex gap-3 items-center">
             <Rate disabled defaultValue={value} className="text-sm" />
@@ -26,7 +26,7 @@ export const CompareTable = () => {
     {
       dataIndex: "product2",
       key: "product2",
-      render: (value: number, record: any, index: number) =>
+      render: (value: number, record: unknown, index: number) =>
         index === 0 ? (
           <div className="flex gap-3 items-center">
             <Rate disabled defaultValue={value} className="text-sm" />
@@ -39,7 +39,7 @@ export const CompareTable = () => {
     {
       dataIndex: "product3",
       key: "product3",
-      render: (value: number, record: any, index: number) =>
+      render: (value: number, record: unknown, index: number) =>
         index === 0 ? (
           <div className="flex gap-3 items-center">
             <Rate disabled defaultValue={value} className="text-sm" />
