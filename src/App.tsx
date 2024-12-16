@@ -21,7 +21,6 @@ import { Home } from "@pages/home";
 import { TurnkeyOffices } from "@pages/turnkeyOffices";
 import { Resuscitation } from "@pages/resuscitation";
 import { Article } from "@pages/article";
-import { Layout } from "@components/layout/layout";
 import { Reviews } from "@pages/reviews/reviews";
 import { Brand } from "@pages/brand";
 import { Category } from "@pages/category/category";
@@ -29,6 +28,7 @@ import { Faq } from "@pages/faq";
 import { Discounts } from "@pages/stock";
 import { Favorites } from "@pages/favorites";
 import { Compare } from "@pages/compare/compare";
+import { Layout } from "@components/layout";
 
 const queryClient = new QueryClient();
 function App() {

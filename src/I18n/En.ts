@@ -493,5 +493,15 @@ const En = {
   "На главную": "To the main page",
   Маммографы: "Mammographs",
   Флюорографы: "Fluorographs",
+  Сравнение: "Compare",
+  "Сравнение товаров": "Compare products",
+  "Не добавлено товаров на сравнение": "No products added for comparison",
+  "Технические характеристики": "Technical specifications",
+  Авторизироваться: "Login",
+  Рейтинг: "Rating",
+  "Скорость работы": "Speed ​​of work",
+  "Возможный диапазон длины волны": "Possible wavelength range",
+  "Тест-полоски": "Test strips",
+  "Функция автоматической калибровки": "Automatic calibration function",
 };
 export default En;

@@ -507,5 +507,16 @@ const Uz = {
   "На главную": "Asosiy sahifaga",
   Маммографы: "Mamografilar",
   Флюорографы: "Florograflar",
+  Сравнение: "Taqqoslash",
+  "Сравнение товаров": "Mahsulotni taqqoslash",
+  "Не добавлено товаров на сравнение":
+    "Taqqoslash uchun mahsulotlar qo'shilmagan",
+  "Технические характеристики": "Texnik xususiyatlari",
+  Авторизироваться: "Tizimga kirish",
+  Рейтинг: "Reyting",
+  "Скорость работы": "Operatsion tezligi",
+  "Возможный диапазон длины волны": "Mumkin bo'lgan to'lqin uzunligi diapazoni",
+  "Тест-полоски": "Sinov chiziqlari",
+  "Функция автоматической калибровки": "Avtomatik kalibrlash funksiyasi",
 };
 export default Uz;

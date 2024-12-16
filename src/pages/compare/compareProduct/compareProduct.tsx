@@ -59,8 +59,8 @@ export const CompareProduct = () => {
           nextEl: ".swiper-button-next",
         }}
         breakpoints={{
-          340: { slidesPerView: 1.2 },
-          640: { slidesPerView: 2.2 },
+          340: { slidesPerView: 1.5 },
+          640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 3.2 },
         }}
@@ -90,7 +90,6 @@ export const CompareProduct = () => {
                     </Button>
                   </div>
                 </div>
-
                 <ImageContainer src={item.src}></ImageContainer>
               </div>
               <div className="p-3 border-t">

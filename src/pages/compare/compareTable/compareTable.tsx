@@ -1,5 +1,7 @@
+import { css, Global } from "@emotion/react";
 import { Rate, Table } from "antd";
 import type { ColumnsType } from "antd/es/table";
+import { useTranslation } from "react-i18next";
 
 interface ProductData {
   key: string;
@@ -8,54 +10,6 @@ interface ProductData {
   product2?: number | string;
   product3?: number | string;
 }
-const columns: ColumnsType<ProductData> = [
-  {
-    dataIndex: "rating",
-    key: "rating",
-    render: (rating: string) => (
-      <span className="text-[#7A7687] font-medium">{rating}</span>
-    ),
-  },
-  {
-    dataIndex: "product1",
-    key: "product1",
-    render: (value: number | string) =>
-      typeof value === "number" ? (
-        <div className="flex gap-3 items-center">
-          <Rate disabled defaultValue={value} className="text-sm" />
-          <span className="font-medium">{value}</span>
-        </div>
-      ) : (
-        <span className="font-semibold">{value}</span>
-      ),
-  },
-  {
-    dataIndex: "product2",
-    key: "product2",
-    render: (value: number | string) =>
-      typeof value === "number" ? (
-        <div className="flex gap-3 items-center">
-          <Rate disabled defaultValue={value} className="text-sm" />
-          <span className="font-medium">{value}</span>
-        </div>
-      ) : (
-        <span className="font-semibold">{value}</span>
-      ),
-  },
-  {
-    dataIndex: "product3",
-    key: "product3",
-    render: (value: number | string) =>
-      typeof value === "number" ? (
-        <div className="flex gap-3 items-center">
-          <Rate disabled defaultValue={value} className="text-sm" />
-          <span className="font-medium">{value}</span>
-        </div>
-      ) : (
-        <span className="font-semibold">{value}</span>
-      ),
-  },
-];
 const data: ProductData[] = [
   {
     key: "1",
@@ -95,16 +49,78 @@ const data: ProductData[] = [
 ];
 
 export const CompareTable = () => {
+  const { t } = useTranslation();
+  const columns: ColumnsType<ProductData> = [
+    {
+      dataIndex: "rating",
+      key: "rating",
+      render: (rating: string) => (
+        <span className="text-[#7A7687] font-medium">{t(rating)}</span>
+      ),
+    },
+    {
+      dataIndex: "product1",
+      key: "product1",
+      render: (value: number | string) =>
+        typeof value === "number" ? (
+          <div className="flex gap-3 items-center">
+            <Rate disabled defaultValue={value} className="text-sm" />
+            <span className="font-medium">{value}</span>
+          </div>
+        ) : (
+          <span className="font-semibold">{value}</span>
+        ),
+    },
+    {
+      dataIndex: "product2",
+      key: "product2",
+      render: (value: number | string) =>
+        typeof value === "number" ? (
+          <div className="flex gap-3 items-center">
+            <Rate disabled defaultValue={value} className="text-sm" />
+            <span className="font-medium">{value}</span>
+          </div>
+        ) : (
+          <span className="font-semibold">{value}</span>
+        ),
+    },
+    {
+      dataIndex: "product3",
+      key: "product3",
+      render: (value: number | string) =>
+        typeof value === "number" ? (
+          <div className="flex gap-3 items-center">
+            <Rate disabled defaultValue={value} className="text-sm" />
+            <span className="font-medium">{value}</span>
+          </div>
+        ) : (
+          <span className="font-semibold">{value}</span>
+        ),
+    },
+  ];
   return (
-    <div>
+    <>
+      {" "}
+      <Global
+        styles={css`
+          * {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+          *::-webkit-scrollbar {
+            display: none;
+          }
+        `}
+      />
       <Table<ProductData>
         dataSource={data}
         columns={columns}
         pagination={false}
         showHeader={false}
+        scroll={{ x: 900 }}
         rowKey="key"
         className="bg-red-50"
       />
-    </div>
+    </>
   );
 };
