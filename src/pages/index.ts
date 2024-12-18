@@ -1,3 +1,4 @@
+export * from "./account";
 export * from "./article";
 export * from "./basket";
 export * from "./blog";
