@@ -1,5 +1,5 @@
-import { BreadcrumbTwo } from "@components/breadCrumb";
-import { BasketProducts } from "./basketProducts";
+import { BreadcrumbTwo } from "components";
+import { BasketProducts } from "./basketProducts/basketProducts";
 
 export const Basket = () => {
   return (

@@ -1,5 +1,4 @@
-import { BreadcrumbTwo } from "@components/breadCrumb";
-import { HomeForm } from "@components/form";
+import { BreadcrumbTwo, HomeForm } from "components";
 import styled from "@emotion/styled";
 import { Col, Pagination, Rate, Row } from "antd";
 import Typography from "antd/es/typography/Typography";

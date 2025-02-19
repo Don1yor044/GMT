@@ -1,4 +1,4 @@
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
+import { PrimaryButton, SecondaryButton } from "components";
 import { Col, Progress, Rate, Row, Select } from "antd";
 import Typography from "antd/es/typography/Typography";
 import { useState } from "react";

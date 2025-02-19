@@ -1,6 +1,5 @@
-import { BreadcrumbTwo } from "@components/breadCrumb";
-import { TertiaryButton } from "@components/buttons";
 import { Button, Typography } from "antd";
+import { BreadcrumbTwo, TertiaryButton } from "components";
 import { AiOutlineEdit } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -31,7 +30,7 @@ export const Account = () => {
               <TertiaryButton text="Изменить пароль" />
             </div>
             <div>
-              <div className="flex  gap-3">
+              <div className="flex gap-3">
                 <Typography className="font-medium">
                   +998 97 277-49-44
                 </Typography>

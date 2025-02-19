@@ -1,12 +1,11 @@
 import { SearchOutlined } from "@ant-design/icons";
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
+import { PrimaryButton, SecondaryButton } from "components";
 import styled from "@emotion/styled";
 import { Checkbox, Col, Input, Pagination, Row, Typography } from "antd";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-
-const Grid = () => {
+export const ManufacturersGrid = () => {
   const { t } = useTranslation();
   const [drawer, setDrawer] = useState(true);
   const [selectedCountries] = useState<string[]>([
@@ -211,7 +210,6 @@ const Grid = () => {
   );
 };
 
-export default Grid;
 const StylePagination = styled.div`
   margin-top: 30px;
   display: flex;

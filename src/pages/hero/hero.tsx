@@ -2,15 +2,16 @@ import { Col, Row, Typography } from "antd";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
-import { Fact } from "@components/fact";
-import { HomeClient } from "@components/clinet";
-import { HomeCards } from "@components/cards";
-import { HomeBrand } from "@components/brend";
-import { Sertifikat } from "@components/sertifikat";
-import { HomeForm } from "@components/form";
-import { LeftButton } from "@components/buttons";
-import { BreadcrumbTwo } from "@components/breadCrumb";
-
+import {
+  Fact,
+  HomeClient,
+  HomeCards,
+  HomeBrand,
+  Sertifikat,
+  HomeForm,
+  LeftButton,
+  BreadcrumbTwo,
+} from "components";
 const images = [
   { src: "../../Person.png", name: "Константин", title: "ОсновательКомпании" },
   {

@@ -1,8 +1,10 @@
-import { BreadcrumbThree } from "@components/breadCrumb";
-import { HomeBrand } from "@components/brend";
-import { CabinetSwiper } from "@components/cabinetSwiper";
-import { CatalogTovar } from "@components/catalogTovar";
-import { HomeForm } from "@components/form";
+import {
+  BreadcrumbThree,
+  HomeForm,
+  HomeBrand,
+  CabinetSwiper,
+  CatalogTovar,
+} from "components";
 import { ArticleInfo } from "./articleInfo";
 
 export const Article = () => {

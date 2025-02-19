@@ -4,16 +4,18 @@ import { Col, Dropdown, MenuProps, Row, Typography } from "antd";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useTranslation } from "react-i18next";
-import { CabinetSwiper } from "@components/cabinetSwiper";
-import { HomeCards } from "@components/cards";
-import { CatalogTovar } from "@components/catalogTovar";
-import { HomeBrand } from "@components/brend";
-import { HomeCompany } from "@components/company";
-import { About } from "@components/about";
-import { HomeForm } from "@components/form";
-import { HomeSubscription } from "@components/subscription";
-import { BreadcrumbTwo } from "@components/breadCrumb";
-import { GridCards } from "./component";
+import {
+  BreadcrumbTwo,
+  HomeSubscription,
+  HomeForm,
+  About,
+  HomeBrand,
+  HomeCompany,
+  CatalogTovar,
+  HomeCards,
+  CabinetSwiper,
+} from "components";
+import { GridCards } from "./catalogComponents/catalogComponents";
 export const Catalog = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);

@@ -1,12 +1,14 @@
-import { BreadcrumbTwo } from "@components/breadCrumb";
-import { Cards } from "./cards";
-import { CabinetSwiper } from "@components/cabinetSwiper";
-import { CategoriesSwiper } from "@components/categoriesSwiper";
-import { CatalogTovar } from "@components/catalogTovar";
-import { HomeBrand } from "@components/brend";
-import { HomeForm } from "@components/form";
-import { HomeSubscription } from "@components/subscription";
+import {
+  BreadcrumbTwo,
+  CabinetSwiper,
+  CategoriesSwiper,
+  CatalogTovar,
+  HomeBrand,
+  HomeForm,
+  HomeSubscription,
+} from "components";
 import { useTranslation } from "react-i18next";
+import { Cards } from "./dicountsCards/dicountsCards";
 
 export const Discounts = () => {
   const { t } = useTranslation();

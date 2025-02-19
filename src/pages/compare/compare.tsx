@@ -1,10 +1,9 @@
-import { BreadcrumbTwo } from "@components/breadCrumb";
 import { Col, Row, Typography } from "antd";
-import { CompareProduct } from "./compareProduct";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
-import { CompareTable } from "./compareTable";
+import { PrimaryButton, SecondaryButton, BreadcrumbTwo } from "components";
+import { CompareTable } from "./compareTable/compareTable";
+import { CompareProduct } from "./compareProduct/compareProduct";
 
 export const Compare = () => {
   const [compareLenght] = useState(false);

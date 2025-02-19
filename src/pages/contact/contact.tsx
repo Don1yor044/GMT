@@ -1,7 +1,7 @@
 import { Typography } from "antd";
 import { useTranslation } from "react-i18next";
-import { Cards } from "./component";
-import { BreadcrumbTwo } from "@components/breadCrumb";
+import { BreadcrumbTwo } from "components";
+import { ContactCards } from "./contactCards/contactCards";
 export const Contact = () => {
   const { t } = useTranslation();
   return (
@@ -12,7 +12,7 @@ export const Contact = () => {
           <Typography className="font-semibold text-3xl sm:text-5xl">
             {t(`Контакты`)}
           </Typography>
-          <Cards />
+          <ContactCards />
         </div>
       </div>
     </>

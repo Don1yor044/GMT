@@ -1,7 +1,6 @@
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
-import { HomeForm } from "@components/form";
-import { BreadcrumbTwo } from "@components/breadCrumb";
+import { BreadcrumbTwo, HomeForm } from "components";
 export const Payment = () => {
   const { t } = useTranslation();
   const sections = [

@@ -1,10 +1,12 @@
-import { BreadcrumbFour } from "@components/breadCrumb";
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
-import { HomeBrand } from "@components/brend";
-import { About } from "@components/about";
-import { HomeForm } from "@components/form";
-import { Equipment } from "@components/equipment";
+import {
+  Equipment,
+  HomeForm,
+  About,
+  HomeBrand,
+  BreadcrumbFour,
+} from "components";
 
 export const Brand = () => {
   const { t } = useTranslation();

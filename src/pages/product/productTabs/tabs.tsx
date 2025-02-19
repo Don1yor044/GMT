@@ -6,7 +6,7 @@ import {
   ThreeChildren,
   TwoChildren,
 } from "./tabsChildrens";
-import { Reviews } from "./reviews";
+import { Reviews } from "./tabsReviews";
 import { useTranslation } from "react-i18next";
 const onChange = (key: string) => {
   console.log(key);

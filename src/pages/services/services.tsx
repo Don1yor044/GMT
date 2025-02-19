@@ -1,11 +1,14 @@
 import { RiDownloadLine } from "react-icons/ri";
 import { Button, Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
-import { Fact } from "@components/fact";
-import { Sertifikat } from "@components/sertifikat";
-import { HomeForm } from "@components/form";
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
-import { BreadcrumbTwo } from "@components/breadCrumb";
+import {
+  Fact,
+  BreadcrumbTwo,
+  Sertifikat,
+  HomeForm,
+  PrimaryButton,
+  SecondaryButton,
+} from "components";
 
 export const Services = () => {
   const { t } = useTranslation();

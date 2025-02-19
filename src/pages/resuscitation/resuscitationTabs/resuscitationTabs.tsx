@@ -1,4 +1,4 @@
-import { ListProducts } from "@components/listProducts";
+import { ListProducts } from "components";
 import styled from "@emotion/styled";
 import { Tabs, TabsProps, Typography } from "antd";
 import { useTranslation } from "react-i18next";

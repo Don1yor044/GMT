@@ -1,4 +1,4 @@
-import { SecondaryButton } from "@components/buttons";
+import { SecondaryButton } from "components";
 import styled from "@emotion/styled";
 import { Button, Typography } from "antd";
 import { useTranslation } from "react-i18next";

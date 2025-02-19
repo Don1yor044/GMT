@@ -11,11 +11,9 @@ import {
   YMaps,
 } from "@pbe/react-yandex-maps";
 import { useTranslation } from "react-i18next";
-import { HomeSubscription } from "@components/subscription";
+import { BreadcrumbTwo, PrimaryButton, HomeSubscription } from "components";
 import { IOptionManager } from "yandex-maps";
 import { ReactNode } from "react";
-import { PrimaryButton } from "@components/buttons";
-import { BreadcrumbTwo } from "@components/breadCrumb";
 
 interface ItemType {
   key: string;

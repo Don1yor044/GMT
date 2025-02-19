@@ -1,4 +1,4 @@
-import { PrimaryButton } from "@components/buttons";
+import { PrimaryButton } from "components";
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

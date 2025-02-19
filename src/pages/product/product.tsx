@@ -1,11 +1,13 @@
-import { BreadcrumbFour } from "@components/breadCrumb";
-import { Products } from "./products";
-import { TabsComp } from "./tabs";
-import { CatalogTovar } from "@components/catalogTovar";
-import { CabinetSwiper } from "@components/cabinetSwiper";
-import { CategoriesSwiper } from "@components/categoriesSwiper";
-import { HomeBrand } from "@components/brend";
-import { HomeSubscription } from "@components/subscription";
+import {
+  BreadcrumbFour,
+  HomeSubscription,
+  CatalogTovar,
+  CabinetSwiper,
+  CategoriesSwiper,
+  HomeBrand,
+} from "components";
+import { TabsComp } from "./productTabs/tabs";
+import { ProductProducts } from "./productProducts/productProducts";
 
 export const Product = () => {
   return (
@@ -17,7 +19,7 @@ export const Product = () => {
           threePages="Анализатор мочи MINDRAY UA-66"
         />
         <div className="mt-3">
-          <Products />
+          <ProductProducts />
         </div>
         <TabsComp />
       </div>

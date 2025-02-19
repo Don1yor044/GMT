@@ -19,13 +19,13 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "jsxImportSource": "@emotion/react",
-    "baseUrl": "./src",
-    "paths": {
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"],
-      "@stores/*": ["stores/*"],
-      "@i18n/*": ["i18n/*"]
-    }
+    "baseUrl": "./src"
+    // "paths": {
+    //   "@components/*": ["components/*"],
+    //   "@pages/*": ["pages/*"],
+    //   "@stores/*": ["stores/*"],
+    //   "@i18n/*": ["i18n/*"]
+    // }
   },
   "include": ["vite.config.ts", "src", "types"]
 }

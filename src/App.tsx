@@ -3,34 +3,34 @@ import "./App.css";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./I18n/I18";
-import { ErrorBoundarayContainer } from "@components/errorBoundaries";
-import { Services } from "@pages/services";
-import { NotFound } from "@components/notFound";
-import { Contact } from "@pages/contact";
-import { Guarantees } from "@pages/guarantees/guarantees";
-import { Catalog } from "@pages/catalog";
-import { Hero } from "@pages/hero";
-import { Vacancies } from "@pages/vacancies";
-import { Delivery } from "@pages/delivery";
-import { Payment } from "@pages/payment";
-import { Blog } from "@pages/blog";
-import { Manufacturers } from "@pages/manufacturers";
-import { Certificates } from "@pages/certificates";
-import { Product } from "@pages/product";
-import { Home } from "@pages/home";
-import { TurnkeyOffices } from "@pages/turnkeyOffices";
-import { Resuscitation } from "@pages/resuscitation";
-import { Article } from "@pages/article";
-import { Reviews } from "@pages/reviews/reviews";
-import { Brand } from "@pages/brand";
-import { Category } from "@pages/category/category";
-import { Faq } from "@pages/faq";
-import { Discounts } from "@pages/stock";
-import { Favorites } from "@pages/favorites";
-import { Compare } from "@pages/compare/compare";
-import { Layout } from "@components/layout";
-import { Basket } from "@pages/basket";
-import { Account } from "@pages/account";
+import { ErrorBoundarayContainer, Layout, NotFound } from "components";
+import {
+  Account,
+  Article,
+  Basket,
+  Blog,
+  Brand,
+  Catalog,
+  Category,
+  Certificates,
+  Compare,
+  Contact,
+  Delivery,
+  Discounts,
+  Faq,
+  Favorites,
+  Guarantees,
+  Hero,
+  Home,
+  Manufacturers,
+  Payment,
+  Product,
+  Resuscitation,
+  Reviews,
+  Services,
+  TurnkeyOffices,
+  Vacancies,
+} from "pages";
 
 const queryClient = new QueryClient();
 function App() {

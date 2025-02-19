@@ -1,5 +1,5 @@
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
+import { PrimaryButton, SecondaryButton } from "components";
 import styled from "@emotion/styled";
 import { Button, Col, Rate, Row, Typography } from "antd";
 import { useState } from "react";
@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 interface StyledButtonProps {
   status: string;
 }
-export const Products = () => {
+export const ProductProducts = () => {
   const { t } = useTranslation();
   const [count, setCount] = useState(1);
 

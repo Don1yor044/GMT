@@ -1,11 +1,10 @@
-import { BreadcrumbTwo } from "@components/breadCrumb";
+import { BreadcrumbTwo, HomeForm } from "components";
 import { Button, Col, Collapse, CollapseProps, Row, Typography } from "antd";
 import { ReactNode } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
 import styled from "@emotion/styled";
 import { useTranslation } from "react-i18next";
-import { HomeForm } from "@components/form";
 import { BsSearch } from "react-icons/bs";
 interface ItemType {
   key: string;

@@ -3,17 +3,20 @@ import { observer } from "mobx-react-lite";
 import { Col, FloatButton, Row, Typography } from "antd";
 import { FcUpload } from "react-icons/fc";
 import { useTranslation } from "react-i18next";
-import { CatalogTovar } from "@components/catalogTovar";
-import { HomeClient } from "@components/clinet";
-import { HomeBrand } from "@components/brend";
-import { About } from "@components/about";
-import { HomeCompany } from "@components/company";
-import { HomeForm } from "@components/form";
-import { HomeSubscription } from "@components/subscription";
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
-import { CategoryHome } from "@components/category";
-import { CabinetSwiper } from "@components/cabinetSwiper";
-import { HomeCards } from "@components/cards";
+import {
+  CatalogTovar,
+  HomeClient,
+  HomeBrand,
+  About,
+  HomeCompany,
+  HomeForm,
+  PrimaryButton,
+  SecondaryButton,
+  HomeSubscription,
+  CategoryHome,
+  CabinetSwiper,
+  HomeCards,
+} from "components";
 
 export const Home = observer(() => {
   const { t } = useTranslation();

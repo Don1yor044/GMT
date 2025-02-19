@@ -1,12 +1,14 @@
-import { BreadcrumbThree } from "@components/breadCrumb";
-import { HomeBrand } from "@components/brend";
-import { CabinetSwiper } from "@components/cabinetSwiper";
-import { HomeCards } from "@components/cards";
-import { CatalogTovar } from "@components/catalogTovar";
-import { HomeCompany } from "@components/company";
-import { Equipment } from "@components/equipment";
-import { HomeForm } from "@components/form";
-import { HomeSubscription } from "@components/subscription";
+import {
+  HomeSubscription,
+  HomeForm,
+  Equipment,
+  HomeCompany,
+  CatalogTovar,
+  HomeCards,
+  CabinetSwiper,
+  HomeBrand,
+  BreadcrumbThree,
+} from "components";
 
 export const Category = () => {
   return (

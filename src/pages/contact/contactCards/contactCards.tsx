@@ -1,4 +1,4 @@
-import { PrimaryButton } from "@components/buttons";
+import { PrimaryButton } from "components";
 import styled from "@emotion/styled";
 import {
   FullscreenControl,
@@ -21,7 +21,7 @@ interface ExtendedOptionManager extends IOptionManager {
   float?: string;
 }
 
-export const Cards = () => {
+export const ContactCards = () => {
   const { t } = useTranslation();
   return (
     <>

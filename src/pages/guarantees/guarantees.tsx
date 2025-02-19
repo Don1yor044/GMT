@@ -1,8 +1,7 @@
 import { Col, Row, Typography } from "antd";
-import Cards from "./component";
 import { useTranslation } from "react-i18next";
-import { HomeForm } from "@components/form";
-import { BreadcrumbTwo } from "@components/breadCrumb";
+import { BreadcrumbTwo, HomeForm } from "components";
+import { GuaranteesCard } from "./guaranteesCard/guaranteesCard";
 export const Guarantees = () => {
   const { t } = useTranslation();
   return (
@@ -54,7 +53,7 @@ export const Guarantees = () => {
             </div>
           </div>
         </div>
-        <Cards />
+        <GuaranteesCard />
         <div className="mt-20 bg-[#088269] rounded-xl p-5 md:p-10">
           <Row gutter={[20, 20]}>
             <Col lg={12} md={10} span={24}>

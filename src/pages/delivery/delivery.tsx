@@ -8,15 +8,17 @@ import {
   ZoomControl,
 } from "@pbe/react-yandex-maps";
 import styled from "@emotion/styled";
-import Cards from "./component/cards";
-import Document from "./component/document";
-import DeliveryForm from "./component/form";
+import Cards from "./deliveryComponents/deliveryCard";
+import Document from "./deliveryComponents/deliveryDocument";
+import DeliveryForm from "./deliveryComponents/deliveryForm";
 import { useTranslation } from "react-i18next";
-import { HomeSubscription } from "@components/subscription";
-import { About } from "@components/about";
 import { IOptionManager } from "yandex-maps";
-import { PrimaryButton } from "@components/buttons";
-import { BreadcrumbTwo } from "@components/breadCrumb";
+import {
+  BreadcrumbTwo,
+  PrimaryButton,
+  About,
+  HomeSubscription,
+} from "components";
 interface TypeSelectorOptions extends IOptionManager {
   float?: string;
 }

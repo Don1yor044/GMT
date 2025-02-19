@@ -5,9 +5,7 @@ import { Col, Dropdown, MenuProps, Pagination, Row, Typography } from "antd";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
 import styled from "@emotion/styled";
-import { HomeSubscription } from "@components/subscription";
-import { SecondaryButton } from "@components/buttons";
-import { BreadcrumbTwo } from "@components/breadCrumb";
+import { HomeSubscription, SecondaryButton, BreadcrumbTwo } from "components";
 export const Blog = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();

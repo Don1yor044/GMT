@@ -1,8 +1,7 @@
 import { Col, Row, Typography } from "antd";
 import { PrimaryButton, SecondaryButton } from "../../../components/buttons";
 import { useTranslation } from "react-i18next";
-
-const Cards = () => {
+export const GuaranteesCard = () => {
   const { t } = useTranslation();
   const items = [
     {
@@ -52,5 +51,3 @@ const Cards = () => {
     </div>
   );
 };
-
-export default Cards;

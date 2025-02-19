@@ -1,6 +1,4 @@
-import { BreadcrumbThree } from "@components/breadCrumb";
-import { CatalogTovar } from "@components/catalogTovar";
-import { HomeForm } from "@components/form";
+import { BreadcrumbThree, HomeForm, CatalogTovar } from "components";
 import styled from "@emotion/styled";
 import { Col, Collapse, CollapseProps, Row, Typography } from "antd";
 import { ReactNode } from "react";

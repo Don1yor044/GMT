@@ -1,9 +1,11 @@
-import { About } from "@components/about";
-import { BreadcrumbTwo } from "@components/breadCrumb";
-import { HomeCards } from "@components/cards";
-import { HomeForm } from "@components/form";
-import { HomeSubscription } from "@components/subscription";
-import { TurnkeyForm } from "@components/turnkeyForm";
+import {
+  About,
+  TurnkeyForm,
+  BreadcrumbTwo,
+  HomeCards,
+  HomeForm,
+  HomeSubscription,
+} from "components";
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 interface Items {

@@ -1,4 +1,4 @@
-import { PrimaryButton } from "@components/buttons";
+import { PrimaryButton } from "components";
 import { Col, Form, Input, Row, Typography } from "antd";
 import { t } from "i18next";
 

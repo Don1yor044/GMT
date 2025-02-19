@@ -1,10 +1,7 @@
-import { BreadcrumbFour } from "@components/breadCrumb";
+import { BreadcrumbFour, HomeForm, About, TurnkeyForm } from "components";
 import { Typography } from "antd";
-import { ResuscitationTabs } from "./resuscitationTabs";
-import { TurnkeyForm } from "@components/turnkeyForm";
-import { About } from "@components/about";
-import { HomeForm } from "@components/form";
 import { useTranslation } from "react-i18next";
+import { ResuscitationTabs } from "./resuscitationTabs/resuscitationTabs";
 
 export const Resuscitation = () => {
   const { t } = useTranslation();

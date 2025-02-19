@@ -4,7 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { LuBarChartBig } from "react-icons/lu";
 import { AiOutlineClose } from "react-icons/ai";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
+import { PrimaryButton, SecondaryButton } from "components";
 import { useTranslation } from "react-i18next";
 
 interface ImageContainerProps {

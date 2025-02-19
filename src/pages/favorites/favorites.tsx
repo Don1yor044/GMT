@@ -1,6 +1,9 @@
-import { BreadcrumbTwo } from "@components/breadCrumb";
-import { PrimaryButton, SecondaryButton } from "@components/buttons";
-import { FavoriteProducts } from "@components/favoriteProducts";
+import {
+  PrimaryButton,
+  SecondaryButton,
+  FavoriteProducts,
+  BreadcrumbTwo,
+} from "components";
 import { Col, Row } from "antd";
 import Typography from "antd/es/typography/Typography";
 import { useState } from "react";
