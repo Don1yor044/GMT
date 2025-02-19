@@ -523,5 +523,6 @@ const Uz = {
   шт: "dona",
   Скидка: "Chegirma",
   "Оформить заказ": "Buyurtma berish",
+  Статья: "Maqola",
 };
 export default Uz;

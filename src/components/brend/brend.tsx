@@ -25,23 +25,23 @@ export const HomeBrand = () => {
   const items = [
     {
       id: 1,
-      src: "https://s3-alpha-sig.figma.com/img/40a3/9e49/81e4863f171c830a16afa5bd4155182f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3O-FK2CGX153lldKC-f8dVfDT9mQVunWwxTTPjJ8LDxFHu1N~yI6XpiLU3XPIwafZ88q1Z3wtsR-GIUohX7AJnp6MoMiypHYuHKlu64v1B1n8G7fJIM06af9BH31lm4OPuabhrpNiRwHEBGdZDaa7w7kegSOY6-hgHlo2eSLzo57ZMvL3d18PGRteC9nXWPDkSR8lVtDW6PuOI7gvGOkoVJSjxqs0b1t0SS~bPjZOXdxqyeT~npKE2e4wRyAoHeMLAqOo8NR8NanG0L4Cv2dTxo9Jw~1rHvzYuXn2nc79Y9pcXf~ssJBaI-Rr~ZrIislYNyf2pVEMAnHpfAJ9xgg__",
+      src: "../brand/cropped.png",
       title: "CRAGHOPPERS",
     },
     {
       id: 2,
-      src: "https://s3-alpha-sig.figma.com/img/7685/b204/10c5d46143d134f91c83f3dc815c432f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PNF2g5Amh0qWJep8KC7p9P~AQtxuH6Ia~vH54fJaQ~-e8ShgCZgl69I5ukU~PBKQXz6zGx53hrjETbGWAs3yT0h~qCtreibUvxUPoxIY8XEdtKc0gN2wTvSXrtLAkEQJWjvr1SE6U9viRnfCXSGEGwTLGvqUaNqn~01y~YE5HG2r4Tfl1onYHzCBxp-tAUm-GKDs2MhWCq13pPpdCH~JBYYndTRejKkoA~Zb9WS1UTWfmkdZzQ~YPg3ei4H7pfXLWImsqh1gx1lI2UbIZjD28gLfmh8qDCV~0h6WItbH0ZmMkgdN7bLryNdi6Y2MBCvXghkORV6f83lUbI4BDr1ytw__",
+      src: "../brand/Без5.png",
       title: "ZAMBERLAN",
     },
     {
       id: 3,
-      src: "https://s3-alpha-sig.figma.com/img/c24e/9fda/01d837f488eff4200f9cf2a59420b504?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UJnHA3GlluHy2yd3dj0vRF4HEeSwoN~k9WtCrub2Uh1C4c1MrH9HlzwpMqQsXa2owcYDC9kSLWJUb2niVJz2D4sttl3QkjKtiOjWr-Ynqlaf-pd14xby5E-NOje60MOa~hHDykSdbbBGGUm2347CQjV2oo~Nu3xr71yzexfWQ8LBl-IExIZ7hucsj6nLX0gGaeXfJw6VMGr1~EtGryWbYvkPr8NLt7AKlLdL0q-dM9luATOBtkW4lQit7ZE5iuel8ooRx1iiD-UycChQKjc7zit2SU5GKd-Nvvs2dSCOh~T87p4bm5Uq9zcKvA1eXEdq-bpjb4BeNE4VCmf3-qclug__",
+      src: "../brand/custom-logo 2.png",
       title: "THERMACELL",
     },
     {
       id: 4,
-      src: "https://s3-alpha-sig.figma.com/img/7be5/fbc1/5cd1bec2679c4b4487192625b42b8de0?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S2PcYfpwi0a1-R9anCW6Hb4MjjYS6A0lmU7VsxGRSFnW60XjvpUZjEHIT4-DcIqSAB9pF12j~MsM3QvVN36G7jBpzmhCII23IdjQU1Vwdz4rYvh9ahQhaPoAi7wifl49LMBMlLVVCvhG2Ozq5yiNGmRS~9YOvztqvVnv~zMVGvMrHxbUFXFmVYL49t-jQV7WjMrC5S8QTBJ47SDJvPVd~LhJrvqytyqOOCwZwVetbyRr4u9ODw8ij53FRx3IKAhHEayr~gP-VbAi0y-H7H7YKHPNQ0FKKmPGPiw5qZgw3hxpcyU-l3RUfM23AUZyDgw3ou8k6Hdl2k0NFs0c1sKNuQ__",
-      title: "ORTLIEB WATERPROOF",
+      src: "../brand/Без5.png",
+      title: "ZAMBERLAN",
     },
   ];
   return (

@@ -3,24 +3,17 @@ import { Button, Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import { FaHeart } from "react-icons/fa";
 import { LuBarChartBig } from "react-icons/lu";
+import { catalogTovar } from "types/types";
 interface ImageContainerProps {
   src: string;
 }
 interface StyledButtonProps {
-  status: string;
-}
-interface ProductsType {
-  id: number;
-  src: string;
-  title: string;
-  article: number;
-  price: string;
-  status: string;
+  status: number;
 }
 export const MenuProducts = ({
   itemsProduct,
 }: {
-  itemsProduct: ProductsType[];
+  itemsProduct: catalogTovar[];
 }) => {
   const { t } = useTranslation();
 
@@ -33,7 +26,16 @@ export const MenuProducts = ({
               <div className="bg-white h-60 sm:h-72 p-1 sm:p-3 rounded-t-xl">
                 <div className="flex justify-between items-center">
                   <StyledButton status={item.status}>
-                    <span className="text-xs sm:text-sm">{t(item.status)}</span>
+                    <span className="text-xs sm:text-sm">
+                      {" "}
+                      {t(
+                        item.status == 1
+                          ? "ХитыПродаж"
+                          : item.status == 2
+                          ? "Новинки"
+                          : "-30%"
+                      )}
+                    </span>
                   </StyledButton>
                   <div className="flex">
                     <Button
@@ -82,24 +84,12 @@ export const MenuProducts = ({
 };
 const StyledButton = styled.button<StyledButtonProps>`
   color: ${({ status }) =>
-    status === "Новинка"
-      ? "#088269"
-      : status === "ХитПродаж"
-      ? "#59599A"
-      : "#855E00"};
+    status === 1 ? "#088269" : status === 2 ? "#59599A" : "#855E00"};
   border: 1px solid
     ${({ status }) =>
-      status === "Новинка"
-        ? "#088269"
-        : status === "ХитПродаж"
-        ? "#59599A"
-        : "#855E00"};
+      status === 1 ? "#088269" : status === 2 ? "#59599A" : "#855E00"};
   background-color: ${({ status }) =>
-    status === "Новинка"
-      ? "#448c7e2f"
-      : status === "ХитПродаж"
-      ? "#59599a44"
-      : "#ffeeba"};
+    status === 1 ? "#448c7e2f" : status === 2 ? "#59599a44" : "#ffeeba"};
   padding: 1px 8px;
   border-radius: 50px;
   font-weight: 500;

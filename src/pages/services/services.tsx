@@ -1,5 +1,4 @@
-import { RiDownloadLine } from "react-icons/ri";
-import { Button, Col, Row, Typography } from "antd";
+import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import {
   Fact,
@@ -134,7 +133,7 @@ export const Services = () => {
                 <PrimaryButton text="Оставить заявку" />
               </div>
             </Col>
-            <Col span={24} md={24} lg={14} xl={12} sm={24}>
+            {/* <Col span={24} md={24} lg={14} xl={12} sm={24}>
               <Row gutter={[20, 20]}>
                 <Col sm={12} span={24}>
                   <div className="bg-white flex justify-between w-full p-4 items-center border rounded-lg">
@@ -157,7 +156,7 @@ export const Services = () => {
                   </div>
                 </Col>
               </Row>
-            </Col>
+            </Col> */}
           </Row>
           <div className="mt-5 flex md:hidden lg:flex justify-end">
             <PrimaryButton text={t("ОставитьЗаявку")} />

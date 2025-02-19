@@ -52,7 +52,7 @@ export const Home = observer(() => {
             <Col lg={14} md={12} sm={24} xs={24} className="h-full flex">
               <div className="w-full">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/df12/2ff9/640dd8789b3a0eb394159b40cd64204b?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YP1SHVwP-M1DWpTDYD2Eu1J5GYmi-PdAh5PRk8SiTd~115qyC7yrViz12AwMpIaBQYWrTzalrf8YVj0ibJLTqpVHnTyJfIy80B3Yyb1VrwFm54beRfFz8TUZovDZOW8o1yERO-2EtdK0xjptRLUDZAwxaGmu5R5C4dbVMUH84XWVBObZ6--OVooZyLce0i965TPkiJBr5PR1ZfSW1RukTl1cPGpBKnaVeUtiO2leFpPFo3v9HWmbOOd6dn1PjcTuaYj7Pbq7U~jdEr1okii5NxiYVHiWX1OlRoJ1ebRFBaFsOwMukCKUOeAPnKHJyYd0QYMOLvRXt54-nTvAY6kudQ__"
+                  src="https://s3-alpha-sig.figma.com/img/df12/2ff9/640dd8789b3a0eb394159b40cd64204b?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=A2Inkm6dc4wK3gkTHDU197W3p7NvaKKlXDIswOAo61VrQL3jcGtqkMDe2wYsNvk5dq23U6~SC3BTBGmB7~Dw~6WhRnYFZD99Gz5C6fl-p-mHK4cvU0kO1SyJ2hJeNKqgho870vIdEgbae3EcOf2SOprAKT0ZSUBvAxcoi7auj3OYdorNVBRPth8C9QQNmpaN4VwlFRHn2bSwsRq2ciJwzRA~4HgfDwds5mv141pUMQBD8FuEN8cpdf73nKbUVXQL0vchfFaJUAx7MCV3J34ZvFsOsmeZUnw8tG18euwadFEQqnAW014zn4unVqME2yJsJoNjCUU9Q224HhTQFlrKAA__"
                   alt=""
                   className="h-full w-full object-cover rounded-[10px] lg:rounded-tl-[300px] md:rounded-[10px]" // MD va undan kichik ekranda 300px, kattaroq ekranda 10px
                 />

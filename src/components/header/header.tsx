@@ -83,19 +83,6 @@ export const Header = () => {
       label: <Link to="/certificates">{t(`Сертификаты`)}</Link>,
       key: "3",
     },
-    {
-      label: <Link to="/">Партнерские программы</Link>,
-      key: "4",
-    },
-
-    {
-      label: <Link to="/">Оптовые продажи</Link>,
-      key: "5",
-    },
-    {
-      label: <Link to="/">Лизинг</Link>,
-      key: "6",
-    },
   ];
   const blogItems: MenuProps["items"] = [
     {
@@ -103,7 +90,7 @@ export const Header = () => {
       key: "0",
     },
     {
-      label: <Link to="/article">{t(`Article`)}</Link>,
+      label: <Link to="/article">{t(`Статья`)}</Link>,
       key: "1",
     },
   ];

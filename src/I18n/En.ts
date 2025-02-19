@@ -508,5 +508,6 @@ const En = {
   шт: "pcs",
   Скидка: "Discount",
   "Оформить заказ": "Place an order",
+  Статья: "Article",
 };
 export default En;

@@ -24,7 +24,7 @@ export const CategoriesSwiper = () => {
   const items = [
     {
       id: 1,
-      src: "../category/Photo (7).png",
+      src: "../category/Photo7.png",
       title: t("ОборудованиеДляАнастезиологии"),
     },
 
@@ -35,7 +35,7 @@ export const CategoriesSwiper = () => {
     },
     {
       id: 3,
-      src: "../category/Photo (8).png",
+      src: "../category/Photo8.png",
       title: t("МебельДляМедицинскихЦелей"),
     },
     {

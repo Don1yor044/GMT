@@ -21,7 +21,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../category/Phtoto.png"
+                      src="../category/Photo.png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />
@@ -61,10 +61,10 @@ export const CategoryHome = () => {
                     <img
                       src="../category/Photo (4).png"
                       alt=""
-                      className="rounded-tr-xl rounded-tl-xl h-[570px] w-[100%] object-contain pe-10"
+                      className="rounded-tr-xl rounded-tl-xl h-[575px] md:h-[592px] w-[100%] object-contain pe-10"
                     />
                   </div>
-                  <div className="lg:p-5 mp:px-3 border-t-2 rounded-b-xl h-[91px]">
+                  <div className="lg:p-5 mp:px-3 border-t-2 rounded-b-xl h-[90px] md:h-[110px]">
                     <Typography.Title level={5} className="lg:pe-14 mp:pe-2">
                       {t(`ДерматологическоеОборудование`)}
                     </Typography.Title>
@@ -95,7 +95,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../category/Photo (7).png"
+                      src="../category/Photo7.png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />
@@ -115,7 +115,7 @@ export const CategoryHome = () => {
                 <div className="border rounded-xl h-[44vh]">
                   <div className="bg-white rounded-tl-xl rounded-tr-xl p-5">
                     <img
-                      src="../category/Photo (8).png"
+                      src="../category/Photo8.png"
                       alt=""
                       className="rounded-tr-xl rounded-tl-xl h-[190px] w-[100%] object-contain"
                     />

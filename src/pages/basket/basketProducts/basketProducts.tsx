@@ -6,54 +6,39 @@ import { AiOutlineClose } from "react-icons/ai";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 import { PrimaryButton, SecondaryButton } from "components";
 import { useTranslation } from "react-i18next";
+import baseURL from "utils/api";
+import { useEffect, useState } from "react";
+import { catalogTovar } from "types/types";
 
 interface ImageContainerProps {
   src: string;
 }
 interface StyledButtonProps {
-  status: string;
+  status: number;
 }
-interface ProductsType {
-  id: number;
-  src: string;
-  title: string;
-  article: number;
-  price: string;
-  status: string;
-}
-const itemsProduct: ProductsType[] = [
-  {
-    id: 1,
-    src: "https://s3-alpha-sig.figma.com/img/98d6/ce68/ca05465aa55ba84ace8005d1e27d304e?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JF03XnkxPtJqZP~WkiPPjrSTlpi6qfHG1YUXGXBdd3Em~VCvVm~6vCv24gGkidK6-0hsp7oSyK6zVFsUSPgpCdHNxU27xnEazGaLBIhEtTRkeYV-ycX98bETvoZvELm47Ln7OcUnkcUdpJfa415tYj2JVUWRymV1gF0q~YvO287tW0OQM9hWIrOtx5xLfBGja5EaNAxXf~BEIHjpgfcHYWiUv0Hi~91eVg1qP6Wv-mj5IwTcdoYcAbT1hskPP4lW6mjoWHg0ewdZdQIFpxpJbr7L9NL4Tr~GmHtgL5W8cMw~-w21MWMt2KDGwA6x~7Yp64dbJCwZ~RZ2arXGydZHng__",
-    title: "Анализатор Мочи MINDUA-66",
-    article: 213134,
-    price: "300 000",
-    status: "Новинка",
-  },
-  {
-    id: 2,
-    src: "../category/Phtoto.png",
-    title: "Анализатор Мочи MINDUA-66",
-    article: 213134,
-    price: "300 000",
-    status: "ХитПродаж",
-  },
-  {
-    id: 3,
-    src: "https://s3-alpha-sig.figma.com/img/d2e6/71b1/8132204915c34ae4aa933a3947a30dfe?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b9AkS0S9gVIeuJ2MgvW1pNcu-12gY-0~hoU3wAgC~g3ByYyEb1ujKxD-HPL1WiUDgcX9mkCQfFl6ys2bISFKdhW6QHs-nNynUc5uFQm2mQlycBdY0K~F8VHYl808nAi0JF5p7YsABLndcyPqU8I1rXWDIK7lksHVzV7byZOoQCmFSZi70TTcAR0cPAIBZRUGsxhD8alVthHMIQWDDh4r3m55S4jCE91I~Vgpyzc~SWR1o5aqU4iiMIXLYRs~hhnF2CrrMnjUI55wE5~fsNywGw79R8jcQ5MFfsOKGKbVrsEYoiukkvL9w7g-C3ZgW67HE~UPgvPngi3FRbBMrhEYCA__",
-    title: "Анализатор Мочи MINDUA-66",
-    article: 213134,
-    price: "300 000",
-    status: "-30%",
-  },
-];
+
 export const BasketProducts = () => {
+  const [dataCourse, setDataCourse] = useState<catalogTovar[]>([]);
+
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await baseURL.get(`CategoryItems`);
+        setDataCourse(res.data);
+        console.log(res.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <>
       <Row gutter={[20, 20]}>
         <Col span={24} md={16} lg={18} className="space-y-4">
-          {itemsProduct.map((item) => (
+          {dataCourse.map((item) => (
             <div
               className="!border border-gray-300 rounded-xl flex"
               key={item.id}
@@ -61,7 +46,13 @@ export const BasketProducts = () => {
               <div className="bg-white w-[50%] sm:w-[30%] lg:w-[35%] p-1 sm:p-3 rounded-s-xl min-h-64 border">
                 <div className="flex justify-between items-center flex-wrap">
                   <StyledButton status={item.status}>
-                    {t(item.status)}
+                    {t(
+                      item.status == 1
+                        ? "ХитыПродаж"
+                        : item.status == 2
+                        ? "Новинки"
+                        : "-30%"
+                    )}
                   </StyledButton>
                   <div className="flex sm:hidden items-center">
                     <Button
@@ -199,24 +190,12 @@ export const BasketProducts = () => {
 };
 const StyledButton = styled.button<StyledButtonProps>`
   color: ${({ status }) =>
-    status === "Новинка"
-      ? "#088269"
-      : status === "ХитПродаж"
-      ? "#59599A"
-      : "#855E00"};
+    status === 1 ? "#088269" : status === 2 ? "#59599A" : "#855E00"};
   border: 1px solid
     ${({ status }) =>
-      status === "Новинка"
-        ? "#088269"
-        : status === "ХитПродаж"
-        ? "#59599A"
-        : "#855E00"};
+      status === 1 ? "#088269" : status === 2 ? "#59599A" : "#855E00"};
   background-color: ${({ status }) =>
-    status === "Новинка"
-      ? "#448c7e2f"
-      : status === "ХитПродаж"
-      ? "#59599a44"
-      : "#ffeeba"};
+    status === 1 ? "#448c7e2f" : status === 2 ? "#59599a44" : "#ffeeba"};
   padding: 1px 8px;
   border-radius: 50px;
   font-weight: 500;
