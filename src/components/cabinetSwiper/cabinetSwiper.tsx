@@ -7,11 +7,7 @@ import { Swiper as SwiperClass } from "swiper";
 import "swiper/swiper-bundle.css"; // Barcha CSS
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
-import {
-  LeftButton,
-  PrimaryButton,
-  SecondaryButton,
-} from "@components/buttons";
+import { LeftButton, PrimaryButton, SecondaryButton } from "components";
 
 const items = [
   { id: 1, src: "../../Photo (1).png", title: "ЭкспрессЛаборатория" },

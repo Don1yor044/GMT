@@ -5,7 +5,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { RxDashboard, RxHamburgerMenu } from "react-icons/rx";
 import { ListProducts } from "./fListProduct";
 import { MenuProducts } from "./fMenuProduct";
-import { PrimaryButton } from "@components/buttons";
+import { PrimaryButton } from "components";
 
 interface ProductsType {
   id: number;

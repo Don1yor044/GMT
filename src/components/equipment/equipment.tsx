@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { Col, Row } from "antd";
 import { useState } from "react";
-import { Filter } from "./filter";
 import { Products } from "./products";
 import { css } from "@emotion/react";
 import { useTranslation } from "react-i18next";
+import { EquipmentFilter } from "./equipmentFilter/equipmentFilter";
 interface Items {
   id: number;
   name: string;
@@ -41,7 +41,7 @@ export const Equipment = () => {
         <div className="mt-8">
           <Row gutter={[20, 20]}>
             <Col span={24} lg={6} md={8}>
-              <Filter />
+              <EquipmentFilter />
             </Col>
             <Col span={24} lg={18} md={16}>
               <Products />

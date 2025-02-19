@@ -1,11 +1,11 @@
 import { SearchOutlined } from "@ant-design/icons";
-import { PrimaryButton, TertiaryButton } from "@components/buttons";
+import { PrimaryButton, TertiaryButton } from "components";
 import { Checkbox, Input, Slider, Typography } from "antd";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-export const Filter = () => {
+export const EquipmentFilter = () => {
   const [country, setCountry] = useState(true);
   const [price, setPrice] = useState(true);
   const [filter, setFilter] = useState(true);

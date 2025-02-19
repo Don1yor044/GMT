@@ -4,7 +4,7 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef } from "react";
 import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css";
-import { LeftButton, PrimaryButton } from "@components/buttons";
+import { LeftButton, PrimaryButton } from "components";
 import { useTranslation } from "react-i18next";
 
 export const CategoriesSwiper = () => {

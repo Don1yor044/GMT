@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { RxDashboard, RxHamburgerMenu } from "react-icons/rx";
-import { ListProducts } from "./eListProduct";
-import { MenuProducts } from "./eMenuProduct";
+import { ListProducts } from "./eListProduct/eListProduct";
+import { MenuProducts } from "./eMenuProduct/eMenuProduct";
 
 interface ProductsType {
   id: number;
