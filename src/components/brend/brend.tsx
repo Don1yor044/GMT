@@ -64,22 +64,22 @@ export const HomeBrand = () => {
           <Swiper
             loop={true}
             spaceBetween={10}
-            slidesPerView={3.5}
+            slidesPerView={4.5}
             onInit={(swiper) => {
               swiperRef.current = swiper;
             }}
             breakpoints={{
               0: {
-                slidesPerView: 1.5, // 640px dan kichik ekranlarda 1 slayd
+                slidesPerView: 1, // 640px dan kichik ekranlarda 1 slayd
               },
               640: {
-                slidesPerView: 2.5, // 640px dan kichik ekranlarda 1 slayd
+                slidesPerView: 2, // 640px dan kichik ekranlarda 1 slayd
               },
               768: {
                 slidesPerView: 3, // 768px dan kichik ekranlarda 2 slayd
               },
               1024: {
-                slidesPerView: 3.5, // 1024px dan katta ekranlarda 3 slayd
+                slidesPerView: 3, // 1024px dan katta ekranlarda 3 slayd
               },
             }}
           >

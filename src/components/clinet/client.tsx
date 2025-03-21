@@ -1,6 +1,7 @@
 import { Col, Row, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 export const HomeClient = () => {
   const { t } = useTranslation();
   const items = [
@@ -54,23 +55,20 @@ export const HomeClient = () => {
             <Swiper
               spaceBetween={10}
               loop={true}
-              autoplay={{
-                delay: 3000, // 3 soniyada bitta slayd o‘tadi
-                disableOnInteraction: false, // foydalanuvchi sutilganda avtomatik o'tishni to'xtatmaydi
-                pauseOnMouseEnter: false, // sichqoncha ustida bo'lsa ham davom etadi
-              }}
+              speed={500}
+              centeredSlides={true}
               breakpoints={{
                 340: {
-                  slidesPerView: 1.5, // 640px dan kichik ekranlarda 1 slayd
+                  slidesPerView: 1,
                 },
                 640: {
-                  slidesPerView: 2.5, // 640px dan kichik ekranlarda 1 slayd
+                  slidesPerView: 2,
                 },
                 768: {
-                  slidesPerView: 3.5, // 768px dan kichik ekranlarda 2 slayd
+                  slidesPerView: 3,
                 },
                 1024: {
-                  slidesPerView: 4.5, // 1024px dan katta ekranlarda 3 slayd
+                  slidesPerView: 4,
                 },
               }}
             >
@@ -80,7 +78,7 @@ export const HomeClient = () => {
                     <div className="bg-white rounded-tl-xl rounded-tr-xl flex justify-center">
                       <img
                         src={item.imgSrc}
-                        alt=""
+                        alt="imges"
                         className="rounded-tr-xl rounded-tl-xl h-[200px] w-auto max-w-[65%] object-contain m-auto"
                       />
                     </div>

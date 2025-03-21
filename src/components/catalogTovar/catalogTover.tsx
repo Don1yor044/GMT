@@ -3,12 +3,11 @@ import { Button, Col, Row, Typography } from "antd";
 import { FaRegHeart } from "react-icons/fa6";
 import { LuBarChartBig } from "react-icons/lu";
 import { Link } from "react-router-dom";
-import { LeftButton, PrimaryButton, SecondaryButton } from "../buttons/index";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { PrimaryButton, SecondaryButton } from "../buttons/index";
 import { useEffect, useRef, useState } from "react";
-import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore from "swiper";
 import { useTranslation } from "react-i18next";
 import baseURL from "utils/api";
 import { catalogTovar } from "types/types";
@@ -20,18 +19,6 @@ export const CatalogTovar = () => {
   const [dataCourse, setDataCourse] = useState<catalogTovar[]>([]);
   const { t } = useTranslation();
   const swiperRef = useRef<SwiperCore | null>(null);
-
-  const handleNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
-
-  const handlePrevious = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -75,10 +62,7 @@ export const CatalogTovar = () => {
             loop={true}
             onSwiper={(swiper) => (swiperRef.current = swiper)} // Swiper instansiyani olish
             spaceBetween={10}
-            navigation={{
-              prevEl: ".swiper-button-prev",
-              nextEl: ".swiper-button-next",
-            }}
+            pagination={{ clickable: true }}
             breakpoints={{
               340: { slidesPerView: 1.2 },
               640: { slidesPerView: 2.2 },
@@ -89,8 +73,8 @@ export const CatalogTovar = () => {
             {dataCourse.length > 0 &&
               dataCourse.map((item) => (
                 <SwiperSlide key={item.id}>
-                  <div className="!border border-gray-300 rounded-xl">
-                    <div className="bg-white h-72 p-3 rounded-t-xl">
+                  <div className="!border border-gray-300 rounded-xl cursor-pointer">
+                    <div className="bg-white h-72 p-3 rounded-t-xl ">
                       <div className="flex justify-between items-center">
                         <StyledButton status={Number(item.status)}>
                           {t(
@@ -145,15 +129,7 @@ export const CatalogTovar = () => {
                 </SwiperSlide>
               ))}
           </Swiper>
-          <div className="flex justify-between mt-10 pr-10 items-center">
-            <div className="xl:flex gap-3 hidden ">
-              <div onClick={handlePrevious}>
-                <LeftButton icon={GoArrowLeft} size={20} />
-              </div>
-              <div onClick={handleNext}>
-                <LeftButton icon={GoArrowRight} size={20} />
-              </div>
-            </div>
+          <div className="flex justify-content-end mt-10 pr-10">
             <div className="md:hidden lg:flex xs:flex sm:flex gap-2 ">
               <SecondaryButton text={t("БесплатнаяКонсультация")} />
               <div className="sm:hidden mp:flex mp:h-3 sm:h-0"> </div>

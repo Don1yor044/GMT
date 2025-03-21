@@ -66,7 +66,7 @@ export const TurnkeyOffices = () => {
   return (
     <>
       <div className="px-5 py-2 lg:px-14">
-        <BreadcrumbTwo currentPage="Кабинеты ключ" />
+        <BreadcrumbTwo currentPage="КабинетыКлюч" />
         <div className="mt-5 md:mt-10 lg:mt-20">
           <Typography className="text-3xl md:text-5xl">
             {t(`КабинетыКлюч`)}

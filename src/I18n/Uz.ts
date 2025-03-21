@@ -14,7 +14,7 @@ const Uz = {
   Корзина: "Savat",
   Каталог: "Katalog", // New translations
   Производители: "Ishlab chiqaruvchi",
-  КабинетыКлюч: "Kalit kabinetlari",
+  КабинетыКлюч: "Kabinetlar kaliti",
   Услуги: "Xizmatlar",
   Акции: "Aksiyalar",
   Покупателям: "Xaridorlar uchun",

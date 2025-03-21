@@ -6,7 +6,7 @@ export * from "./cabinetSwiper";
 export * from "./cards";
 export * from "./catalogTovar";
 export * from "./categoriesSwiper";
-export * from "./category";
+export * from "./categoryHome";
 export * from "./clinet";
 export * from "./company";
 export * from "./equipment";

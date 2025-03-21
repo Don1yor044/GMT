@@ -250,7 +250,7 @@ export const Footer = () => {
                   {t(`Стрерилизация`)}
                 </Link>
                 <Link to={"/"} className="hidden md:flex lg:hidden">
-                  {t(`КабинетыПодключ`)}
+                  {t(`КабинетыКлюч`)}
                 </Link>
                 <Link to={"/"} className="hidden md:flex lg:hidden">
                   {t(`СкачатьКаталог`)}
@@ -260,7 +260,7 @@ export const Footer = () => {
                 <Link to={"/"}>{t(`Новинки`)}</Link>
                 <Link to={"/"}>{t(`Распродажи`)}</Link>
                 <Link to={"/"}>{t(`Стрерилизация`)}</Link>
-                <Link to={"/"}>{t(`КабинетыПодключ`)}</Link>
+                <Link to={"/"}>{t(`КабинетыКлюч`)}</Link>
                 <Link to={"/"}>{t(`СкачатьКаталог`)}</Link>
               </div>
             </div>

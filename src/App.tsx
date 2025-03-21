@@ -31,11 +31,22 @@ import {
   TurnkeyOffices,
   Vacancies,
 } from "pages";
+import { FloatButton } from "antd";
+import { FcUpload } from "react-icons/fc";
 
 const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <FloatButton.BackTop
+        visibilityHeight={1000}
+        icon={<FcUpload />}
+        style={{
+          right: "20px",
+          bottom: "70px",
+        }}
+      />
+
       <I18nextProvider i18n={i18n}>
         <ErrorBoundarayContainer>
           <BrowserRouter>

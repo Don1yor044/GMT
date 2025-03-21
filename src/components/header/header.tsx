@@ -54,9 +54,10 @@ export const Header = () => {
     i18n.changeLanguage(language).catch((error) => {
       console.error("Error changing language: ", error);
     });
-    localStorage.setItem("selectedLanguage", language); // Tanlangan tilni saqlash
+    setShowDropdown(false);
+    localStorage.setItem("selectLanguage", language); // Tanlangan tilni saqlash
   };
-  const language = localStorage.getItem("selectedLanguage");
+  const language = localStorage.getItem("selectLanguage") || "Ru";
 
   useEffect(() => {
     if (language) {
@@ -96,74 +97,74 @@ export const Header = () => {
   ];
   const categories: MenuProps["items"] = [
     {
-      label: <a href="/catalog">Реанимация</a>,
+      label: <Link to="/catalog">Реанимация</Link>,
       key: "0",
     },
     {
-      label: <a href="/">Хирургия</a>,
+      label: <Link to="/">Хирургия</Link>,
       key: "1",
     },
     {
-      label: <a href="/">Офтальмология</a>,
+      label: <Link to="/">Офтальмология</Link>,
       key: "2",
     },
     {
-      label: <a href="/">Лабораторная диагностика</a>,
+      label: <Link to="/">Лабораторная диагностика</Link>,
       key: "3",
     },
     {
-      label: <a href="/">Акушерство</a>,
+      label: <Link to="/">Акушерство</Link>,
       key: "4",
     },
     {
-      label: <a href="/">Гинекология</a>,
+      label: <Link to="/">Гинекология</Link>,
       key: "5",
     },
     {
-      label: <a href="/">Гистология</a>,
+      label: <Link to="/">Гистология</Link>,
       key: "6",
     },
     {
-      label: <a href="/">Косметология</a>,
+      label: <Link to="/">Косметология</Link>,
       key: "7",
     },
     {
-      label: <a href="/">Оториноларингология</a>,
+      label: <Link to="/">Оториноларингология</Link>,
       key: "8",
     },
     {
-      label: <a href="/">Рентгенология и томография</a>,
+      label: <Link to="/">Рентгенология и томография</Link>,
       key: "9",
     },
     {
-      label: <a href="/">Стерилизация</a>,
+      label: <Link to="/">Стерилизация</Link>,
       key: "10",
     },
     {
-      label: <a href="/">Физиотерапия и реабилитация</a>,
+      label: <Link to="/">Физиотерапия и реабилитация</Link>,
       key: "11",
     },
     {
-      label: <a href="/">Функциональная диагностика</a>,
+      label: <Link to="/">Функциональная диагностика</Link>,
       key: "12",
     },
     {
-      label: <a href="/">Эндоскопия</a>,
+      label: <Link to="/">Эндоскопия</Link>,
       key: "13",
     },
     {
       type: "divider",
     },
     {
-      label: <a href="/">Новинки</a>,
+      label: <Link to="/">Новинки</Link>,
       key: "14",
     },
     {
-      label: <a href="/">Распродажи</a>,
+      label: <Link to="/">Распродажи</Link>,
       key: "15",
     },
     {
-      label: <a href="/">Кабинеты под ключ</a>,
+      label: <Link to="/">Кабинеты под ключ</Link>,
       key: "16",
     },
   ];
@@ -184,66 +185,66 @@ export const Header = () => {
       key: "1",
     },
     {
-      label: <a href="/">Офтальмология</a>,
+      label: <Link to="/">Офтальмология</Link>,
       key: "2",
     },
     {
-      label: <a href="/">Лабораторная диагностика</a>,
+      label: <Link to="/">Лабораторная диагностика</Link>,
       key: "3",
     },
     {
-      label: <a href="/">Акушерство</a>,
+      label: <Link to="/">Акушерство</Link>,
       key: "4",
     },
     {
-      label: <a href="/">Гинекология</a>,
+      label: <Link to="/">Гинекология</Link>,
       key: "5",
     },
     {
-      label: <a href="/">Гистология</a>,
+      label: <Link to="/">Гистология</Link>,
       key: "6",
     },
     {
-      label: <a href="/">Косметология</a>,
+      label: <Link to="/">Косметология</Link>,
       key: "7",
     },
     {
-      label: <a href="/">Оториноларингология</a>,
+      label: <Link to="/">Оториноларингология</Link>,
       key: "8",
     },
     {
-      label: <a href="/">Рентгенология и томография</a>,
+      label: <Link to="/">Рентгенология и томография</Link>,
       key: "9",
     },
     {
-      label: <a href="/">Стерилизация</a>,
+      label: <Link to="/">Стерилизация</Link>,
       key: "10",
     },
     {
-      label: <a href="/">Физиотерапия и реабилитация</a>,
+      label: <Link to="/">Физиотерапия и реабилитация</Link>,
       key: "11",
     },
     {
-      label: <a href="/">Функциональная диагностика</a>,
+      label: <Link to="/">Функциональная диагностика</Link>,
       key: "12",
     },
     {
-      label: <a href="/">Эндоскопия</a>,
+      label: <Link to="/">Эндоскопия</Link>,
       key: "13",
     },
     {
       type: "divider",
     },
     {
-      label: <a href="/">Новинки</a>,
+      label: <Link to="/">Новинки</Link>,
       key: "14",
     },
     {
-      label: <a href="/">Распродажи</a>,
+      label: <Link to="/">Распродажи</Link>,
       key: "15",
     },
     {
-      label: <a href="/">Кабинеты под ключ</a>,
+      label: <Link to="/">Кабинеты под ключ</Link>,
       key: "16",
     },
   ];
@@ -468,8 +469,10 @@ export const Header = () => {
             )}
           </div>
         </div>
+
+        {/* Telefon uchun layout  */}
         <div className="hidden gap-3 items-center phoneMenu w-full">
-          <StyledButton>
+          <StyledButton onClick={() => navigate("/")}>
             <div className="flex flex-col items-center hover:text-[#088269]">
               <TiHomeOutline size={20} />
               <div className="text-gray-500 text hover:text-[#088269]">
@@ -485,7 +488,7 @@ export const Header = () => {
               </div>
             </div>
           </StyledButton>
-          <StyledButton>
+          <StyledButton onClick={() => navigate("/basket")}>
             <div className="flex flex-col items-center hover:text-[#088269]">
               <SlBasket size={20} />
               <div className="text-gray-500 text hover:text-[#088269]">
@@ -493,7 +496,7 @@ export const Header = () => {
               </div>
             </div>
           </StyledButton>
-          <StyledButton>
+          <StyledButton onClick={() => navigate("/favorites")}>
             <div className="flex flex-col items-center hover:text-[#088269]">
               <FaRegHeart size={20} />
               <div className="text-gray-500 text hover:text-[#088269]">
