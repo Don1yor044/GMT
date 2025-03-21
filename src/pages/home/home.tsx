@@ -31,7 +31,7 @@ export const Home = observer(() => {
               className="flex flex-col justify-center"
             >
               <div className="md:px-8 lg:px-12 py-8 px-5 flex-col flex-wrap">
-                <Typography.Title style={{ fontSize: 50 }}>
+                <Typography.Title style={{ fontSize: 48 }}>
                   {t("ЗаголовокБаннераВПаруСтрок")}
                 </Typography.Title>
                 <Typography.Title

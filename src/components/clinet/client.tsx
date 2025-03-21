@@ -37,7 +37,9 @@ export const HomeClient = () => {
       <div className="px-5 lg:px-12 xl:px-14 md:px-10 ">
         <Row gutter={[20, 20]}>
           <Col md={12} xs={24}>
-            <Typography.Title level={2}>{t(`НашиКлиенты`)}</Typography.Title>
+            <Typography className="lg:text-4xl text-2xl font-semibold">
+              {t(`НашиКлиенты`)}
+            </Typography>
           </Col>
           <Col md={12} xs={24}>
             <Typography className="text-3xl md:text-5xl">
