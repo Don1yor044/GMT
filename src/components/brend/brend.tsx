@@ -70,7 +70,7 @@ export const HomeBrand = () => {
             }}
             breakpoints={{
               0: {
-                slidesPerView: 1, // 640px dan kichik ekranlarda 1 slayd
+                slidesPerView: 1.5, // 640px dan kichik ekranlarda 1 slayd
               },
               640: {
                 slidesPerView: 2, // 640px dan kichik ekranlarda 1 slayd

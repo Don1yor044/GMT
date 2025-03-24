@@ -165,7 +165,7 @@ const ImageContainer = styled.div<ImageContainerProps>`
   width: 100%;
   max-width: 200px;
   height: 100%;
-  max-height: 200px;
+  max-height: 180px;
   margin: 0 auto;
   background-image: ${(props) => `url(${props.src})`};
 `;

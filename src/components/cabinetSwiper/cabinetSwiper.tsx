@@ -90,7 +90,7 @@ export const CabinetSwiper = () => {
             <LeftButton icon={GoArrowRight} size={20} />
           </div>
         </div>
-        <div className="flex gap-2 lg:h-10 mp:h-10 mp:text-xs  sm:text-sm">
+        <div className="flex gap-2 lg:h-10 mp:h-10 mp:text-[11px] font-semibold sm:text-sm">
           <SecondaryButton text={t("БесплатнаяКонсультация")} />
           <PrimaryButton text={t("РассчитатьСтоимость")} />
         </div>

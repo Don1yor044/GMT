@@ -57,10 +57,9 @@ export const HomeClient = () => {
               spaceBetween={10}
               loop={true}
               speed={500}
-              centeredSlides={true}
               breakpoints={{
                 340: {
-                  slidesPerView: 1,
+                  slidesPerView: 1.5,
                 },
                 640: {
                   slidesPerView: 2,
