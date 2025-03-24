@@ -50,7 +50,7 @@ export const Home = observer(() => {
             <Col lg={14} md={12} sm={24} xs={24} className="h-full flex">
               <div className="w-full">
                 <img
-                  src="public/image.png"
+                  src="/image.png"
                   alt=""
                   className="h-full w-full object-cover rounded-[10px] lg:rounded-tl-[300px] md:rounded-[10px]" // MD va undan kichik ekranda 300px, kattaroq ekranda 10px
                 />

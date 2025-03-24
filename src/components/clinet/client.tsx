@@ -50,7 +50,6 @@ export const HomeClient = () => {
           </Col>
         </Row>
       </div>
-
       <div className="!mt-20 px-2">
         <Row gutter={[10, 20]}>
           <Col span={24}>
@@ -95,7 +94,7 @@ export const HomeClient = () => {
             </Swiper>
           </Col>
         </Row>
-      </div>
+      </div>{" "}
     </div>
   );
 };

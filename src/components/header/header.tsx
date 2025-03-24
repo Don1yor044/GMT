@@ -398,29 +398,53 @@ export const Header = () => {
           </StyledButton>
           <StyledButton>
             <div
-              className="flex flex-col items-center"
+              className={`flex flex-col items-center ${
+                isActive("/favorites") ? "text-[#07745E]" : ""
+              }`}
               onClick={() => navigate("favorites")}
             >
               <FaRegHeart size={20} />
-              <div className="text-gray-500 text">{t("Избранное")}</div>
+              <div
+                className={`text-gray-500 text ${
+                  isActive("/favorites") ? "!text-[#07745E]" : ""
+                }`}
+              >
+                {t("Избранное")}
+              </div>
             </div>
           </StyledButton>
           <StyledButton>
             <div
-              className="flex flex-col items-center"
+              className={`flex flex-col items-center ${
+                isActive("/compare") ? "text-[#07745E]" : ""
+              }`}
               onClick={() => navigate("compare")}
             >
               <LuBarChartBig size={20} />
-              <div className="text-gray-500 text">{t("Сравнить")}</div>
+              <div
+                className={`text-gray-500 text ${
+                  isActive("/compare") ? "!text-[#07745E]" : ""
+                }`}
+              >
+                {t("Сравнить")}
+              </div>
             </div>
           </StyledButton>
           <StyledButton>
             <div
-              className="flex flex-col items-center"
+              className={`flex flex-col items-center ${
+                isActive("/basket") ? "text-[#07745E]" : ""
+              }`}
               onClick={() => navigate("basket")}
             >
               <SlBasket size={20} />
-              <div className="text-gray-500 text">{t("Корзина")}</div>
+              <div
+                className={`text-gray-500 text ${
+                  isActive("/basket") ? "!text-[#07745E]" : ""
+                }`}
+              >
+                {t("Корзина")}
+              </div>
             </div>
           </StyledButton>
           <div className="relative flex flex-col items-center">
@@ -541,19 +565,44 @@ export const Header = () => {
               </div>
             </Dropdown>
           </Button>
-          <Link to={"/manufacturers"} className="hover:!text-[#07745E]">
+          <Link
+            to={"/manufacturers"}
+            className={`hover:!text-[#07745E] ${
+              isActive("/manufacturers") ? "!text-[#07745E]" : ""
+            }`}
+          >
             {t("Производители")}
           </Link>
-          <Link to={"/turnkey"} className="hover:!text-[#07745E]">
+          <Link
+            to={"/turnkey"}
+            className={`hover:!text-[#07745E] ${
+              isActive("/turnkey") ? "!text-[#07745E]" : ""
+            }`}
+          >
             {t("КабинетыКлюч")}
           </Link>
-          <Link to={"/services"} className="hover:!text-[#07745E]">
+          <Link
+            to={"/services"}
+            className={`hover:!text-[#07745E] ${
+              isActive("/services") ? "!text-[#07745E]" : ""
+            }`}
+          >
             {t("Услуги")}
           </Link>
-          <Link to={"/discounts"} className="hover:!text-[#07745E]">
+          <Link
+            to={"/discounts"}
+            className={`hover:!text-[#07745E] ${
+              isActive("/discounts") ? "!text-[#07745E]" : ""
+            }`}
+          >
             {t("Акции")}
           </Link>
-          <Link to={"/contact"} className="hover:!text-[#07745E]">
+          <Link
+            to={"/contact"}
+            className={`hover:!text-[#07745E] ${
+              isActive("/contact") ? "!text-[#07745E]" : ""
+            }`}
+          >
             {t("Контакты")}
           </Link>
         </div>
